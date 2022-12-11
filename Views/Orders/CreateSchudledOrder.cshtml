@@ -1,0 +1,215 @@
+﻿@model Ris2022.Data.Models.Order
+
+@{
+    ViewData["Title"] = Resource.AddOrder;
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<h1>@Resource.AddNew</h1>
+
+<h4>@Resource.SchudledOrder</h4>
+<hr />
+<div class="row">
+    <div class="col">
+        <form asp-action="CreateSchudledOrder">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            @Html.HiddenFor(model=>model.Patientid)
+			@Html.HiddenFor(model=>model.Studyid)
+            <div class="row  justify-content-center align-items-center">
+                <div class="p-3  col d-flex flex-column">
+
+            <div class="row">
+                        <label asp-for="Modalityid" class="control-label col" name="ModalityName">@Resource.ModalityName</label>
+                        <select asp-for="Modalityid" class="form-control col" name="ModalityName" asp-items="ViewBag.Modalityid">@Resource.ModalityName</select>
+             </div>
+             </div>
+                
+            <div class="col">
+             <div class="row">
+                        <label asp-for="Proceduretypeid" class="control-label col" name="Proceduretype">@Resource.Proceduretype</label>
+                        <select asp-for="Proceduretypeid" class="form-control col" name="Proceduretype" asp-items="ViewBag.Proceduretypeid">@Resource.Proceduretype</select>
+            </div>
+            </div>
+
+
+            <div class="col">
+            <div class="row">
+                        <label asp-for="Modalitytypeid" class="control-label col" name="Modalitytype">@Resource.Modalitytype</label>
+                        <select asp-for="Modalitytypeid" class="form-control col" name="Modalitytype" asp-items="ViewBag.Modalitytypeid">@Resource.Modalitytype</select>
+            </div>
+            </div>
+            </div>
+
+            <div class="row  justify-content-center align-items-center">
+                <div class="p-3  col d-flex flex-column">
+
+            <div class="row">
+                        <label asp-for="Doctorid" class="control-label col" name="DoctorName">@Resource.DoctorName</label>
+                        <select asp-for="Doctorid" class="form-control col" name="DoctorName" asp-items="ViewBag.Doctorid">@Resource.DoctorName</select>
+            </div>
+            </div>
+
+            <div class="col">
+            <div class="row">
+                        <label asp-for="Departmentid" class="control-label col" name="Department">@Resource.Department</label>
+                        <select asp-for="Departmentid" class="form-control col" name="Department" asp-items="ViewBag.Departmentid">@Resource.Department</select>
+            </div>
+            </div>
+            
+            <div class="col">
+            <div class="row">
+                        <label asp-for="Documentid" class="control-label col" name="Documentid">@Resource.Documentid</label>
+                        <input asp-for="Documentid" class="form-control col" placeholder="@Resource.Documentid" name="Documentid" />
+                <span asp-validation-for="Documentid" class="text-danger"></span>
+            </div>
+
+            </div>
+            </div>
+
+            <div class="row justify-content-center align-items-center">
+                <div class="p-3  col d-flex flex-column">
+            <div class="row">
+                        <label asp-for="Ordertypeid" class="control-label col" name="OrderIndex">@Resource.OrderIndex</label>
+                        <select asp-for="Ordertypeid" class="form-control col" name="OrderIndex" asp-items="ViewBag.Ordertypeid">@Resource.OrderIndex</select>
+            </div>
+            </div>
+
+            <div class="col">
+            <div class="row">
+                <label asp-for="Reasonid" class="control-label col"></label>
+                <select asp-for="Reasonid" class ="form-control col" asp-items="ViewBag.Reasonid">
+                            <option disabled="disabled" selected="selected" value=""><distributed-cache class="fa fa-chevron-down"></i></option>
+                    @Resource.Reason
+                    </select>
+            </div>
+            </div>
+
+            <div class="col">
+            <div class="row">
+                <label asp-for="Paytypeid" class="control-label col"></label>
+                <i style="position:absolute;left:15px; top:12px; width:20px;" class="fa fa-chevron-down"></i>
+                <select asp-for="Paytypeid" onchange="reasonShow();" class="form-control col" asp-items="ViewBag.Paytypeid"></select>
+            </div>
+            </div>
+            </div>
+
+            <div class="row justify-content-center align-items-center">
+                <div class="p-3  col d-flex flex-column">
+            <div id="reasonTable" class="row">
+                        <label asp-for="Payreasonid" class="control-label col" name="Payreasonid">@Resource.Payreasonid</label>
+                <input asp-for="Payreasonid" class="form-control col" placeholder="@Resource.Payreasonid" name="Payreasonid" />
+                <span asp-validation-for="Payreasonid" class="text-danger"></span>
+            </div>
+            </div>
+
+            <div class="col">
+            <div class="row">
+                        <label asp-for="Clinicid" class="control-label col" name="Clinic">@Resource.Clinic</label>
+                        <select asp-for="Clinicid" class="form-control col" name="Clinic" asp-items="ViewBag.Clinicid">@Resource.Clinic</select>
+            </div>
+            </div>
+            </div>
+            
+            <div class="row justify-content-center align-items-center">
+                <div class="p-3  col d-flex flex-column">
+            <div class="row">
+               <label asp-for="Startdate" class="control-label col" name="StartDate">@Resource.StartDate</label>
+               <input asp-for="Startdate" asp-format="{0:yyyy-MM-dd}"  name="StartDate" placeholder="@Resource.StartDate" class="form-control col" />
+               <span asp-validation-for="Startdate" class="text-danger col-12"></span>
+            </div>
+            </div>
+            
+
+            
+            <div class="col">
+            <div class="row">
+                 <label  class="control-label col" name="EndDate">@Resource.EndDate</label>
+                        <input asp-for="Startdate" asp-format="{0:yyyy-MM-dd}"  name="StartDate" placeholder="@Resource.StartDate" class="form-control col" />
+                <span asp-validation-for="Startdate" class="text-danger col-12"></span>
+            </div>
+            </div>
+            </div>
+            
+
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="IndexSchudledOrder">Back to List</a>
+</div>
+
+@section Scripts {
+    
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");
+}
+
+<script>
+        function reasonShow() {
+            var PaytypeValue = document.getElementById("Paytypeid").value;
+            debugger;
+            if (PaytypeValue == 2){
+                $("#reasonTable").show();
+            }
+            else
+            {
+                $("#reasonTable").hide();
+            }
+            
+        }
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            console.log("Start");
+            $("#Departmentid").change(function () {
+                console.log("Change");
+                var selectedText = $(this).find("option:selected").text();
+                var selectedValue = $(this).val();
+                alert("Selected Text: " + selectedText + " Value: " + selectedValue);
+                $.ajax({
+
+                    type: 'POST',
+
+                    url: '/Orders/getDeptModalities',
+
+                    data: '{ "Departmentid" : "' + selectedValue + '" }',
+
+                    contentType: 'application/json; charset=utf-8',
+
+                    dataType: 'json',
+
+
+                    success: function (data) {
+                        var ddlMod = document.getElementById("Modalitytypeid");
+                        ddlMod.innerHTML = "";
+
+                        console.log(data);
+
+                        for (var i = 0; i < data.length; i++) {
+                            var option = document.createElement("option");
+
+                            //Set Customer Name in Text part.
+                            option.innerHTML = data[i].name;
+
+                            //Set CustomerId in Value part.
+                            option.value = data[i].num;
+
+                            //Add the Option element to DropDownList.
+                            ddlMod.options.add(option);
+                        }
+
+                    },
+                    error: function () {
+
+                    }
+
+                });
+            });
+            console.log("End");
+        });
+    </script>
+}

@@ -1,0 +1,151 @@
+﻿@model Ris2022.Data.Models.Order
+
+@{
+    ViewData["Title"] = "DetailsSchudledOrder";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<h1>DetailsSchudledOrder</h1>
+
+<div>
+    <h4>Order</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.patient)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.patient.Firstname)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.modality)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.modality.Aetitle)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.proceduretype)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.proceduretype.Namear)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Studyid)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Studyid)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Startdate)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Startdate)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Enddate)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Enddate)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Statusid)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Statusid)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Doctorid)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Doctorid)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Autoexpiredate)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Autoexpiredate)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Accessionnumber)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Accessionnumber)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.dept)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.dept.Namear)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Documentid)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Documentid)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Ordertype)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Ordertype.Namear)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Insertdate)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Insertdate)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.InsertuserName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.InsertuserName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.reason)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.reason.Namear)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.UpdateuserName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.UpdateuserName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Updatedate)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Updatedate)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.paytype)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.paytype.Namear)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Payreasonid)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Payreasonid)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.clinic)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.clinic.Namear)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.modalitytype)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.modalitytype.Namear)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="EditSchudledOrder" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="IndexSchudledOrder">Back to List</a>
+</div>

@@ -1,0 +1,90 @@
+﻿@model IEnumerable<Ris2022.Data.Models.Patient>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">@Resource.AddPatient</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Givenid)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Firstname)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Gendre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Mothername)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Age)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Insertdate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InsertUserName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Acceptancetypeid)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Givenid)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Firstname)
+                @Html.DisplayFor(modelItem => item.Middlename)
+                @Html.DisplayFor(modelItem => item.Lastname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Gendre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Mothername)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Age)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Insertdate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InsertUserName)
+            </td>
+            
+                @{
+                    if (Resource.Lang == "ar")
+                    {
+                        <td>@Html.DisplayFor(modelItem => item.Acceptancetype.Namear)</td>
+                    }
+                    else
+                    {
+                        <td>@Html.DisplayFor(modelItem => item.Acceptancetype.Nameen) </td>
+                    }
+                }
+            
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">@Resource.Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">@Resource.Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">@Resource.Delete</a>|
+                    <a asp-action="Create" asp-controller="Orders" asp-route-patientId="@item.Id">@Resource.AddOrder</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

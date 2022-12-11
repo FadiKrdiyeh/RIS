@@ -1,0 +1,1312 @@
+2022-11-22 16:13:12.200 +02:00 [INF User profile is available. Using 'C:\Users\khalidD\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+ ]2022-11-22 16:13:12.615 +02:00 [INF Application Is Starting 
+ ]2022-11-22 16:13:13.233 +02:00 [INF Application started. Press Ctrl+C to shut down. 
+ ]2022-11-22 16:13:13.234 +02:00 [INF Hosting environment: Development 
+ ]2022-11-22 16:13:13.234 +02:00 [INF Content root path: C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\ 
+ ]2022-11-22 16:13:13.507 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/ - - 
+ ]2022-11-22 16:13:13.916 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-11-22 16:13:14.661 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-11-22 16:13:15.466 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnGetAsync - ModelState is "Valid" 
+ ]2022-11-22 16:13:15.710 +02:00 [INF AuthenticationScheme: Identity.External signed out. 
+ ]2022-11-22 16:13:15.878 +02:00 [INF Executed handler method OnGetAsync, returned result . 
+ ]2022-11-22 16:13:15.883 +02:00 [INF Executing an implicit handler method - ModelState is "Valid" 
+ ]2022-11-22 16:13:15.883 +02:00 [INF Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-11-22 16:13:19.261 +02:00 [INF Executed page /Index in 4597.108ms 
+ ]2022-11-22 16:13:19.262 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-11-22 16:13:19.428 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/ - - - 200 - text/html;+charset=utf-8 5923.2331ms 
+ ]2022-11-22 16:13:19.459 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css - - 
+ ]2022-11-22 16:13:19.459 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/all.min.css - - 
+ ]2022-11-22 16:13:19.484 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/plugins/slider/css/owl.carousel.min.css - - 
+ ]2022-11-22 16:13:19.484 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/animate.css - - 
+ ]2022-11-22 16:13:19.484 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-11-22 16:13:19.484 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/plugins/slider/css/owl.theme.default.css - - 
+ ]2022-11-22 16:13:19.484 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/style.css - - 
+ ]2022-11-22 16:13:19.488 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 3.5770ms 
+ ]2022-11-22 16:13:19.493 +02:00 [INF Sending file. Request path: '/assets/css/animate.css'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\assets\css\animate.css' 
+ ]2022-11-22 16:13:19.493 +02:00 [INF Sending file. Request path: '/assets/css/all.min.css'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\assets\css\all.min.css' 
+ ]2022-11-22 16:13:19.493 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/animate.css - - - 0 81372 text/css 9.4637ms 
+ ]2022-11-22 16:13:19.493 +02:00 [INF Sending file. Request path: '/assets/css/style.css'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\assets\css\style.css' 
+ ]2022-11-22 16:13:19.493 +02:00 [INF Sending file. Request path: '/assets/plugins/slider/css/owl.theme.default.css'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\assets\plugins\slider\css\owl.theme.default.css' 
+ ]2022-11-22 16:13:19.493 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/all.min.css - - - 0 57180 text/css 34.2470ms 
+ ]2022-11-22 16:13:19.493 +02:00 [INF Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css' 
+ ]2022-11-22 16:13:19.493 +02:00 [INF Sending file. Request path: '/assets/plugins/slider/css/owl.carousel.min.css'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\assets\plugins\slider\css\owl.carousel.min.css' 
+ ]2022-11-22 16:13:19.493 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/plugins/slider/css/owl.theme.default.css - - - 0 1303 text/css 9.3349ms 
+ ]2022-11-22 16:13:19.494 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css - - - 0 155845 text/css 34.7224ms 
+ ]2022-11-22 16:13:19.494 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/plugins/slider/css/owl.carousel.min.css - - - 0 3241 text/css 9.8277ms 
+ ]2022-11-22 16:13:19.494 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/style.css - - - 200 18256 text/css 9.6414ms 
+ ]2022-11-22 16:13:19.505 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/images/logo.gif - - 
+ ]2022-11-22 16:13:19.505 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-11-22 16:13:19.506 +02:00 [INF Sending file. Request path: '/assets/images/logo.gif'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\assets\images\logo.gif' 
+ ]2022-11-22 16:13:19.506 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/images/logo.gif - - - 0 6230 image/gif 0.4995ms 
+ ]2022-11-22 16:13:19.991 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 485.5624ms 
+ ]2022-11-22 16:13:20.669 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/webfonts/fa-solid-900.woff2 - - 
+ ]2022-11-22 16:13:20.669 +02:00 [INF Sending file. Request path: '/assets/webfonts/fa-solid-900.woff2'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\assets\webfonts\fa-solid-900.woff2' 
+ ]2022-11-22 16:13:20.669 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/webfonts/fa-solid-900.woff2 - - - 0 76084 font/woff2 0.4591ms 
+ ]2022-11-22 16:13:20.866 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/webfonts/fa-regular-400.woff2 - - 
+ ]2022-11-22 16:13:20.875 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/images/fav.png - - 
+ ]2022-11-22 16:13:20.893 +02:00 [INF Sending file. Request path: '/assets/webfonts/fa-regular-400.woff2'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\assets\webfonts\fa-regular-400.woff2' 
+ ]2022-11-22 16:13:20.893 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/webfonts/fa-regular-400.woff2 - - - 0 13576 font/woff2 27.2532ms 
+ ]2022-11-22 16:13:20.895 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/images/fav.png - - - 0 - - 20.4470ms 
+ ]2022-11-22 16:13:33.338 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/clinics - - 
+ ]2022-11-22 16:13:33.345 +02:00 [INF Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user. 
+ ]2022-11-22 16:13:33.347 +02:00 [INF AuthenticationScheme: Identity.Application was challenged. 
+ ]2022-11-22 16:13:33.347 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/clinics - - - 302 - - 9.6047ms 
+ ]2022-11-22 16:13:33.748 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/Index?ReturnUrl=%2Fclinics - - 
+ ]2022-11-22 16:13:34.256 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-11-22 16:13:34.261 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-11-22 16:13:34.278 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnGetAsync - ModelState is "Valid" 
+ ]2022-11-22 16:13:34.329 +02:00 [INF AuthenticationScheme: Identity.External signed out. 
+ ]2022-11-22 16:13:34.330 +02:00 [INF Executed handler method OnGetAsync, returned result . 
+ ]2022-11-22 16:13:34.330 +02:00 [INF Executing an implicit handler method - ModelState is "Valid" 
+ ]2022-11-22 16:13:34.330 +02:00 [INF Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-11-22 16:13:34.590 +02:00 [INF Executed page /Index in 328.6297ms 
+ ]2022-11-22 16:13:34.590 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-11-22 16:13:34.596 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/Index?ReturnUrl=%2Fclinics - - - 200 - text/html;+charset=utf-8 846.9822ms 
+ ]2022-11-22 16:13:36.023 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-11-22 16:13:36.023 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-11-22 16:13:36.024 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 0.6631ms 
+ ]2022-11-22 16:13:36.049 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 25.9545ms 
+ ]2022-11-22 16:26:00.619 +02:00 [INF User profile is available. Using 'C:\Users\khalidD\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+ ]2022-11-22 16:26:00.834 +02:00 [INF Application Is Starting 
+ ]2022-11-22 16:26:00.870 +02:00 [INF Application started. Press Ctrl+C to shut down. 
+ ]2022-11-22 16:26:00.870 +02:00 [INF Hosting environment: Development 
+ ]2022-11-22 16:26:00.870 +02:00 [INF Content root path: C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\ 
+ ]2022-11-22 16:26:00.886 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/Index?ReturnUrl=%2Fclinics - - 
+ ]2022-11-22 16:26:00.997 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-11-22 16:26:01.059 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-11-22 16:26:01.219 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnGetAsync - ModelState is "Valid" 
+ ]2022-11-22 16:26:01.223 +02:00 [INF AuthenticationScheme: Identity.External signed out. 
+ ]2022-11-22 16:26:01.223 +02:00 [INF Executed handler method OnGetAsync, returned result . 
+ ]2022-11-22 16:26:01.227 +02:00 [INF Executing an implicit handler method - ModelState is "Valid" 
+ ]2022-11-22 16:26:01.227 +02:00 [INF Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-11-22 16:26:01.392 +02:00 [INF Executed page /Index in 326.7222ms 
+ ]2022-11-22 16:26:01.393 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-11-22 16:26:01.434 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/Index?ReturnUrl=%2Fclinics - - - 200 - text/html;+charset=utf-8 549.5754ms 
+ ]2022-11-22 16:26:01.457 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-11-22 16:26:01.457 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-11-22 16:26:01.461 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 3.8823ms 
+ ]2022-11-22 16:26:01.498 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 41.9929ms 
+ ]2022-11-22 16:26:07.116 +02:00 [INF Request starting HTTP/2 POST https://localhost:44392/Index?ReturnUrl=%2Fclinics application/x-www-form-urlencoded 256 
+ ]2022-11-22 16:26:07.122 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-11-22 16:26:07.123 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-11-22 16:26:07.152 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnPostAsync - ModelState is "Valid" 
+ ]2022-11-22 16:26:08.054 +02:00 [INF Entity Framework Core 6.0.8 initialized 'RisDBContext' using provider 'Oracle.EntityFrameworkCore:6.0.21.1-20220418' with options: None 
+ ]2022-11-22 16:26:09.173 +02:00 [INF Executed DbCommand (106ms) [Parameters=[:normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='0']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ClinicId", "a"."ConcurrencyStamp", "a"."Departmentid", "a"."Email", "a"."EmailConfirmed", "a"."Firstname", "a"."Isdoctor", "a"."Languageid", "a"."Lastname", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AppUser" "a"
+WHERE "a"."NormalizedUserName" = :normalizedUserName_0
+FETCH FIRST 1 ROWS ONLY 
+ ]2022-11-22 16:26:09.384 +02:00 [INF Executed DbCommand (2ms) [Parameters=[:user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='0']
+SELECT "u"."Id", "u"."ClaimType", "u"."ClaimValue", "u"."UserId"
+FROM "UserClaims" "u"
+WHERE "u"."UserId" = :user_Id_0 
+ ]2022-11-22 16:26:09.404 +02:00 [INF Executed DbCommand (2ms) [Parameters=[:userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='0']
+SELECT "r"."Name"
+FROM "UserRoles" "u"
+INNER JOIN "Role" "r" ON "u"."RoleId" = "r"."Id"
+WHERE "u"."UserId" = :userId_0 
+ ]2022-11-22 16:26:09.406 +02:00 [INF AuthenticationScheme: Identity.Application signed in. 
+ ]2022-11-22 16:26:09.406 +02:00 [INF khaled User logged in. 
+ ]2022-11-22 16:26:09.406 +02:00 [INF Executed handler method OnPostAsync, returned result Microsoft.AspNetCore.Mvc.RedirectToPageResult. 
+ ]2022-11-22 16:26:09.408 +02:00 [INF Executing RedirectToPageResult, redirecting to MainPage. 
+ ]2022-11-22 16:26:09.409 +02:00 [INF Executed page /Index in 2285.8902ms 
+ ]2022-11-22 16:26:09.409 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-11-22 16:26:09.418 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/MainPage - - 
+ ]2022-11-22 16:26:09.419 +02:00 [INF Request finished HTTP/2 POST https://localhost:44392/Index?ReturnUrl=%2Fclinics application/x-www-form-urlencoded 256 - 302 - - 2302.4779ms 
+ ]2022-11-22 16:26:09.423 +02:00 [INF Executing endpoint '/MainPage' 
+ ]2022-11-22 16:26:09.425 +02:00 [INF Route matched with {page = "/MainPage", action = "", controller = "", area = ""}. Executing page /MainPage 
+ ]2022-11-22 16:26:09.425 +02:00 [INF Executing handler method Ris2022.Pages.IndexModel.OnGet - ModelState is "Valid" 
+ ]2022-11-22 16:26:09.425 +02:00 [INF Executed handler method OnGet, returned result . 
+ ]2022-11-22 16:26:09.425 +02:00 [INF Executing an implicit handler method - ModelState is "Valid" 
+ ]2022-11-22 16:26:09.425 +02:00 [INF Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-11-22 16:26:09.770 +02:00 [INF Executed page /MainPage in 345.6755ms 
+ ]2022-11-22 16:26:09.771 +02:00 [INF Executed endpoint '/MainPage' 
+ ]2022-11-22 16:26:09.774 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/MainPage - - - 200 - text/html;+charset=utf-8 356.2263ms 
+ ]2022-11-22 16:26:09.800 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/newsTickerStyle.css - - 
+ ]2022-11-22 16:26:09.800 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-11-22 16:26:09.801 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-11-22 16:26:09.801 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/css/mvc-grid/mvc-grid.css - - 
+ ]2022-11-22 16:26:09.801 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/images/services/service-1.jpg - - 
+ ]2022-11-22 16:26:09.802 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 0.8883ms 
+ ]2022-11-22 16:26:09.802 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/images/services/service-2.jpg - - 
+ ]2022-11-22 16:26:09.803 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/images/services/service-3.jpg - - 
+ ]2022-11-22 16:26:09.803 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/images/services/s1.jpg - - 
+ ]2022-11-22 16:26:09.805 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/images/services/s2.jpg - - 
+ ]2022-11-22 16:26:09.807 +02:00 [INF Sending file. Request path: '/assets/images/services/service-1.jpg'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\assets\images\services\service-1.jpg' 
+ ]2022-11-22 16:26:09.807 +02:00 [INF Sending file. Request path: '/assets/images/services/s2.jpg'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\assets\images\services\s2.jpg' 
+ ]2022-11-22 16:26:09.807 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/images/services/service-1.jpg - - - 200 15996 image/jpeg 5.3095ms 
+ ]2022-11-22 16:26:09.808 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - - 
+ ]2022-11-22 16:26:09.809 +02:00 [INF Sending file. Request path: '/assets/images/services/service-3.jpg'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\assets\images\services\service-3.jpg' 
+ ]2022-11-22 16:26:09.809 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/images/services/s2.jpg - - - 200 28416 image/jpeg 4.2322ms 
+ ]2022-11-22 16:26:09.809 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/images/services/service-3.jpg - - - 200 18051 image/jpeg 6.0277ms 
+ ]2022-11-22 16:26:09.810 +02:00 [INF Sending file. Request path: '/assets/images/services/service-2.jpg'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\assets\images\services\service-2.jpg' 
+ ]2022-11-22 16:26:09.810 +02:00 [INF Sending file. Request path: '/assets/images/services/s1.jpg'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\assets\images\services\s1.jpg' 
+ ]2022-11-22 16:26:09.810 +02:00 [INF Sending file. Request path: '/js/site.js'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\js\site.js' 
+ ]2022-11-22 16:26:09.811 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - - - 200 230 application/javascript 2.6881ms 
+ ]2022-11-22 16:26:09.811 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/images/services/s1.jpg - - - 200 32864 image/jpeg 7.7290ms 
+ ]2022-11-22 16:26:09.811 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/images/services/service-2.jpg - - - 200 23803 image/jpeg 8.9874ms 
+ ]2022-11-22 16:26:09.817 +02:00 [INF Sending file. Request path: '/assets/css/newsTickerStyle.css'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\assets\css\newsTickerStyle.css' 
+ ]2022-11-22 16:26:09.817 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/newsTickerStyle.css - - - 0 337 text/css 17.5447ms 
+ ]2022-11-22 16:26:09.823 +02:00 [INF Sending file. Request path: '/css/mvc-grid/mvc-grid.css'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\css\mvc-grid\mvc-grid.css' 
+ ]2022-11-22 16:26:09.823 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/css/mvc-grid/mvc-grid.css - - - 200 8220 text/css 22.4544ms 
+ ]2022-11-22 16:26:09.828 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 27.7853ms 
+ ]2022-11-22 16:26:15.247 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/Index?ReturnUrl=%2Fclinics - - 
+ ]2022-11-22 16:26:15.249 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-11-22 16:26:15.249 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-11-22 16:26:15.250 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnGetAsync - ModelState is "Valid" 
+ ]2022-11-22 16:26:15.250 +02:00 [INF AuthenticationScheme: Identity.External signed out. 
+ ]2022-11-22 16:26:15.250 +02:00 [INF Executed handler method OnGetAsync, returned result . 
+ ]2022-11-22 16:26:15.250 +02:00 [INF Executing an implicit handler method - ModelState is "Valid" 
+ ]2022-11-22 16:26:15.250 +02:00 [INF Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-11-22 16:26:15.254 +02:00 [INF Executed page /Index in 4.5681ms 
+ ]2022-11-22 16:26:15.254 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-11-22 16:26:15.256 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/Index?ReturnUrl=%2Fclinics - - - 200 - text/html;+charset=utf-8 8.7531ms 
+ ]2022-11-22 16:26:15.282 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-11-22 16:26:15.283 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 0.6737ms 
+ ]2022-11-22 17:12:40.987 +02:00 [INF User profile is available. Using 'C:\Users\khalidD\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+ ]2022-11-22 17:12:41.602 +02:00 [INF Application Is Starting 
+ ]2022-11-22 17:12:42.263 +02:00 [INF Application started. Press Ctrl+C to shut down. 
+ ]2022-11-22 17:12:42.263 +02:00 [INF Hosting environment: Development 
+ ]2022-11-22 17:12:42.263 +02:00 [INF Content root path: C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\ 
+ ]2022-11-22 17:12:42.458 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/ - - 
+ ]2022-11-22 17:12:43.394 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-11-22 17:12:43.962 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-11-22 17:12:44.719 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnGetAsync - ModelState is "Valid" 
+ ]2022-11-22 17:12:44.748 +02:00 [INF AuthenticationScheme: Identity.External signed out. 
+ ]2022-11-22 17:12:44.749 +02:00 [INF Executed handler method OnGetAsync, returned result . 
+ ]2022-11-22 17:12:44.752 +02:00 [INF Executing an implicit handler method - ModelState is "Valid" 
+ ]2022-11-22 17:12:44.753 +02:00 [INF Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-11-22 17:12:45.519 +02:00 [INF Executed page /Index in 1551.8317ms 
+ ]2022-11-22 17:12:45.521 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-11-22 17:12:45.767 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/ - - - 200 - text/html;+charset=utf-8 3310.8530ms 
+ ]2022-11-22 17:12:45.963 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-11-22 17:12:45.963 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/images/logo.gif - - 
+ ]2022-11-22 17:12:45.978 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-11-22 17:12:45.978 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/style.css - - 
+ ]2022-11-22 17:12:45.983 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/script.js - - 
+ ]2022-11-22 17:12:46.016 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/all.min.css - - 
+ ]2022-11-22 17:12:46.130 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/animate.css - - 
+ ]2022-11-22 17:12:46.130 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css - - 
+ ]2022-11-22 17:12:46.141 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/plugins/slider/css/owl.theme.default.css - - 
+ ]2022-11-22 17:12:46.143 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 181.2894ms 
+ ]2022-11-22 17:12:46.144 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/plugins/slider/css/owl.carousel.min.css - - 
+ ]2022-11-22 17:12:46.249 +02:00 [INF Sending file. Request path: '/assets/css/all.min.css'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\assets\css\all.min.css' 
+ ]2022-11-22 17:12:46.249 +02:00 [INF Sending file. Request path: '/assets/css/style.css'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\assets\css\style.css' 
+ ]2022-11-22 17:12:46.249 +02:00 [INF Sending file. Request path: '/assets/css/animate.css'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\assets\css\animate.css' 
+ ]2022-11-22 17:12:46.250 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/all.min.css - - - 0 57180 text/css 234.2148ms 
+ ]2022-11-22 17:12:46.250 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/style.css - - - 0 18256 text/css 276.7693ms 
+ ]2022-11-22 17:12:46.249 +02:00 [INF Sending file. Request path: '/assets/plugins/slider/css/owl.carousel.min.css'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\assets\plugins\slider\css\owl.carousel.min.css' 
+ ]2022-11-22 17:12:46.249 +02:00 [INF Sending file. Request path: '/assets/js/script.js'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\assets\js\script.js' 
+ ]2022-11-22 17:12:46.249 +02:00 [INF Sending file. Request path: '/assets/images/logo.gif'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\assets\images\logo.gif' 
+ ]2022-11-22 17:12:46.249 +02:00 [INF Sending file. Request path: '/assets/plugins/slider/css/owl.theme.default.css'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\assets\plugins\slider\css\owl.theme.default.css' 
+ ]2022-11-22 17:12:46.250 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/images/logo.gif - - - 0 6230 image/gif 288.0375ms 
+ ]2022-11-22 17:12:46.250 +02:00 [INF Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css' 
+ ]2022-11-22 17:12:46.250 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/plugins/slider/css/owl.theme.default.css - - - 0 1303 text/css 108.6202ms 
+ ]2022-11-22 17:12:46.250 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/animate.css - - - 0 81372 text/css 119.3181ms 
+ ]2022-11-22 17:12:46.250 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/plugins/slider/css/owl.carousel.min.css - - - 0 3241 text/css 106.0173ms 
+ ]2022-11-22 17:12:46.250 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/script.js - - - 0 729 application/javascript 267.6770ms 
+ ]2022-11-22 17:12:46.250 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css - - - 0 155845 text/css 119.6602ms 
+ ]2022-11-22 17:12:46.465 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 486.7123ms 
+ ]2022-11-22 17:12:52.017 +02:00 [INF Request starting HTTP/2 POST https://localhost:44392/ application/x-www-form-urlencoded 256 
+ ]2022-11-22 17:12:52.019 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-11-22 17:12:52.019 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-11-22 17:12:52.204 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnPostAsync - ModelState is "Valid" 
+ ]2022-11-22 17:12:53.330 +02:00 [INF Entity Framework Core 6.0.8 initialized 'RisDBContext' using provider 'Oracle.EntityFrameworkCore:6.0.21.1-20220418' with options: None 
+ ]2022-11-22 17:12:54.628 +02:00 [INF Executed DbCommand (95ms) [Parameters=[:normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='0']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ClinicId", "a"."ConcurrencyStamp", "a"."Departmentid", "a"."Email", "a"."EmailConfirmed", "a"."Firstname", "a"."Isdoctor", "a"."Languageid", "a"."Lastname", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AppUser" "a"
+WHERE "a"."NormalizedUserName" = :normalizedUserName_0
+FETCH FIRST 1 ROWS ONLY 
+ ]2022-11-22 17:12:55.047 +02:00 [INF Executed DbCommand (1ms) [Parameters=[:user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='0']
+SELECT "u"."Id", "u"."ClaimType", "u"."ClaimValue", "u"."UserId"
+FROM "UserClaims" "u"
+WHERE "u"."UserId" = :user_Id_0 
+ ]2022-11-22 17:12:55.078 +02:00 [INF Executed DbCommand (0ms) [Parameters=[:userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='0']
+SELECT "r"."Name"
+FROM "UserRoles" "u"
+INNER JOIN "Role" "r" ON "u"."RoleId" = "r"."Id"
+WHERE "u"."UserId" = :userId_0 
+ ]2022-11-22 17:12:55.081 +02:00 [INF AuthenticationScheme: Identity.Application signed in. 
+ ]2022-11-22 17:12:55.082 +02:00 [INF khaled User logged in. 
+ ]2022-11-22 17:12:55.083 +02:00 [INF Executed handler method OnPostAsync, returned result Microsoft.AspNetCore.Mvc.RedirectToPageResult. 
+ ]2022-11-22 17:12:55.086 +02:00 [INF Executing RedirectToPageResult, redirecting to MainPage. 
+ ]2022-11-22 17:12:55.086 +02:00 [INF Executed page /Index in 3066.6478ms 
+ ]2022-11-22 17:12:55.086 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-11-22 17:12:55.095 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/MainPage - - 
+ ]2022-11-22 17:12:55.101 +02:00 [INF Request finished HTTP/2 POST https://localhost:44392/ application/x-www-form-urlencoded 256 - 302 - - 3083.9390ms 
+ ]2022-11-22 17:12:55.107 +02:00 [INF Executing endpoint '/MainPage' 
+ ]2022-11-22 17:12:55.109 +02:00 [INF Route matched with {page = "/MainPage", action = "", controller = "", area = ""}. Executing page /MainPage 
+ ]2022-11-22 17:12:55.109 +02:00 [INF Executing handler method Ris2022.Pages.IndexModel.OnGet - ModelState is "Valid" 
+ ]2022-11-22 17:12:55.109 +02:00 [INF Executed handler method OnGet, returned result . 
+ ]2022-11-22 17:12:55.109 +02:00 [INF Executing an implicit handler method - ModelState is "Valid" 
+ ]2022-11-22 17:12:55.109 +02:00 [INF Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-11-22 17:12:55.383 +02:00 [INF Executed page /MainPage in 274.7552ms 
+ ]2022-11-22 17:12:55.383 +02:00 [INF Executed endpoint '/MainPage' 
+ ]2022-11-22 17:12:55.390 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/MainPage - - - 200 - text/html;+charset=utf-8 295.2059ms 
+ ]2022-11-22 17:12:55.417 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/newsTickerStyle.css - - 
+ ]2022-11-22 17:12:55.420 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/css/mvc-grid/mvc-grid.css - - 
+ ]2022-11-22 17:12:55.420 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-11-22 17:12:55.422 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-11-22 17:12:55.423 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/images/services/service-1.jpg - - 
+ ]2022-11-22 17:12:55.423 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 1.9951ms 
+ ]2022-11-22 17:12:55.424 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/images/services/service-3.jpg - - 
+ ]2022-11-22 17:12:55.425 +02:00 [INF Sending file. Request path: '/assets/images/services/service-1.jpg'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\assets\images\services\service-1.jpg' 
+ ]2022-11-22 17:12:55.425 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/images/services/s1.jpg - - 
+ ]2022-11-22 17:12:55.425 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/images/services/service-1.jpg - - - 0 15996 image/jpeg 1.4608ms 
+ ]2022-11-22 17:12:55.425 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/images/services/s2.jpg - - 
+ ]2022-11-22 17:12:55.426 +02:00 [INF Sending file. Request path: '/assets/images/services/service-3.jpg'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\assets\images\services\service-3.jpg' 
+ ]2022-11-22 17:12:55.426 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/images/services/service-3.jpg - - - 0 18051 image/jpeg 1.4016ms 
+ ]2022-11-22 17:12:55.426 +02:00 [INF Sending file. Request path: '/assets/images/services/s1.jpg'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\assets\images\services\s1.jpg' 
+ ]2022-11-22 17:12:55.426 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/images/services/s1.jpg - - - 0 32864 image/jpeg 1.6069ms 
+ ]2022-11-22 17:12:55.427 +02:00 [INF Sending file. Request path: '/assets/images/services/s2.jpg'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\assets\images\services\s2.jpg' 
+ ]2022-11-22 17:12:55.427 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/images/services/s2.jpg - - - 0 28416 image/jpeg 1.4886ms 
+ ]2022-11-22 17:12:55.433 +02:00 [INF Sending file. Request path: '/assets/css/newsTickerStyle.css'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\assets\css\newsTickerStyle.css' 
+ ]2022-11-22 17:12:55.433 +02:00 [INF Sending file. Request path: '/css/mvc-grid/mvc-grid.css'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\css\mvc-grid\mvc-grid.css' 
+ ]2022-11-22 17:12:55.433 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/newsTickerStyle.css - - - 0 337 text/css 16.7565ms 
+ ]2022-11-22 17:12:55.433 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/css/mvc-grid/mvc-grid.css - - - 0 8220 text/css 13.2336ms 
+ ]2022-11-22 17:12:55.451 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 30.3974ms 
+ ]2022-11-22 17:12:57.386 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/Patients - - 
+ ]2022-11-22 17:12:57.394 +02:00 [INF Executing endpoint 'Ris2022.Controllers.PatientsController.Index (Ris2022)' 
+ ]2022-11-22 17:12:57.499 +02:00 [INF Route matched with {action = "Index", controller = "Patients", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller Ris2022.Controllers.PatientsController (Ris2022). 
+ ]2022-11-22 17:12:58.824 +02:00 [INF Executing action method Ris2022.Controllers.PatientsController.Index (Ris2022) - Validation state: "Valid" 
+ ]2022-11-22 17:12:58.896 +02:00 [INF Entity Framework Core 6.0.8 initialized 'RisDBContext' using provider 'Oracle.EntityFrameworkCore:6.0.21.1-20220418' with options: None 
+ ]2022-11-22 17:12:59.032 +02:00 [INF Executed DbCommand (78ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT "p"."Id", "p"."Acceptancetypeid", "p"."Age", "p"."Birthdate", "p"."Birthplace", "p"."Currentaddress", "p"."Firstname", "p"."Gendre", "p"."Givenid", "p"."InsertUserName", "p"."Insertdate", "p"."Landphone", "p"."Lastname", "p"."Martialstatusid", "p"."Middlename", "p"."Mobilephone", "p"."Mothername", "p"."NationalIdNumber", "p"."Nationalityid", "p"."Nearestperson", "p"."Nearestpersonphone", "p"."Notes", "p"."Reasonid", "p"."Residentaddress", "p"."Translatedfathername", "p"."Translatedfname", "p"."Translatedlname", "p"."Translatedmothername", "p"."Updatedate", "p"."UpdateuserName", "p"."Workaddress", "p"."Workphone", "p"."Worktypeid", "a"."Id", "a"."Namear", "a"."Nameen", "m"."Id", "m"."Namear", "m"."Nameen", "n"."Id", "n"."Namear", "n"."Nameen", "w"."Id", "w"."Namear", "w"."Nameen", "r"."Id", "r"."Namear", "r"."Nameen"
+FROM "Patients" "p"
+INNER JOIN "Acceptancetypes" "a" ON "p"."Acceptancetypeid" = "a"."Id"
+LEFT JOIN "Martialstatuses" "m" ON "p"."Martialstatusid" = "m"."Id"
+LEFT JOIN "Nationalities" "n" ON "p"."Nationalityid" = "n"."Id"
+LEFT JOIN "Worktypes" "w" ON "p"."Worktypeid" = "w"."Id"
+LEFT JOIN "Reasons" "r" ON "p"."Reasonid" = "r"."Id" 
+ ]2022-11-22 17:12:59.151 +02:00 [INF Executed action method Ris2022.Controllers.PatientsController.Index (Ris2022), returned result Microsoft.AspNetCore.Mvc.ViewResult in 323.5757ms. 
+ ]2022-11-22 17:12:59.186 +02:00 [INF Executing ViewResult, running view Index. 
+ ]2022-11-22 17:12:59.286 +02:00 [INF Executed ViewResult - view Index executed in 124.1772ms. 
+ ]2022-11-22 17:12:59.288 +02:00 [INF Executed action Ris2022.Controllers.PatientsController.Index (Ris2022) in 1789.017ms 
+ ]2022-11-22 17:12:59.289 +02:00 [INF Executed endpoint 'Ris2022.Controllers.PatientsController.Index (Ris2022)' 
+ ]2022-11-22 17:12:59.294 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/Patients - - - 200 - text/html;+charset=utf-8 1907.7219ms 
+ ]2022-11-22 17:12:59.316 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-11-22 17:12:59.316 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-11-22 17:12:59.318 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 1.4718ms 
+ ]2022-11-22 17:12:59.346 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 29.5889ms 
+ ]2022-11-22 17:13:03.507 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/Patients/Create - - 
+ ]2022-11-22 17:13:03.509 +02:00 [INF Executing endpoint 'Ris2022.Controllers.PatientsController.Create (Ris2022)' 
+ ]2022-11-22 17:13:03.510 +02:00 [INF Route matched with {action = "Create", controller = "Patients", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller Ris2022.Controllers.PatientsController (Ris2022). 
+ ]2022-11-22 17:13:03.530 +02:00 [INF Executing action method Ris2022.Controllers.PatientsController.Create (Ris2022) - Validation state: "Valid" 
+ ]2022-11-22 17:13:03.532 +02:00 [INF Executed action method Ris2022.Controllers.PatientsController.Create (Ris2022), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.527ms. 
+ ]2022-11-22 17:13:03.533 +02:00 [INF Executing ViewResult, running view Create. 
+ ]2022-11-22 17:13:03.809 +02:00 [INF Entity Framework Core 6.0.8 initialized 'RisDBContext' using provider 'Oracle.EntityFrameworkCore:6.0.21.1-20220418' with options: None 
+ ]2022-11-22 17:13:03.823 +02:00 [INF Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT "n"."Id", "n"."Namear", "n"."Nameen"
+FROM "Nationalities" "n" 
+ ]2022-11-22 17:13:03.842 +02:00 [INF Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT "m"."Id", "m"."Namear", "m"."Nameen"
+FROM "Martialstatuses" "m" 
+ ]2022-11-22 17:13:03.856 +02:00 [INF Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT "a"."Id", "a"."Namear", "a"."Nameen"
+FROM "Acceptancetypes" "a" 
+ ]2022-11-22 17:13:03.867 +02:00 [INF Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT "w"."Id", "w"."Namear", "w"."Nameen"
+FROM "Worktypes" "w" 
+ ]2022-11-22 17:13:03.943 +02:00 [INF Executed ViewResult - view Create executed in 410.6928ms. 
+ ]2022-11-22 17:13:03.943 +02:00 [INF Executed action Ris2022.Controllers.PatientsController.Create (Ris2022) in 433.062ms 
+ ]2022-11-22 17:13:03.943 +02:00 [INF Executed endpoint 'Ris2022.Controllers.PatientsController.Create (Ris2022)' 
+ ]2022-11-22 17:13:03.951 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/Patients/Create - - - 200 - text/html;+charset=utf-8 444.5064ms 
+ ]2022-11-22 17:13:04.025 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/Patients/assets/js/jquery-3.2.1.min.js - - 
+ ]2022-11-22 17:13:04.026 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/Patients/assets/js/popper.min.js - - 
+ ]2022-11-22 17:13:04.027 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/Patients/assets/js/bootstrap.min.js - - 
+ ]2022-11-22 17:13:04.029 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/Patients/assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js - - 
+ ]2022-11-22 17:13:04.030 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/Patients/assets/plugins/slider/js/owl.carousel.min.js - - 
+ ]2022-11-22 17:13:04.030 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/Patients/assets/js/script.js - - 
+ ]2022-11-22 17:13:04.031 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-11-22 17:13:04.033 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-11-22 17:13:04.043 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 10.9221ms 
+ ]2022-11-22 17:13:04.057 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/Patients/assets/plugins/slider/js/owl.carousel.min.js - - - 404 - - 27.8433ms 
+ ]2022-11-22 17:13:04.058 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/Patients/assets/js/jquery-3.2.1.min.js - - - 404 - - 32.5066ms 
+ ]2022-11-22 17:13:04.058 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/Patients/assets/js/bootstrap.min.js - - - 404 - - 30.5450ms 
+ ]2022-11-22 17:13:04.058 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/Patients/assets/js/script.js - - - 404 - - 27.7432ms 
+ ]2022-11-22 17:13:04.058 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/Patients/assets/js/popper.min.js - - - 404 - - 32.0577ms 
+ ]2022-11-22 17:13:04.058 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/Patients/assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js - - - 404 - - 29.8323ms 
+ ]2022-11-22 17:13:04.069 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 38.0406ms 
+ ]2022-11-22 17:13:04.082 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_content/AspNetCoreHero.ToastNotification/notyf.min.css - - 
+ ]2022-11-22 17:13:04.118 +02:00 [INF Sending file. Request path: '/_content/AspNetCoreHero.ToastNotification/notyf.min.css'. Physical path: 'C:\Users\khalidD\.nuget\packages\aspnetcorehero.toastnotification\1.1.0\staticwebassets\notyf.min.css' 
+ ]2022-11-22 17:13:04.118 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_content/AspNetCoreHero.ToastNotification/notyf.min.css - - - 0 7591 text/css 36.2024ms 
+ ]2022-11-22 17:13:04.153 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/Patients/assets/js/jquery-3.2.1.min.js - - 
+ ]2022-11-22 17:13:04.154 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/Patients/assets/js/jquery-3.2.1.min.js - - - 404 - - 0.8488ms 
+ ]2022-11-22 17:13:04.157 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/Patients/assets/js/popper.min.js - - 
+ ]2022-11-22 17:13:04.157 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/Patients/assets/js/popper.min.js - - - 404 - - 0.7440ms 
+ ]2022-11-22 17:13:04.160 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/Patients/assets/js/bootstrap.min.js - - 
+ ]2022-11-22 17:13:04.161 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/Patients/assets/js/bootstrap.min.js - - - 404 - - 0.7362ms 
+ ]2022-11-22 17:13:04.163 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/Patients/assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js - - 
+ ]2022-11-22 17:13:04.164 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/Patients/assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js - - - 404 - - 0.7603ms 
+ ]2022-11-22 17:13:04.168 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/Patients/assets/plugins/slider/js/owl.carousel.min.js - - 
+ ]2022-11-22 17:13:04.169 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/Patients/assets/plugins/slider/js/owl.carousel.min.js - - - 404 - - 0.7683ms 
+ ]2022-11-22 17:13:04.171 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/Patients/assets/js/script.js - - 
+ ]2022-11-22 17:13:04.172 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/Patients/assets/js/script.js - - - 404 - - 0.7517ms 
+ ]2022-11-22 17:13:04.336 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/lib/jquery-validation/dist/jquery.validate.js - - 
+ ]2022-11-22 17:13:04.338 +02:00 [INF The file /lib/jquery-validation/dist/jquery.validate.js was not modified 
+ ]2022-11-22 17:13:04.338 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/lib/jquery-validation/dist/jquery.validate.js - - - 304 - application/javascript 1.8844ms 
+ ]2022-11-22 17:13:04.346 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js - - 
+ ]2022-11-22 17:13:04.346 +02:00 [INF The file /lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js was not modified 
+ ]2022-11-22 17:13:04.347 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js - - - 304 - application/javascript 0.2816ms 
+ ]2022-11-22 17:13:11.176 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/Patients - - 
+ ]2022-11-22 17:13:11.177 +02:00 [INF Executing endpoint 'Ris2022.Controllers.PatientsController.Index (Ris2022)' 
+ ]2022-11-22 17:13:11.177 +02:00 [INF Route matched with {action = "Index", controller = "Patients", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller Ris2022.Controllers.PatientsController (Ris2022). 
+ ]2022-11-22 17:13:11.195 +02:00 [INF Executing action method Ris2022.Controllers.PatientsController.Index (Ris2022) - Validation state: "Valid" 
+ ]2022-11-22 17:13:11.196 +02:00 [INF Entity Framework Core 6.0.8 initialized 'RisDBContext' using provider 'Oracle.EntityFrameworkCore:6.0.21.1-20220418' with options: None 
+ ]2022-11-22 17:13:11.202 +02:00 [INF Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT "p"."Id", "p"."Acceptancetypeid", "p"."Age", "p"."Birthdate", "p"."Birthplace", "p"."Currentaddress", "p"."Firstname", "p"."Gendre", "p"."Givenid", "p"."InsertUserName", "p"."Insertdate", "p"."Landphone", "p"."Lastname", "p"."Martialstatusid", "p"."Middlename", "p"."Mobilephone", "p"."Mothername", "p"."NationalIdNumber", "p"."Nationalityid", "p"."Nearestperson", "p"."Nearestpersonphone", "p"."Notes", "p"."Reasonid", "p"."Residentaddress", "p"."Translatedfathername", "p"."Translatedfname", "p"."Translatedlname", "p"."Translatedmothername", "p"."Updatedate", "p"."UpdateuserName", "p"."Workaddress", "p"."Workphone", "p"."Worktypeid", "a"."Id", "a"."Namear", "a"."Nameen", "m"."Id", "m"."Namear", "m"."Nameen", "n"."Id", "n"."Namear", "n"."Nameen", "w"."Id", "w"."Namear", "w"."Nameen", "r"."Id", "r"."Namear", "r"."Nameen"
+FROM "Patients" "p"
+INNER JOIN "Acceptancetypes" "a" ON "p"."Acceptancetypeid" = "a"."Id"
+LEFT JOIN "Martialstatuses" "m" ON "p"."Martialstatusid" = "m"."Id"
+LEFT JOIN "Nationalities" "n" ON "p"."Nationalityid" = "n"."Id"
+LEFT JOIN "Worktypes" "w" ON "p"."Worktypeid" = "w"."Id"
+LEFT JOIN "Reasons" "r" ON "p"."Reasonid" = "r"."Id" 
+ ]2022-11-22 17:13:11.207 +02:00 [INF Executed action method Ris2022.Controllers.PatientsController.Index (Ris2022), returned result Microsoft.AspNetCore.Mvc.ViewResult in 11.4807ms. 
+ ]2022-11-22 17:13:11.207 +02:00 [INF Executing ViewResult, running view Index. 
+ ]2022-11-22 17:13:11.231 +02:00 [INF Executed ViewResult - view Index executed in 23.8343ms. 
+ ]2022-11-22 17:13:11.231 +02:00 [INF Executed action Ris2022.Controllers.PatientsController.Index (Ris2022) in 54.0843ms 
+ ]2022-11-22 17:13:11.231 +02:00 [INF Executed endpoint 'Ris2022.Controllers.PatientsController.Index (Ris2022)' 
+ ]2022-11-22 17:13:11.237 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/Patients - - - 200 - text/html;+charset=utf-8 61.6648ms 
+ ]2022-11-22 17:13:11.263 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-11-22 17:13:11.276 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-11-22 17:13:11.279 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 2.8119ms 
+ ]2022-11-22 17:13:11.310 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 47.1137ms 
+ ]2022-11-22 17:17:32.059 +02:00 [INF User profile is available. Using 'C:\Users\khalidD\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+ ]2022-11-22 17:17:32.292 +02:00 [INF Application Is Starting 
+ ]2022-11-22 17:17:32.376 +02:00 [INF Application started. Press Ctrl+C to shut down. 
+ ]2022-11-22 17:17:32.376 +02:00 [INF Hosting environment: Development 
+ ]2022-11-22 17:17:32.376 +02:00 [INF Content root path: C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\ 
+ ]2022-11-22 17:17:32.395 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/ - - 
+ ]2022-11-22 17:17:32.497 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-11-22 17:17:32.581 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-11-22 17:17:32.780 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnGetAsync - ModelState is "Valid" 
+ ]2022-11-22 17:17:32.798 +02:00 [INF AuthenticationScheme: Identity.External signed out. 
+ ]2022-11-22 17:17:32.799 +02:00 [INF Executed handler method OnGetAsync, returned result . 
+ ]2022-11-22 17:17:32.802 +02:00 [INF Executing an implicit handler method - ModelState is "Valid" 
+ ]2022-11-22 17:17:32.802 +02:00 [INF Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-11-22 17:17:33.036 +02:00 [INF Executed page /Index in 450.4494ms 
+ ]2022-11-22 17:17:33.037 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-11-22 17:17:33.116 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/ - - - 200 - text/html;+charset=utf-8 722.8466ms 
+ ]2022-11-22 17:17:33.137 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/animate.css - - 
+ ]2022-11-22 17:17:33.155 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/images/logo.gif - - 
+ ]2022-11-22 17:17:33.174 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/plugins/slider/css/owl.carousel.min.css - - 
+ ]2022-11-22 17:17:33.174 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/plugins/slider/css/owl.theme.default.css - - 
+ ]2022-11-22 17:17:33.244 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css - - 
+ ]2022-11-22 17:17:33.248 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/all.min.css - - 
+ ]2022-11-22 17:17:33.253 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-11-22 17:17:33.258 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/style.css - - 
+ ]2022-11-22 17:17:33.264 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 12.4817ms 
+ ]2022-11-22 17:17:33.265 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-11-22 17:17:33.269 +02:00 [INF Sending file. Request path: '/assets/plugins/slider/css/owl.carousel.min.css'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\assets\plugins\slider\css\owl.carousel.min.css' 
+ ]2022-11-22 17:17:33.269 +02:00 [INF Sending file. Request path: '/assets/plugins/slider/css/owl.theme.default.css'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\assets\plugins\slider\css\owl.theme.default.css' 
+ ]2022-11-22 17:17:33.269 +02:00 [INF Sending file. Request path: '/assets/css/all.min.css'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\assets\css\all.min.css' 
+ ]2022-11-22 17:17:33.269 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/plugins/slider/css/owl.theme.default.css - - - 0 1303 text/css 104.1265ms 
+ ]2022-11-22 17:17:33.269 +02:00 [INF Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css' 
+ ]2022-11-22 17:17:33.269 +02:00 [INF Sending file. Request path: '/assets/css/animate.css'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\assets\css\animate.css' 
+ ]2022-11-22 17:17:33.269 +02:00 [INF Sending file. Request path: '/assets/images/logo.gif'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\assets\images\logo.gif' 
+ ]2022-11-22 17:17:33.269 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css - - - 0 155845 text/css 25.0061ms 
+ ]2022-11-22 17:17:33.269 +02:00 [INF Sending file. Request path: '/assets/css/style.css'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\assets\css\style.css' 
+ ]2022-11-22 17:17:33.269 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/plugins/slider/css/owl.carousel.min.css - - - 0 3241 text/css 103.9919ms 
+ ]2022-11-22 17:17:33.269 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/all.min.css - - - 0 57180 text/css 20.8409ms 
+ ]2022-11-22 17:17:33.269 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/images/logo.gif - - - 0 6230 image/gif 114.2633ms 
+ ]2022-11-22 17:17:33.269 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/style.css - - - 0 18256 text/css 11.5365ms 
+ ]2022-11-22 17:17:33.269 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/animate.css - - - 0 81372 text/css 131.8818ms 
+ ]2022-11-22 17:17:33.320 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 55.2915ms 
+ ]2022-11-22 17:17:33.323 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/images/fav.png - - 
+ ]2022-11-22 17:17:33.345 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/images/fav.png - - - 0 - - 22.7003ms 
+ ]2022-11-22 17:17:36.045 +02:00 [INF Request starting HTTP/2 POST https://localhost:44392/ application/x-www-form-urlencoded 256 
+ ]2022-11-22 17:17:36.049 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-11-22 17:17:36.050 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-11-22 17:17:36.104 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnPostAsync - ModelState is "Valid" 
+ ]2022-11-22 17:17:37.246 +02:00 [INF Entity Framework Core 6.0.8 initialized 'RisDBContext' using provider 'Oracle.EntityFrameworkCore:6.0.21.1-20220418' with options: None 
+ ]2022-11-22 17:17:38.349 +02:00 [INF Executed DbCommand (81ms) [Parameters=[:normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='0']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ClinicId", "a"."ConcurrencyStamp", "a"."Departmentid", "a"."Email", "a"."EmailConfirmed", "a"."Firstname", "a"."Isdoctor", "a"."Languageid", "a"."Lastname", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AppUser" "a"
+WHERE "a"."NormalizedUserName" = :normalizedUserName_0
+FETCH FIRST 1 ROWS ONLY 
+ ]2022-11-22 17:17:38.605 +02:00 [INF Executed DbCommand (0ms) [Parameters=[:user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='0']
+SELECT "u"."Id", "u"."ClaimType", "u"."ClaimValue", "u"."UserId"
+FROM "UserClaims" "u"
+WHERE "u"."UserId" = :user_Id_0 
+ ]2022-11-22 17:17:38.658 +02:00 [INF Executed DbCommand (0ms) [Parameters=[:userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='0']
+SELECT "r"."Name"
+FROM "UserRoles" "u"
+INNER JOIN "Role" "r" ON "u"."RoleId" = "r"."Id"
+WHERE "u"."UserId" = :userId_0 
+ ]2022-11-22 17:17:38.661 +02:00 [INF AuthenticationScheme: Identity.Application signed in. 
+ ]2022-11-22 17:17:38.661 +02:00 [INF khaled User logged in. 
+ ]2022-11-22 17:17:38.661 +02:00 [INF Executed handler method OnPostAsync, returned result Microsoft.AspNetCore.Mvc.RedirectToPageResult. 
+ ]2022-11-22 17:17:38.664 +02:00 [INF Executing RedirectToPageResult, redirecting to MainPage. 
+ ]2022-11-22 17:17:38.665 +02:00 [INF Executed page /Index in 2614.8773ms 
+ ]2022-11-22 17:17:38.665 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-11-22 17:17:38.669 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/MainPage - - 
+ ]2022-11-22 17:17:38.673 +02:00 [INF Request finished HTTP/2 POST https://localhost:44392/ application/x-www-form-urlencoded 256 - 302 - - 2627.7905ms 
+ ]2022-11-22 17:17:38.678 +02:00 [INF Executing endpoint '/MainPage' 
+ ]2022-11-22 17:17:38.681 +02:00 [INF Route matched with {page = "/MainPage", action = "", controller = "", area = ""}. Executing page /MainPage 
+ ]2022-11-22 17:17:38.681 +02:00 [INF Executing handler method Ris2022.Pages.IndexModel.OnGet - ModelState is "Valid" 
+ ]2022-11-22 17:17:38.681 +02:00 [INF Executed handler method OnGet, returned result . 
+ ]2022-11-22 17:17:38.681 +02:00 [INF Executing an implicit handler method - ModelState is "Valid" 
+ ]2022-11-22 17:17:38.682 +02:00 [INF Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-11-22 17:17:38.895 +02:00 [INF Executed page /MainPage in 214.2158ms 
+ ]2022-11-22 17:17:38.895 +02:00 [INF Executed endpoint '/MainPage' 
+ ]2022-11-22 17:17:38.908 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/MainPage - - - 200 - text/html;+charset=utf-8 238.6795ms 
+ ]2022-11-22 17:17:38.928 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/newsTickerStyle.css - - 
+ ]2022-11-22 17:17:38.930 +02:00 [INF Sending file. Request path: '/assets/css/newsTickerStyle.css'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\assets\css\newsTickerStyle.css' 
+ ]2022-11-22 17:17:38.930 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/newsTickerStyle.css - - - 0 337 text/css 1.4042ms 
+ ]2022-11-22 17:17:38.935 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/css/mvc-grid/mvc-grid.css - - 
+ ]2022-11-22 17:17:38.936 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/images/services/service-1.jpg - - 
+ ]2022-11-22 17:17:38.936 +02:00 [INF Sending file. Request path: '/css/mvc-grid/mvc-grid.css'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\css\mvc-grid\mvc-grid.css' 
+ ]2022-11-22 17:17:38.936 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/css/mvc-grid/mvc-grid.css - - - 0 8220 text/css 1.4000ms 
+ ]2022-11-22 17:17:38.937 +02:00 [INF Sending file. Request path: '/assets/images/services/service-1.jpg'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\assets\images\services\service-1.jpg' 
+ ]2022-11-22 17:17:38.937 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/images/services/service-1.jpg - - - 0 15996 image/jpeg 1.3475ms 
+ ]2022-11-22 17:17:38.938 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/images/services/service-2.jpg - - 
+ ]2022-11-22 17:17:38.938 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/images/services/service-3.jpg - - 
+ ]2022-11-22 17:17:38.939 +02:00 [INF Sending file. Request path: '/assets/images/services/service-2.jpg'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\assets\images\services\service-2.jpg' 
+ ]2022-11-22 17:17:38.939 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/images/services/service-2.jpg - - - 0 23803 image/jpeg 1.5280ms 
+ ]2022-11-22 17:17:38.939 +02:00 [INF Sending file. Request path: '/assets/images/services/service-3.jpg'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\assets\images\services\service-3.jpg' 
+ ]2022-11-22 17:17:38.939 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/images/services/service-3.jpg - - - 0 18051 image/jpeg 1.3474ms 
+ ]2022-11-22 17:17:38.940 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-11-22 17:17:38.940 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-11-22 17:17:38.944 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 1.9838ms 
+ ]2022-11-22 17:17:38.980 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 40.0739ms 
+ ]2022-11-22 17:17:40.696 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/Patients - - 
+ ]2022-11-22 17:17:40.699 +02:00 [INF Executing endpoint 'Ris2022.Controllers.PatientsController.Index (Ris2022)' 
+ ]2022-11-22 17:17:40.706 +02:00 [INF Route matched with {action = "Index", controller = "Patients", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller Ris2022.Controllers.PatientsController (Ris2022). 
+ ]2022-11-22 17:17:40.794 +02:00 [INF Executing action method Ris2022.Controllers.PatientsController.Index (Ris2022) - Validation state: "Valid" 
+ ]2022-11-22 17:17:40.833 +02:00 [INF Entity Framework Core 6.0.8 initialized 'RisDBContext' using provider 'Oracle.EntityFrameworkCore:6.0.21.1-20220418' with options: None 
+ ]2022-11-22 17:17:40.901 +02:00 [INF Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT "p"."Id", "p"."Acceptancetypeid", "p"."Age", "p"."Birthdate", "p"."Birthplace", "p"."Currentaddress", "p"."Firstname", "p"."Gendre", "p"."Givenid", "p"."InsertUserName", "p"."Insertdate", "p"."Landphone", "p"."Lastname", "p"."Martialstatusid", "p"."Middlename", "p"."Mobilephone", "p"."Mothername", "p"."NationalIdNumber", "p"."Nationalityid", "p"."Nearestperson", "p"."Nearestpersonphone", "p"."Notes", "p"."Reasonid", "p"."Residentaddress", "p"."Translatedfathername", "p"."Translatedfname", "p"."Translatedlname", "p"."Translatedmothername", "p"."Updatedate", "p"."UpdateuserName", "p"."Workaddress", "p"."Workphone", "p"."Worktypeid", "a"."Id", "a"."Namear", "a"."Nameen", "m"."Id", "m"."Namear", "m"."Nameen", "n"."Id", "n"."Namear", "n"."Nameen", "w"."Id", "w"."Namear", "w"."Nameen", "r"."Id", "r"."Namear", "r"."Nameen"
+FROM "Patients" "p"
+INNER JOIN "Acceptancetypes" "a" ON "p"."Acceptancetypeid" = "a"."Id"
+LEFT JOIN "Martialstatuses" "m" ON "p"."Martialstatusid" = "m"."Id"
+LEFT JOIN "Nationalities" "n" ON "p"."Nationalityid" = "n"."Id"
+LEFT JOIN "Worktypes" "w" ON "p"."Worktypeid" = "w"."Id"
+LEFT JOIN "Reasons" "r" ON "p"."Reasonid" = "r"."Id" 
+ ]2022-11-22 17:17:41.023 +02:00 [INF Executed action method Ris2022.Controllers.PatientsController.Index (Ris2022), returned result Microsoft.AspNetCore.Mvc.ViewResult in 223.9926ms. 
+ ]2022-11-22 17:17:41.026 +02:00 [INF Executing ViewResult, running view Index. 
+ ]2022-11-22 17:17:41.087 +02:00 [INF Executed ViewResult - view Index executed in 62.143ms. 
+ ]2022-11-22 17:17:41.091 +02:00 [INF Executed action Ris2022.Controllers.PatientsController.Index (Ris2022) in 383.8371ms 
+ ]2022-11-22 17:17:41.091 +02:00 [INF Executed endpoint 'Ris2022.Controllers.PatientsController.Index (Ris2022)' 
+ ]2022-11-22 17:17:41.096 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/Patients - - - 200 - text/html;+charset=utf-8 399.7855ms 
+ ]2022-11-22 17:17:41.120 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-11-22 17:17:41.122 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-11-22 17:17:41.124 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 1.3140ms 
+ ]2022-11-22 17:17:41.271 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 151.2382ms 
+ ]2022-11-22 17:17:43.229 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/Patients/Delete/37 - - 
+ ]2022-11-22 17:17:43.232 +02:00 [INF Executing endpoint 'Ris2022.Controllers.PatientsController.Delete (Ris2022)' 
+ ]2022-11-22 17:17:43.234 +02:00 [INF Route matched with {action = "Delete", controller = "Patients", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(System.Nullable`1[System.Int32]) on controller Ris2022.Controllers.PatientsController (Ris2022). 
+ ]2022-11-22 17:17:43.518 +02:00 [INF Executing action method Ris2022.Controllers.PatientsController.Delete (Ris2022) - Validation state: "Valid" 
+ ]2022-11-22 17:17:43.561 +02:00 [INF Entity Framework Core 6.0.8 initialized 'RisDBContext' using provider 'Oracle.EntityFrameworkCore:6.0.21.1-20220418' with options: None 
+ ]2022-11-22 17:17:43.590 +02:00 [WRN The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+ ]2022-11-22 17:17:43.645 +02:00 [INF Executed DbCommand (25ms) [Parameters=[:id_0='?' (DbType = Int32), :p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='0']
+SELECT "t"."Id", "t"."Acceptancetypeid", "t"."Age", "t"."Birthdate", "t"."Birthplace", "t"."Currentaddress", "t"."Firstname", "t"."Gendre", "t"."Givenid", "t"."InsertUserName", "t"."Insertdate", "t"."Landphone", "t"."Lastname", "t"."Martialstatusid", "t"."Middlename", "t"."Mobilephone", "t"."Mothername", "t"."NationalIdNumber", "t"."Nationalityid", "t"."Nearestperson", "t"."Nearestpersonphone", "t"."Notes", "t"."Reasonid", "t"."Residentaddress", "t"."Translatedfathername", "t"."Translatedfname", "t"."Translatedlname", "t"."Translatedmothername", "t"."Updatedate", "t"."UpdateuserName", "t"."Workaddress", "t"."Workphone", "t"."Worktypeid", "a"."Id", "a"."Namear", "a"."Nameen", "m"."Id", "m"."Namear", "m"."Nameen", "n"."Id", "n"."Namear", "n"."Nameen", "w"."Id", "w"."Namear", "w"."Nameen", "r"."Id", "r"."Namear", "r"."Nameen"
+FROM (
+    SELECT "p"."Id", "p"."Acceptancetypeid", "p"."Age", "p"."Birthdate", "p"."Birthplace", "p"."Currentaddress", "p"."Firstname", "p"."Gendre", "p"."Givenid", "p"."InsertUserName", "p"."Insertdate", "p"."Landphone", "p"."Lastname", "p"."Martialstatusid", "p"."Middlename", "p"."Mobilephone", "p"."Mothername", "p"."NationalIdNumber", "p"."Nationalityid", "p"."Nearestperson", "p"."Nearestpersonphone", "p"."Notes", "p"."Reasonid", "p"."Residentaddress", "p"."Translatedfathername", "p"."Translatedfname", "p"."Translatedlname", "p"."Translatedmothername", "p"."Updatedate", "p"."UpdateuserName", "p"."Workaddress", "p"."Workphone", "p"."Worktypeid"
+    FROM "Patients" "p"
+    WHERE "p"."Id" = :id_0
+    FETCH FIRST :p_1 ROWS ONLY
+    ) "t"
+    INNER JOIN "Acceptancetypes" "a" ON "t"."Acceptancetypeid" = "a"."Id"
+    LEFT JOIN "Martialstatuses" "m" ON "t"."Martialstatusid" = "m"."Id"
+    LEFT JOIN "Nationalities" "n" ON "t"."Nationalityid" = "n"."Id"
+    LEFT JOIN "Worktypes" "w" ON "t"."Worktypeid" = "w"."Id"
+    LEFT JOIN "Reasons" "r" ON "t"."Reasonid" = "r"."Id" 
+ ]2022-11-22 17:17:43.645 +02:00 [INF Executed action method Ris2022.Controllers.PatientsController.Delete (Ris2022), returned result Microsoft.AspNetCore.Mvc.ViewResult in 127.2159ms. 
+ ]2022-11-22 17:17:43.646 +02:00 [INF Executing ViewResult, running view Delete. 
+ ]2022-11-22 17:17:43.778 +02:00 [INF Executed ViewResult - view Delete executed in 132.6849ms. 
+ ]2022-11-22 17:17:43.778 +02:00 [INF Executed action Ris2022.Controllers.PatientsController.Delete (Ris2022) in 544.2376ms 
+ ]2022-11-22 17:17:43.778 +02:00 [INF Executed endpoint 'Ris2022.Controllers.PatientsController.Delete (Ris2022)' 
+ ]2022-11-22 17:17:43.784 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/Patients/Delete/37 - - - 200 - text/html;+charset=utf-8 554.2948ms 
+ ]2022-11-22 17:17:43.805 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-11-22 17:17:43.805 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-11-22 17:17:43.807 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 1.5223ms 
+ ]2022-11-22 17:17:43.807 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/Patients/Delete/assets/js/popper.min.js - - 
+ ]2022-11-22 17:17:43.808 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/Patients/Delete/assets/js/bootstrap.min.js - - 
+ ]2022-11-22 17:17:43.809 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/Patients/Delete/assets/js/jquery-3.2.1.min.js - - 
+ ]2022-11-22 17:17:43.809 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/Patients/Delete/assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js - - 
+ ]2022-11-22 17:17:43.809 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/Patients/Delete/assets/js/script.js - - 
+ ]2022-11-22 17:17:43.809 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/Patients/Delete/assets/plugins/slider/js/owl.carousel.min.js - - 
+ ]2022-11-22 17:17:43.811 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/Patients/Delete/assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js - - - 404 - - 2.7379ms 
+ ]2022-11-22 17:17:43.812 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/Patients/Delete/assets/js/script.js - - - 404 - - 2.9654ms 
+ ]2022-11-22 17:17:43.812 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/Patients/Delete/assets/plugins/slider/js/owl.carousel.min.js - - - 404 - - 3.0426ms 
+ ]2022-11-22 17:17:43.812 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/Patients/Delete/assets/js/jquery-3.2.1.min.js - - - 404 - - 3.8916ms 
+ ]2022-11-22 17:17:43.812 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/Patients/Delete/assets/js/popper.min.js - - - 404 - - 5.2297ms 
+ ]2022-11-22 17:17:43.813 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/Patients/Delete/assets/js/bootstrap.min.js - - - 404 - - 4.5780ms 
+ ]2022-11-22 17:17:43.823 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/Patients/Delete/assets/js/jquery-3.2.1.min.js - - 
+ ]2022-11-22 17:17:43.824 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/Patients/Delete/assets/js/jquery-3.2.1.min.js - - - 404 - - 0.8212ms 
+ ]2022-11-22 17:17:43.828 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/Patients/Delete/assets/js/popper.min.js - - 
+ ]2022-11-22 17:17:43.829 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/Patients/Delete/assets/js/popper.min.js - - - 404 - - 0.9893ms 
+ ]2022-11-22 17:17:43.831 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/Patients/Delete/assets/js/bootstrap.min.js - - 
+ ]2022-11-22 17:17:43.832 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/Patients/Delete/assets/js/bootstrap.min.js - - - 404 - - 0.8207ms 
+ ]2022-11-22 17:17:43.836 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/Patients/Delete/assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js - - 
+ ]2022-11-22 17:17:43.836 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 30.6549ms 
+ ]2022-11-22 17:17:43.837 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/Patients/Delete/assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js - - - 404 - - 1.0315ms 
+ ]2022-11-22 17:17:43.840 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/Patients/Delete/assets/plugins/slider/js/owl.carousel.min.js - - 
+ ]2022-11-22 17:17:43.840 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/Patients/Delete/assets/plugins/slider/js/owl.carousel.min.js - - - 404 - - 0.7380ms 
+ ]2022-11-22 17:17:43.843 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/Patients/Delete/assets/js/script.js - - 
+ ]2022-11-22 17:17:43.844 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/Patients/Delete/assets/js/script.js - - - 404 - - 0.7445ms 
+ ]2022-11-22 17:48:02.917 +02:00 [INF Entity Framework Core 6.0.8 initialized 'RisDBContext' using provider 'Oracle.EntityFrameworkCore:6.0.21.1-20220418' with options: None 
+ ]2022-11-22 17:48:25.713 +02:00 [INF Entity Framework Core 6.0.8 initialized 'RisDBContext' using provider 'Oracle.EntityFrameworkCore:6.0.21.1-20220418' with options: None 
+ ]2022-11-22 17:48:41.287 +02:00 [ERR 2022-11-22 17:48:41.285253 ThreadID:1   (ERROR)   OracleDatabaseCreator.Exists() :  OracleException.Number: -1000 
+ ]2022-11-22 17:48:41.325 +02:00 [ERR 2022-11-22 17:48:41.325322 ThreadID:1   (ERROR)   OracleDatabaseCreator.Exists() :  Oracle.ManagedDataAccess.Client.OracleException (0x80004005): Connection request timed out
+   at OracleInternal.ConnectionPool.PoolManager`3.Get(ConnectionString csWithDiffOrNewPwd, Boolean bGetForApp, OracleConnection connRefForCriteria, String affinityInstanceName, Boolean bForceMatch)
+   at OracleInternal.ConnectionPool.OraclePoolManager.Get(ConnectionString csWithNewPassword, Boolean bGetForApp, OracleConnection connRefForCriteria, String affinityInstanceName, Boolean bForceMatch)
+   at OracleInternal.ConnectionPool.OracleConnectionDispenser`3.Get(ConnectionString cs, PM conPM, ConnectionString pmCS, SecureString securedPassword, SecureString securedProxyPassword, OracleConnection connRefForCriteria)
+   at Oracle.ManagedDataAccess.Client.OracleConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Oracle.EntityFrameworkCore.Storage.Internal.OracleDatabaseCreator.Exists() 
+ ]2022-11-22 18:01:46.594 +02:00 [INF Entity Framework Core 6.0.8 initialized 'RisDBContext' using provider 'Oracle.EntityFrameworkCore:6.0.21.1-20220418' with options: None 
+ ]2022-11-22 18:01:47.389 +02:00 [INF Executed DbCommand (87ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT t.table_name FROM user_tables t WHERE t.table_name = N'__EFMigrationsHistory' 
+ ]2022-11-22 18:01:47.397 +02:00 [INF Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT t.table_name FROM user_tables t WHERE t.table_name = N'__EFMigrationsHistory' 
+ ]2022-11-22 18:01:47.439 +02:00 [INF Executed DbCommand (36ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId" 
+ ]2022-11-22 18:01:47.461 +02:00 [INF Applying migration '20221109173850_SecondCreate'. 
+ ]2022-11-22 18:01:47.604 +02:00 [INF Executed DbCommand (52ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+DELETE FROM "AppUser"
+WHERE "Id" = N'a00618d5-ef02-4f22-b500-1632a34d2300' 
+ ]2022-11-22 18:01:47.607 +02:00 [INF Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+DELETE FROM "Role"
+WHERE "Id" = N'7f0d9c03-8686-4006-8eab-f35b27b3bdfd' 
+ ]2022-11-22 18:01:47.609 +02:00 [INF Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+DELETE FROM "Role"
+WHERE "Id" = N'ace7a300-ccfe-4acd-8880-c265812dea36' 
+ ]2022-11-22 18:01:47.917 +02:00 [INF Executed DbCommand (308ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+ALTER TABLE "Patients" ADD "NationalIdNumber" NVARCHAR2(11) NOT NULL 
+ ]2022-11-22 18:01:47.922 +02:00 [INF Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+BEGIN
+INSERT INTO "AppUser" ("Id", "AccessFailedCount", "ClinicId", "ConcurrencyStamp", "Departmentid", "Email", "EmailConfirmed", "Firstname", "Isdoctor", "Languageid", "Lastname", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName")
+VALUES (N'40bc12d1-d694-4c71-a82d-93f98113b42f', 0, NULL, N'efd4e114-632c-480e-9621-21f71411973e', NULL, N'RISAdmin@yy.com', 1, N'RIS', 1, 1, N'Admin', 0, NULL, NULL, NULL, N'P@ssw0rd123', NULL, 1, N'a35bdc90-7c21-419e-8758-a65eeaab9f52', 0, N'RISAdmin');
+END; 
+ ]2022-11-22 18:01:47.925 +02:00 [INF Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+BEGIN
+INSERT INTO "Role" ("Id", "ConcurrencyStamp", "Name", "NormalizedName")
+VALUES (N'51ecc494-53b7-41b2-a986-1a770b053bb8', N'7a3af335-9789-46ec-91bc-8ee8e096d98c', N'User', N'USER');
+END; 
+ ]2022-11-22 18:01:47.928 +02:00 [INF Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+BEGIN
+INSERT INTO "Role" ("Id", "ConcurrencyStamp", "Name", "NormalizedName")
+VALUES (N'b205e3e6-9b6d-46ce-8a16-cdc9331a8e94', N'45675193-f86f-4cfa-93de-57c925a83472', N'Administrator', N'ADMINISTRATOR');
+END; 
+ ]2022-11-22 18:01:47.929 +02:00 [INF Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES (N'20221109173850_SecondCreate', N'6.0.8') 
+ ]2022-11-22 18:02:49.439 +02:00 [INF Entity Framework Core 6.0.8 initialized 'RisDBContext' using provider 'Oracle.EntityFrameworkCore:6.0.21.1-20220418' with options: None 
+ ]2022-11-22 18:02:49.886 +02:00 [INF Executed DbCommand (67ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT t.table_name FROM user_tables t WHERE t.table_name = N'__EFMigrationsHistory' 
+ ]2022-11-22 18:02:49.892 +02:00 [INF Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT t.table_name FROM user_tables t WHERE t.table_name = N'__EFMigrationsHistory' 
+ ]2022-11-22 18:02:49.906 +02:00 [INF Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId" 
+ ]2022-11-22 18:02:49.930 +02:00 [INF Applying migration '20221109180604_ForthCreate'. 
+ ]2022-11-22 18:02:49.990 +02:00 [INF Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+DELETE FROM "AppUser"
+WHERE "Id" = N'2d1c98be-7d43-44a5-905b-8b9c620f4f8a' 
+ ]2022-11-22 18:02:49.992 +02:00 [INF Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+DELETE FROM "Role"
+WHERE "Id" = N'27941722-da70-4c04-bbc7-ea5ff26769bd' 
+ ]2022-11-22 18:02:49.994 +02:00 [INF Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+DELETE FROM "Role"
+WHERE "Id" = N'482cacb2-0d19-4e7f-8bed-741e70567076' 
+ ]2022-11-22 18:02:49.996 +02:00 [INF Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+BEGIN
+INSERT INTO "AppUser" ("Id", "AccessFailedCount", "ClinicId", "ConcurrencyStamp", "Departmentid", "Email", "EmailConfirmed", "Firstname", "Isdoctor", "Languageid", "Lastname", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName")
+VALUES (N'd70af375-f4ff-4b02-8603-7be4fad3a7e3', 0, NULL, N'b6c42d46-b7f1-4c3b-803d-f44f5417a222', NULL, N'RISAdmin@yy.com', 1, N'RIS', 1, 1, N'Admin', 0, NULL, NULL, NULL, N'P@ssw0rd123', NULL, 1, N'ad50170a-9462-4703-974b-72e39f8a9b3d', 0, N'RISAdmin');
+END; 
+ ]2022-11-22 18:02:49.999 +02:00 [INF Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+BEGIN
+INSERT INTO "Role" ("Id", "ConcurrencyStamp", "Name", "NormalizedName")
+VALUES (N'cc092175-5555-477e-93e7-8d7bab11573c', N'9348df50-637d-4602-a97f-fa7ae1ed5494', N'Administrator', N'ADMINISTRATOR');
+END; 
+ ]2022-11-22 18:02:50.000 +02:00 [INF Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+BEGIN
+INSERT INTO "Role" ("Id", "ConcurrencyStamp", "Name", "NormalizedName")
+VALUES (N'd7dee8bd-f7b4-4e7c-8287-4281ed284f59', N'16e3bf6a-3515-4b0d-99a0-5df25cee668d', N'User', N'USER');
+END; 
+ ]2022-11-22 18:02:50.001 +02:00 [INF Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES (N'20221109180604_ForthCreate', N'6.0.8') 
+ ]2022-11-22 18:03:11.326 +02:00 [INF Entity Framework Core 6.0.8 initialized 'RisDBContext' using provider 'Oracle.EntityFrameworkCore:6.0.21.1-20220418' with options: None 
+ ]2022-11-22 18:03:11.762 +02:00 [INF Executed DbCommand (59ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT t.table_name FROM user_tables t WHERE t.table_name = N'__EFMigrationsHistory' 
+ ]2022-11-22 18:03:11.768 +02:00 [INF Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT t.table_name FROM user_tables t WHERE t.table_name = N'__EFMigrationsHistory' 
+ ]2022-11-22 18:03:11.781 +02:00 [INF Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId" 
+ ]2022-11-22 18:03:11.806 +02:00 [INF Applying migration '20221116163811_FifthCreate'. 
+ ]2022-11-22 18:03:11.875 +02:00 [INF Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+DELETE FROM "AppUser"
+WHERE "Id" = N'd70af375-f4ff-4b02-8603-7be4fad3a7e3' 
+ ]2022-11-22 18:03:11.876 +02:00 [INF Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+DELETE FROM "Role"
+WHERE "Id" = N'cc092175-5555-477e-93e7-8d7bab11573c' 
+ ]2022-11-22 18:03:11.896 +02:00 [INF Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+DELETE FROM "Role"
+WHERE "Id" = N'd7dee8bd-f7b4-4e7c-8287-4281ed284f59' 
+ ]2022-11-22 18:03:11.961 +02:00 [INF Executed DbCommand (64ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+declare
+   l_nullable user_tab_columns.nullable % type;
+begin 
+   select nullable into l_nullable 
+   from user_tab_columns 
+  where table_name = 'Patients' 
+  and column_name = 'NationalIdNumber' 
+;
+   if l_nullable = 'N' then 
+        EXECUTE IMMEDIATE 'ALTER TABLE "Patients" MODIFY "NationalIdNumber" NVARCHAR2(2000) ';
+ else 
+        EXECUTE IMMEDIATE 'ALTER TABLE "Patients" MODIFY "NationalIdNumber" NVARCHAR2(2000) NOT NULL';
+ end if;
+end; 
+ ]2022-11-22 18:03:12.009 +02:00 [INF Executed DbCommand (48ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+declare
+   l_nullable user_tab_columns.nullable % type;
+begin 
+   select nullable into l_nullable 
+   from user_tab_columns 
+  where table_name = 'Patients' 
+  and column_name = 'Gendre' 
+;
+   if l_nullable = 'N' then 
+        EXECUTE IMMEDIATE 'ALTER TABLE "Patients" MODIFY "Gendre" NUMBER(10) NULL';
+ else 
+        EXECUTE IMMEDIATE 'ALTER TABLE "Patients" MODIFY "Gendre" NUMBER(10)';
+ end if;
+end; 
+ ]2022-11-22 18:03:12.012 +02:00 [INF Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+BEGIN
+INSERT INTO "AppUser" ("Id", "AccessFailedCount", "ClinicId", "ConcurrencyStamp", "Departmentid", "Email", "EmailConfirmed", "Firstname", "Isdoctor", "Languageid", "Lastname", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName")
+VALUES (N'602acb02-e038-4ffe-8191-87927668c6f2', 0, NULL, N'e3e09089-8c03-4417-b86a-3c772a9ecc7c', NULL, N'RISAdmin@yy.com', 1, N'RIS', 1, 1, N'Admin', 0, NULL, NULL, NULL, N'P@ssw0rd123', NULL, 1, N'dfbe4569-677a-4645-8f8b-71fa7682a2e5', 0, N'RISAdmin');
+END; 
+ ]2022-11-22 18:03:12.015 +02:00 [INF Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+BEGIN
+INSERT INTO "Role" ("Id", "ConcurrencyStamp", "Name", "NormalizedName")
+VALUES (N'91d19b9b-9f1d-4e82-8281-6aa3c441da0e', N'30db3016-e860-411a-be73-9432a9bdaa5e', N'Administrator', N'ADMINISTRATOR');
+END; 
+ ]2022-11-22 18:03:12.017 +02:00 [INF Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+BEGIN
+INSERT INTO "Role" ("Id", "ConcurrencyStamp", "Name", "NormalizedName")
+VALUES (N'ac1835c3-d864-4665-9a36-f7870c73a4a9', N'4a9153d2-e2f3-4dca-bd5b-85cf7716fbb2', N'User', N'USER');
+END; 
+ ]2022-11-22 18:03:12.062 +02:00 [INF Executed DbCommand (45ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES (N'20221116163811_FifthCreate', N'6.0.8') 
+ ]2022-11-22 18:03:25.277 +02:00 [INF Entity Framework Core 6.0.8 initialized 'RisDBContext' using provider 'Oracle.EntityFrameworkCore:6.0.21.1-20220418' with options: None 
+ ]2022-11-22 18:03:25.703 +02:00 [INF Executed DbCommand (54ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT t.table_name FROM user_tables t WHERE t.table_name = N'__EFMigrationsHistory' 
+ ]2022-11-22 18:03:25.710 +02:00 [INF Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT t.table_name FROM user_tables t WHERE t.table_name = N'__EFMigrationsHistory' 
+ ]2022-11-22 18:03:25.724 +02:00 [INF Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId" 
+ ]2022-11-22 18:03:25.748 +02:00 [INF Applying migration '20221122154803_SixthCreate'. 
+ ]2022-11-22 18:03:25.816 +02:00 [INF Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+DELETE FROM "AppUser"
+WHERE "Id" = N'602acb02-e038-4ffe-8191-87927668c6f2' 
+ ]2022-11-22 18:03:25.817 +02:00 [INF Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+DELETE FROM "Role"
+WHERE "Id" = N'91d19b9b-9f1d-4e82-8281-6aa3c441da0e' 
+ ]2022-11-22 18:03:25.819 +02:00 [INF Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+DELETE FROM "Role"
+WHERE "Id" = N'ac1835c3-d864-4665-9a36-f7870c73a4a9' 
+ ]2022-11-22 18:03:25.821 +02:00 [INF Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+BEGIN
+INSERT INTO "AppUser" ("Id", "AccessFailedCount", "ClinicId", "ConcurrencyStamp", "Departmentid", "Email", "EmailConfirmed", "Firstname", "Isdoctor", "Languageid", "Lastname", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName")
+VALUES (N'369a50a5-a20c-48cc-ac10-d8cb244a70fb', 0, NULL, N'fa846b63-4f07-459d-b476-a65a545444d3', NULL, N'RISAdmin@yy.com', 1, N'RIS', 1, 1, N'Admin', 0, NULL, NULL, NULL, N'P@ssw0rd123', NULL, 1, N'8f1f9051-d8cc-4687-946b-2f95b55d4f18', 0, N'RISAdmin');
+END; 
+ ]2022-11-22 18:03:25.823 +02:00 [INF Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+BEGIN
+INSERT INTO "Role" ("Id", "ConcurrencyStamp", "Name", "NormalizedName")
+VALUES (N'723c8787-0df7-4eb6-8984-4749976bca43', N'c16d260e-f2e2-45a7-a5d0-ecacd1489ebc', N'User', N'USER');
+END; 
+ ]2022-11-22 18:03:25.825 +02:00 [INF Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+BEGIN
+INSERT INTO "Role" ("Id", "ConcurrencyStamp", "Name", "NormalizedName")
+VALUES (N'a2cb6ad2-195e-49f2-8a8d-bc5fe2dfd644', N'd4caca49-c7c6-44d3-aa1c-3108eebfc356', N'Administrator', N'ADMINISTRATOR');
+END; 
+ ]2022-11-22 18:03:25.826 +02:00 [INF Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES (N'20221122154803_SixthCreate', N'6.0.8') 
+ ]2022-11-22 18:19:22.723 +02:00 [INF User profile is available. Using 'C:\Users\khalidD\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+ ]2022-11-22 18:19:22.958 +02:00 [INF Application Is Starting 
+ ]2022-11-22 18:19:23.032 +02:00 [INF Application started. Press Ctrl+C to shut down. 
+ ]2022-11-22 18:19:23.032 +02:00 [INF Hosting environment: Development 
+ ]2022-11-22 18:19:23.032 +02:00 [INF Content root path: C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\ 
+ ]2022-11-22 18:19:23.064 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/ - - 
+ ]2022-11-22 18:19:23.164 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-11-22 18:19:23.243 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-11-22 18:19:23.436 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnGetAsync - ModelState is "Valid" 
+ ]2022-11-22 18:19:23.456 +02:00 [INF AuthenticationScheme: Identity.External signed out. 
+ ]2022-11-22 18:19:23.457 +02:00 [INF Executed handler method OnGetAsync, returned result . 
+ ]2022-11-22 18:19:23.460 +02:00 [INF Executing an implicit handler method - ModelState is "Valid" 
+ ]2022-11-22 18:19:23.461 +02:00 [INF Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-11-22 18:19:23.682 +02:00 [INF Executed page /Index in 433.3123ms 
+ ]2022-11-22 18:19:23.683 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-11-22 18:19:23.763 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/ - - - 200 - text/html;+charset=utf-8 701.3325ms 
+ ]2022-11-22 18:19:23.819 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/style.css - - 
+ ]2022-11-22 18:19:23.819 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/plugins/slider/css/owl.carousel.min.css - - 
+ ]2022-11-22 18:19:23.834 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/plugins/slider/css/owl.theme.default.css - - 
+ ]2022-11-22 18:19:23.847 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css - - 
+ ]2022-11-22 18:19:23.851 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/images/logo.gif - - 
+ ]2022-11-22 18:19:23.856 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-11-22 18:19:23.858 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/all.min.css - - 
+ ]2022-11-22 18:19:23.858 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/animate.css - - 
+ ]2022-11-22 18:19:23.873 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 11.1214ms 
+ ]2022-11-22 18:19:23.873 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-11-22 18:19:23.876 +02:00 [INF Sending file. Request path: '/assets/plugins/slider/css/owl.carousel.min.css'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\assets\plugins\slider\css\owl.carousel.min.css' 
+ ]2022-11-22 18:19:23.876 +02:00 [INF Sending file. Request path: '/assets/css/style.css'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\assets\css\style.css' 
+ ]2022-11-22 18:19:23.876 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/plugins/slider/css/owl.carousel.min.css - - - 0 3241 text/css 57.4017ms 
+ ]2022-11-22 18:19:23.877 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/style.css - - - 0 18256 text/css 57.4340ms 
+ ]2022-11-22 18:19:23.876 +02:00 [INF Sending file. Request path: '/assets/images/logo.gif'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\assets\images\logo.gif' 
+ ]2022-11-22 18:19:23.876 +02:00 [INF Sending file. Request path: '/assets/css/animate.css'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\assets\css\animate.css' 
+ ]2022-11-22 18:19:23.876 +02:00 [INF Sending file. Request path: '/assets/css/all.min.css'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\assets\css\all.min.css' 
+ ]2022-11-22 18:19:23.876 +02:00 [INF Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css' 
+ ]2022-11-22 18:19:23.877 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/images/logo.gif - - - 0 6230 image/gif 25.5875ms 
+ ]2022-11-22 18:19:23.877 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/animate.css - - - 0 81372 text/css 18.3050ms 
+ ]2022-11-22 18:19:23.877 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/all.min.css - - - 0 57180 text/css 18.4786ms 
+ ]2022-11-22 18:19:23.876 +02:00 [INF Sending file. Request path: '/assets/plugins/slider/css/owl.theme.default.css'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\assets\plugins\slider\css\owl.theme.default.css' 
+ ]2022-11-22 18:19:23.877 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css - - - 0 155845 text/css 29.3982ms 
+ ]2022-11-22 18:19:23.877 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/plugins/slider/css/owl.theme.default.css - - - 0 1303 text/css 50.0647ms 
+ ]2022-11-22 18:19:23.984 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/images/fav.png - - 
+ ]2022-11-22 18:19:23.990 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 116.7301ms 
+ ]2022-11-22 18:19:23.996 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/images/fav.png - - - 0 - - 12.1293ms 
+ ]2022-11-22 18:19:50.905 +02:00 [INF Request starting HTTP/2 POST https://localhost:44392/ application/x-www-form-urlencoded 256 
+ ]2022-11-22 18:19:50.925 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-11-22 18:19:50.930 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-11-22 18:19:51.013 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnPostAsync - ModelState is "Valid" 
+ ]2022-11-22 18:19:52.019 +02:00 [INF Entity Framework Core 6.0.8 initialized 'RisDBContext' using provider 'Oracle.EntityFrameworkCore:6.0.21.1-20220418' with options: None 
+ ]2022-11-22 18:19:53.062 +02:00 [INF Executed DbCommand (75ms) [Parameters=[:normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='0']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ClinicId", "a"."ConcurrencyStamp", "a"."Departmentid", "a"."Email", "a"."EmailConfirmed", "a"."Firstname", "a"."Isdoctor", "a"."Languageid", "a"."Lastname", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AppUser" "a"
+WHERE "a"."NormalizedUserName" = :normalizedUserName_0
+FETCH FIRST 1 ROWS ONLY 
+ ]2022-11-22 18:19:53.104 +02:00 [ERR Invalid login attempt to khaled User 
+ ]2022-11-22 18:19:53.105 +02:00 [INF Executed handler method OnPostAsync, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-11-22 18:19:53.121 +02:00 [INF Executed page /Index in 2190.8013ms 
+ ]2022-11-22 18:19:53.121 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-11-22 18:19:53.135 +02:00 [INF Request finished HTTP/2 POST https://localhost:44392/ application/x-www-form-urlencoded 256 - 200 - text/html;+charset=utf-8 2231.0195ms 
+ ]2022-11-22 18:19:53.156 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-11-22 18:19:53.156 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-11-22 18:19:53.157 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 1.3851ms 
+ ]2022-11-22 18:19:53.193 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 36.9403ms 
+ ]2022-11-22 18:24:10.618 +02:00 [INF User profile is available. Using 'C:\Users\khalidD\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+ ]2022-11-22 18:24:10.873 +02:00 [INF Application Is Starting 
+ ]2022-11-22 18:24:10.945 +02:00 [INF Application started. Press Ctrl+C to shut down. 
+ ]2022-11-22 18:24:10.946 +02:00 [INF Hosting environment: Development 
+ ]2022-11-22 18:24:10.946 +02:00 [INF Content root path: C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\ 
+ ]2022-11-22 18:24:10.972 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/ - - 
+ ]2022-11-22 18:24:11.072 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-11-22 18:24:11.153 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-11-22 18:24:11.349 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnGetAsync - ModelState is "Valid" 
+ ]2022-11-22 18:24:11.368 +02:00 [INF AuthenticationScheme: Identity.External signed out. 
+ ]2022-11-22 18:24:11.369 +02:00 [INF Executed handler method OnGetAsync, returned result . 
+ ]2022-11-22 18:24:11.372 +02:00 [INF Executing an implicit handler method - ModelState is "Valid" 
+ ]2022-11-22 18:24:11.372 +02:00 [INF Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-11-22 18:24:11.591 +02:00 [INF Executed page /Index in 432.5295ms 
+ ]2022-11-22 18:24:11.592 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-11-22 18:24:11.675 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/ - - - 200 - text/html;+charset=utf-8 705.4331ms 
+ ]2022-11-22 18:24:11.676 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css - - 
+ ]2022-11-22 18:24:11.688 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/all.min.css - - 
+ ]2022-11-22 18:24:11.719 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/plugins/slider/css/owl.theme.default.css - - 
+ ]2022-11-22 18:24:11.739 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/animate.css - - 
+ ]2022-11-22 18:24:11.750 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/style.css - - 
+ ]2022-11-22 18:24:11.755 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/images/logo.gif - - 
+ ]2022-11-22 18:24:11.759 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-11-22 18:24:11.766 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/plugins/slider/css/owl.carousel.min.css - - 
+ ]2022-11-22 18:24:11.782 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 15.0501ms 
+ ]2022-11-22 18:24:11.782 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-11-22 18:24:11.785 +02:00 [INF Sending file. Request path: '/assets/images/logo.gif'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\assets\images\logo.gif' 
+ ]2022-11-22 18:24:11.785 +02:00 [INF Sending file. Request path: '/assets/plugins/slider/css/owl.carousel.min.css'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\assets\plugins\slider\css\owl.carousel.min.css' 
+ ]2022-11-22 18:24:11.785 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/images/logo.gif - - - 0 6230 image/gif 29.8182ms 
+ ]2022-11-22 18:24:11.785 +02:00 [INF Sending file. Request path: '/assets/plugins/slider/css/owl.theme.default.css'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\assets\plugins\slider\css\owl.theme.default.css' 
+ ]2022-11-22 18:24:11.785 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/plugins/slider/css/owl.carousel.min.css - - - 0 3241 text/css 19.4884ms 
+ ]2022-11-22 18:24:11.785 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/plugins/slider/css/owl.theme.default.css - - - 0 1303 text/css 66.3135ms 
+ ]2022-11-22 18:24:11.786 +02:00 [INF Sending file. Request path: '/assets/css/animate.css'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\assets\css\animate.css' 
+ ]2022-11-22 18:24:11.786 +02:00 [INF Sending file. Request path: '/assets/css/all.min.css'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\assets\css\all.min.css' 
+ ]2022-11-22 18:24:11.786 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/animate.css - - - 0 81372 text/css 46.3766ms 
+ ]2022-11-22 18:24:11.786 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/all.min.css - - - 0 57180 text/css 98.1017ms 
+ ]2022-11-22 18:24:11.788 +02:00 [INF Sending file. Request path: '/assets/css/style.css'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\assets\css\style.css' 
+ ]2022-11-22 18:24:11.788 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/style.css - - - 0 18256 text/css 48.2829ms 
+ ]2022-11-22 18:24:11.788 +02:00 [INF Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css' 
+ ]2022-11-22 18:24:11.788 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css - - - 0 155845 text/css 112.0671ms 
+ ]2022-11-22 18:24:11.829 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 46.6459ms 
+ ]2022-11-22 18:24:11.832 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/images/fav.png - - 
+ ]2022-11-22 18:24:11.847 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/images/fav.png - - - 0 - - 15.2050ms 
+ ]2022-11-22 18:24:54.684 +02:00 [INF Request starting HTTP/2 POST https://localhost:44392/ application/x-www-form-urlencoded 258 
+ ]2022-11-22 18:24:54.728 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-11-22 18:24:54.728 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-11-22 18:24:54.845 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnPostAsync - ModelState is "Valid" 
+ ]2022-11-22 18:24:55.881 +02:00 [INF Entity Framework Core 6.0.8 initialized 'RisDBContext' using provider 'Oracle.EntityFrameworkCore:6.0.21.1-20220418' with options: None 
+ ]2022-11-22 18:24:56.904 +02:00 [INF Executed DbCommand (80ms) [Parameters=[:normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='0']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ClinicId", "a"."ConcurrencyStamp", "a"."Departmentid", "a"."Email", "a"."EmailConfirmed", "a"."Firstname", "a"."Isdoctor", "a"."Languageid", "a"."Lastname", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AppUser" "a"
+WHERE "a"."NormalizedUserName" = :normalizedUserName_0
+FETCH FIRST 1 ROWS ONLY 
+ ]2022-11-22 18:24:56.950 +02:00 [ERR Invalid login attempt to RISAdmin User 
+ ]2022-11-22 18:24:56.950 +02:00 [INF Executed handler method OnPostAsync, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-11-22 18:24:56.978 +02:00 [INF Executed page /Index in 2249.9719ms 
+ ]2022-11-22 18:24:56.978 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-11-22 18:24:56.995 +02:00 [INF Request finished HTTP/2 POST https://localhost:44392/ application/x-www-form-urlencoded 258 - 200 - text/html;+charset=utf-8 2312.3053ms 
+ ]2022-11-22 18:24:57.014 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-11-22 18:24:57.014 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-11-22 18:24:57.016 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 1.7398ms 
+ ]2022-11-22 18:24:57.047 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 32.8034ms 
+ ]2022-11-22 18:26:09.964 +02:00 [INF Request starting HTTP/2 POST https://localhost:44392/ application/x-www-form-urlencoded 258 
+ ]2022-11-22 18:26:09.976 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-11-22 18:26:09.977 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-11-22 18:26:09.978 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnPostAsync - ModelState is "Valid" 
+ ]2022-11-22 18:26:10.027 +02:00 [INF Entity Framework Core 6.0.8 initialized 'RisDBContext' using provider 'Oracle.EntityFrameworkCore:6.0.21.1-20220418' with options: None 
+ ]2022-11-22 18:26:10.050 +02:00 [INF Executed DbCommand (3ms) [Parameters=[:normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='0']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ClinicId", "a"."ConcurrencyStamp", "a"."Departmentid", "a"."Email", "a"."EmailConfirmed", "a"."Firstname", "a"."Isdoctor", "a"."Languageid", "a"."Lastname", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AppUser" "a"
+WHERE "a"."NormalizedUserName" = :normalizedUserName_0
+FETCH FIRST 1 ROWS ONLY 
+ ]2022-11-22 18:26:10.050 +02:00 [ERR Invalid login attempt to RISAdmin User 
+ ]2022-11-22 18:26:10.050 +02:00 [INF Executed handler method OnPostAsync, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-11-22 18:26:10.074 +02:00 [INF Executed page /Index in 97.4229ms 
+ ]2022-11-22 18:26:10.074 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-11-22 18:26:10.085 +02:00 [INF Request finished HTTP/2 POST https://localhost:44392/ application/x-www-form-urlencoded 258 - 200 - text/html;+charset=utf-8 121.9147ms 
+ ]2022-11-22 18:26:10.120 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-11-22 18:26:10.120 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-11-22 18:26:10.122 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 1.8015ms 
+ ]2022-11-22 18:26:10.174 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 54.1648ms 
+ ]2022-11-22 18:33:28.805 +02:00 [INF User profile is available. Using 'C:\Users\khalidD\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+ ]2022-11-22 18:33:29.082 +02:00 [INF Application Is Starting 
+ ]2022-11-22 18:33:29.161 +02:00 [INF Application started. Press Ctrl+C to shut down. 
+ ]2022-11-22 18:33:29.161 +02:00 [INF Hosting environment: Development 
+ ]2022-11-22 18:33:29.161 +02:00 [INF Content root path: C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\ 
+ ]2022-11-22 18:33:29.191 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/ - - 
+ ]2022-11-22 18:33:29.303 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-11-22 18:33:29.377 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-11-22 18:33:29.648 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnGetAsync - ModelState is "Valid" 
+ ]2022-11-22 18:33:29.668 +02:00 [INF AuthenticationScheme: Identity.External signed out. 
+ ]2022-11-22 18:33:29.669 +02:00 [INF Executed handler method OnGetAsync, returned result . 
+ ]2022-11-22 18:33:29.672 +02:00 [INF Executing an implicit handler method - ModelState is "Valid" 
+ ]2022-11-22 18:33:29.672 +02:00 [INF Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-11-22 18:33:29.884 +02:00 [INF Executed page /Index in 501.8117ms 
+ ]2022-11-22 18:33:29.885 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-11-22 18:33:29.959 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/ - - - 200 - text/html;+charset=utf-8 772.0076ms 
+ ]2022-11-22 18:33:30.010 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/plugins/slider/css/owl.theme.default.css - - 
+ ]2022-11-22 18:33:30.012 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css - - 
+ ]2022-11-22 18:33:30.012 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/plugins/slider/css/owl.carousel.min.css - - 
+ ]2022-11-22 18:33:30.012 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/all.min.css - - 
+ ]2022-11-22 18:33:30.034 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-11-22 18:33:30.039 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/animate.css - - 
+ ]2022-11-22 18:33:30.062 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/images/logo.gif - - 
+ ]2022-11-22 18:33:30.072 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/style.css - - 
+ ]2022-11-22 18:33:30.085 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-11-22 18:33:30.090 +02:00 [INF Sending file. Request path: '/assets/css/all.min.css'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\assets\css\all.min.css' 
+ ]2022-11-22 18:33:30.090 +02:00 [INF Sending file. Request path: '/assets/css/style.css'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\assets\css\style.css' 
+ ]2022-11-22 18:33:30.090 +02:00 [INF Sending file. Request path: '/assets/plugins/slider/css/owl.theme.default.css'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\assets\plugins\slider\css\owl.theme.default.css' 
+ ]2022-11-22 18:33:30.090 +02:00 [INF Sending file. Request path: '/assets/plugins/slider/css/owl.carousel.min.css'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\assets\plugins\slider\css\owl.carousel.min.css' 
+ ]2022-11-22 18:33:30.090 +02:00 [INF Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css' 
+ ]2022-11-22 18:33:30.090 +02:00 [INF Sending file. Request path: '/assets/css/animate.css'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\assets\css\animate.css' 
+ ]2022-11-22 18:33:30.090 +02:00 [INF Sending file. Request path: '/assets/images/logo.gif'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\assets\images\logo.gif' 
+ ]2022-11-22 18:33:30.090 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css - - - 0 155845 text/css 79.0464ms 
+ ]2022-11-22 18:33:30.090 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/style.css - - - 0 18256 text/css 17.6980ms 
+ ]2022-11-22 18:33:30.090 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/plugins/slider/css/owl.theme.default.css - - - 0 1303 text/css 85.6640ms 
+ ]2022-11-22 18:33:30.090 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/plugins/slider/css/owl.carousel.min.css - - - 0 3241 text/css 80.1111ms 
+ ]2022-11-22 18:33:30.090 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/all.min.css - - - 0 57180 text/css 78.8235ms 
+ ]2022-11-22 18:33:30.090 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/animate.css - - - 0 81372 text/css 52.1013ms 
+ ]2022-11-22 18:33:30.090 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/images/logo.gif - - - 0 6230 image/gif 28.0576ms 
+ ]2022-11-22 18:33:30.093 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 7.0460ms 
+ ]2022-11-22 18:33:30.123 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 89.3215ms 
+ ]2022-11-22 18:33:30.125 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/images/fav.png - - 
+ ]2022-11-22 18:33:30.138 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/images/fav.png - - - 404 - - 13.4079ms 
+ ]2022-11-22 18:46:38.427 +02:00 [INF User profile is available. Using 'C:\Users\khalidD\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+ ]2022-11-22 18:46:38.681 +02:00 [INF Application Is Starting 
+ ]2022-11-22 18:46:38.770 +02:00 [INF Application started. Press Ctrl+C to shut down. 
+ ]2022-11-22 18:46:38.770 +02:00 [INF Hosting environment: Development 
+ ]2022-11-22 18:46:38.770 +02:00 [INF Content root path: C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\ 
+ ]2022-11-22 18:46:38.796 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/ - - 
+ ]2022-11-22 18:46:38.897 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-11-22 18:46:38.981 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-11-22 18:46:39.184 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnGetAsync - ModelState is "Valid" 
+ ]2022-11-22 18:46:39.191 +02:00 [INF AuthenticationScheme: Identity.External signed out. 
+ ]2022-11-22 18:46:39.192 +02:00 [INF Executed handler method OnGetAsync, returned result . 
+ ]2022-11-22 18:46:39.195 +02:00 [INF Executing an implicit handler method - ModelState is "Valid" 
+ ]2022-11-22 18:46:39.195 +02:00 [INF Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-11-22 18:46:39.450 +02:00 [INF Executed page /Index in 462.4245ms 
+ ]2022-11-22 18:46:39.451 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-11-22 18:46:39.526 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/ - - - 200 - text/html;+charset=utf-8 732.5580ms 
+ ]2022-11-22 18:46:39.545 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-11-22 18:46:39.558 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 6.4048ms 
+ ]2022-11-22 18:46:39.575 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-11-22 18:46:39.623 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 48.2956ms 
+ ]2022-11-22 18:46:39.940 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/webfonts/fa-solid-900.woff2 - - 
+ ]2022-11-22 18:46:39.959 +02:00 [INF Sending file. Request path: '/assets/webfonts/fa-solid-900.woff2'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\assets\webfonts\fa-solid-900.woff2' 
+ ]2022-11-22 18:46:39.960 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/webfonts/fa-solid-900.woff2 - - - 0 76084 font/woff2 19.8342ms 
+ ]2022-11-22 18:47:05.402 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/MainPage - - 
+ ]2022-11-22 18:47:05.439 +02:00 [INF Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user. 
+ ]2022-11-22 18:47:05.442 +02:00 [INF AuthenticationScheme: Identity.Application was challenged. 
+ ]2022-11-22 18:47:05.444 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/MainPage - - - 302 - - 42.5626ms 
+ ]2022-11-22 18:47:05.458 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/Index?ReturnUrl=%2FMainPage - - 
+ ]2022-11-22 18:47:05.463 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-11-22 18:47:05.465 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-11-22 18:47:05.518 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnGetAsync - ModelState is "Valid" 
+ ]2022-11-22 18:47:05.518 +02:00 [INF AuthenticationScheme: Identity.External signed out. 
+ ]2022-11-22 18:47:05.518 +02:00 [INF Executed handler method OnGetAsync, returned result . 
+ ]2022-11-22 18:47:05.518 +02:00 [INF Executing an implicit handler method - ModelState is "Valid" 
+ ]2022-11-22 18:47:05.518 +02:00 [INF Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-11-22 18:47:05.543 +02:00 [INF Executed page /Index in 77.6102ms 
+ ]2022-11-22 18:47:05.543 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-11-22 18:47:05.547 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/Index?ReturnUrl=%2FMainPage - - - 200 - text/html;+charset=utf-8 88.2817ms 
+ ]2022-11-22 18:47:05.672 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-11-22 18:47:05.693 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-11-22 18:47:05.703 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 9.8017ms 
+ ]2022-11-22 18:47:05.734 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 61.2825ms 
+ ]2022-11-22 18:47:30.070 +02:00 [INF User profile is available. Using 'C:\Users\khalidD\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+ ]2022-11-22 18:47:30.303 +02:00 [INF Application Is Starting 
+ ]2022-11-22 18:47:30.375 +02:00 [INF Application started. Press Ctrl+C to shut down. 
+ ]2022-11-22 18:47:30.376 +02:00 [INF Hosting environment: Development 
+ ]2022-11-22 18:47:30.376 +02:00 [INF Content root path: C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\ 
+ ]2022-11-22 18:47:30.404 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/ - - 
+ ]2022-11-22 18:47:30.501 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-11-22 18:47:30.578 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-11-22 18:47:30.776 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnGetAsync - ModelState is "Valid" 
+ ]2022-11-22 18:47:30.784 +02:00 [INF AuthenticationScheme: Identity.External signed out. 
+ ]2022-11-22 18:47:30.785 +02:00 [INF Executed handler method OnGetAsync, returned result . 
+ ]2022-11-22 18:47:30.788 +02:00 [INF Executing an implicit handler method - ModelState is "Valid" 
+ ]2022-11-22 18:47:30.788 +02:00 [INF Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-11-22 18:47:31.008 +02:00 [INF Executed page /Index in 424.0003ms 
+ ]2022-11-22 18:47:31.009 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-11-22 18:47:31.084 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/ - - - 200 - text/html;+charset=utf-8 682.8565ms 
+ ]2022-11-22 18:47:31.116 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-11-22 18:47:31.116 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-11-22 18:47:31.133 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 16.2737ms 
+ ]2022-11-22 18:47:31.171 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 54.4937ms 
+ ]2022-11-22 18:48:21.851 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/AddUser/AddUser - - 
+ ]2022-11-22 18:48:21.937 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/AddUser/AddUser - - - 404 - - 86.8443ms 
+ ]2022-11-22 18:48:21.957 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/favicon.ico - - 
+ ]2022-11-22 18:48:22.028 +02:00 [INF Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\favicon.ico' 
+ ]2022-11-22 18:48:22.028 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/favicon.ico - - - 0 5430 image/x-icon 70.7621ms 
+ ]2022-11-22 18:49:36.445 +02:00 [INF User profile is available. Using 'C:\Users\khalidD\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+ ]2022-11-22 18:49:36.692 +02:00 [INF Application Is Starting 
+ ]2022-11-22 18:49:36.766 +02:00 [INF Application started. Press Ctrl+C to shut down. 
+ ]2022-11-22 18:49:36.766 +02:00 [INF Hosting environment: Development 
+ ]2022-11-22 18:49:36.766 +02:00 [INF Content root path: C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\ 
+ ]2022-11-22 18:49:36.792 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/ - - 
+ ]2022-11-22 18:49:36.888 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-11-22 18:49:36.973 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-11-22 18:49:37.169 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnGetAsync - ModelState is "Valid" 
+ ]2022-11-22 18:49:37.190 +02:00 [INF AuthenticationScheme: Identity.External signed out. 
+ ]2022-11-22 18:49:37.191 +02:00 [INF Executed handler method OnGetAsync, returned result . 
+ ]2022-11-22 18:49:37.194 +02:00 [INF Executing an implicit handler method - ModelState is "Valid" 
+ ]2022-11-22 18:49:37.194 +02:00 [INF Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-11-22 18:49:37.421 +02:00 [INF Executed page /Index in 442.6064ms 
+ ]2022-11-22 18:49:37.422 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-11-22 18:49:37.499 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/ - - - 200 - text/html;+charset=utf-8 709.2173ms 
+ ]2022-11-22 18:49:37.529 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-11-22 18:49:37.529 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-11-22 18:49:37.564 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 30.2801ms 
+ ]2022-11-22 18:49:37.605 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 75.9837ms 
+ ]2022-11-22 18:50:19.733 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/Administration/AddUser - - 
+ ]2022-11-22 18:50:19.799 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/Administration/AddUser - - - 404 - - 67.4479ms 
+ ]2022-11-22 18:51:22.373 +02:00 [INF User profile is available. Using 'C:\Users\khalidD\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+ ]2022-11-22 18:51:22.611 +02:00 [INF Application Is Starting 
+ ]2022-11-22 18:51:22.690 +02:00 [INF Application started. Press Ctrl+C to shut down. 
+ ]2022-11-22 18:51:22.690 +02:00 [INF Hosting environment: Development 
+ ]2022-11-22 18:51:22.690 +02:00 [INF Content root path: C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\ 
+ ]2022-11-22 18:51:22.720 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/ - - 
+ ]2022-11-22 18:51:22.828 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-11-22 18:51:22.917 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-11-22 18:51:23.122 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnGetAsync - ModelState is "Valid" 
+ ]2022-11-22 18:51:23.143 +02:00 [INF AuthenticationScheme: Identity.External signed out. 
+ ]2022-11-22 18:51:23.144 +02:00 [INF Executed handler method OnGetAsync, returned result . 
+ ]2022-11-22 18:51:23.148 +02:00 [INF Executing an implicit handler method - ModelState is "Valid" 
+ ]2022-11-22 18:51:23.148 +02:00 [INF Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-11-22 18:51:23.380 +02:00 [INF Executed page /Index in 458.0319ms 
+ ]2022-11-22 18:51:23.382 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-11-22 18:51:23.469 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/ - - - 200 - text/html;+charset=utf-8 751.7431ms 
+ ]2022-11-22 18:51:23.481 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-11-22 18:51:23.494 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-11-22 18:51:23.506 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 24.2964ms 
+ ]2022-11-22 18:51:23.563 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 69.5240ms 
+ ]2022-11-22 18:51:59.196 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/Register/AddUser - - 
+ ]2022-11-22 18:51:59.250 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/Register/AddUser - - - 404 - - 54.0773ms 
+ ]2022-11-22 18:52:27.808 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/Register/Register - - 
+ ]2022-11-22 18:52:27.822 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/Register/Register - - - 404 - - 15.6272ms 
+ ]2022-11-22 18:53:00.545 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/Administration/Register - - 
+ ]2022-11-22 18:53:00.555 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/Administration/Register - - - 404 - - 11.6041ms 
+ ]2022-11-22 19:07:49.648 +02:00 [INF User profile is available. Using 'C:\Users\khalidD\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+ ]2022-11-22 19:07:50.004 +02:00 [INF Application Is Starting 
+ ]2022-11-22 19:07:50.081 +02:00 [INF Application started. Press Ctrl+C to shut down. 
+ ]2022-11-22 19:07:50.081 +02:00 [INF Hosting environment: Development 
+ ]2022-11-22 19:07:50.081 +02:00 [INF Content root path: C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\ 
+ ]2022-11-22 19:07:50.108 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/ - - 
+ ]2022-11-22 19:07:50.230 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-11-22 19:07:50.308 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-11-22 19:07:50.504 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnGetAsync - ModelState is "Valid" 
+ ]2022-11-22 19:07:50.523 +02:00 [INF AuthenticationScheme: Identity.External signed out. 
+ ]2022-11-22 19:07:50.524 +02:00 [INF Executed handler method OnGetAsync, returned result . 
+ ]2022-11-22 19:07:50.527 +02:00 [INF Executing an implicit handler method - ModelState is "Valid" 
+ ]2022-11-22 19:07:50.527 +02:00 [INF Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-11-22 19:07:50.935 +02:00 [INF Executed page /Index in 621.2033ms 
+ ]2022-11-22 19:07:50.936 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-11-22 19:07:51.018 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/ - - - 200 - text/html;+charset=utf-8 912.8041ms 
+ ]2022-11-22 19:07:51.042 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-11-22 19:07:51.046 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-11-22 19:07:51.058 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 15.7869ms 
+ ]2022-11-22 19:07:51.113 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 66.9758ms 
+ ]2022-11-22 19:08:35.830 +02:00 [INF Request starting HTTP/2 POST https://localhost:44392/ application/x-www-form-urlencoded 258 
+ ]2022-11-22 19:08:35.875 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-11-22 19:08:35.876 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-11-22 19:08:35.972 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnPostAsync - ModelState is "Valid" 
+ ]2022-11-22 19:08:37.000 +02:00 [INF Entity Framework Core 6.0.8 initialized 'RisDBContext' using provider 'Oracle.EntityFrameworkCore:6.0.21.1-20220418' with options: None 
+ ]2022-11-22 19:08:38.332 +02:00 [INF Executed DbCommand (77ms) [Parameters=[:normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='0']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ClinicId", "a"."ConcurrencyStamp", "a"."Departmentid", "a"."Email", "a"."EmailConfirmed", "a"."Firstname", "a"."Isdoctor", "a"."Languageid", "a"."Lastname", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AppUser" "a"
+WHERE "a"."NormalizedUserName" = :normalizedUserName_0
+FETCH FIRST 1 ROWS ONLY 
+ ]2022-11-22 19:08:38.372 +02:00 [ERR Invalid login attempt to RISAdmin User 
+ ]2022-11-22 19:08:38.373 +02:00 [INF Executed handler method OnPostAsync, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-11-22 19:08:38.393 +02:00 [INF Executed page /Index in 2517.1837ms 
+ ]2022-11-22 19:08:38.394 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-11-22 19:08:38.405 +02:00 [INF Request finished HTTP/2 POST https://localhost:44392/ application/x-www-form-urlencoded 258 - 200 - text/html;+charset=utf-8 2574.9026ms 
+ ]2022-11-22 19:08:38.440 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-11-22 19:08:38.441 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 1.0319ms 
+ ]2022-11-22 19:08:38.446 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-11-22 19:08:38.497 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 50.5944ms 
+ ]2022-11-22 19:22:06.685 +02:00 [INF User profile is available. Using 'C:\Users\khalidD\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+ ]2022-11-22 19:22:06.970 +02:00 [INF Application Is Starting 
+ ]2022-11-22 19:22:07.058 +02:00 [INF Application started. Press Ctrl+C to shut down. 
+ ]2022-11-22 19:22:07.058 +02:00 [INF Hosting environment: Development 
+ ]2022-11-22 19:22:07.058 +02:00 [INF Content root path: C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\ 
+ ]2022-11-22 19:22:07.090 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/ - - 
+ ]2022-11-22 19:22:07.206 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-11-22 19:22:07.286 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-11-22 19:22:07.494 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnGetAsync - ModelState is "Valid" 
+ ]2022-11-22 19:22:07.515 +02:00 [INF AuthenticationScheme: Identity.External signed out. 
+ ]2022-11-22 19:22:07.516 +02:00 [INF Executed handler method OnGetAsync, returned result . 
+ ]2022-11-22 19:22:07.520 +02:00 [INF Executing an implicit handler method - ModelState is "Valid" 
+ ]2022-11-22 19:22:07.520 +02:00 [INF Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-11-22 19:22:07.750 +02:00 [INF Executed page /Index in 457.9003ms 
+ ]2022-11-22 19:22:07.751 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-11-22 19:22:07.828 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/ - - - 200 - text/html;+charset=utf-8 741.2471ms 
+ ]2022-11-22 19:22:07.855 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-11-22 19:22:07.856 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-11-22 19:22:07.880 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 17.3818ms 
+ ]2022-11-22 19:22:07.993 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 128.6502ms 
+ ]2022-11-22 19:23:04.727 +02:00 [INF Request starting HTTP/2 POST https://localhost:44392/ application/x-www-form-urlencoded 258 
+ ]2022-11-22 19:23:04.813 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-11-22 19:23:04.814 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-11-22 19:23:04.898 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnPostAsync - ModelState is "Valid" 
+ ]2022-11-22 19:23:05.863 +02:00 [INF Entity Framework Core 6.0.8 initialized 'RisDBContext' using provider 'Oracle.EntityFrameworkCore:6.0.21.1-20220418' with options: None 
+ ]2022-11-22 19:23:06.884 +02:00 [INF Executed DbCommand (74ms) [Parameters=[:normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='0']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ClinicId", "a"."ConcurrencyStamp", "a"."Departmentid", "a"."Email", "a"."EmailConfirmed", "a"."Firstname", "a"."Isdoctor", "a"."Languageid", "a"."Lastname", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AppUser" "a"
+WHERE "a"."NormalizedUserName" = :normalizedUserName_0
+FETCH FIRST 1 ROWS ONLY 
+ ]2022-11-22 19:23:06.926 +02:00 [ERR Invalid login attempt to RISAdmin User 
+ ]2022-11-22 19:23:06.927 +02:00 [INF Executed handler method OnPostAsync, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-11-22 19:23:06.954 +02:00 [INF Executed page /Index in 2137.6345ms 
+ ]2022-11-22 19:23:06.954 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-11-22 19:23:06.967 +02:00 [INF Request finished HTTP/2 POST https://localhost:44392/ application/x-www-form-urlencoded 258 - 200 - text/html;+charset=utf-8 2239.6293ms 
+ ]2022-11-22 19:23:07.002 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-11-22 19:23:07.002 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-11-22 19:23:07.004 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 1.7592ms 
+ ]2022-11-22 19:23:07.046 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 43.5340ms 
+ ]2022-11-22 19:41:29.575 +02:00 [INF User profile is available. Using 'C:\Users\khalidD\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+ ]2022-11-22 19:41:29.821 +02:00 [INF Application Is Starting 
+ ]2022-11-22 19:41:29.893 +02:00 [INF Application started. Press Ctrl+C to shut down. 
+ ]2022-11-22 19:41:29.893 +02:00 [INF Hosting environment: Development 
+ ]2022-11-22 19:41:29.893 +02:00 [INF Content root path: C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\ 
+ ]2022-11-22 19:41:29.921 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/ - - 
+ ]2022-11-22 19:41:30.104 +02:00 [ERR An unhandled exception has occurred while executing the request. 
+ System.InvalidOperationException: Endpoint /Index contains authorization metadata, but a middleware was not found that supports authorization.
+Configure your application startup by adding app.UseAuthorization() in the application startup code. If there are calls to app.UseRouting() and app.UseEndpoints(...), the call to app.UseAuthorization() must go between them.
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.ThrowMissingAuthMiddlewareException(Endpoint endpoint)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at AspNetCoreHero.ToastNotification.Middlewares.NotyfMiddleware.InvokeAsync(HttpContext context, RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+]2022-11-22 19:41:30.680 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/ - - - 500 - text/html;+charset=utf-8 762.1637ms 
+ ]2022-11-22 19:41:30.681 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-11-22 19:41:30.698 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-11-22 19:41:30.720 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 31.6378ms 
+ ]2022-11-22 19:41:30.756 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 52.0629ms 
+ ]2022-11-22 19:44:00.708 +02:00 [INF User profile is available. Using 'C:\Users\khalidD\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+ ]2022-11-22 19:44:00.953 +02:00 [INF Application Is Starting 
+ ]2022-11-22 19:44:01.032 +02:00 [INF Application started. Press Ctrl+C to shut down. 
+ ]2022-11-22 19:44:01.032 +02:00 [INF Hosting environment: Development 
+ ]2022-11-22 19:44:01.032 +02:00 [INF Content root path: C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\ 
+ ]2022-11-22 19:44:01.058 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/ - - 
+ ]2022-11-22 19:44:01.156 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-11-22 19:44:01.255 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-11-22 19:44:01.459 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnGetAsync - ModelState is "Valid" 
+ ]2022-11-22 19:44:01.478 +02:00 [INF AuthenticationScheme: Identity.External signed out. 
+ ]2022-11-22 19:44:01.479 +02:00 [INF Executed handler method OnGetAsync, returned result . 
+ ]2022-11-22 19:44:01.485 +02:00 [INF Executing an implicit handler method - ModelState is "Valid" 
+ ]2022-11-22 19:44:01.485 +02:00 [INF Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-11-22 19:44:01.737 +02:00 [INF Executed page /Index in 476.4474ms 
+ ]2022-11-22 19:44:01.738 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-11-22 19:44:01.820 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/ - - - 200 - text/html;+charset=utf-8 763.6370ms 
+ ]2022-11-22 19:44:01.846 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-11-22 19:44:01.848 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-11-22 19:44:01.860 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 13.9717ms 
+ ]2022-11-22 19:44:01.902 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 53.4204ms 
+ ]2022-11-22 19:44:32.482 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/Account/AddUser - - 
+ ]2022-11-22 19:44:32.538 +02:00 [INF Executing endpoint '/Account/AddUser' 
+ ]2022-11-22 19:44:32.595 +02:00 [INF Route matched with {page = "/Account/AddUser", action = "", controller = "", area = ""}. Executing page /Account/AddUser 
+ ]2022-11-22 19:44:32.621 +02:00 [INF Executing handler method Ris2022.Pages.Account.AddUserModel.OnGetAsync - ModelState is "Valid" 
+ ]2022-11-22 19:44:32.649 +02:00 [INF Executed handler method OnGetAsync, returned result . 
+ ]2022-11-22 19:44:32.650 +02:00 [INF Executing an implicit handler method - ModelState is "Valid" 
+ ]2022-11-22 19:44:32.650 +02:00 [INF Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-11-22 19:44:33.025 +02:00 [INF Executed page /Account/AddUser in 429.548ms 
+ ]2022-11-22 19:44:33.025 +02:00 [INF Executed endpoint '/Account/AddUser' 
+ ]2022-11-22 19:44:33.035 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/Account/AddUser - - - 200 - text/html;+charset=utf-8 554.2258ms 
+ ]2022-11-22 19:44:33.085 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/css/mvc-grid/mvc-grid.css - - 
+ ]2022-11-22 19:44:33.144 +02:00 [INF Sending file. Request path: '/css/mvc-grid/mvc-grid.css'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\css\mvc-grid\mvc-grid.css' 
+ ]2022-11-22 19:44:33.144 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/css/mvc-grid/mvc-grid.css - - - 200 8220 text/css 58.9152ms 
+ ]2022-11-22 19:44:33.182 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/Account/assets/js/jquery-3.2.1.min.js - - 
+ ]2022-11-22 19:44:33.184 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/Account/assets/js/popper.min.js - - 
+ ]2022-11-22 19:44:33.190 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/Account/assets/js/bootstrap.min.js - - 
+ ]2022-11-22 19:44:33.192 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/Account/assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js - - 
+ ]2022-11-22 19:44:33.194 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/Account/assets/plugins/slider/js/owl.carousel.min.js - - 
+ ]2022-11-22 19:44:33.195 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-11-22 19:44:33.196 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/Account/assets/js/script.js - - 
+ ]2022-11-22 19:44:33.198 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-11-22 19:44:33.199 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 0.9817ms 
+ ]2022-11-22 19:44:33.199 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - - 
+ ]2022-11-22 19:44:33.210 +02:00 [INF Sending file. Request path: '/js/site.js'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\js\site.js' 
+ ]2022-11-22 19:44:33.210 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/Account/assets/js/jquery-3.2.1.min.js - - - 404 - - 28.3541ms 
+ ]2022-11-22 19:44:33.210 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/Account/assets/js/bootstrap.min.js - - - 404 - - 20.0171ms 
+ ]2022-11-22 19:44:33.210 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/Account/assets/plugins/slider/js/owl.carousel.min.js - - - 404 - - 16.3009ms 
+ ]2022-11-22 19:44:33.210 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - - - 200 230 application/javascript 11.2035ms 
+ ]2022-11-22 19:44:33.215 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/Account/assets/js/script.js - - - 404 - - 19.2123ms 
+ ]2022-11-22 19:44:33.215 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/Account/assets/js/popper.min.js - - - 404 - - 30.9247ms 
+ ]2022-11-22 19:44:33.215 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/Account/assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js - - - 404 - - 22.5319ms 
+ ]2022-11-22 19:44:33.253 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 57.8925ms 
+ ]2022-11-22 19:44:33.416 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/Account/assets/js/jquery-3.2.1.min.js - - 
+ ]2022-11-22 19:44:33.417 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/Account/assets/js/jquery-3.2.1.min.js - - - 404 - - 0.9912ms 
+ ]2022-11-22 19:44:33.432 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/Account/assets/js/popper.min.js - - 
+ ]2022-11-22 19:44:33.433 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/Account/assets/js/popper.min.js - - - 404 - - 0.8515ms 
+ ]2022-11-22 19:44:33.437 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/Account/assets/js/bootstrap.min.js - - 
+ ]2022-11-22 19:44:33.438 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/Account/assets/js/bootstrap.min.js - - - 404 - - 0.7020ms 
+ ]2022-11-22 19:44:33.442 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/Account/assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js - - 
+ ]2022-11-22 19:44:33.443 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/Account/assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js - - - 404 - - 0.5790ms 
+ ]2022-11-22 19:44:33.446 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/Account/assets/plugins/slider/js/owl.carousel.min.js - - 
+ ]2022-11-22 19:44:33.447 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/Account/assets/plugins/slider/js/owl.carousel.min.js - - - 404 - - 0.6486ms 
+ ]2022-11-22 19:44:33.453 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/Account/assets/js/script.js - - 
+ ]2022-11-22 19:44:33.454 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/Account/assets/js/script.js - - - 404 - - 0.6787ms 
+ ]2022-11-22 19:45:58.123 +02:00 [INF Request starting HTTP/2 POST https://localhost:44392/Account/AddUser application/x-www-form-urlencoded 365 
+ ]2022-11-22 19:45:58.133 +02:00 [INF Executing endpoint '/Account/AddUser' 
+ ]2022-11-22 19:45:58.134 +02:00 [INF Route matched with {page = "/Account/AddUser", action = "", controller = "", area = ""}. Executing page /Account/AddUser 
+ ]2022-11-22 19:45:58.219 +02:00 [INF Executing handler method Ris2022.Pages.Account.AddUserModel.OnPostAsync - ModelState is "Valid" 
+ ]2022-11-22 19:45:59.350 +02:00 [INF Entity Framework Core 6.0.8 initialized 'RisDBContext' using provider 'Oracle.EntityFrameworkCore:6.0.21.1-20220418' with options: None 
+ ]2022-11-22 19:46:00.332 +02:00 [INF Executed DbCommand (76ms) [Parameters=[:normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='0']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ClinicId", "a"."ConcurrencyStamp", "a"."Departmentid", "a"."Email", "a"."EmailConfirmed", "a"."Firstname", "a"."Isdoctor", "a"."Languageid", "a"."Lastname", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AppUser" "a"
+WHERE "a"."NormalizedUserName" = :normalizedUserName_0
+FETCH FIRST 1 ROWS ONLY 
+ ]2022-11-22 19:46:00.649 +02:00 [INF Executed DbCommand (21ms) [Parameters=[:p0='?' (Size = 450), :p1='?' (DbType = Int32), :p2='?' (DbType = Int32), :p3='?' (Size = 2000), :p4='?' (DbType = Int32), :p5='?' (Size = 256), :p6='?' (DbType = Byte), :p7='?' (Size = 20), :p8='?' (DbType = Byte), :p9='?' (DbType = Int32), :p10='?' (Size = 2000), :p11='?' (DbType = Byte), :p12='?' (DbType = DateTime), :p13='?' (Size = 256), :p14='?' (Size = 256), :p15='?' (Size = 2000), :p16='?' (Size = 2000), :p17='?' (DbType = Byte), :p18='?' (Size = 2000), :p19='?' (DbType = Byte), :p20='?' (Size = 256)], CommandType='"Text"', CommandTimeout='0']
+BEGIN
+
+INSERT INTO "AppUser" ("Id", "AccessFailedCount", "ClinicId", "ConcurrencyStamp", "Departmentid", "Email", "EmailConfirmed", "Firstname", "Isdoctor", "Languageid", "Lastname", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName")
+VALUES (:p0, :p1, :p2, :p3, :p4, :p5, :p6, :p7, :p8, :p9, :p10, :p11, :p12, :p13, :p14, :p15, :p16, :p17, :p18, :p19, :p20);
+END; 
+ ]2022-11-22 19:46:00.726 +02:00 [INF Executed DbCommand (9ms) [Parameters=[:normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='0']
+SELECT "r"."Id", "r"."ConcurrencyStamp", "r"."Name", "r"."NormalizedName"
+FROM "Role" "r"
+WHERE "r"."NormalizedName" = :normalizedRoleName_0
+FETCH FIRST 2 ROWS ONLY 
+ ]2022-11-22 19:46:00.773 +02:00 [INF Executed DbCommand (4ms) [Parameters=[:p_0='?' (Size = 450), :p_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='0']
+SELECT "u"."UserId", "u"."RoleId"
+FROM "UserRoles" "u"
+WHERE (("u"."UserId" = :p_0) AND ("u"."RoleId" = :p_1))
+FETCH FIRST 1 ROWS ONLY 
+ ]2022-11-22 19:46:00.783 +02:00 [INF Executed DbCommand (3ms) [Parameters=[:normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='0']
+SELECT "r"."Id", "r"."ConcurrencyStamp", "r"."Name", "r"."NormalizedName"
+FROM "Role" "r"
+WHERE "r"."NormalizedName" = :normalizedRoleName_0
+FETCH FIRST 2 ROWS ONLY 
+ ]2022-11-22 19:46:00.798 +02:00 [INF Executed DbCommand (1ms) [Parameters=[:normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='0']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ClinicId", "a"."ConcurrencyStamp", "a"."Departmentid", "a"."Email", "a"."EmailConfirmed", "a"."Firstname", "a"."Isdoctor", "a"."Languageid", "a"."Lastname", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AppUser" "a"
+WHERE "a"."NormalizedUserName" = :normalizedUserName_0
+FETCH FIRST 1 ROWS ONLY 
+ ]2022-11-22 19:46:00.845 +02:00 [INF Executed DbCommand (23ms) [Parameters=[:p20='?' (Size = 450), :p0='?' (DbType = Int32), :p1='?' (DbType = Int32), :p2='?' (Size = 2000), :p21='?' (Size = 2000), :p3='?' (DbType = Int32), :p4='?' (Size = 256), :p5='?' (DbType = Byte), :p6='?' (Size = 20), :p7='?' (DbType = Byte), :p8='?' (DbType = Int32), :p9='?' (Size = 2000), :p10='?' (DbType = Byte), :p11='?' (DbType = DateTime), :p12='?' (Size = 256), :p13='?' (Size = 256), :p14='?' (Size = 2000), :p15='?' (Size = 2000), :p16='?' (DbType = Byte), :p17='?' (Size = 2000), :p18='?' (DbType = Byte), :p19='?' (Size = 256), :cur1='?' (Direction = Output) (DbType = Object)], CommandType='"Text"', CommandTimeout='0']
+DECLARE
+v_RowCount INTEGER;
+BEGIN
+UPDATE "AppUser" SET "AccessFailedCount" = :p0, "ClinicId" = :p1, "ConcurrencyStamp" = :p2, "Departmentid" = :p3, "Email" = :p4, "EmailConfirmed" = :p5, "Firstname" = :p6, "Isdoctor" = :p7, "Languageid" = :p8, "Lastname" = :p9, "LockoutEnabled" = :p10, "LockoutEnd" = :p11, "NormalizedEmail" = :p12, "NormalizedUserName" = :p13, "PasswordHash" = :p14, "PhoneNumber" = :p15, "PhoneNumberConfirmed" = :p16, "SecurityStamp" = :p17, "TwoFactorEnabled" = :p18, "UserName" = :p19
+WHERE "Id" = :p20 AND "ConcurrencyStamp" = :p21;
+v_RowCount := SQL%ROWCOUNT;
+OPEN :cur1 FOR SELECT v_RowCount FROM DUAL;
+
+END; 
+ ]2022-11-22 19:46:00.905 +02:00 [INF Executed DbCommand (52ms) [Parameters=[:p0='?' (Size = 450), :p1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='0']
+BEGIN
+
+INSERT INTO "UserRoles" ("RoleId", "UserId")
+VALUES (:p0, :p1);
+END; 
+ ]2022-11-22 19:46:00.988 +02:00 [INF Executed DbCommand (17ms) [Parameters=[:user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='0']
+SELECT "u"."Id", "u"."ClaimType", "u"."ClaimValue", "u"."UserId"
+FROM "UserClaims" "u"
+WHERE "u"."UserId" = :user_Id_0 
+ ]2022-11-22 19:46:01.037 +02:00 [INF Executed DbCommand (17ms) [Parameters=[:userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='0']
+SELECT "r"."Name"
+FROM "UserRoles" "u"
+INNER JOIN "Role" "r" ON "u"."RoleId" = "r"."Id"
+WHERE "u"."UserId" = :userId_0 
+ ]2022-11-22 19:46:01.045 +02:00 [INF Executed DbCommand (2ms) [Parameters=[:normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='0']
+SELECT "r"."Id", "r"."ConcurrencyStamp", "r"."Name", "r"."NormalizedName"
+FROM "Role" "r"
+WHERE "r"."NormalizedName" = :normalizedName_0
+FETCH FIRST 1 ROWS ONLY 
+ ]2022-11-22 19:46:01.056 +02:00 [INF Executed DbCommand (4ms) [Parameters=[:role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='0']
+SELECT "r"."ClaimType", "r"."ClaimValue"
+FROM "RoleClaims" "r"
+WHERE "r"."RoleId" = :role_Id_0 
+ ]2022-11-22 19:46:01.059 +02:00 [INF AuthenticationScheme: Identity.Application signed in. 
+ ]2022-11-22 19:46:01.060 +02:00 [INF Executed handler method OnPostAsync, returned result Microsoft.AspNetCore.Mvc.RedirectToPageResult. 
+ ]2022-11-22 19:46:01.060 +02:00 [INF Executing RedirectToPageResult, redirecting to /MainPage. 
+ ]2022-11-22 19:46:01.060 +02:00 [INF Executed page /Account/AddUser in 2926.6975ms 
+ ]2022-11-22 19:46:01.060 +02:00 [INF Executed endpoint '/Account/AddUser' 
+ ]2022-11-22 19:46:01.064 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/MainPage - - 
+ ]2022-11-22 19:46:01.068 +02:00 [INF Request finished HTTP/2 POST https://localhost:44392/Account/AddUser application/x-www-form-urlencoded 365 - 302 - - 2944.8613ms 
+ ]2022-11-22 19:46:01.080 +02:00 [INF Executing endpoint '/MainPage' 
+ ]2022-11-22 19:46:01.082 +02:00 [INF Route matched with {page = "/MainPage", action = "", controller = "", area = ""}. Executing page /MainPage 
+ ]2022-11-22 19:46:01.082 +02:00 [INF Executing handler method Ris2022.Pages.IndexModel.OnGet - ModelState is "Valid" 
+ ]2022-11-22 19:46:01.082 +02:00 [INF Executed handler method OnGet, returned result . 
+ ]2022-11-22 19:46:01.082 +02:00 [INF Executing an implicit handler method - ModelState is "Valid" 
+ ]2022-11-22 19:46:01.082 +02:00 [INF Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-11-22 19:46:01.211 +02:00 [INF Executed page /MainPage in 128.5242ms 
+ ]2022-11-22 19:46:01.211 +02:00 [INF Executed endpoint '/MainPage' 
+ ]2022-11-22 19:46:01.222 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/MainPage - - - 200 - text/html;+charset=utf-8 158.3750ms 
+ ]2022-11-22 19:46:01.249 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-11-22 19:46:01.250 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/images/services/s2.jpg - - 
+ ]2022-11-22 19:46:01.249 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/images/services/service-1.jpg - - 
+ ]2022-11-22 19:46:01.249 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/images/services/service-3.jpg - - 
+ ]2022-11-22 19:46:01.249 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-11-22 19:46:01.249 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/images/services/service-2.jpg - - 
+ ]2022-11-22 19:46:01.249 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/images/services/s1.jpg - - 
+ ]2022-11-22 19:46:01.264 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 15.2642ms 
+ ]2022-11-22 19:46:01.320 +02:00 [INF Sending file. Request path: '/assets/images/services/s1.jpg'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\assets\images\services\s1.jpg' 
+ ]2022-11-22 19:46:01.320 +02:00 [INF Sending file. Request path: '/assets/images/services/service-1.jpg'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\assets\images\services\service-1.jpg' 
+ ]2022-11-22 19:46:01.320 +02:00 [INF Sending file. Request path: '/assets/images/services/service-2.jpg'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\assets\images\services\service-2.jpg' 
+ ]2022-11-22 19:46:01.320 +02:00 [INF Sending file. Request path: '/assets/images/services/service-3.jpg'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\assets\images\services\service-3.jpg' 
+ ]2022-11-22 19:46:01.320 +02:00 [INF Sending file. Request path: '/assets/images/services/s2.jpg'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2019\Projects\Ris2022\Ris2022\wwwroot\assets\images\services\s2.jpg' 
+ ]2022-11-22 19:46:01.320 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/images/services/service-3.jpg - - - 200 18051 image/jpeg 70.9590ms 
+ ]2022-11-22 19:46:01.320 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/images/services/service-1.jpg - - - 200 15996 image/jpeg 71.2307ms 
+ ]2022-11-22 19:46:01.321 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/images/services/s1.jpg - - - 200 32864 image/jpeg 71.1650ms 
+ ]2022-11-22 19:46:01.321 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/images/services/service-2.jpg - - - 200 23803 image/jpeg 71.7133ms 
+ ]2022-11-22 19:46:01.321 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/images/services/s2.jpg - - - 200 28416 image/jpeg 70.5970ms 
+ ]2022-11-22 19:46:01.342 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 93.0615ms 
+ ]

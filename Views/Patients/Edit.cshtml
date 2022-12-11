@@ -1,0 +1,303 @@
+﻿@model Ris2022.Data.Models.Patient
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<h1>@Resource.EditPatient</h1>
+
+<hr />
+<div class="row">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            @Html.HiddenFor(model=>model.InsertUserName)
+			@Html.HiddenFor(model=>model.Givenid)
+			<div class="row  justify-content-center align-items-center">
+				<div class="p-3  col d-flex flex-column">
+
+					<div class="form-group">
+						<label asp-for="Firstname" class="form-label"></label>
+					<input type="text" class="form-control" placeholder="First name" name="Firstname" value="@Html.DisplayFor(model => model.Firstname)">
+						<span asp-validation-for="Firstname" class="text-danger"></span>
+					</div>
+					</div>
+					<div class="col">
+					<div class="form-group">
+						<label asp-for="Middlename" class="form-label"></label>
+						<input type="text" class="form-control" placeholder="Middle name" value="@Html.DisplayFor(model => model.Middlename)" name="Middlename">
+						<span asp-validation-for="Middlename" class="text-danger"></span>
+						@* <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> *@
+					</div>
+					</div>
+
+				
+					<div class="col">
+					<div class="form-group">
+					<label asp-for="Lastname" class="form-label"></label>
+					<input type="text" class="form-control" placeholder="Last name" value="@Html.DisplayFor(model => model.Lastname)" name="Lastname">
+					<span asp-validation-for="Lastname" class="text-danger"></span>
+					@* <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> *@
+				</div>
+				</div>
+			
+				<div class="col">
+				<div class="form-group">
+					<label asp-for="Mothername" class="form-label"></label>
+					<input type="text" class="form-control" value="@Html.DisplayFor(model => model.Mothername)" placeholder=@Resource.MotherName name="Mothername">
+					<span asp-validation-for="Mothername" class="text-danger"></span>
+				</div>
+				</div>
+				</div>
+				
+    
+				<div class="row justify-content-center align-items-center">
+				<div class="p-3  col d-flex flex-column">
+
+       		    <div class="form-group">
+						<label asp-for="Gendre" class="form-label"></label>
+@*						<input type="number" class="form-control" name="Gendre">
+					*@
+					<select asp-for="Gendre" class="form-control" asp-items="ViewBag.Gendre"></select>
+
+						<span asp-validation-for="Gendre" class="text-danger"></span>
+					</div>
+					</div>
+
+				<div class="col">
+					<div class="form-group">
+					<label asp-for="Birthdate" class="form-label"></label>
+					<input asp-for="Birthdate" value="@Html.DisplayFor(model => model.Birthdate)" asp-format="{0:yyyy-MM-dd}" class="form-control" placeholder="Birthdate" name="Birthdate">
+					<span asp-validation-for="Birthdate" class="text-danger"></span>
+				</div>
+				</div>
+				<div class="col">
+				<div class="form-group">
+					<label asp-for="Age" class="form-label"></label>
+					<input id="Age" type="text" value="@Html.DisplayFor(model => model.Age)" class="form-control" placeholder=@Resource.Age name="Age">
+					<span asp-validation-for="Age" class="text-danger"></span>
+				</div>
+				</div>
+				<div class="col">
+					<label asp-for="NationalIdNumber" class="form-label"></label>
+				<input type="text" class="form-control" value="@Html.DisplayFor(model => model.NationalIdNumber)" placeholder=@Resource.NationalidNumber name="NationalidNumber">
+					<span asp-validation-for="NationalIdNumber" class="text-danger"></span>
+
+				</div>
+					</div>
+		<div class="row justify-content-center align-items-center">
+			<div class="p-3  col d-flex flex-column">
+				<div class="form-group">
+					<button id="otherInfo" type="button" style="width:150px; background-color:#0ac88b !important; height:50px; color:white;" name="Otherinfo"  class="btn btn-primary"> @Resource.Otherinfo </button> 
+				</div>
+			</div>
+		</div>
+		<div id="infoToShow">
+
+
+			<div class="row justify-content-center align-items-center">
+			<div class="p-3 col d-flex flex-column">
+				
+				<div class="form-group">
+					<label asp-for="Nationalityid" class="form-label"></label>
+						<select asp-for="Nationalityid" class="form-control" onselect="@Html.DisplayFor(model => model.Nationalityid)" asp-items="ViewBag.Nationalityid"></select>
+				</div>
+				</div>
+			
+
+			    <div class="col">
+				<div class="form-group">
+					<label asp-for="Martialstatusid" class="form-label"></label>
+						<select asp-for="Martialstatusid" class="form-control" onselect="@Html.DisplayFor(model => model.Martialstatusid)" asp-items="ViewBag.Martialstatusid"></select>
+				</div>
+				</div>
+				
+				    <div class="col">	
+					<div class="form-group">
+						<label asp-for="Birthplace" class="form-label"></label>
+						<input type="text" class="form-control" placeholder="Birthplace" value="@Html.DisplayFor(model => model.Birthplace)" name="Birthplace">
+						<span asp-validation-for="Birthplace" class="text-danger"></span>
+					</div>
+					</div>
+					</div>
+					
+					
+
+			<div class="row justify-content-center align-items-center">
+				<div class="p-3 col d-flex flex-column">
+			
+					<div class="form-group">
+						<label asp-for="Currentaddress" class="form-label"></label>
+						<input asp-for="Currentaddress" value="@Html.DisplayFor(model => model.Currentaddress)" class="form-control" />
+						<span asp-validation-for="Currentaddress" class="text-danger"></span>
+					</div>
+					</div>
+					
+
+		
+            <div class="col">
+			<div class="form-group">
+				<label asp-for="Residentaddress" class="form-label"></label>
+						<input asp-for="Residentaddress" value="@Html.DisplayFor(model => model.Residentaddress)" class="form-control" />
+				<span asp-validation-for="Residentaddress" class="text-danger"></span>
+			</div>
+			</div>
+
+			<div class="col">
+					<div class="form-group">
+					<label asp-for="Insertdate" class="form-label"></label>
+						<input asp-for="Insertdate" asp-format="{0:yyyy-MM-dd}" value="@Html.DisplayFor(model => model.Insertdate)" class="form-control" placeholder="@Resource.Insertdate" name="Insertdate">
+						<span asp-validation-for="Insertdate" class="text-danger"></span>
+			</div>
+			</div>
+			</div>
+
+			<div class="row justify-content-center align-items-center">
+				<div class="col">
+					<div class="form-group">
+						<label asp-for="Mobilephone" class="form-label"></label>
+						<input type="number" value="@Html.DisplayFor(model => model.Mobilephone)" class="form-control" name="Mobilephone">
+						<span asp-validation-for="Mobilephone" class="text-danger"></span>
+					</div>
+					</div>
+
+					<div class="col">
+					<div class="form-group">
+						<label asp-for="Landphone" class="form-label"></label>
+						<input asp-for="Landphone" value="@Html.DisplayFor(model => model.Landphone)" class="form-control" />
+						<span asp-validation-for="Landphone" class="text-danger"></span>
+					</div>
+					</div>
+
+				<div class="col">
+					<div class="form-group">
+						<label asp-for="Acceptancetype" class="form-label"></label>
+						<input asp-for="Acceptancetype" value="@Html.DisplayFor(model => model.Acceptancetype)" class="form-control" name="Acceptancetype" />
+						<span asp-validation-for="Acceptancetype" class="text-danger"></span>
+					</div>
+				</div>
+					</div>
+
+			<div class="row justify-content-center align-items-center">
+
+				<div class=" col">
+					<div class="form-group">
+						<label asp-for="Workphone" class="form-label"></label>
+						<input asp-for="Workphone" value="@Html.DisplayFor(model => model.Workphone)" class="form-control" />
+						<span asp-validation-for="Workphone" class="text-danger"></span>
+					</div>
+					</div>
+					<div class="col">
+					<div class="form-group">
+						<label asp-for="Workaddress" class="form-label"></label>
+						<input asp-for="Workaddress" value="@Html.DisplayFor(model => model.Workaddress)" class="form-control" />
+						<span asp-validation-for="Workaddress" class="text-danger"></span>
+					</div>
+					</div>
+					
+
+				<div class=" col">
+					<div class="form-group">
+						<label asp-for="Worktypeid" class="form-label"></label>
+						<select asp-for="Worktypeid" onselect="@Html.DisplayFor(model => model.Worktypeid)" class="form-control" asp-items="ViewBag.Worktypeid"></select>
+					</div>
+				</div>
+				</div>
+				
+
+			<div class="row justify-content-center align-items-center">
+					<div class="col">
+					<div class="form-group">
+						<label asp-for="Nearestperson" class="form-label"></label>
+						<input asp-for="Nearestperson" value="@Html.DisplayFor(model => model.Nearestperson)" class="form-control" />
+						<span asp-validation-for="Nearestperson" class="text-danger"></span>
+					</div>
+					</div>
+
+				<div class="col">
+					<div class="form-group">
+						<label asp-for="Nearestpersonphone" class="form-label"></label>
+						<input asp-for="Nearestpersonphone" value="@Html.DisplayFor(model => model.Nearestpersonphone)" class="form-control" />
+						<span asp-validation-for="Nearestpersonphone" class="text-danger"></span>
+					</div>
+					</div>
+					</div>
+
+			<div class="row justify-content-center align-items-center">
+					<div class="col">
+					<div class="form-group">
+						<label asp-for="Notes" class="form-label"></label>
+						<input asp-for="Notes" type="text" value="@Html.DisplayFor(model => model.Notes)" class="form-control" />
+						<span asp-validation-for="Notes" class="text-danger"></span>
+					</div>
+					</div>
+					</div>
+					</div>
+            <div class="form-group">
+			<input type="submit" name="Edit" value="تعديل" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+
+
+<div>
+	<a asp-action="Index" name="BackToList">@Resource.BackToList</a>
+</div>
+
+@section Scripts {
+
+    @{
+		await Html.RenderPartialAsync("_ValidationScriptsPartial");
+	}
+	<script>
+
+		$(document).ready(function () {
+			$("#firstname").focus();
+
+			{
+
+				$('#infoToShow').toggle();
+				$('#otherInfo').click(function () {
+					$('#infoToShow').toggle();
+
+				});
+
+			}
+		})
+
+
+	</script>
+
+	<script>
+		$("#Birthdate").change(function () {
+			//alert($(this).val());
+			//2023-12-16T18:44
+			var noTime = $(this).val().split('T');
+			var birthDate = noTime[0].split('-');
+			//debugger;
+			var birthDay = birthDate[2];
+			var birthMonth = birthDate[1];
+			var birthYear = birthDate[0];
+
+			var today_date = new Date();
+			var today_year = today_date.getFullYear();
+			var today_month = today_date.getMonth();
+			var today_day = today_date.getDate();
+			age = today_year - birthYear;
+			//debugger;
+			if (today_month < (birthMonth - 1)) {
+				age--;
+			}
+			if (((birthMonth - 1) == today_month) && (today_day < birthDay)) {
+				age--;
+			}
+			if (age == 0) {
+				age = 1;
+			}
+
+			$("#Age").val(age.toString());
+			//alert(age);
+		});
+	</script>
+
+}
