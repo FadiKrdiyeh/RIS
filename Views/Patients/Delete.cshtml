@@ -1,0 +1,249 @@
+﻿@model Ris2022.Data.Models.Patient
+
+@{
+    ViewData["Title"] = Resource.Delete + ' ' + Resource.Patient;
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<script>
+    let activeLink = document.querySelector(".scrollmenu .custom-nav-item#patientLink");
+    activeLink.classList.add("active");
+</script>
+
+<h1 class="main-title">@Resource.Delete</h1>
+
+<div class="show-details">
+    <h4>@Resource.Patient</h4>
+    @*<h3>@Resource.ConfirmDelete @Resource.Patient?</h3>*@
+    <hr />
+    <dl class="row mb-5">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Givenid)
+        </dt>
+        <dd class="col-sm-2">
+            @Html.DisplayFor(model => model.Givenid)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Firstname)
+        </dt>
+        <dd class="col-sm-2">
+            @Html.DisplayFor(model => model.Firstname)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Middlename)
+        </dt>
+        <dd class="col-sm-2">
+            @Html.DisplayFor(model => model.Middlename)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Lastname)
+        </dt>
+        <dd class="col-sm-2">
+            @Html.DisplayFor(model => model.Lastname)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Gendre)
+        </dt>
+        <dd class="col-sm-2">
+            @Html.DisplayFor(model => model.Gendre)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Mothername)
+        </dt>
+        <dd class="col-sm-2">
+            @Html.DisplayFor(model => model.Mothername)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Birthdate)
+        </dt>
+        <dd class="col-sm-2">
+            @Html.DisplayFor(model => model.Birthdate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Age)
+        </dt>
+        <dd class="col-sm-2">
+            @Html.DisplayFor(model => model.Age)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Mobilephone)
+        </dt>
+        <dd class="col-sm-2">
+            @Html.DisplayFor(model => model.Mobilephone)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Landphone)
+        </dt>
+        <dd class="col-sm-2">
+            @Html.DisplayFor(model => model.Landphone)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Currentaddress)
+        </dt>
+        <dd class="col-sm-2">
+            @Html.DisplayFor(model => model.Currentaddress)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Residentaddress)
+        </dt>
+        <dd class="col-sm-2">
+            @Html.DisplayFor(model => model.Residentaddress)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Workphone)
+        </dt>
+        <dd class="col-sm-2">
+            @Html.DisplayFor(model => model.Workphone)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Workaddress)
+        </dt>
+        <dd class="col-sm-2">
+            @Html.DisplayFor(model => model.Workaddress)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Nearestperson)
+        </dt>
+        <dd class="col-sm-2">
+            @Html.DisplayFor(model => model.Nearestperson)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Nearestpersonphone)
+        </dt>
+        <dd class="col-sm-2">
+            @Html.DisplayFor(model => model.Nearestpersonphone)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Birthplace)
+        </dt>
+        <dd class="col-sm-2">
+            @Html.DisplayFor(model => model.Birthplace)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Notes)
+        </dt>
+        <dd class="col-sm-2">
+            @Html.DisplayFor(model => model.Notes)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Translatedfname)
+        </dt>
+        <dd class="col-sm-2">
+            @Html.DisplayFor(model => model.Translatedfname)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Translatedlname)
+        </dt>
+        <dd class="col-sm-2">
+            @Html.DisplayFor(model => model.Translatedlname)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Translatedfathername)
+        </dt>
+        <dd class="col-sm-2">
+            @Html.DisplayFor(model => model.Translatedfathername)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Translatedmothername)
+        </dt>
+        <dd class="col-sm-2">
+            @Html.DisplayFor(model => model.Translatedmothername)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Insertdate)
+        </dt>
+        <dd class="col-sm-2">
+            @Html.DisplayFor(model => model.Insertdate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.UpdateuserName)
+        </dt>
+        <dd class="col-sm-2">
+            @Html.DisplayFor(model => model.UpdateuserName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Updatedate)
+        </dt>
+        <dd class="col-sm-2">
+            @Html.DisplayFor(model => model.Updatedate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Reasonid)
+        </dt>
+        <dd class="col-sm-2">
+            @Html.DisplayFor(model => model.Reasonid)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.InsertUserName)
+        </dt>
+        <dd class="col-sm-2">
+            @Html.DisplayFor(model => model.InsertUserName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Nationality)
+        </dt>
+        <dd class="col-sm-2">
+            @Html.DisplayFor(model => model.Nationality.Id)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Worktype)
+        </dt>
+        <dd class="col-sm-2">
+            @Html.DisplayFor(model => model.Worktype.Id)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Martialstatus)
+        </dt>
+        <dd class="col-sm-2">
+            @Html.DisplayFor(model => model.Martialstatus.Id)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Acceptancetype)
+        </dt>
+        <dd class="col-sm-2">
+            @Html.DisplayFor(model => model.Acceptancetype.Id)
+        </dd>
+    </dl>
+
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn delete-btn mx-2" data-toggle="modal" data-target="#staticBackdrop">حذف <i class="fa fa-trash"></i></button> | 
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-danger" id="staticBackdropLabel"><i class="fa fa-warning"></i> @Resource.Delete @Resource.Patient</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    @Resource.ConfirmDelete @Resource.Patient?
+                    <div class="row justify-content-center align-items-center">
+                        <form asp-action="Delete" class="create-form">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            @Html.DisplayFor(model=>model.Reason)
+
+                            <div class="p-3 col d-flex flex-column">
+                                <div class="form-group mb-0">
+                                    <label asp-for="Reasonid" class="form-label ms-0"></label>
+                                    <select asp-for="Reasonid" class="form-control" name="Reason" asp-items="ViewBag.Reasonid">@Resource.Reason</select>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <form asp-action="Delete" id="deletePatient">
+                        <input type="hidden" asp-for="Id" />
+                        @*<input type="submit" value="حذف" class="btn btn-danger" /> |*@
+                        <button type="button" class="btn btn-outline-secondary py-2" data-dismiss="modal">Cancel <i class="fa fa-close"></i></button>
+                        <button type="submit" class="btn delete-btn">حذف <i class="fa fa-trash"></i></button>
+                        @*<input type="submit" value="حذف" class="btn btn-danger" />*@
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a asp-action="Index" class="btn back-btn py-2 mx-2">@Resource.BackToList <i class="fa fa-hand-o-right"></i></a>
+</div>

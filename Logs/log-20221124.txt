@@ -1,0 +1,978 @@
+2022-11-24 18:13:02.770 +02:00 [INF User profile is available. Using 'C:\Users\oracle\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+ ]2022-11-24 18:13:02.938 +02:00 [INF Application Is Starting 
+ ]2022-11-24 18:13:02.997 +02:00 [INF Application started. Press Ctrl+C to shut down. 
+ ]2022-11-24 18:13:02.997 +02:00 [INF Hosting environment: Development 
+ ]2022-11-24 18:13:02.997 +02:00 [INF Content root path: C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\ 
+ ]2022-11-24 18:13:03.014 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/ - - 
+ ]2022-11-24 18:13:05.637 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-11-24 18:13:05.694 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-11-24 18:13:06.008 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnGetAsync - ModelState is "Valid" 
+ ]2022-11-24 18:13:06.013 +02:00 [INF AuthenticationScheme: Identity.External signed out. 
+ ]2022-11-24 18:13:06.014 +02:00 [INF Executed handler method OnGetAsync, returned result . 
+ ]2022-11-24 18:13:06.017 +02:00 [INF Executing an implicit handler method - ModelState is "Valid" 
+ ]2022-11-24 18:13:06.017 +02:00 [INF Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-11-24 18:13:08.694 +02:00 [INF Executed page /Index in 2994.503ms 
+ ]2022-11-24 18:13:08.695 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-11-24 18:13:08.702 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css - - 
+ ]2022-11-24 18:13:08.703 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/all.min.css - - 
+ ]2022-11-24 18:13:08.706 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/animate.css - - 
+ ]2022-11-24 18:13:08.707 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/style.css - - 
+ ]2022-11-24 18:13:08.707 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/plugins/slider/css/owl.carousel.min.css - - 
+ ]2022-11-24 18:13:08.707 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/plugins/slider/css/owl.theme.default.css - - 
+ ]2022-11-24 18:13:08.709 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/jquery-3.2.1.min.js - - 
+ ]2022-11-24 18:13:08.711 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/ - - - 200 - text/html;+charset=utf-8 5700.3626ms 
+ ]2022-11-24 18:13:09.607 +02:00 [INF Sending file. Request path: '/assets/css/all.min.css'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\css\all.min.css' 
+ ]2022-11-24 18:13:09.609 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/all.min.css - - - 200 57180 text/css 905.4261ms 
+ ]2022-11-24 18:13:09.722 +02:00 [INF Sending file. Request path: '/assets/plugins/slider/css/owl.carousel.min.css'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\plugins\slider\css\owl.carousel.min.css' 
+ ]2022-11-24 18:13:09.722 +02:00 [INF Sending file. Request path: '/assets/plugins/slider/css/owl.theme.default.css'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\plugins\slider\css\owl.theme.default.css' 
+ ]2022-11-24 18:13:09.722 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/plugins/slider/css/owl.carousel.min.css - - - 200 3241 text/css 1014.3273ms 
+ ]2022-11-24 18:13:09.722 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/plugins/slider/css/owl.theme.default.css - - - 200 1303 text/css 1014.3631ms 
+ ]2022-11-24 18:13:09.722 +02:00 [INF Sending file. Request path: '/assets/css/style.css'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\css\style.css' 
+ ]2022-11-24 18:13:09.722 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/style.css - - - 200 18335 text/css 1015.0251ms 
+ ]2022-11-24 18:13:09.722 +02:00 [INF Sending file. Request path: '/assets/css/animate.css'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\css\animate.css' 
+ ]2022-11-24 18:13:09.723 +02:00 [INF Sending file. Request path: '/assets/js/jquery-3.2.1.min.js'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\js\jquery-3.2.1.min.js' 
+ ]2022-11-24 18:13:09.724 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/animate.css - - - 200 81372 text/css 1018.3816ms 
+ ]2022-11-24 18:13:09.727 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/jquery-3.2.1.min.js - - - 200 86663 application/javascript 1017.6988ms 
+ ]2022-11-24 18:13:10.025 +02:00 [INF Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css' 
+ ]2022-11-24 18:13:10.029 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css - - - 200 155845 text/css 1327.5231ms 
+ ]2022-11-24 18:13:10.076 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/bootstrap.min.js - - 
+ ]2022-11-24 18:13:10.076 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/popper.min.js - - 
+ ]2022-11-24 18:13:10.090 +02:00 [INF Sending file. Request path: '/assets/js/popper.min.js'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\js\popper.min.js' 
+ ]2022-11-24 18:13:10.090 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/popper.min.js - - - 200 19038 application/javascript 14.3473ms 
+ ]2022-11-24 18:13:10.099 +02:00 [INF Sending file. Request path: '/assets/js/bootstrap.min.js'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\js\bootstrap.min.js' 
+ ]2022-11-24 18:13:10.100 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/bootstrap.min.js - - - 200 48944 application/javascript 24.1802ms 
+ ]2022-11-24 18:13:10.265 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/plugins/slider/js/owl.carousel.min.js - - 
+ ]2022-11-24 18:13:10.265 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js - - 
+ ]2022-11-24 18:13:10.275 +02:00 [INF Sending file. Request path: '/assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\plugins\scroll-fixed\jquery-scrolltofixed-min.js' 
+ ]2022-11-24 18:13:10.275 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js - - - 200 5853 application/javascript 10.3719ms 
+ ]2022-11-24 18:13:10.283 +02:00 [INF Sending file. Request path: '/assets/plugins/slider/js/owl.carousel.min.js'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\plugins\slider\js\owl.carousel.min.js' 
+ ]2022-11-24 18:13:10.284 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/plugins/slider/js/owl.carousel.min.js - - - 200 42766 application/javascript 19.2921ms 
+ ]2022-11-24 18:13:10.288 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/script.js - - 
+ ]2022-11-24 18:13:10.295 +02:00 [INF Sending file. Request path: '/assets/js/script.js'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\js\script.js' 
+ ]2022-11-24 18:13:10.295 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/script.js - - - 200 729 application/javascript 6.9605ms 
+ ]2022-11-24 18:13:10.303 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/lib/jquery-validation/dist/jquery.validate.min.js - - 
+ ]2022-11-24 18:13:10.316 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js - - 
+ ]2022-11-24 18:13:10.328 +02:00 [INF Sending file. Request path: '/lib/jquery-validation/dist/jquery.validate.min.js'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js' 
+ ]2022-11-24 18:13:10.329 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/lib/jquery-validation/dist/jquery.validate.min.js - - - 200 23261 application/javascript 26.0621ms 
+ ]2022-11-24 18:13:10.359 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-11-24 18:13:10.361 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 2.0140ms 
+ ]2022-11-24 18:13:10.363 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/images/logo.gif - - 
+ ]2022-11-24 18:13:10.364 +02:00 [INF Sending file. Request path: '/assets/images/logo.gif'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\images\logo.gif' 
+ ]2022-11-24 18:13:10.365 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/images/logo.gif - - - 200 6230 image/gif 1.7431ms 
+ ]2022-11-24 18:13:10.368 +02:00 [INF Sending file. Request path: '/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js' 
+ ]2022-11-24 18:13:10.368 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js - - - 200 5868 application/javascript 52.0286ms 
+ ]2022-11-24 18:13:12.481 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/webfonts/fa-solid-900.woff2 - - 
+ ]2022-11-24 18:13:12.481 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/webfonts/fa-regular-400.woff2 - - 
+ ]2022-11-24 18:13:12.488 +02:00 [INF Sending file. Request path: '/assets/webfonts/fa-solid-900.woff2'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\webfonts\fa-solid-900.woff2' 
+ ]2022-11-24 18:13:12.489 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/webfonts/fa-solid-900.woff2 - - - 200 76084 font/woff2 8.0625ms 
+ ]2022-11-24 18:13:12.489 +02:00 [INF Sending file. Request path: '/assets/webfonts/fa-regular-400.woff2'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\webfonts\fa-regular-400.woff2' 
+ ]2022-11-24 18:13:12.489 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/webfonts/fa-regular-400.woff2 - - - 200 13576 font/woff2 8.9101ms 
+ ]2022-11-24 18:13:12.616 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/images/fav.jpg - - 
+ ]2022-11-24 18:13:12.665 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/images/fav.jpg - - - 404 - - 49.4906ms 
+ ]2022-11-24 18:13:12.683 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/images/fav.png - - 
+ ]2022-11-24 18:13:12.687 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/images/fav.png - - - 404 - - 4.4685ms 
+ ]2022-11-24 18:15:03.909 +02:00 [INF User profile is available. Using 'C:\Users\oracle\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+ ]2022-11-24 18:15:04.305 +02:00 [INF Application Is Starting 
+ ]2022-11-24 18:15:04.343 +02:00 [INF Application started. Press Ctrl+C to shut down. 
+ ]2022-11-24 18:15:04.343 +02:00 [INF Hosting environment: Development 
+ ]2022-11-24 18:15:04.343 +02:00 [INF Content root path: C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\ 
+ ]2022-11-24 18:15:04.359 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/ - - 
+ ]2022-11-24 18:15:04.431 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-11-24 18:15:04.513 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-11-24 18:15:04.629 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnGetAsync - ModelState is "Valid" 
+ ]2022-11-24 18:15:04.746 +02:00 [INF AuthenticationScheme: Identity.External signed out. 
+ ]2022-11-24 18:15:04.747 +02:00 [INF Executed handler method OnGetAsync, returned result . 
+ ]2022-11-24 18:15:04.753 +02:00 [INF Executing an implicit handler method - ModelState is "Valid" 
+ ]2022-11-24 18:15:04.753 +02:00 [INF Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-11-24 18:15:05.263 +02:00 [INF Executed page /Index in 743.8618ms 
+ ]2022-11-24 18:15:05.263 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-11-24 18:15:05.494 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/ - - - 200 - text/html;+charset=utf-8 1137.1487ms 
+ ]2022-11-24 18:15:05.509 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-11-24 18:15:05.510 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-11-24 18:15:05.514 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 5.4456ms 
+ ]2022-11-24 18:15:05.616 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/ - - 
+ ]2022-11-24 18:15:05.619 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-11-24 18:15:05.619 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-11-24 18:15:05.692 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnGetAsync - ModelState is "Valid" 
+ ]2022-11-24 18:15:05.692 +02:00 [INF AuthenticationScheme: Identity.External signed out. 
+ ]2022-11-24 18:15:05.693 +02:00 [INF Executed handler method OnGetAsync, returned result . 
+ ]2022-11-24 18:15:05.693 +02:00 [INF Executing an implicit handler method - ModelState is "Valid" 
+ ]2022-11-24 18:15:05.693 +02:00 [INF Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-11-24 18:15:05.698 +02:00 [INF Executed page /Index in 78.998ms 
+ ]2022-11-24 18:15:05.698 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-11-24 18:15:05.700 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/ - - - 200 - text/html;+charset=utf-8 84.7123ms 
+ ]2022-11-24 18:15:06.219 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 709.2268ms 
+ ]2022-11-24 18:15:06.299 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-11-24 18:15:06.300 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-11-24 18:15:06.300 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 0.9297ms 
+ ]2022-11-24 18:15:06.329 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 28.6969ms 
+ ]2022-11-24 18:15:10.105 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/ - - 
+ ]2022-11-24 18:15:10.153 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-11-24 18:15:10.239 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-11-24 18:15:10.240 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnGetAsync - ModelState is "Valid" 
+ ]2022-11-24 18:15:10.240 +02:00 [INF AuthenticationScheme: Identity.External signed out. 
+ ]2022-11-24 18:15:10.240 +02:00 [INF Executed handler method OnGetAsync, returned result . 
+ ]2022-11-24 18:15:10.240 +02:00 [INF Executing an implicit handler method - ModelState is "Valid" 
+ ]2022-11-24 18:15:10.240 +02:00 [INF Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-11-24 18:15:10.246 +02:00 [INF Executed page /Index in 7.1659ms 
+ ]2022-11-24 18:15:10.246 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-11-24 18:15:10.248 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/ - - - 200 - text/html;+charset=utf-8 142.2089ms 
+ ]2022-11-24 18:15:14.874 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/popper.min.js.map - - 
+ ]2022-11-24 18:15:14.874 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/bootstrap.min.js.map - - 
+ ]2022-11-24 18:15:14.928 +02:00 [INF Sending file. Request path: '/assets/js/popper.min.js.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\js\popper.min.js.map' 
+ ]2022-11-24 18:15:14.931 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/popper.min.js.map - - - 200 122908 text/plain 57.3282ms 
+ ]2022-11-24 18:15:14.978 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/style.css.map - - 
+ ]2022-11-24 18:15:14.978 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css.map - - 
+ ]2022-11-24 18:15:15.011 +02:00 [INF Sending file. Request path: '/assets/css/style.css.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\css\style.css.map' 
+ ]2022-11-24 18:15:15.011 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/style.css.map - - - 200 11116 text/plain 32.8866ms 
+ ]2022-11-24 18:15:15.041 +02:00 [INF Sending file. Request path: '/assets/js/bootstrap.min.js.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\js\bootstrap.min.js.map' 
+ ]2022-11-24 18:15:15.047 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/bootstrap.min.js.map - - - 200 176087 text/plain 172.9023ms 
+ ]2022-11-24 18:15:15.174 +02:00 [INF Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map' 
+ ]2022-11-24 18:15:15.184 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css.map - - - 200 431289 text/plain 206.3050ms 
+ ]2022-11-24 18:15:16.257 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/ - - 
+ ]2022-11-24 18:15:16.258 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-11-24 18:15:16.258 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-11-24 18:15:16.258 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnGetAsync - ModelState is "Valid" 
+ ]2022-11-24 18:15:16.258 +02:00 [INF AuthenticationScheme: Identity.External signed out. 
+ ]2022-11-24 18:15:16.258 +02:00 [INF Executed handler method OnGetAsync, returned result . 
+ ]2022-11-24 18:15:16.259 +02:00 [INF Executing an implicit handler method - ModelState is "Valid" 
+ ]2022-11-24 18:15:16.259 +02:00 [INF Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-11-24 18:15:16.262 +02:00 [INF Executed page /Index in 4.5694ms 
+ ]2022-11-24 18:15:16.262 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-11-24 18:15:16.264 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/ - - - 200 - text/html;+charset=utf-8 7.6206ms 
+ ]2022-11-24 18:15:20.579 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/style.css - - 
+ ]2022-11-24 18:15:20.591 +02:00 [INF Sending file. Request path: '/assets/css/style.css'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\css\style.css' 
+ ]2022-11-24 18:15:20.591 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/style.css - - - 200 18372 text/css 12.3065ms 
+ ]2022-11-24 18:15:20.755 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/favicon.ico - - 
+ ]2022-11-24 18:15:20.909 +02:00 [INF Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\favicon.ico' 
+ ]2022-11-24 18:15:20.909 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/favicon.ico - - - 200 5430 image/x-icon 153.5100ms 
+ ]2022-11-24 18:15:22.693 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/ - - 
+ ]2022-11-24 18:15:22.695 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-11-24 18:15:22.695 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-11-24 18:15:22.695 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnGetAsync - ModelState is "Valid" 
+ ]2022-11-24 18:15:22.695 +02:00 [INF AuthenticationScheme: Identity.External signed out. 
+ ]2022-11-24 18:15:22.695 +02:00 [INF Executed handler method OnGetAsync, returned result . 
+ ]2022-11-24 18:15:22.695 +02:00 [INF Executing an implicit handler method - ModelState is "Valid" 
+ ]2022-11-24 18:15:22.695 +02:00 [INF Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-11-24 18:15:22.699 +02:00 [INF Executed page /Index in 3.7041ms 
+ ]2022-11-24 18:15:22.699 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-11-24 18:15:22.700 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/ - - - 200 - text/html;+charset=utf-8 7.1425ms 
+ ]2022-11-24 18:15:23.340 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/ - - 
+ ]2022-11-24 18:15:23.341 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-11-24 18:15:23.341 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-11-24 18:15:23.342 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnGetAsync - ModelState is "Valid" 
+ ]2022-11-24 18:15:23.342 +02:00 [INF AuthenticationScheme: Identity.External signed out. 
+ ]2022-11-24 18:15:23.342 +02:00 [INF Executed handler method OnGetAsync, returned result . 
+ ]2022-11-24 18:15:23.342 +02:00 [INF Executing an implicit handler method - ModelState is "Valid" 
+ ]2022-11-24 18:15:23.342 +02:00 [INF Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-11-24 18:15:23.346 +02:00 [INF Executed page /Index in 4.7424ms 
+ ]2022-11-24 18:15:23.346 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-11-24 18:15:23.348 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/ - - - 200 - text/html;+charset=utf-8 7.5835ms 
+ ]2022-11-24 18:15:23.365 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-11-24 18:15:23.365 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-11-24 18:15:23.365 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 0.7823ms 
+ ]2022-11-24 18:15:23.399 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 34.3991ms 
+ ]2022-11-24 18:15:23.512 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css.map - - 
+ ]2022-11-24 18:15:23.512 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/style.css.map - - 
+ ]2022-11-24 18:15:23.513 +02:00 [INF Sending file. Request path: '/assets/css/style.css.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\css\style.css.map' 
+ ]2022-11-24 18:15:23.514 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/style.css.map - - - 200 11116 text/plain 1.1777ms 
+ ]2022-11-24 18:15:23.515 +02:00 [INF Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map' 
+ ]2022-11-24 18:15:23.529 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css.map - - - 200 431289 text/plain 16.3023ms 
+ ]2022-11-24 18:15:23.620 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/popper.min.js.map - - 
+ ]2022-11-24 18:15:23.620 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/bootstrap.min.js.map - - 
+ ]2022-11-24 18:15:23.623 +02:00 [INF Sending file. Request path: '/assets/js/popper.min.js.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\js\popper.min.js.map' 
+ ]2022-11-24 18:15:23.623 +02:00 [INF Sending file. Request path: '/assets/js/bootstrap.min.js.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\js\bootstrap.min.js.map' 
+ ]2022-11-24 18:15:23.629 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/popper.min.js.map - - - 200 122908 text/plain 8.7264ms 
+ ]2022-11-24 18:15:23.629 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/bootstrap.min.js.map - - - 200 176087 text/plain 9.1939ms 
+ ]2022-11-24 18:15:26.019 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/ - - 
+ ]2022-11-24 18:15:26.020 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-11-24 18:15:26.020 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-11-24 18:15:26.020 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnGetAsync - ModelState is "Valid" 
+ ]2022-11-24 18:15:26.020 +02:00 [INF AuthenticationScheme: Identity.External signed out. 
+ ]2022-11-24 18:15:26.020 +02:00 [INF Executed handler method OnGetAsync, returned result . 
+ ]2022-11-24 18:15:26.020 +02:00 [INF Executing an implicit handler method - ModelState is "Valid" 
+ ]2022-11-24 18:15:26.020 +02:00 [INF Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-11-24 18:15:26.101 +02:00 [INF Executed page /Index in 81.5474ms 
+ ]2022-11-24 18:15:26.102 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-11-24 18:15:26.130 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/ - - - 200 - text/html;+charset=utf-8 110.8895ms 
+ ]2022-11-24 18:15:28.367 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/style.css - - 
+ ]2022-11-24 18:15:28.368 +02:00 [INF The file /assets/css/style.css was not modified 
+ ]2022-11-24 18:15:28.440 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/style.css - - - 304 - text/css 73.3000ms 
+ ]2022-11-24 18:15:35.265 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/style.css - - 
+ ]2022-11-24 18:15:35.265 +02:00 [INF The file /assets/css/style.css was not modified 
+ ]2022-11-24 18:15:35.266 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/style.css - - - 304 - text/css 0.8150ms 
+ ]2022-11-24 18:15:35.307 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/bootstrap.min.js.map - - 
+ ]2022-11-24 18:15:35.307 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/popper.min.js.map - - 
+ ]2022-11-24 18:15:35.309 +02:00 [INF Sending file. Request path: '/assets/js/bootstrap.min.js.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\js\bootstrap.min.js.map' 
+ ]2022-11-24 18:15:35.309 +02:00 [INF Sending file. Request path: '/assets/js/popper.min.js.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\js\popper.min.js.map' 
+ ]2022-11-24 18:15:35.314 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/popper.min.js.map - - - 200 122908 text/plain 6.9620ms 
+ ]2022-11-24 18:15:35.316 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/bootstrap.min.js.map - - - 200 176087 text/plain 8.5099ms 
+ ]2022-11-24 18:15:35.360 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css.map - - 
+ ]2022-11-24 18:15:35.362 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/style.css.map - - 
+ ]2022-11-24 18:15:35.362 +02:00 [INF Sending file. Request path: '/assets/css/style.css.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\css\style.css.map' 
+ ]2022-11-24 18:15:35.363 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/style.css.map - - - 200 11116 text/plain 1.0704ms 
+ ]2022-11-24 18:15:35.363 +02:00 [INF Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map' 
+ ]2022-11-24 18:15:35.374 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css.map - - - 200 431289 text/plain 13.3815ms 
+ ]2022-11-24 18:15:55.852 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/ - - 
+ ]2022-11-24 18:15:55.852 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-11-24 18:15:55.852 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-11-24 18:15:55.853 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnGetAsync - ModelState is "Valid" 
+ ]2022-11-24 18:15:55.853 +02:00 [INF AuthenticationScheme: Identity.External signed out. 
+ ]2022-11-24 18:15:55.853 +02:00 [INF Executed handler method OnGetAsync, returned result . 
+ ]2022-11-24 18:15:55.853 +02:00 [INF Executing an implicit handler method - ModelState is "Valid" 
+ ]2022-11-24 18:15:55.853 +02:00 [INF Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-11-24 18:15:55.856 +02:00 [INF Executed page /Index in 3.9473ms 
+ ]2022-11-24 18:15:55.857 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-11-24 18:15:55.859 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/ - - - 200 - text/html;+charset=utf-8 7.2870ms 
+ ]2022-11-24 18:15:55.869 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/style.css - - 
+ ]2022-11-24 18:15:55.870 +02:00 [INF The file /assets/css/style.css was not modified 
+ ]2022-11-24 18:15:55.870 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-11-24 18:15:55.870 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/style.css - - - 304 - text/css 0.4384ms 
+ ]2022-11-24 18:15:55.873 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-11-24 18:15:55.874 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 1.0080ms 
+ ]2022-11-24 18:15:55.897 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 27.2760ms 
+ ]2022-11-24 18:16:01.315 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/popper.min.js.map - - 
+ ]2022-11-24 18:16:01.315 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/style.css.map - - 
+ ]2022-11-24 18:16:01.316 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/bootstrap.min.js.map - - 
+ ]2022-11-24 18:16:01.316 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css.map - - 
+ ]2022-11-24 18:16:01.317 +02:00 [INF Sending file. Request path: '/assets/css/style.css.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\css\style.css.map' 
+ ]2022-11-24 18:16:01.317 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/style.css.map - - - 200 11116 text/plain 1.9590ms 
+ ]2022-11-24 18:16:01.322 +02:00 [INF Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map' 
+ ]2022-11-24 18:16:01.322 +02:00 [INF Sending file. Request path: '/assets/js/bootstrap.min.js.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\js\bootstrap.min.js.map' 
+ ]2022-11-24 18:16:01.328 +02:00 [INF Sending file. Request path: '/assets/js/popper.min.js.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\js\popper.min.js.map' 
+ ]2022-11-24 18:16:01.331 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/bootstrap.min.js.map - - - 200 176087 text/plain 14.9537ms 
+ ]2022-11-24 18:16:01.335 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/popper.min.js.map - - - 200 122908 text/plain 18.9982ms 
+ ]2022-11-24 18:16:01.341 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css.map - - - 200 431289 text/plain 24.9025ms 
+ ]2022-11-24 18:16:03.912 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/ - - 
+ ]2022-11-24 18:16:03.914 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-11-24 18:16:03.914 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-11-24 18:16:03.914 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnGetAsync - ModelState is "Valid" 
+ ]2022-11-24 18:16:03.914 +02:00 [INF AuthenticationScheme: Identity.External signed out. 
+ ]2022-11-24 18:16:03.914 +02:00 [INF Executed handler method OnGetAsync, returned result . 
+ ]2022-11-24 18:16:03.914 +02:00 [INF Executing an implicit handler method - ModelState is "Valid" 
+ ]2022-11-24 18:16:03.915 +02:00 [INF Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-11-24 18:16:03.917 +02:00 [INF Executed page /Index in 3.3982ms 
+ ]2022-11-24 18:16:03.918 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-11-24 18:16:03.919 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/ - - - 200 - text/html;+charset=utf-8 6.3985ms 
+ ]2022-11-24 18:16:03.933 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/style.css - - 
+ ]2022-11-24 18:16:03.933 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-11-24 18:16:03.933 +02:00 [INF The file /assets/css/style.css was not modified 
+ ]2022-11-24 18:16:03.933 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/style.css - - - 304 - text/css 0.3962ms 
+ ]2022-11-24 18:16:03.939 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-11-24 18:16:03.940 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 0.9501ms 
+ ]2022-11-24 18:16:03.965 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 32.1842ms 
+ ]2022-11-24 18:16:04.014 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/style.css.map - - 
+ ]2022-11-24 18:16:04.014 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css.map - - 
+ ]2022-11-24 18:16:04.016 +02:00 [INF Sending file. Request path: '/assets/css/style.css.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\css\style.css.map' 
+ ]2022-11-24 18:16:04.016 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/style.css.map - - - 200 11116 text/plain 1.5928ms 
+ ]2022-11-24 18:16:04.018 +02:00 [INF Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map' 
+ ]2022-11-24 18:16:04.018 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/bootstrap.min.js.map - - 
+ ]2022-11-24 18:16:04.018 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/popper.min.js.map - - 
+ ]2022-11-24 18:16:04.020 +02:00 [INF Sending file. Request path: '/assets/js/popper.min.js.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\js\popper.min.js.map' 
+ ]2022-11-24 18:16:04.020 +02:00 [INF Sending file. Request path: '/assets/js/bootstrap.min.js.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\js\bootstrap.min.js.map' 
+ ]2022-11-24 18:16:04.024 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/popper.min.js.map - - - 200 122908 text/plain 6.5112ms 
+ ]2022-11-24 18:16:04.028 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/bootstrap.min.js.map - - - 200 176087 text/plain 9.8653ms 
+ ]2022-11-24 18:16:04.034 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css.map - - - 200 431289 text/plain 19.9621ms 
+ ]2022-11-24 18:22:17.197 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/ - - 
+ ]2022-11-24 18:22:17.199 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-11-24 18:22:17.199 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-11-24 18:22:17.199 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnGetAsync - ModelState is "Valid" 
+ ]2022-11-24 18:22:17.199 +02:00 [INF AuthenticationScheme: Identity.External signed out. 
+ ]2022-11-24 18:22:17.199 +02:00 [INF Executed handler method OnGetAsync, returned result . 
+ ]2022-11-24 18:22:17.199 +02:00 [INF Executing an implicit handler method - ModelState is "Valid" 
+ ]2022-11-24 18:22:17.199 +02:00 [INF Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-11-24 18:22:17.204 +02:00 [INF Executed page /Index in 4.9818ms 
+ ]2022-11-24 18:22:17.204 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-11-24 18:22:17.205 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/ - - - 200 - text/html;+charset=utf-8 7.8907ms 
+ ]2022-11-24 18:22:17.225 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/style.css - - 
+ ]2022-11-24 18:22:17.225 +02:00 [INF The file /assets/css/style.css was not modified 
+ ]2022-11-24 18:22:17.225 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/style.css - - - 304 - text/css 0.4368ms 
+ ]2022-11-24 18:22:17.229 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-11-24 18:22:17.229 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 0.6877ms 
+ ]2022-11-24 18:22:17.233 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-11-24 18:22:17.262 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 28.8849ms 
+ ]2022-11-24 18:22:17.272 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css.map - - 
+ ]2022-11-24 18:22:17.272 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/style.css.map - - 
+ ]2022-11-24 18:22:17.273 +02:00 [INF Sending file. Request path: '/assets/css/style.css.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\css\style.css.map' 
+ ]2022-11-24 18:22:17.273 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/style.css.map - - - 200 11116 text/plain 0.9910ms 
+ ]2022-11-24 18:22:17.274 +02:00 [INF Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map' 
+ ]2022-11-24 18:22:17.288 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css.map - - - 200 431289 text/plain 16.6034ms 
+ ]2022-11-24 18:22:17.295 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/popper.min.js.map - - 
+ ]2022-11-24 18:22:17.297 +02:00 [INF Sending file. Request path: '/assets/js/popper.min.js.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\js\popper.min.js.map' 
+ ]2022-11-24 18:22:17.304 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/popper.min.js.map - - - 200 122908 text/plain 8.3475ms 
+ ]2022-11-24 18:22:17.307 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/bootstrap.min.js.map - - 
+ ]2022-11-24 18:22:17.309 +02:00 [INF Sending file. Request path: '/assets/js/bootstrap.min.js.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\js\bootstrap.min.js.map' 
+ ]2022-11-24 18:22:17.318 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/bootstrap.min.js.map - - - 200 176087 text/plain 11.0561ms 
+ ]2022-11-24 18:25:58.085 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/ - - 
+ ]2022-11-24 18:25:58.086 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-11-24 18:25:58.086 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-11-24 18:25:58.087 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnGetAsync - ModelState is "Valid" 
+ ]2022-11-24 18:25:58.087 +02:00 [INF AuthenticationScheme: Identity.External signed out. 
+ ]2022-11-24 18:25:58.087 +02:00 [INF Executed handler method OnGetAsync, returned result . 
+ ]2022-11-24 18:25:58.087 +02:00 [INF Executing an implicit handler method - ModelState is "Valid" 
+ ]2022-11-24 18:25:58.087 +02:00 [INF Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-11-24 18:25:58.093 +02:00 [INF Executed page /Index in 6.8144ms 
+ ]2022-11-24 18:25:58.093 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-11-24 18:25:58.096 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/ - - - 200 - text/html;+charset=utf-8 10.7370ms 
+ ]2022-11-24 18:25:58.142 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/style.css - - 
+ ]2022-11-24 18:25:58.142 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-11-24 18:25:58.143 +02:00 [INF The file /assets/css/style.css was not modified 
+ ]2022-11-24 18:25:58.143 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/style.css - - - 304 - text/css 0.4980ms 
+ ]2022-11-24 18:25:58.143 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 0.5841ms 
+ ]2022-11-24 18:25:58.145 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-11-24 18:25:58.180 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 34.5450ms 
+ ]2022-11-24 18:25:58.186 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css.map - - 
+ ]2022-11-24 18:25:58.187 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/style.css.map - - 
+ ]2022-11-24 18:25:58.188 +02:00 [INF Sending file. Request path: '/assets/css/style.css.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\css\style.css.map' 
+ ]2022-11-24 18:25:58.189 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/style.css.map - - - 200 11116 text/plain 1.7643ms 
+ ]2022-11-24 18:25:58.189 +02:00 [INF Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map' 
+ ]2022-11-24 18:25:58.203 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css.map - - - 200 431289 text/plain 16.9974ms 
+ ]2022-11-24 18:25:58.260 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/popper.min.js.map - - 
+ ]2022-11-24 18:25:58.276 +02:00 [INF Sending file. Request path: '/assets/js/popper.min.js.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\js\popper.min.js.map' 
+ ]2022-11-24 18:25:58.286 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/popper.min.js.map - - - 200 122908 text/plain 25.9093ms 
+ ]2022-11-24 18:25:58.288 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/bootstrap.min.js.map - - 
+ ]2022-11-24 18:25:58.312 +02:00 [INF Sending file. Request path: '/assets/js/bootstrap.min.js.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\js\bootstrap.min.js.map' 
+ ]2022-11-24 18:25:58.351 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/bootstrap.min.js.map - - - 200 176087 text/plain 63.3760ms 
+ ]2022-11-24 18:26:12.360 +02:00 [INF User profile is available. Using 'C:\Users\oracle\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+ ]2022-11-24 18:26:12.505 +02:00 [INF Application Is Starting 
+ ]2022-11-24 18:26:12.540 +02:00 [INF Application started. Press Ctrl+C to shut down. 
+ ]2022-11-24 18:26:12.541 +02:00 [INF Hosting environment: Development 
+ ]2022-11-24 18:26:12.541 +02:00 [INF Content root path: C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\ 
+ ]2022-11-24 18:26:12.556 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/ - - 
+ ]2022-11-24 18:26:12.628 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-11-24 18:26:12.663 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-11-24 18:26:12.782 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnGetAsync - ModelState is "Valid" 
+ ]2022-11-24 18:26:12.787 +02:00 [INF AuthenticationScheme: Identity.External signed out. 
+ ]2022-11-24 18:26:12.788 +02:00 [INF Executed handler method OnGetAsync, returned result . 
+ ]2022-11-24 18:26:12.791 +02:00 [INF Executing an implicit handler method - ModelState is "Valid" 
+ ]2022-11-24 18:26:12.791 +02:00 [INF Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-11-24 18:26:12.918 +02:00 [INF Executed page /Index in 251.6719ms 
+ ]2022-11-24 18:26:12.918 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-11-24 18:26:12.946 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/ - - - 200 - text/html;+charset=utf-8 394.1247ms 
+ ]2022-11-24 18:26:12.957 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-11-24 18:26:12.963 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 5.1226ms 
+ ]2022-11-24 18:26:12.963 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-11-24 18:26:12.997 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 34.5255ms 
+ ]2022-11-24 18:26:13.045 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/style.css.map - - 
+ ]2022-11-24 18:26:13.045 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css.map - - 
+ ]2022-11-24 18:26:13.053 +02:00 [INF Sending file. Request path: '/assets/css/style.css.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\css\style.css.map' 
+ ]2022-11-24 18:26:13.054 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/style.css.map - - - 200 11116 text/plain 8.9018ms 
+ ]2022-11-24 18:26:13.056 +02:00 [INF Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map' 
+ ]2022-11-24 18:26:13.070 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css.map - - - 200 431289 text/plain 24.9668ms 
+ ]2022-11-24 18:26:13.073 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/popper.min.js.map - - 
+ ]2022-11-24 18:26:13.075 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/bootstrap.min.js.map - - 
+ ]2022-11-24 18:26:13.075 +02:00 [INF Sending file. Request path: '/assets/js/popper.min.js.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\js\popper.min.js.map' 
+ ]2022-11-24 18:26:13.077 +02:00 [INF Sending file. Request path: '/assets/js/bootstrap.min.js.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\js\bootstrap.min.js.map' 
+ ]2022-11-24 18:26:13.081 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/popper.min.js.map - - - 200 122908 text/plain 8.2658ms 
+ ]2022-11-24 18:26:13.084 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/bootstrap.min.js.map - - - 200 176087 text/plain 8.7003ms 
+ ]2022-11-24 18:26:55.107 +02:00 [INF User profile is available. Using 'C:\Users\oracle\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+ ]2022-11-24 18:26:55.362 +02:00 [INF Application Is Starting 
+ ]2022-11-24 18:26:55.399 +02:00 [INF Application started. Press Ctrl+C to shut down. 
+ ]2022-11-24 18:26:55.400 +02:00 [INF Hosting environment: Development 
+ ]2022-11-24 18:26:55.400 +02:00 [INF Content root path: C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\ 
+ ]2022-11-24 18:26:55.419 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/ - - 
+ ]2022-11-24 18:26:55.492 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-11-24 18:26:55.550 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-11-24 18:26:55.689 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnGetAsync - ModelState is "Valid" 
+ ]2022-11-24 18:26:55.720 +02:00 [INF AuthenticationScheme: Identity.External signed out. 
+ ]2022-11-24 18:26:55.721 +02:00 [INF Executed handler method OnGetAsync, returned result . 
+ ]2022-11-24 18:26:55.725 +02:00 [INF Executing an implicit handler method - ModelState is "Valid" 
+ ]2022-11-24 18:26:55.725 +02:00 [INF Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-11-24 18:26:56.089 +02:00 [INF Executed page /Index in 535.9774ms 
+ ]2022-11-24 18:26:56.090 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-11-24 18:26:56.118 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/ - - - 200 - text/html;+charset=utf-8 701.8919ms 
+ ]2022-11-24 18:26:56.144 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-11-24 18:26:56.144 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-11-24 18:26:56.153 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 8.8518ms 
+ ]2022-11-24 18:26:56.183 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 39.4798ms 
+ ]2022-11-24 18:26:56.390 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css.map - - 
+ ]2022-11-24 18:26:56.404 +02:00 [INF Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map' 
+ ]2022-11-24 18:26:56.415 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css.map - - - 200 431289 text/plain 25.2306ms 
+ ]2022-11-24 18:26:56.827 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/style.css.map - - 
+ ]2022-11-24 18:26:56.828 +02:00 [INF Sending file. Request path: '/assets/css/style.css.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\css\style.css.map' 
+ ]2022-11-24 18:26:56.829 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/style.css.map - - - 200 11116 text/plain 1.7727ms 
+ ]2022-11-24 18:26:56.891 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/popper.min.js.map - - 
+ ]2022-11-24 18:26:56.892 +02:00 [INF Sending file. Request path: '/assets/js/popper.min.js.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\js\popper.min.js.map' 
+ ]2022-11-24 18:26:56.897 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/popper.min.js.map - - - 200 122908 text/plain 5.9286ms 
+ ]2022-11-24 18:26:56.921 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/bootstrap.min.js.map - - 
+ ]2022-11-24 18:26:56.925 +02:00 [INF Sending file. Request path: '/assets/js/bootstrap.min.js.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\js\bootstrap.min.js.map' 
+ ]2022-11-24 18:26:56.934 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/bootstrap.min.js.map - - - 200 176087 text/plain 12.3188ms 
+ ]2022-11-24 18:26:57.095 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/images/fav.jpg - - 
+ ]2022-11-24 18:26:57.103 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/images/fav.jpg - - - 404 - - 7.7760ms 
+ ]2022-11-24 18:26:57.169 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/images/fav.png - - 
+ ]2022-11-24 18:26:57.176 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/images/fav.png - - - 404 - - 7.1533ms 
+ ]2022-11-24 18:27:24.066 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/style.css - - 
+ ]2022-11-24 18:27:24.066 +02:00 [INF The file /assets/css/style.css was not modified 
+ ]2022-11-24 18:27:24.067 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/style.css - - - 304 - text/css 1.0690ms 
+ ]2022-11-24 18:27:24.083 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/popper.min.js.map - - 
+ ]2022-11-24 18:27:24.083 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/bootstrap.min.js.map - - 
+ ]2022-11-24 18:27:24.086 +02:00 [INF Sending file. Request path: '/assets/js/bootstrap.min.js.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\js\bootstrap.min.js.map' 
+ ]2022-11-24 18:27:24.087 +02:00 [INF Sending file. Request path: '/assets/js/popper.min.js.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\js\popper.min.js.map' 
+ ]2022-11-24 18:27:24.092 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/popper.min.js.map - - - 200 122908 text/plain 8.6461ms 
+ ]2022-11-24 18:27:24.092 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/bootstrap.min.js.map - - - 200 176087 text/plain 8.9830ms 
+ ]2022-11-24 18:27:24.120 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/style.css.map - - 
+ ]2022-11-24 18:27:24.120 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css.map - - 
+ ]2022-11-24 18:27:24.121 +02:00 [INF Sending file. Request path: '/assets/css/style.css.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\css\style.css.map' 
+ ]2022-11-24 18:27:24.121 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/style.css.map - - - 200 11116 text/plain 1.2430ms 
+ ]2022-11-24 18:27:24.121 +02:00 [INF Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map' 
+ ]2022-11-24 18:27:24.132 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css.map - - - 200 431289 text/plain 11.8125ms 
+ ]2022-11-24 18:29:24.332 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/style.css?__browserLink_refresh=1664e16596334fb0b8fa3cb99e117f55 - - 
+ ]2022-11-24 18:29:24.342 +02:00 [INF Sending file. Request path: '/assets/css/style.css'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\css\style.css' 
+ ]2022-11-24 18:29:24.342 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/style.css?__browserLink_refresh=1664e16596334fb0b8fa3cb99e117f55 - - - 200 18404 text/css 9.8331ms 
+ ]2022-11-24 18:29:24.433 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/style.css.map - - 
+ ]2022-11-24 18:29:24.434 +02:00 [INF Sending file. Request path: '/assets/css/style.css.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\css\style.css.map' 
+ ]2022-11-24 18:29:24.435 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/style.css.map - - - 200 11116 text/plain 1.2014ms 
+ ]2022-11-24 18:29:32.354 +02:00 [INF User profile is available. Using 'C:\Users\oracle\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+ ]2022-11-24 18:29:32.537 +02:00 [INF Application Is Starting 
+ ]2022-11-24 18:29:32.573 +02:00 [INF Application started. Press Ctrl+C to shut down. 
+ ]2022-11-24 18:29:32.573 +02:00 [INF Hosting environment: Development 
+ ]2022-11-24 18:29:32.573 +02:00 [INF Content root path: C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\ 
+ ]2022-11-24 18:29:32.587 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/ - - 
+ ]2022-11-24 18:29:32.659 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-11-24 18:29:32.693 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-11-24 18:29:32.804 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnGetAsync - ModelState is "Valid" 
+ ]2022-11-24 18:29:32.809 +02:00 [INF AuthenticationScheme: Identity.External signed out. 
+ ]2022-11-24 18:29:32.810 +02:00 [INF Executed handler method OnGetAsync, returned result . 
+ ]2022-11-24 18:29:32.813 +02:00 [INF Executing an implicit handler method - ModelState is "Valid" 
+ ]2022-11-24 18:29:32.813 +02:00 [INF Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-11-24 18:29:32.940 +02:00 [INF Executed page /Index in 243.5903ms 
+ ]2022-11-24 18:29:32.941 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-11-24 18:29:32.968 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/ - - - 200 - text/html;+charset=utf-8 382.7028ms 
+ ]2022-11-24 18:29:32.991 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/style.css - - 
+ ]2022-11-24 18:29:33.002 +02:00 [INF Sending file. Request path: '/assets/css/style.css'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\css\style.css' 
+ ]2022-11-24 18:29:33.002 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/style.css - - - 200 18404 text/css 10.9827ms 
+ ]2022-11-24 18:29:33.340 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css.map - - 
+ ]2022-11-24 18:29:33.345 +02:00 [INF Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map' 
+ ]2022-11-24 18:29:33.356 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css.map - - - 200 431289 text/plain 16.0333ms 
+ ]2022-11-24 18:29:33.463 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/style.css.map - - 
+ ]2022-11-24 18:29:33.465 +02:00 [INF Sending file. Request path: '/assets/css/style.css.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\css\style.css.map' 
+ ]2022-11-24 18:29:33.465 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/style.css.map - - - 200 11116 text/plain 1.3653ms 
+ ]2022-11-24 18:29:33.544 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/popper.min.js.map - - 
+ ]2022-11-24 18:29:33.545 +02:00 [INF Sending file. Request path: '/assets/js/popper.min.js.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\js\popper.min.js.map' 
+ ]2022-11-24 18:29:33.549 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/bootstrap.min.js.map - - 
+ ]2022-11-24 18:29:33.550 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/popper.min.js.map - - - 200 122908 text/plain 6.5138ms 
+ ]2022-11-24 18:29:33.551 +02:00 [INF Sending file. Request path: '/assets/js/bootstrap.min.js.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\js\bootstrap.min.js.map' 
+ ]2022-11-24 18:29:33.555 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-11-24 18:29:33.557 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/bootstrap.min.js.map - - - 200 176087 text/plain 8.2673ms 
+ ]2022-11-24 18:29:33.557 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 2.2188ms 
+ ]2022-11-24 18:29:33.560 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-11-24 18:29:33.598 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 37.2608ms 
+ ]2022-11-24 18:29:39.200 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/ - - 
+ ]2022-11-24 18:29:39.204 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-11-24 18:29:39.204 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-11-24 18:29:39.222 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnGetAsync - ModelState is "Valid" 
+ ]2022-11-24 18:29:39.222 +02:00 [INF AuthenticationScheme: Identity.External signed out. 
+ ]2022-11-24 18:29:39.223 +02:00 [INF Executed handler method OnGetAsync, returned result . 
+ ]2022-11-24 18:29:39.223 +02:00 [INF Executing an implicit handler method - ModelState is "Valid" 
+ ]2022-11-24 18:29:39.223 +02:00 [INF Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-11-24 18:29:39.230 +02:00 [INF Executed page /Index in 25.9219ms 
+ ]2022-11-24 18:29:39.230 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-11-24 18:29:39.232 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/ - - - 200 - text/html;+charset=utf-8 32.3680ms 
+ ]2022-11-24 18:29:39.248 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-11-24 18:29:39.248 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/style.css - - 
+ ]2022-11-24 18:29:39.248 +02:00 [INF The file /assets/css/style.css was not modified 
+ ]2022-11-24 18:29:39.249 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/style.css - - - 304 - text/css 1.2189ms 
+ ]2022-11-24 18:29:39.256 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-11-24 18:29:39.256 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 0.8023ms 
+ ]2022-11-24 18:29:39.279 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 31.1141ms 
+ ]2022-11-24 18:29:39.302 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/style.css.map - - 
+ ]2022-11-24 18:29:39.303 +02:00 [INF Sending file. Request path: '/assets/css/style.css.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\css\style.css.map' 
+ ]2022-11-24 18:29:39.303 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css.map - - 
+ ]2022-11-24 18:29:39.303 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/style.css.map - - - 200 11116 text/plain 1.1169ms 
+ ]2022-11-24 18:29:39.305 +02:00 [INF Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map' 
+ ]2022-11-24 18:29:39.307 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/popper.min.js.map - - 
+ ]2022-11-24 18:29:39.309 +02:00 [INF Sending file. Request path: '/assets/js/popper.min.js.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\js\popper.min.js.map' 
+ ]2022-11-24 18:29:39.315 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/popper.min.js.map - - - 200 122908 text/plain 7.9023ms 
+ ]2022-11-24 18:29:39.318 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/bootstrap.min.js.map - - 
+ ]2022-11-24 18:29:39.320 +02:00 [INF Sending file. Request path: '/assets/js/bootstrap.min.js.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\js\bootstrap.min.js.map' 
+ ]2022-11-24 18:29:39.320 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css.map - - - 200 431289 text/plain 16.7067ms 
+ ]2022-11-24 18:29:39.326 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/bootstrap.min.js.map - - - 200 176087 text/plain 8.4305ms 
+ ]2022-11-24 18:29:44.846 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/ - - 
+ ]2022-11-24 18:29:44.850 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-11-24 18:29:44.850 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-11-24 18:29:44.851 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnGetAsync - ModelState is "Valid" 
+ ]2022-11-24 18:29:44.851 +02:00 [INF AuthenticationScheme: Identity.External signed out. 
+ ]2022-11-24 18:29:44.851 +02:00 [INF Executed handler method OnGetAsync, returned result . 
+ ]2022-11-24 18:29:44.851 +02:00 [INF Executing an implicit handler method - ModelState is "Valid" 
+ ]2022-11-24 18:29:44.851 +02:00 [INF Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-11-24 18:29:44.855 +02:00 [INF Executed page /Index in 5.1932ms 
+ ]2022-11-24 18:29:44.856 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-11-24 18:29:44.857 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/ - - - 200 - text/html;+charset=utf-8 11.2546ms 
+ ]2022-11-24 18:29:44.871 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/style.css - - 
+ ]2022-11-24 18:29:44.871 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-11-24 18:29:44.871 +02:00 [INF The file /assets/css/style.css was not modified 
+ ]2022-11-24 18:29:44.871 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/style.css - - - 304 - text/css 0.4640ms 
+ ]2022-11-24 18:29:44.881 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-11-24 18:29:44.883 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 1.8021ms 
+ ]2022-11-24 18:29:44.903 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 32.2734ms 
+ ]2022-11-24 18:29:44.926 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css.map - - 
+ ]2022-11-24 18:29:44.927 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/style.css.map - - 
+ ]2022-11-24 18:29:44.927 +02:00 [INF Sending file. Request path: '/assets/css/style.css.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\css\style.css.map' 
+ ]2022-11-24 18:29:44.928 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/style.css.map - - - 200 11116 text/plain 0.9606ms 
+ ]2022-11-24 18:29:44.928 +02:00 [INF Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map' 
+ ]2022-11-24 18:29:44.935 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/popper.min.js.map - - 
+ ]2022-11-24 18:29:44.938 +02:00 [INF Sending file. Request path: '/assets/js/popper.min.js.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\js\popper.min.js.map' 
+ ]2022-11-24 18:29:44.942 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css.map - - - 200 431289 text/plain 16.1382ms 
+ ]2022-11-24 18:29:44.944 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/popper.min.js.map - - - 200 122908 text/plain 8.7108ms 
+ ]2022-11-24 18:29:44.946 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/bootstrap.min.js.map - - 
+ ]2022-11-24 18:29:44.951 +02:00 [INF Sending file. Request path: '/assets/js/bootstrap.min.js.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\js\bootstrap.min.js.map' 
+ ]2022-11-24 18:29:44.958 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/bootstrap.min.js.map - - - 200 176087 text/plain 12.6640ms 
+ ]2022-11-24 18:30:02.626 +02:00 [INF User profile is available. Using 'C:\Users\oracle\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+ ]2022-11-24 18:30:02.787 +02:00 [INF Application Is Starting 
+ ]2022-11-24 18:30:02.849 +02:00 [INF Application started. Press Ctrl+C to shut down. 
+ ]2022-11-24 18:30:02.849 +02:00 [INF Hosting environment: Development 
+ ]2022-11-24 18:30:02.849 +02:00 [INF Content root path: C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\ 
+ ]2022-11-24 18:30:02.875 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/ - - 
+ ]2022-11-24 18:30:02.951 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-11-24 18:30:02.994 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-11-24 18:30:03.119 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnGetAsync - ModelState is "Valid" 
+ ]2022-11-24 18:30:03.123 +02:00 [INF AuthenticationScheme: Identity.External signed out. 
+ ]2022-11-24 18:30:03.124 +02:00 [INF Executed handler method OnGetAsync, returned result . 
+ ]2022-11-24 18:30:03.127 +02:00 [INF Executing an implicit handler method - ModelState is "Valid" 
+ ]2022-11-24 18:30:03.127 +02:00 [INF Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-11-24 18:30:03.252 +02:00 [INF Executed page /Index in 253.6156ms 
+ ]2022-11-24 18:30:03.253 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-11-24 18:30:03.278 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/ - - - 200 - text/html;+charset=utf-8 407.4786ms 
+ ]2022-11-24 18:30:03.286 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/style.css - - 
+ ]2022-11-24 18:30:03.286 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-11-24 18:30:03.295 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-11-24 18:30:03.298 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 2.9131ms 
+ ]2022-11-24 18:30:03.303 +02:00 [INF Sending file. Request path: '/assets/css/style.css'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\css\style.css' 
+ ]2022-11-24 18:30:03.304 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/style.css - - - 200 18404 text/css 17.7318ms 
+ ]2022-11-24 18:30:03.328 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 41.6748ms 
+ ]2022-11-24 18:30:03.347 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/style.css.map - - 
+ ]2022-11-24 18:30:03.347 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css.map - - 
+ ]2022-11-24 18:30:03.352 +02:00 [INF Sending file. Request path: '/assets/css/style.css.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\css\style.css.map' 
+ ]2022-11-24 18:30:03.352 +02:00 [INF Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map' 
+ ]2022-11-24 18:30:03.353 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/style.css.map - - - 200 11116 text/plain 5.6922ms 
+ ]2022-11-24 18:30:03.366 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css.map - - - 200 431289 text/plain 19.3360ms 
+ ]2022-11-24 18:30:03.395 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/popper.min.js.map - - 
+ ]2022-11-24 18:30:03.398 +02:00 [INF Sending file. Request path: '/assets/js/popper.min.js.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\js\popper.min.js.map' 
+ ]2022-11-24 18:30:03.400 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/bootstrap.min.js.map - - 
+ ]2022-11-24 18:30:03.402 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/popper.min.js.map - - - 200 122908 text/plain 6.8799ms 
+ ]2022-11-24 18:30:03.402 +02:00 [INF Sending file. Request path: '/assets/js/bootstrap.min.js.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\js\bootstrap.min.js.map' 
+ ]2022-11-24 18:30:03.408 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/bootstrap.min.js.map - - - 200 176087 text/plain 8.2788ms 
+ ]2022-11-24 18:30:03.694 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/ - - 
+ ]2022-11-24 18:30:03.697 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-11-24 18:30:03.697 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-11-24 18:30:03.712 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnGetAsync - ModelState is "Valid" 
+ ]2022-11-24 18:30:03.712 +02:00 [INF AuthenticationScheme: Identity.External signed out. 
+ ]2022-11-24 18:30:03.712 +02:00 [INF Executed handler method OnGetAsync, returned result . 
+ ]2022-11-24 18:30:03.712 +02:00 [INF Executing an implicit handler method - ModelState is "Valid" 
+ ]2022-11-24 18:30:03.712 +02:00 [INF Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-11-24 18:30:03.721 +02:00 [INF Executed page /Index in 24.0164ms 
+ ]2022-11-24 18:30:03.721 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-11-24 18:30:03.723 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/ - - - 200 - text/html;+charset=utf-8 28.7985ms 
+ ]2022-11-24 18:30:03.737 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-11-24 18:30:03.738 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-11-24 18:30:03.739 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 1.0509ms 
+ ]2022-11-24 18:30:03.769 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 32.2480ms 
+ ]2022-11-24 18:30:03.792 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css.map - - 
+ ]2022-11-24 18:30:03.792 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/style.css.map - - 
+ ]2022-11-24 18:30:03.794 +02:00 [INF Sending file. Request path: '/assets/css/style.css.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\css\style.css.map' 
+ ]2022-11-24 18:30:03.794 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/style.css.map - - - 200 11116 text/plain 1.3264ms 
+ ]2022-11-24 18:30:03.795 +02:00 [INF Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map' 
+ ]2022-11-24 18:30:03.797 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/popper.min.js.map - - 
+ ]2022-11-24 18:30:03.798 +02:00 [INF Sending file. Request path: '/assets/js/popper.min.js.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\js\popper.min.js.map' 
+ ]2022-11-24 18:30:03.803 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/popper.min.js.map - - - 200 122908 text/plain 6.4073ms 
+ ]2022-11-24 18:30:03.809 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/bootstrap.min.js.map - - 
+ ]2022-11-24 18:30:03.809 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css.map - - - 200 431289 text/plain 16.4013ms 
+ ]2022-11-24 18:30:03.812 +02:00 [INF Sending file. Request path: '/assets/js/bootstrap.min.js.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\js\bootstrap.min.js.map' 
+ ]2022-11-24 18:30:03.818 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/bootstrap.min.js.map - - - 200 176087 text/plain 8.9110ms 
+ ]2022-11-24 18:30:17.003 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/ - - 
+ ]2022-11-24 18:30:17.006 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-11-24 18:30:17.007 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-11-24 18:30:17.008 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnGetAsync - ModelState is "Valid" 
+ ]2022-11-24 18:30:17.008 +02:00 [INF AuthenticationScheme: Identity.External signed out. 
+ ]2022-11-24 18:30:17.008 +02:00 [INF Executed handler method OnGetAsync, returned result . 
+ ]2022-11-24 18:30:17.008 +02:00 [INF Executing an implicit handler method - ModelState is "Valid" 
+ ]2022-11-24 18:30:17.008 +02:00 [INF Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-11-24 18:30:17.014 +02:00 [INF Executed page /Index in 7.5951ms 
+ ]2022-11-24 18:30:17.014 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-11-24 18:30:17.016 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/ - - - 200 - text/html;+charset=utf-8 12.7056ms 
+ ]2022-11-24 18:30:17.030 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-11-24 18:30:17.030 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/style.css - - 
+ ]2022-11-24 18:30:17.032 +02:00 [INF Sending file. Request path: '/assets/css/style.css'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\css\style.css' 
+ ]2022-11-24 18:30:17.032 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/style.css - - - 200 18415 text/css 1.9403ms 
+ ]2022-11-24 18:30:17.039 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-11-24 18:30:17.040 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 0.5900ms 
+ ]2022-11-24 18:30:17.059 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 28.8453ms 
+ ]2022-11-24 18:30:17.069 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/popper.min.js.map - - 
+ ]2022-11-24 18:30:17.070 +02:00 [INF Sending file. Request path: '/assets/js/popper.min.js.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\js\popper.min.js.map' 
+ ]2022-11-24 18:30:17.073 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/popper.min.js.map - - - 200 122908 text/plain 4.6253ms 
+ ]2022-11-24 18:30:17.078 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/bootstrap.min.js.map - - 
+ ]2022-11-24 18:30:17.079 +02:00 [INF Sending file. Request path: '/assets/js/bootstrap.min.js.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\js\bootstrap.min.js.map' 
+ ]2022-11-24 18:30:17.084 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/bootstrap.min.js.map - - - 200 176087 text/plain 6.6961ms 
+ ]2022-11-24 18:30:17.102 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/style.css.map - - 
+ ]2022-11-24 18:30:17.102 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css.map - - 
+ ]2022-11-24 18:30:17.103 +02:00 [INF Sending file. Request path: '/assets/css/style.css.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\css\style.css.map' 
+ ]2022-11-24 18:30:17.103 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/style.css.map - - - 200 11116 text/plain 1.1035ms 
+ ]2022-11-24 18:30:17.104 +02:00 [INF Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map' 
+ ]2022-11-24 18:30:17.116 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css.map - - - 200 431289 text/plain 14.2090ms 
+ ]2022-11-24 18:30:26.089 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/ - - 
+ ]2022-11-24 18:30:26.090 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-11-24 18:30:26.090 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-11-24 18:30:26.091 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnGetAsync - ModelState is "Valid" 
+ ]2022-11-24 18:30:26.091 +02:00 [INF AuthenticationScheme: Identity.External signed out. 
+ ]2022-11-24 18:30:26.091 +02:00 [INF Executed handler method OnGetAsync, returned result . 
+ ]2022-11-24 18:30:26.091 +02:00 [INF Executing an implicit handler method - ModelState is "Valid" 
+ ]2022-11-24 18:30:26.091 +02:00 [INF Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-11-24 18:30:26.095 +02:00 [INF Executed page /Index in 4.9132ms 
+ ]2022-11-24 18:30:26.095 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-11-24 18:30:26.098 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/ - - - 200 - text/html;+charset=utf-8 8.5584ms 
+ ]2022-11-24 18:30:26.114 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/style.css - - 
+ ]2022-11-24 18:30:26.114 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-11-24 18:30:26.115 +02:00 [INF The file /assets/css/style.css was not modified 
+ ]2022-11-24 18:30:26.115 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/style.css - - - 304 - text/css 1.3112ms 
+ ]2022-11-24 18:30:26.121 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-11-24 18:30:26.122 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 0.7363ms 
+ ]2022-11-24 18:30:26.143 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 28.7091ms 
+ ]2022-11-24 18:30:26.146 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/popper.min.js.map - - 
+ ]2022-11-24 18:30:26.147 +02:00 [INF Sending file. Request path: '/assets/js/popper.min.js.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\js\popper.min.js.map' 
+ ]2022-11-24 18:30:26.151 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/popper.min.js.map - - - 200 122908 text/plain 5.0494ms 
+ ]2022-11-24 18:30:26.160 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/bootstrap.min.js.map - - 
+ ]2022-11-24 18:30:26.162 +02:00 [INF Sending file. Request path: '/assets/js/bootstrap.min.js.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\js\bootstrap.min.js.map' 
+ ]2022-11-24 18:30:26.167 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/bootstrap.min.js.map - - - 200 176087 text/plain 6.9647ms 
+ ]2022-11-24 18:30:26.187 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css.map - - 
+ ]2022-11-24 18:30:26.187 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/style.css.map - - 
+ ]2022-11-24 18:30:26.189 +02:00 [INF Sending file. Request path: '/assets/css/style.css.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\css\style.css.map' 
+ ]2022-11-24 18:30:26.189 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/style.css.map - - - 200 11116 text/plain 1.6180ms 
+ ]2022-11-24 18:30:26.189 +02:00 [INF Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map' 
+ ]2022-11-24 18:30:26.201 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css.map - - - 200 431289 text/plain 13.6372ms 
+ ]2022-11-24 18:30:33.648 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/ - - 
+ ]2022-11-24 18:30:33.648 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-11-24 18:30:33.648 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-11-24 18:30:33.649 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnGetAsync - ModelState is "Valid" 
+ ]2022-11-24 18:30:33.649 +02:00 [INF AuthenticationScheme: Identity.External signed out. 
+ ]2022-11-24 18:30:33.649 +02:00 [INF Executed handler method OnGetAsync, returned result . 
+ ]2022-11-24 18:30:33.649 +02:00 [INF Executing an implicit handler method - ModelState is "Valid" 
+ ]2022-11-24 18:30:33.649 +02:00 [INF Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-11-24 18:30:33.652 +02:00 [INF Executed page /Index in 3.8439ms 
+ ]2022-11-24 18:30:33.653 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-11-24 18:30:33.655 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/ - - - 200 - text/html;+charset=utf-8 7.4056ms 
+ ]2022-11-24 18:30:33.671 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-11-24 18:30:33.671 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/style.css - - 
+ ]2022-11-24 18:30:33.672 +02:00 [INF The file /assets/css/style.css was not modified 
+ ]2022-11-24 18:30:33.672 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/style.css - - - 304 - text/css 0.5145ms 
+ ]2022-11-24 18:30:33.679 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-11-24 18:30:33.680 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 0.8336ms 
+ ]2022-11-24 18:30:33.700 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 28.4407ms 
+ ]2022-11-24 18:30:33.709 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/popper.min.js.map - - 
+ ]2022-11-24 18:30:33.711 +02:00 [INF Sending file. Request path: '/assets/js/popper.min.js.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\js\popper.min.js.map' 
+ ]2022-11-24 18:30:33.714 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/popper.min.js.map - - - 200 122908 text/plain 4.9240ms 
+ ]2022-11-24 18:30:33.720 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/bootstrap.min.js.map - - 
+ ]2022-11-24 18:30:33.721 +02:00 [INF Sending file. Request path: '/assets/js/bootstrap.min.js.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\js\bootstrap.min.js.map' 
+ ]2022-11-24 18:30:33.727 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/bootstrap.min.js.map - - - 200 176087 text/plain 7.6989ms 
+ ]2022-11-24 18:30:33.756 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css.map - - 
+ ]2022-11-24 18:30:33.756 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/style.css.map - - 
+ ]2022-11-24 18:30:33.757 +02:00 [INF Sending file. Request path: '/assets/css/style.css.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\css\style.css.map' 
+ ]2022-11-24 18:30:33.757 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/style.css.map - - - 200 11116 text/plain 1.0491ms 
+ ]2022-11-24 18:30:33.758 +02:00 [INF Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map' 
+ ]2022-11-24 18:30:33.769 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css.map - - - 200 431289 text/plain 12.9507ms 
+ ]2022-11-24 18:30:44.517 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/ - - 
+ ]2022-11-24 18:30:44.517 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-11-24 18:30:44.518 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-11-24 18:30:44.518 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnGetAsync - ModelState is "Valid" 
+ ]2022-11-24 18:30:44.518 +02:00 [INF AuthenticationScheme: Identity.External signed out. 
+ ]2022-11-24 18:30:44.518 +02:00 [INF Executed handler method OnGetAsync, returned result . 
+ ]2022-11-24 18:30:44.518 +02:00 [INF Executing an implicit handler method - ModelState is "Valid" 
+ ]2022-11-24 18:30:44.518 +02:00 [INF Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-11-24 18:30:44.521 +02:00 [INF Executed page /Index in 3.4663ms 
+ ]2022-11-24 18:30:44.521 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-11-24 18:30:44.524 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/ - - - 200 - text/html;+charset=utf-8 6.8251ms 
+ ]2022-11-24 18:30:44.538 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/style.css - - 
+ ]2022-11-24 18:30:44.538 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-11-24 18:30:44.538 +02:00 [INF The file /assets/css/style.css was not modified 
+ ]2022-11-24 18:30:44.538 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/style.css - - - 304 - text/css 0.4717ms 
+ ]2022-11-24 18:30:44.548 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-11-24 18:30:44.548 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 0.6073ms 
+ ]2022-11-24 18:30:44.568 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 30.5624ms 
+ ]2022-11-24 18:30:44.607 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/popper.min.js.map - - 
+ ]2022-11-24 18:30:44.607 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/bootstrap.min.js.map - - 
+ ]2022-11-24 18:30:44.609 +02:00 [INF Sending file. Request path: '/assets/js/popper.min.js.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\js\popper.min.js.map' 
+ ]2022-11-24 18:30:44.609 +02:00 [INF Sending file. Request path: '/assets/js/bootstrap.min.js.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\js\bootstrap.min.js.map' 
+ ]2022-11-24 18:30:44.613 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/popper.min.js.map - - - 200 122908 text/plain 5.3711ms 
+ ]2022-11-24 18:30:44.614 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/style.css.map - - 
+ ]2022-11-24 18:30:44.615 +02:00 [INF Sending file. Request path: '/assets/css/style.css.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\css\style.css.map' 
+ ]2022-11-24 18:30:44.615 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/style.css.map - - - 200 11116 text/plain 1.0056ms 
+ ]2022-11-24 18:30:44.615 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/bootstrap.min.js.map - - - 200 176087 text/plain 8.0399ms 
+ ]2022-11-24 18:30:44.616 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css.map - - 
+ ]2022-11-24 18:30:44.619 +02:00 [INF Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map' 
+ ]2022-11-24 18:30:44.632 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css.map - - - 200 431289 text/plain 15.1654ms 
+ ]2022-11-24 18:30:48.088 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/ - - 
+ ]2022-11-24 18:30:48.089 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-11-24 18:30:48.089 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-11-24 18:30:48.089 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnGetAsync - ModelState is "Valid" 
+ ]2022-11-24 18:30:48.089 +02:00 [INF AuthenticationScheme: Identity.External signed out. 
+ ]2022-11-24 18:30:48.090 +02:00 [INF Executed handler method OnGetAsync, returned result . 
+ ]2022-11-24 18:30:48.090 +02:00 [INF Executing an implicit handler method - ModelState is "Valid" 
+ ]2022-11-24 18:30:48.090 +02:00 [INF Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-11-24 18:30:48.093 +02:00 [INF Executed page /Index in 3.7767ms 
+ ]2022-11-24 18:30:48.093 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-11-24 18:30:48.095 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/ - - - 200 - text/html;+charset=utf-8 7.0003ms 
+ ]2022-11-24 18:30:48.108 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/style.css - - 
+ ]2022-11-24 18:30:48.108 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-11-24 18:30:48.108 +02:00 [INF The file /assets/css/style.css was not modified 
+ ]2022-11-24 18:30:48.109 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/style.css - - - 304 - text/css 0.4436ms 
+ ]2022-11-24 18:30:48.116 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-11-24 18:30:48.117 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 0.7932ms 
+ ]2022-11-24 18:30:48.138 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 30.2253ms 
+ ]2022-11-24 18:30:48.162 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css.map - - 
+ ]2022-11-24 18:30:48.162 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/style.css.map - - 
+ ]2022-11-24 18:30:48.163 +02:00 [INF Sending file. Request path: '/assets/css/style.css.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\css\style.css.map' 
+ ]2022-11-24 18:30:48.163 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/style.css.map - - - 200 11116 text/plain 1.6328ms 
+ ]2022-11-24 18:30:48.164 +02:00 [INF Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map' 
+ ]2022-11-24 18:30:48.170 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/popper.min.js.map - - 
+ ]2022-11-24 18:30:48.173 +02:00 [INF Sending file. Request path: '/assets/js/popper.min.js.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\js\popper.min.js.map' 
+ ]2022-11-24 18:30:48.174 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/bootstrap.min.js.map - - 
+ ]2022-11-24 18:30:48.176 +02:00 [INF Sending file. Request path: '/assets/js/bootstrap.min.js.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\js\bootstrap.min.js.map' 
+ ]2022-11-24 18:30:48.183 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css.map - - - 200 431289 text/plain 21.5156ms 
+ ]2022-11-24 18:30:48.183 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/popper.min.js.map - - - 200 122908 text/plain 12.7976ms 
+ ]2022-11-24 18:30:48.185 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/bootstrap.min.js.map - - - 200 176087 text/plain 10.0908ms 
+ ]2022-11-24 18:30:49.067 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/ - - 
+ ]2022-11-24 18:30:49.068 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-11-24 18:30:49.068 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-11-24 18:30:49.068 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnGetAsync - ModelState is "Valid" 
+ ]2022-11-24 18:30:49.068 +02:00 [INF AuthenticationScheme: Identity.External signed out. 
+ ]2022-11-24 18:30:49.068 +02:00 [INF Executed handler method OnGetAsync, returned result . 
+ ]2022-11-24 18:30:49.068 +02:00 [INF Executing an implicit handler method - ModelState is "Valid" 
+ ]2022-11-24 18:30:49.068 +02:00 [INF Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-11-24 18:30:49.071 +02:00 [INF Executed page /Index in 2.8034ms 
+ ]2022-11-24 18:30:49.071 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-11-24 18:30:49.072 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/ - - - 200 - text/html;+charset=utf-8 5.3170ms 
+ ]2022-11-24 18:30:49.090 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-11-24 18:30:49.096 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-11-24 18:30:49.097 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 0.7419ms 
+ ]2022-11-24 18:30:49.124 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 33.8923ms 
+ ]2022-11-24 18:30:49.143 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css.map - - 
+ ]2022-11-24 18:30:49.144 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/style.css.map - - 
+ ]2022-11-24 18:30:49.145 +02:00 [INF Sending file. Request path: '/assets/css/style.css.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\css\style.css.map' 
+ ]2022-11-24 18:30:49.146 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/style.css.map - - - 200 11116 text/plain 2.0010ms 
+ ]2022-11-24 18:30:49.146 +02:00 [INF Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map' 
+ ]2022-11-24 18:30:49.148 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/popper.min.js.map - - 
+ ]2022-11-24 18:30:49.149 +02:00 [INF Sending file. Request path: '/assets/js/popper.min.js.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\js\popper.min.js.map' 
+ ]2022-11-24 18:30:49.155 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/popper.min.js.map - - - 200 122908 text/plain 6.6376ms 
+ ]2022-11-24 18:30:49.161 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/bootstrap.min.js.map - - 
+ ]2022-11-24 18:30:49.162 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css.map - - - 200 431289 text/plain 18.7417ms 
+ ]2022-11-24 18:30:49.164 +02:00 [INF Sending file. Request path: '/assets/js/bootstrap.min.js.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\js\bootstrap.min.js.map' 
+ ]2022-11-24 18:30:49.172 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/bootstrap.min.js.map - - - 200 176087 text/plain 10.5421ms 
+ ]2022-11-24 18:30:49.445 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/ - - 
+ ]2022-11-24 18:30:49.446 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-11-24 18:30:49.446 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-11-24 18:30:49.447 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnGetAsync - ModelState is "Valid" 
+ ]2022-11-24 18:30:49.447 +02:00 [INF AuthenticationScheme: Identity.External signed out. 
+ ]2022-11-24 18:30:49.447 +02:00 [INF Executed handler method OnGetAsync, returned result . 
+ ]2022-11-24 18:30:49.447 +02:00 [INF Executing an implicit handler method - ModelState is "Valid" 
+ ]2022-11-24 18:30:49.447 +02:00 [INF Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-11-24 18:30:49.452 +02:00 [INF Executed page /Index in 5.5168ms 
+ ]2022-11-24 18:30:49.452 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-11-24 18:30:49.454 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/ - - - 200 - text/html;+charset=utf-8 8.7380ms 
+ ]2022-11-24 18:30:49.474 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-11-24 18:30:49.474 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-11-24 18:30:49.475 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 0.7621ms 
+ ]2022-11-24 18:30:49.509 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 35.3760ms 
+ ]2022-11-24 18:30:49.542 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css.map - - 
+ ]2022-11-24 18:30:49.542 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/style.css.map - - 
+ ]2022-11-24 18:30:49.543 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/popper.min.js.map - - 
+ ]2022-11-24 18:30:49.543 +02:00 [INF Sending file. Request path: '/assets/css/style.css.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\css\style.css.map' 
+ ]2022-11-24 18:30:49.543 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/style.css.map - - - 200 11116 text/plain 1.4832ms 
+ ]2022-11-24 18:30:49.545 +02:00 [INF Sending file. Request path: '/assets/js/popper.min.js.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\js\popper.min.js.map' 
+ ]2022-11-24 18:30:49.545 +02:00 [INF Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map' 
+ ]2022-11-24 18:30:49.547 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/bootstrap.min.js.map - - 
+ ]2022-11-24 18:30:49.549 +02:00 [INF Sending file. Request path: '/assets/js/bootstrap.min.js.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\js\bootstrap.min.js.map' 
+ ]2022-11-24 18:30:49.550 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/popper.min.js.map - - - 200 122908 text/plain 7.7194ms 
+ ]2022-11-24 18:30:49.555 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/bootstrap.min.js.map - - - 200 176087 text/plain 8.1884ms 
+ ]2022-11-24 18:30:49.559 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css.map - - - 200 431289 text/plain 17.0774ms 
+ ]2022-11-24 18:30:49.658 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/ - - 
+ ]2022-11-24 18:30:49.659 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-11-24 18:30:49.659 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-11-24 18:30:49.660 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnGetAsync - ModelState is "Valid" 
+ ]2022-11-24 18:30:49.660 +02:00 [INF AuthenticationScheme: Identity.External signed out. 
+ ]2022-11-24 18:30:49.660 +02:00 [INF Executed handler method OnGetAsync, returned result . 
+ ]2022-11-24 18:30:49.660 +02:00 [INF Executing an implicit handler method - ModelState is "Valid" 
+ ]2022-11-24 18:30:49.660 +02:00 [INF Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-11-24 18:30:49.664 +02:00 [INF Executed page /Index in 4.4883ms 
+ ]2022-11-24 18:30:49.664 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-11-24 18:30:49.665 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/ - - - 200 - text/html;+charset=utf-8 7.0790ms 
+ ]2022-11-24 18:30:49.676 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-11-24 18:30:49.676 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-11-24 18:30:49.677 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 0.8038ms 
+ ]2022-11-24 18:30:49.706 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 29.7398ms 
+ ]2022-11-24 18:30:49.730 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/style.css.map - - 
+ ]2022-11-24 18:30:49.732 +02:00 [INF Sending file. Request path: '/assets/css/style.css.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\css\style.css.map' 
+ ]2022-11-24 18:30:49.732 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/style.css.map - - - 200 11116 text/plain 1.6776ms 
+ ]2022-11-24 18:30:49.733 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css.map - - 
+ ]2022-11-24 18:30:49.733 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/popper.min.js.map - - 
+ ]2022-11-24 18:30:49.734 +02:00 [INF Sending file. Request path: '/assets/js/popper.min.js.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\js\popper.min.js.map' 
+ ]2022-11-24 18:30:49.735 +02:00 [INF Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map' 
+ ]2022-11-24 18:30:49.739 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/popper.min.js.map - - - 200 122908 text/plain 6.2845ms 
+ ]2022-11-24 18:30:49.741 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/bootstrap.min.js.map - - 
+ ]2022-11-24 18:30:49.743 +02:00 [INF Sending file. Request path: '/assets/js/bootstrap.min.js.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\js\bootstrap.min.js.map' 
+ ]2022-11-24 18:30:49.750 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/bootstrap.min.js.map - - - 200 176087 text/plain 9.2077ms 
+ ]2022-11-24 18:30:49.752 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css.map - - - 200 431289 text/plain 18.7937ms 
+ ]2022-11-24 18:30:49.833 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/ - - 
+ ]2022-11-24 18:30:49.834 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-11-24 18:30:49.834 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-11-24 18:30:49.834 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnGetAsync - ModelState is "Valid" 
+ ]2022-11-24 18:30:49.835 +02:00 [INF AuthenticationScheme: Identity.External signed out. 
+ ]2022-11-24 18:30:49.835 +02:00 [INF Executed handler method OnGetAsync, returned result . 
+ ]2022-11-24 18:30:49.835 +02:00 [INF Executing an implicit handler method - ModelState is "Valid" 
+ ]2022-11-24 18:30:49.835 +02:00 [INF Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-11-24 18:30:49.838 +02:00 [INF Executed page /Index in 3.7187ms 
+ ]2022-11-24 18:30:49.838 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-11-24 18:30:49.841 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/ - - - 200 - text/html;+charset=utf-8 7.3848ms 
+ ]2022-11-24 18:30:49.910 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-11-24 18:30:49.910 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-11-24 18:30:49.911 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 0.8235ms 
+ ]2022-11-24 18:30:49.942 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 31.9317ms 
+ ]2022-11-24 18:30:49.963 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/style.css.map - - 
+ ]2022-11-24 18:30:49.965 +02:00 [INF Sending file. Request path: '/assets/css/style.css.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\css\style.css.map' 
+ ]2022-11-24 18:30:49.965 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/style.css.map - - - 200 11116 text/plain 1.5811ms 
+ ]2022-11-24 18:30:49.966 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css.map - - 
+ ]2022-11-24 18:30:49.966 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/popper.min.js.map - - 
+ ]2022-11-24 18:30:49.967 +02:00 [INF Sending file. Request path: '/assets/js/popper.min.js.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\js\popper.min.js.map' 
+ ]2022-11-24 18:30:49.967 +02:00 [INF Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map' 
+ ]2022-11-24 18:30:49.971 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/popper.min.js.map - - - 200 122908 text/plain 5.3316ms 
+ ]2022-11-24 18:30:49.973 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/bootstrap.min.js.map - - 
+ ]2022-11-24 18:30:49.975 +02:00 [INF Sending file. Request path: '/assets/js/bootstrap.min.js.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\js\bootstrap.min.js.map' 
+ ]2022-11-24 18:30:49.980 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css.map - - - 200 431289 text/plain 14.3302ms 
+ ]2022-11-24 18:30:49.982 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/bootstrap.min.js.map - - - 200 176087 text/plain 8.9594ms 
+ ]2022-11-24 18:30:50.021 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/ - - 
+ ]2022-11-24 18:30:50.022 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-11-24 18:30:50.022 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-11-24 18:30:50.022 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnGetAsync - ModelState is "Valid" 
+ ]2022-11-24 18:30:50.022 +02:00 [INF AuthenticationScheme: Identity.External signed out. 
+ ]2022-11-24 18:30:50.022 +02:00 [INF Executed handler method OnGetAsync, returned result . 
+ ]2022-11-24 18:30:50.022 +02:00 [INF Executing an implicit handler method - ModelState is "Valid" 
+ ]2022-11-24 18:30:50.022 +02:00 [INF Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-11-24 18:30:50.025 +02:00 [INF Executed page /Index in 3.2454ms 
+ ]2022-11-24 18:30:50.025 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-11-24 18:30:50.026 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/ - - - 200 - text/html;+charset=utf-8 5.4673ms 
+ ]2022-11-24 18:30:50.066 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-11-24 18:30:50.066 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-11-24 18:30:50.067 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 0.6219ms 
+ ]2022-11-24 18:30:50.095 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 28.6374ms 
+ ]2022-11-24 18:30:50.118 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/style.css.map - - 
+ ]2022-11-24 18:30:50.119 +02:00 [INF Sending file. Request path: '/assets/css/style.css.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\css\style.css.map' 
+ ]2022-11-24 18:30:50.119 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css.map - - 
+ ]2022-11-24 18:30:50.119 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/style.css.map - - - 200 11116 text/plain 1.0209ms 
+ ]2022-11-24 18:30:50.121 +02:00 [INF Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map' 
+ ]2022-11-24 18:30:50.133 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css.map - - - 200 431289 text/plain 14.2491ms 
+ ]2022-11-24 18:30:50.144 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/popper.min.js.map - - 
+ ]2022-11-24 18:30:50.145 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/bootstrap.min.js.map - - 
+ ]2022-11-24 18:30:50.146 +02:00 [INF Sending file. Request path: '/assets/js/popper.min.js.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\js\popper.min.js.map' 
+ ]2022-11-24 18:30:50.148 +02:00 [INF Sending file. Request path: '/assets/js/bootstrap.min.js.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\js\bootstrap.min.js.map' 
+ ]2022-11-24 18:30:50.151 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/popper.min.js.map - - - 200 122908 text/plain 7.0199ms 
+ ]2022-11-24 18:30:50.154 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/bootstrap.min.js.map - - - 200 176087 text/plain 8.8222ms 
+ ]2022-11-24 18:30:50.277 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/ - - 
+ ]2022-11-24 18:30:50.277 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-11-24 18:30:50.277 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-11-24 18:30:50.278 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnGetAsync - ModelState is "Valid" 
+ ]2022-11-24 18:30:50.278 +02:00 [INF AuthenticationScheme: Identity.External signed out. 
+ ]2022-11-24 18:30:50.278 +02:00 [INF Executed handler method OnGetAsync, returned result . 
+ ]2022-11-24 18:30:50.278 +02:00 [INF Executing an implicit handler method - ModelState is "Valid" 
+ ]2022-11-24 18:30:50.278 +02:00 [INF Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-11-24 18:30:50.281 +02:00 [INF Executed page /Index in 3.5086ms 
+ ]2022-11-24 18:30:50.281 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-11-24 18:30:50.282 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/ - - - 200 - text/html;+charset=utf-8 5.6338ms 
+ ]2022-11-24 18:30:50.292 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-11-24 18:30:50.292 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-11-24 18:30:50.293 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 0.6762ms 
+ ]2022-11-24 18:30:50.322 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 29.4963ms 
+ ]2022-11-24 18:30:50.345 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/style.css.map - - 
+ ]2022-11-24 18:30:50.346 +02:00 [INF Sending file. Request path: '/assets/css/style.css.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\css\style.css.map' 
+ ]2022-11-24 18:30:50.347 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/style.css.map - - - 200 11116 text/plain 1.5754ms 
+ ]2022-11-24 18:30:50.347 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css.map - - 
+ ]2022-11-24 18:30:50.347 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/popper.min.js.map - - 
+ ]2022-11-24 18:30:50.348 +02:00 [INF Sending file. Request path: '/assets/js/popper.min.js.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\js\popper.min.js.map' 
+ ]2022-11-24 18:30:50.349 +02:00 [INF Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map' 
+ ]2022-11-24 18:30:50.352 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/popper.min.js.map - - - 200 122908 text/plain 5.3425ms 
+ ]2022-11-24 18:30:50.355 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/bootstrap.min.js.map - - 
+ ]2022-11-24 18:30:50.356 +02:00 [INF Sending file. Request path: '/assets/js/bootstrap.min.js.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\js\bootstrap.min.js.map' 
+ ]2022-11-24 18:30:50.361 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css.map - - - 200 431289 text/plain 14.0825ms 
+ ]2022-11-24 18:30:50.365 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/bootstrap.min.js.map - - - 200 176087 text/plain 9.9823ms 
+ ]2022-11-24 18:30:50.422 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/ - - 
+ ]2022-11-24 18:30:50.424 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-11-24 18:30:50.424 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-11-24 18:30:50.424 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnGetAsync - ModelState is "Valid" 
+ ]2022-11-24 18:30:50.425 +02:00 [INF AuthenticationScheme: Identity.External signed out. 
+ ]2022-11-24 18:30:50.425 +02:00 [INF Executed handler method OnGetAsync, returned result . 
+ ]2022-11-24 18:30:50.425 +02:00 [INF Executing an implicit handler method - ModelState is "Valid" 
+ ]2022-11-24 18:30:50.425 +02:00 [INF Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-11-24 18:30:50.435 +02:00 [INF Executed page /Index in 11.1807ms 
+ ]2022-11-24 18:30:50.435 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-11-24 18:30:50.445 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/ - - - 200 - text/html;+charset=utf-8 22.2871ms 
+ ]2022-11-24 18:30:50.476 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-11-24 18:30:50.485 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-11-24 18:30:50.486 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 1.0285ms 
+ ]2022-11-24 18:30:50.509 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 33.3564ms 
+ ]2022-11-24 18:30:50.529 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/style.css.map - - 
+ ]2022-11-24 18:30:50.529 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css.map - - 
+ ]2022-11-24 18:30:50.529 +02:00 [INF Sending file. Request path: '/assets/css/style.css.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\css\style.css.map' 
+ ]2022-11-24 18:30:50.530 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/style.css.map - - - 200 11116 text/plain 1.0476ms 
+ ]2022-11-24 18:30:50.530 +02:00 [INF Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map' 
+ ]2022-11-24 18:30:50.541 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css.map - - - 200 431289 text/plain 12.6486ms 
+ ]2022-11-24 18:30:50.588 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/popper.min.js.map - - 
+ ]2022-11-24 18:30:50.588 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/ - - 
+ ]2022-11-24 18:30:50.588 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/bootstrap.min.js.map - - 
+ ]2022-11-24 18:30:50.588 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-11-24 18:30:50.588 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-11-24 18:30:50.589 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnGetAsync - ModelState is "Valid" 
+ ]2022-11-24 18:30:50.589 +02:00 [INF Sending file. Request path: '/assets/js/popper.min.js.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\js\popper.min.js.map' 
+ ]2022-11-24 18:30:50.589 +02:00 [INF AuthenticationScheme: Identity.External signed out. 
+ ]2022-11-24 18:30:50.589 +02:00 [INF Executed handler method OnGetAsync, returned result . 
+ ]2022-11-24 18:30:50.589 +02:00 [INF Executing an implicit handler method - ModelState is "Valid" 
+ ]2022-11-24 18:30:50.589 +02:00 [INF Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-11-24 18:30:50.589 +02:00 [INF Sending file. Request path: '/assets/js/bootstrap.min.js.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\js\bootstrap.min.js.map' 
+ ]2022-11-24 18:30:50.592 +02:00 [INF Executed page /Index in 3.1296ms 
+ ]2022-11-24 18:30:50.592 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-11-24 18:30:50.593 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/ - - - 200 - text/html;+charset=utf-8 5.7193ms 
+ ]2022-11-24 18:30:50.594 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/popper.min.js.map - - - 200 122908 text/plain 6.4698ms 
+ ]2022-11-24 18:30:50.597 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/bootstrap.min.js.map - - - 200 176087 text/plain 9.3355ms 
+ ]2022-11-24 18:30:50.625 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-11-24 18:30:50.625 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-11-24 18:30:50.627 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 1.3882ms 
+ ]2022-11-24 18:30:50.655 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 29.9321ms 
+ ]2022-11-24 18:30:50.690 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/style.css.map - - 
+ ]2022-11-24 18:30:50.690 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css.map - - 
+ ]2022-11-24 18:30:50.691 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/bootstrap.min.js.map - - 
+ ]2022-11-24 18:30:50.691 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/popper.min.js.map - - 
+ ]2022-11-24 18:30:50.692 +02:00 [INF Sending file. Request path: '/assets/css/style.css.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\css\style.css.map' 
+ ]2022-11-24 18:30:50.692 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/style.css.map - - - 200 11116 text/plain 2.1452ms 
+ ]2022-11-24 18:30:50.693 +02:00 [INF Sending file. Request path: '/assets/js/popper.min.js.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\js\popper.min.js.map' 
+ ]2022-11-24 18:30:50.699 +02:00 [INF Sending file. Request path: '/assets/js/bootstrap.min.js.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\js\bootstrap.min.js.map' 
+ ]2022-11-24 18:30:50.700 +02:00 [INF Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map' 
+ ]2022-11-24 18:30:50.701 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/popper.min.js.map - - - 200 122908 text/plain 9.9546ms 
+ ]2022-11-24 18:30:50.706 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/bootstrap.min.js.map - - - 200 176087 text/plain 15.0906ms 
+ ]2022-11-24 18:30:50.715 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css.map - - - 200 431289 text/plain 25.3073ms 
+ ]2022-11-24 18:31:38.395 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/ - - 
+ ]2022-11-24 18:31:38.397 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-11-24 18:31:38.397 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-11-24 18:31:38.397 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnGetAsync - ModelState is "Valid" 
+ ]2022-11-24 18:31:38.398 +02:00 [INF AuthenticationScheme: Identity.External signed out. 
+ ]2022-11-24 18:31:38.398 +02:00 [INF Executed handler method OnGetAsync, returned result . 
+ ]2022-11-24 18:31:38.398 +02:00 [INF Executing an implicit handler method - ModelState is "Valid" 
+ ]2022-11-24 18:31:38.398 +02:00 [INF Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-11-24 18:31:38.403 +02:00 [INF Executed page /Index in 5.7221ms 
+ ]2022-11-24 18:31:38.403 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-11-24 18:31:38.405 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/ - - - 200 - text/html;+charset=utf-8 9.8322ms 
+ ]2022-11-24 18:31:38.426 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/style.css - - 
+ ]2022-11-24 18:31:38.426 +02:00 [INF The file /assets/css/style.css was not modified 
+ ]2022-11-24 18:31:38.426 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-11-24 18:31:38.426 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/style.css - - - 304 - text/css 0.3707ms 
+ ]2022-11-24 18:31:38.435 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-11-24 18:31:38.435 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 0.8399ms 
+ ]2022-11-24 18:31:38.457 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 30.2129ms 
+ ]2022-11-24 18:31:38.468 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/popper.min.js.map - - 
+ ]2022-11-24 18:31:38.469 +02:00 [INF Sending file. Request path: '/assets/js/popper.min.js.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\js\popper.min.js.map' 
+ ]2022-11-24 18:31:38.473 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/popper.min.js.map - - - 200 122908 text/plain 5.0216ms 
+ ]2022-11-24 18:31:38.475 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/bootstrap.min.js.map - - 
+ ]2022-11-24 18:31:38.476 +02:00 [INF Sending file. Request path: '/assets/js/bootstrap.min.js.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\js\bootstrap.min.js.map' 
+ ]2022-11-24 18:31:38.483 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/bootstrap.min.js.map - - - 200 176087 text/plain 7.8584ms 
+ ]2022-11-24 18:31:38.501 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css.map - - 
+ ]2022-11-24 18:31:38.501 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/style.css.map - - 
+ ]2022-11-24 18:31:38.502 +02:00 [INF Sending file. Request path: '/assets/css/style.css.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\assets\css\style.css.map' 
+ ]2022-11-24 18:31:38.502 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/style.css.map - - - 200 11116 text/plain 1.0780ms 
+ ]2022-11-24 18:31:38.504 +02:00 [INF Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\Ris2022\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map' 
+ ]2022-11-24 18:31:38.517 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css.map - - - 200 431289 text/plain 15.3972ms 
+ ]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      

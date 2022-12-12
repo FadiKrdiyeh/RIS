@@ -1,0 +1,141 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <NullableDbContextOptions>disable</NullableDbContextOptions>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Reports\**" />
+    <Compile Remove="Views\Accounts\**" />
+    <Compile Remove="Views\Orders1\**" />
+    <Content Remove="Reports\**" />
+    <Content Remove="Views\Accounts\**" />
+    <Content Remove="Views\Orders1\**" />
+    <EmbeddedResource Remove="Reports\**" />
+    <EmbeddedResource Remove="Views\Accounts\**" />
+    <EmbeddedResource Remove="Views\Orders1\**" />
+    <None Remove="Reports\**" />
+    <None Remove="Views\Accounts\**" />
+    <None Remove="Views\Orders1\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\AccountsController.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Views\Acceptancetypes\Create.cshtml" />
+    <None Include="Views\Acceptancetypes\Delete.cshtml" />
+    <None Include="Views\Acceptancetypes\Details.cshtml" />
+    <None Include="Views\Acceptancetypes\Edit.cshtml" />
+    <None Include="Views\Acceptancetypes\Index.cshtml" />
+    <None Include="Views\Clinics\Create.cshtml" />
+    <None Include="Views\Clinics\Delete.cshtml" />
+    <None Include="Views\Clinics\Details.cshtml" />
+    <None Include="Views\Clinics\Edit.cshtml" />
+    <None Include="Views\Clinics\Index.cshtml" />
+    <None Include="Views\Departments\Create.cshtml" />
+    <None Include="Views\Departments\Delete.cshtml" />
+    <None Include="Views\Departments\Details.cshtml" />
+    <None Include="Views\Departments\Edit.cshtml" />
+    <None Include="Views\Departments\Index.cshtml" />
+    <None Include="Views\Modalities\Create.cshtml" />
+    <None Include="Views\Modalities\Delete.cshtml" />
+    <None Include="Views\Modalities\Details.cshtml" />
+    <None Include="Views\Modalities\Edit.cshtml" />
+    <None Include="Views\Modalities\Index.cshtml" />
+    <None Include="Views\Modalitytypes\Create.cshtml" />
+    <None Include="Views\Modalitytypes\Delete.cshtml" />
+    <None Include="Views\Modalitytypes\Details.cshtml" />
+    <None Include="Views\Modalitytypes\Edit.cshtml" />
+    <None Include="Views\Modalitytypes\Index.cshtml" />
+    <None Include="Views\Patients\Create.cshtml" />
+    <None Include="Views\Patients\Delete.cshtml" />
+    <None Include="Views\Patients\Details.cshtml" />
+    <None Include="Views\Patients\Edit.cshtml" />
+    <None Include="Views\Patients\Index.cshtml" />
+    <None Include="Views\Paytypes\Create.cshtml" />
+    <None Include="Views\Paytypes\Delete.cshtml" />
+    <None Include="Views\Paytypes\Details.cshtml" />
+    <None Include="Views\Paytypes\Edit.cshtml" />
+    <None Include="Views\Paytypes\Index.cshtml" />
+    <None Include="Views\Proceduretypes\Create.cshtml" />
+    <None Include="Views\Proceduretypes\Delete.cshtml" />
+    <None Include="Views\Proceduretypes\Details.cshtml" />
+    <None Include="Views\Proceduretypes\Edit.cshtml" />
+    <None Include="Views\Proceduretypes\Index.cshtml" />
+    <None Include="Views\Reasons\Create.cshtml" />
+    <None Include="Views\Reasons\Delete.cshtml" />
+    <None Include="Views\Reasons\Details.cshtml" />
+    <None Include="Views\Reasons\Edit.cshtml" />
+    <None Include="Views\Reasons\Index.cshtml" />
+    <None Include="Views\Shared\_ValidationScriptsPartial.cshtml" />
+    <None Include="Views\_ViewImports.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AspNetCoreHero.ToastNotification" Version="1.1.0" />
+    <PackageReference Include="FluentAssertions" Version="6.8.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.8" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.8" />
+    <PackageReference Include="NonFactors.Grid.Mvc6" Version="7.0.2" />
+    <PackageReference Include="NToastNotify" Version="8.0.0" />
+    <PackageReference Include="Oracle.EntityFrameworkCore" Version="6.21.61" />
+    <PackageReference Include="ReportViewerCore.NETCore" Version="15.1.17" />
+    <PackageReference Include="Serilog.AspNetCore" Version="6.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Resources\Resource.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\CommonResources.ar.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\CommonResources.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\CommonResources.fr.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Resource.Ar.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Resource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Data\Migrations\" />
+    <Folder Include="Logs\" />
+    <Folder Include="Views\Acceptancetypes\" />
+    <Folder Include="Views\Clinics\" />
+    <Folder Include="Views\Departments\" />
+    <Folder Include="Views\Modalities\" />
+    <Folder Include="Views\Modalitytypes\" />
+    <Folder Include="Views\Paytypes\" />
+    <Folder Include="Views\Proceduretypes\" />
+    <Folder Include="Views\Reasons\" />
+  </ItemGroup>
+
+</Project>

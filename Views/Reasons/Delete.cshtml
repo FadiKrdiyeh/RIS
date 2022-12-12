@@ -1,0 +1,62 @@
+﻿@model Ris2022.Data.Models.Reason
+
+@{
+    ViewData["Title"] = Resource.Delete + ' ' + @Resource.Reason;
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<script>
+    let activeLink = document.querySelector(".scrollmenu .custom-nav-item#reasonLink");
+    activeLink.classList.add("active");
+</script>
+
+<h1 class="main-title">@Resource.Delete</h1>
+
+<div class="show-details">
+    <h4>@Resource.Reason</h4>
+    <hr />
+    <dl class="row justify-content-center mb-5">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Namear)
+        </dt>
+        <dd class = "col-sm-2">
+            @Html.DisplayFor(model => model.Namear)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Nameen)
+        </dt>
+        <dd class = "col-sm-2">
+            @Html.DisplayFor(model => model.Nameen)
+        </dd>
+    </dl>
+
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn delete-btn mx-2" data-toggle="modal" data-target="#staticBackdrop">حذف <i class="fa fa-trash"></i></button> |
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-danger" id="staticBackdropLabel"><i class="fa fa-warning"></i> @Resource.Delete @Resource.Reason</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    @Resource.ConfirmDelete @Resource.Reason?
+                </div>
+                <div class="modal-footer">
+                    <form asp-action="Delete">
+                        <input type="hidden" asp-for="Id" />
+                        @*<input type="submit" value="حذف" class="btn btn-danger" /> |*@
+                        <button type="button" class="btn btn-outline-secondary py-2" data-dismiss="modal">Cancel <i class="fa fa-close"></i></button>
+                        <button type="submit" class="btn delete-btn">حذف <i class="fa fa-trash"></i></button>
+                        @*<input type="submit" value="حذف" class="btn btn-danger" />*@
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a asp-action="Index" class="btn back-btn py-2 mx-2">Back to List <i class="fa fa-hand-o-right"></i></a>
+</div>

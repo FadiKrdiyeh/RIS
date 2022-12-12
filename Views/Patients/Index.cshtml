@@ -1,0 +1,103 @@
+﻿@model IEnumerable<Ris2022.Data.Models.Patient>
+
+@{
+    ViewData["Title"] = "Patients";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+<script>
+    let activeLink = document.querySelector(".scrollmenu .custom-nav-item#patientLink");
+    activeLink.classList.add("active");
+</script>
+
+<h1 class="main-title">Patients</h1>
+
+<p>
+    <a asp-action="Create" class="btn create-o-btn mb-5">@Resource.AddPatient <i class="fa fa-plus ms-2"></i></a>
+</p>
+<div class="table-responsive">
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Givenid)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Firstname)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Gendre)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Mothername)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Age)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Insertdate)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.InsertUserName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Acceptancetypeid)
+                </th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr class="show-buttons">
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Givenid)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Firstname)
+                        @Html.DisplayFor(modelItem => item.Middlename)
+                        @Html.DisplayFor(modelItem => item.Lastname)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Gendre)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Mothername)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Age)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Insertdate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.InsertUserName)
+                    </td>
+
+                    @{
+                        if (Resource.Lang == "ar")
+                        {
+                            <td>@Html.DisplayFor(modelItem => item.Acceptancetype.Namear)</td>
+                        }
+                        else
+                        {
+                            <td>@Html.DisplayFor(modelItem => item.Acceptancetype.Nameen) </td>
+                        }
+                    }
+
+                    <td class="position-relative overflow-hidden">
+                        <div class="table-buttons">
+                            @*<a asp-action="Edit" asp-route-id="@item.Id">@Resource.Edit</a> |
+                            <a asp-action="Details" asp-route-id="@item.Id">@Resource.Details</a> |
+                            <a asp-action="Delete" asp-route-id="@item.Id">@Resource.Delete</a>|
+                            <a asp-action="Create" asp-controller="Orders" asp-route-patientId="@item.Id">@Resource.AddOrder</a>*@
+                            <a asp-action="Edit" asp-route-id="@item.Id" class="btn edit-btn icon-btn rounded-circle" title="Edit"><i class="fa fa-edit"></i></a> 
+                            <a asp-action="Details" asp-route-id="@item.Id" class="btn details-btn icon-btn rounded-circle" title="Details"><i class="fa fa-info"></i></a> 
+                            <a asp-action="Delete" asp-route-id="@item.Id" class="btn delete-btn icon-btn rounded-circle" title="Delete"><i class="fa fa-trash"></i></a>
+                            <a asp-action="Create" asp-controller="Orders" asp-route-patientId="@item.Id" class="btn add-btn icon-btn rounded-circle" title="Add Order"><i class="fa fa-plus"></i></a>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

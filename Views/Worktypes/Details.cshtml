@@ -1,0 +1,36 @@
+﻿@model Ris2022.Data.Models.Worktype
+
+@{
+    ViewData["Title"] = "Details Worktype";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<script>
+    let activeLink = document.querySelector(".scrollmenu .custom-nav-item#workTypeLink");
+    activeLink.classList.add("active");
+</script>
+
+<h1 class="main-title">Details</h1>
+
+<div class="show-details">
+    <h4>Worktype</h4>
+    <hr />
+    <dl class="row justify-content-center">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Namear)
+        </dt>
+        <dd class = "col-sm-2">
+            @Html.DisplayFor(model => model.Namear)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Nameen)
+        </dt>
+        <dd class = "col-sm-2">
+            @Html.DisplayFor(model => model.Nameen)
+        </dd>
+    </dl>
+</div>
+<div class=" mt-5">
+    <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn edit-btn mx-2">Edit <i class="fa fa-edit"></i></a> |
+    <a asp-action="Index" class="btn back-btn mx-2 py-2">Back to List <i class="fa fa-hand-o-right"></i></a>
+</div>

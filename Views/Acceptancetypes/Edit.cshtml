@@ -1,0 +1,45 @@
+﻿@model Ris2022.Data.Models.Acceptancetype
+
+@{
+    ViewData["Title"] = "Edit Acceptancetype";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<script>
+    let activeLink = document.querySelector(".scrollmenu .custom-nav-item#acceptanceTypeLink");
+    activeLink.classList.add("active");
+</script>
+
+<h1 class="main-title">Edit Acceptancetype</h1>
+
+<hr />
+<div class="row justify-content-center">
+    <div class="col-md-4">
+        <form asp-action="Edit" class="create-form">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Namear" class="control-label"></label>
+                <input asp-for="Namear" class="form-control" />
+                <span asp-validation-for="Namear" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Nameen" class="control-label"></label>
+                <input asp-for="Nameen" class="form-control" />
+                <span asp-validation-for="Nameen" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                @*<input type="submit" value="Save" class="btn btn-primary" />*@
+                <button type="submit" value="Save" class="btn create-btn">Save <i class="fa fa-edit"></i></button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index" class="btn back-btn">Back to List <i class="fa fa-hand-o-right"></i></a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
