@@ -132,6 +132,9 @@
   <data name="AddPatient" xml:space="preserve">
     <value>Add Patient</value>
   </data>
+  <data name="AddSchudledOrder" xml:space="preserve">
+    <value>Add Schudled Radioghraphy</value>
+  </data>
   <data name="AddUser" xml:space="preserve">
     <value>Add New User</value>
   </data>
@@ -189,6 +192,9 @@
   <data name="DoctorName" xml:space="preserve">
     <value>Doctor Name</value>
   </data>
+  <data name="Documentid" xml:space="preserve">
+    <value>Document id</value>
+  </data>
   <data name="Edit" xml:space="preserve">
     <value>Edit</value>
   </data>
@@ -200,6 +206,9 @@
   </data>
   <data name="ENARName" xml:space="preserve">
     <value>Nameen</value>
+  </data>
+  <data name="EndDate" xml:space="preserve">
+    <value>End Date</value>
   </data>
   <data name="failedMes" xml:space="preserve">
     <value>Save Failed</value>
@@ -251,6 +260,9 @@
   </data>
   <data name="Modality" xml:space="preserve">
     <value>Modality</value>
+  </data>
+  <data name="ModalityName" xml:space="preserve">
+    <value>Modality Name</value>
   </data>
   <data name="Modalitytype" xml:space="preserve">
     <value>Modality Type</value>
@@ -315,6 +327,9 @@
   <data name="Patients" xml:space="preserve">
     <value>Patients</value>
   </data>
+  <data name="Payreasonid" xml:space="preserve">
+    <value>Acceptance Reason</value>
+  </data>
   <data name="Paytype" xml:space="preserve">
     <value>Pay Type</value>
   </data>
@@ -344,6 +359,9 @@
   </data>
   <data name="Save" xml:space="preserve">
     <value>Save</value>
+  </data>
+  <data name="SchudledOrder" xml:space="preserve">
+    <value>Schudled Radioghraphy </value>
   </data>
   <data name="StartDate" xml:space="preserve">
     <value>Start Date</value>

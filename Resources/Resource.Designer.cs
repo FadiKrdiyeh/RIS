@@ -106,6 +106,15 @@ namespace Ris2022.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Add Schudled Radioghraphy.
+        /// </summary>
+        public static string AddSchudledOrder {
+            get {
+                return ResourceManager.GetString("AddSchudledOrder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Add New User.
         /// </summary>
         public static string AddUser {
@@ -277,6 +286,15 @@ namespace Ris2022.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Document id.
+        /// </summary>
+        public static string Documentid {
+            get {
+                return ResourceManager.GetString("Documentid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Edit.
         /// </summary>
         public static string Edit {
@@ -309,6 +327,15 @@ namespace Ris2022.Resources {
         public static string ENARName {
             get {
                 return ResourceManager.GetString("ENARName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to End Date.
+        /// </summary>
+        public static string EndDate {
+            get {
+                return ResourceManager.GetString("EndDate", resourceCulture);
             }
         }
         
@@ -462,6 +489,15 @@ namespace Ris2022.Resources {
         public static string Modality {
             get {
                 return ResourceManager.GetString("Modality", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Modality Name.
+        /// </summary>
+        public static string ModalityName {
+            get {
+                return ResourceManager.GetString("ModalityName", resourceCulture);
             }
         }
         
@@ -655,6 +691,15 @@ namespace Ris2022.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Acceptance Reason.
+        /// </summary>
+        public static string Payreasonid {
+            get {
+                return ResourceManager.GetString("Payreasonid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Pay Type.
         /// </summary>
         public static string Paytype {
@@ -741,6 +786,15 @@ namespace Ris2022.Resources {
         public static string Save {
             get {
                 return ResourceManager.GetString("Save", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Schudled Radioghraphy .
+        /// </summary>
+        public static string SchudledOrder {
+            get {
+                return ResourceManager.GetString("SchudledOrder", resourceCulture);
             }
         }
         

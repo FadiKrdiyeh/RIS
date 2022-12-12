@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\oracle\\Documents\\Visual Studio 2022\\Projects\\Ris2022\\Ris2022\\Ris2022\\Ris2022.csproj": {}
+    "C:\\Users\\oracle\\Documents\\Visual Studio 2022\\Projects\\Project\\Ris2022\\Ris2022\\Ris2022.csproj": {}
   },
   "projects": {
-    "C:\\Users\\oracle\\Documents\\Visual Studio 2022\\Projects\\Ris2022\\Ris2022\\Ris2022\\Ris2022.csproj": {
+    "C:\\Users\\oracle\\Documents\\Visual Studio 2022\\Projects\\Project\\Ris2022\\Ris2022\\Ris2022.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\oracle\\Documents\\Visual Studio 2022\\Projects\\Ris2022\\Ris2022\\Ris2022\\Ris2022.csproj",
+        "projectUniqueName": "C:\\Users\\oracle\\Documents\\Visual Studio 2022\\Projects\\Project\\Ris2022\\Ris2022\\Ris2022.csproj",
         "projectName": "Ris2022",
-        "projectPath": "C:\\Users\\oracle\\Documents\\Visual Studio 2022\\Projects\\Ris2022\\Ris2022\\Ris2022\\Ris2022.csproj",
+        "projectPath": "C:\\Users\\oracle\\Documents\\Visual Studio 2022\\Projects\\Project\\Ris2022\\Ris2022\\Ris2022.csproj",
         "packagesPath": "C:\\Users\\oracle\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\oracle\\Documents\\Visual Studio 2022\\Projects\\Ris2022\\Ris2022\\Ris2022\\obj\\",
+        "outputPath": "C:\\Users\\oracle\\Documents\\Visual Studio 2022\\Projects\\Project\\Ris2022\\Ris2022\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\oracle\\AppData\\Roaming\\NuGet\\NuGet.Config",
