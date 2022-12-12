@@ -1786,4 +1786,25 @@ FETCH FIRST 1 ROWS ONLY
  ]2022-12-12 16:12:03.400 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/Clinics/Details/1 - - - 200 - text/html;+charset=utf-8 4.5282ms 
  ]2022-12-12 16:12:03.417 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
  ]2022-12-12 16:12:03.417 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11983 application/javascript;+charset=utf-8 0.5927ms 
+ ]2022-12-12 16:36:26.405 +02:00 [INF User profile is available. Using 'C:\Users\oracle\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+ ]2022-12-12 16:36:27.493 +02:00 [INF Application Is Starting 
+ ]2022-12-12 16:36:28.219 +02:00 [INF Application started. Press Ctrl+C to shut down. 
+ ]2022-12-12 16:36:28.219 +02:00 [INF Hosting environment: Development 
+ ]2022-12-12 16:36:28.219 +02:00 [INF Content root path: C:\Users\oracle\Documents\Visual Studio 2022\Projects\Project\Ris2022\Ris2022\ 
+ ]2022-12-12 16:36:28.406 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/ - - 
+ ]2022-12-12 16:36:29.587 +02:00 [INF Identity.Application was not authenticated. Failure message: Unprotect ticket failed 
+ ]2022-12-12 16:36:29.679 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-12-12 16:36:30.153 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-12-12 16:36:31.697 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnGetAsync - ModelState is "Valid" 
+ ]2022-12-12 16:36:31.817 +02:00 [INF AuthenticationScheme: Identity.External signed out. 
+ ]2022-12-12 16:36:31.818 +02:00 [INF Executed handler method OnGetAsync, returned result . 
+ ]2022-12-12 16:36:31.822 +02:00 [INF Executing an implicit handler method - ModelState is "Valid" 
+ ]2022-12-12 16:36:31.822 +02:00 [INF Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-12-12 16:36:34.032 +02:00 [INF Executed page /Index in 3867.371ms 
+ ]2022-12-12 16:36:34.057 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-12-12 16:36:34.390 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/ - - - 200 - text/html;+charset=utf-8 5996.5195ms 
+ ]2022-12-12 16:36:34.889 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-12-12 16:36:34.894 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11983 application/javascript;+charset=utf-8 3.9882ms 
+ ]2022-12-12 16:36:35.243 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-12-12 16:36:37.977 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 2733.9312ms 
  ]
