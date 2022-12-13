@@ -2,7 +2,9 @@ $(document).ready(function () {
     var w = window.innerWidth;
 
     if (w > 767) {
-        $('#menu-jk').scrollToFixed();
+        if ($.isFunction('owlCarousel')) {
+            $('#menu-jk').scrollToFixed();
+        }
     } else {
         // $('#menu-jk').scrollToFixed();
     }
@@ -13,26 +15,43 @@ $(document).ready(function () {
 
 
 $(document).ready(function() {
-
-    $('.owl-carousel').owlCarousel({
-        loop:true,
-        margin:0,
-        nav:true,
-        autoplay: true,
-        dots: true,
-        autoplayTimeout: 5000,
-        navText:['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
-        responsive:{
-            0:{
-                items:1
-            },
-            600:{
-                items:1
-            },
-            1000:{
-                items:1
+    if ($.isFunction('owlCarousel')) {
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: true,
+            autoplay: true,
+            dots: true,
+            autoplayTimeout: 5000,
+            navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
             }
+        });
+    }
+
+    // Fix Alert Messages bs Attributes
+    $('div.alert-dismissible button').attr("data-dismiss", "alert");
+
+    // Hide And Show Password Input
+    console.log("asf");
+    $('input[type="password"]').after("<i class='fa fa-eye hide-show-password'></i>");
+    $("i.hide-show-password").on("click", function () {
+        if ($(this).hasClass("fa-eye")) {
+            $(this).siblings("input").attr("type", "text");
         }
+        if ($(this).hasClass("fa-eye-slash")) {
+            $(this).siblings("input").attr("type", "password");
+        }
+        $(this).toggleClass("fa-eye-slash").toggleClass("fa-eye");
     });
 
     $(".moved-label").on("focus", function () {
@@ -77,7 +96,54 @@ $(document).ready(function() {
             }, 1500);
         }
 
-    })
+    });
+
+    console.log("Test");
+
+    $('#registerForm').on('submit', function (e) {
+        let userName = $("#Input_UserName").val();
+        let firstName = $("#Input_FirstName").val();
+        let lastName = $("#Input_LastName").val();
+        let pass = $("#Input_Password").val();
+        let confirmPass = $("#Input_ConfirmPassword").val();
+        let role = $("#Input_Role").val();
+        if (userName != "" && firstName != "" && lastName != "" && pass != "" && confirmPass != "" && role != "") {
+            // e.preventDefault();
+            let but = $(this).find('[type="submit"]').toggleClass('sending').blur();
+            setTimeout(function () {
+                but.removeClass('sending').blur();
+            }, 4500);
+        } else {
+            e.preventDefault();
+            let but = $(this).find('[type="submit"]').toggleClass('sending').blur();
+
+            setTimeout(function () {
+                but.removeClass('sending').blur();
+            }, 1500);
+        }
+
+    });
+
+    $('#profile-form').on('submit', function (e) {
+        let Username = $("#Username").val();
+        let inputPhoneNumber = $("#Input_PhoneNumber").val();
+
+        if (Username != "" && inputPhoneNumber != "") {
+            // e.preventDefault();
+            let but = $(this).find('[type="submit"]').toggleClass('sending').blur();
+            setTimeout(function () {
+                but.removeClass('sending').blur();
+            }, 4500);
+        } else {
+            e.preventDefault();
+            let but = $(this).find('[type="submit"]').toggleClass('sending').blur();
+
+            setTimeout(function () {
+                but.removeClass('sending').blur();
+            }, 1500);
+        }
+
+    });
 });
 
 // Toggle Info Button In Create Patient Page

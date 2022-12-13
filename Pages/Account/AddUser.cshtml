@@ -5,58 +5,60 @@
     Layout = "_Layout";
 }
 
-<h1>@ViewData["Title"]</h1>
+<section class="login-form section-form pt-3">
+    <h1 class="login-main-title mt-5">@ViewData["Title"]</h1>
 
-<div class="row justify-content-center">
-    <div class="col-md-4">
-        <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
-            <h2>@Resources.Resource.AddUser</h2>
-            <hr />
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-floating">
-                <input asp-for="Input.UserName" class="form-control" autocomplete="username" aria-required="true" />
-                <label asp-for="Input.UserName"></label>
-                <span asp-validation-for="Input.UserName" class="text-danger"></span>
-            </div>
-            <div class="form-floating">
-                <input asp-for="Input.FirstName" class="form-control" autocomplete="username" aria-required="true" />
-                <label asp-for="Input.FirstName"></label>
-                <span asp-validation-for="Input.FirstName" class="text-danger"></span>
-            </div>
-            <div class="form-floating">
-                <input asp-for="Input.LastName" class="form-control" autocomplete="username" aria-required="true" />
-                <label asp-for="Input.LastName"></label>
-                <span asp-validation-for="Input.LastName" class="text-danger"></span>
-            </div>
-            <div class="form-floating">
-                <input asp-for="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" />
-                <label asp-for="Input.Password"></label>
-                <span asp-validation-for="Input.Password" class="text-danger"></span>
-            </div>
-            <div class="form-floating">
-                <input asp-for="Input.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" />
-                <label asp-for="Input.ConfirmPassword"></label>
-                <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
-            </div>
-            <div class="form-floating">
-                <input asp-for="Input.Role" class="form-control" autocomplete="Role" aria-required="true" />
-                <label asp-for="Input.Role"></label>
-                <span asp-validation-for="Input.Role" class="text-danger"></span>
-            </div>
-
-            <div>
-                <div class="checkbox">
-                    <label asp-for="Input.IsDoctor" class="form-label">
-                        <input class="form-check-input" asp-for="Input.IsDoctor" />
-                        @Html.DisplayNameFor(m => m.Input.IsDoctor)
-                    </label>
+    <div class="row justify-content-center align-items-center">
+        <div class="col-md-4">
+            <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="login-form register-form">
+                <hr />
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-floating mt-5 mx-auto">
+                    <input asp-for="Input.UserName" class="form-control moved-label" autocomplete="username" aria-required="true" />
+                    <label asp-for="Input.UserName" class="login-label form-label"></label>
+                    <span asp-validation-for="Input.UserName" class="text-danger text-start"></span>
                 </div>
-            </div>
-            <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary">Register</button>
-        </form>
-    </div>
-</div>
+                <div class="form-floating mt-5 mx-auto">
+                    <input asp-for="Input.FirstName" class="form-control moved-label" autocomplete="username" aria-required="true" />
+                    <label asp-for="Input.FirstName" class="login-label form-label"></label>
+                    <span asp-validation-for="Input.FirstName" class="text-danger text-start"></span>
+                </div>
+                <div class="form-floating mt-5 mx-auto">
+                    <input asp-for="Input.LastName" class="form-control moved-label" autocomplete="username" aria-required="true" />
+                    <label asp-for="Input.LastName" class="login-label form-label"></label>
+                    <span asp-validation-for="Input.LastName" class="text-danger text-start"></span>
+                </div>
+                <div class="form-floating mt-5 mx-auto">
+                    <input asp-for="Input.Password" class="form-control moved-label" autocomplete="new-password" aria-required="true" />
+                    <label asp-for="Input.Password" class="login-label form-label"></label>
+                    <span asp-validation-for="Input.Password" class="text-danger text-start"></span>
+                </div>
+                <div class="form-floating mt-5 mx-auto">
+                    <input asp-for="Input.ConfirmPassword" class="form-control moved-label" autocomplete="new-password" aria-required="true" />
+                    <label asp-for="Input.ConfirmPassword" class="login-label form-label"></label>
+                    <span asp-validation-for="Input.ConfirmPassword" class="text-danger text-start"></span>
+                </div>
+                <div class="form-floating mt-5 mx-auto">
+                    <input asp-for="Input.Role" class="form-control moved-label" autocomplete="Role" aria-required="true" />
+                    <label asp-for="Input.Role" class="login-label form-label"></label>
+                    <span asp-validation-for="Input.Role" class="text-danger text-start"></span>
+                </div>
 
+                <div class="form-floating mt-5 mb-5 mx-auto">
+                    <div class="checkbox">
+                        <label asp-for="Input.IsDoctor" class="form-label">
+                            <input class="form-check-input" asp-for="Input.IsDoctor" />
+                            @Html.DisplayNameFor(m => m.Input.IsDoctor)
+                        </label>
+                    </div>
+                </div>
+                @*<button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary">Register</button>*@
+                <button id="registerSubmit" type="submit" class="w-75 btn btn-lg custom-button">Register</button>
+            </form>
+        </div>
+    </div>
+
+</section>
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
 }

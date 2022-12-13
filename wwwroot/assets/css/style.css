@@ -940,6 +940,7 @@ header .logo-img {
     font-size: 40px;
     letter-spacing: 8px;
     margin-bottom: 20px;
+    text-shadow: 4px 4px 7px #000;
 }
 hr {
     margin-bottom: 50px;
@@ -979,6 +980,13 @@ hr {
     color: #111;
     font-size: 23px;
 }
+.hide-show-password {
+    position: absolute;
+    right: 13px;
+    top: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
 .login-label {
     top: 5px;
     font-size: 20px;
@@ -986,6 +994,9 @@ hr {
     transition: all 0.5s ease-in-out !important;
     color: #555;
     left: 5px;
+}
+.form-floating .login-label {
+    top: 5px;
 }
 .form-control {
     position: relative;
@@ -1000,6 +1011,11 @@ hr {
 .form-control.input-validation-error {
     background-color: #f8c8c8;
     border-color: #891212;
+}
+.field-validation-error {
+    position: absolute;
+    white-space: nowrap;
+    left: 45px;
 }
 .login-form .form-control.input-validation-error ~ .icons-container {
     /*border-left-color: #891212 !important;*/
@@ -1348,6 +1364,17 @@ hr {
 }
 /* End Details */
 /******** End Patients Page *********/
+
+/******** Start Register User Page *********/
+.register-form .form-control {
+    padding-left: 20px !important;
+}
+.register-form .form-floating .login-label {
+    top: 5px;
+    left: -30px;
+}
+/******** End Register User Page *********/
+
 
 /******** Start Footer ********/
 footer {

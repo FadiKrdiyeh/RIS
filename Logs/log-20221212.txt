@@ -2125,4 +2125,27 @@ FETCH FIRST 1 ROWS ONLY
  ]2022-12-12 16:50:27.175 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
  ]2022-12-12 16:50:27.175 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11983 application/javascript;+charset=utf-8 0.7717ms 
  ]2022-12-12 16:50:27.205 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 30.3694ms 
+ ]2022-12-12 16:53:14.800 +02:00 [INF User profile is available. Using 'C:\Users\oracle\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+ ]2022-12-12 16:53:16.140 +02:00 [INF Application Is Starting 
+ ]2022-12-12 16:53:16.662 +02:00 [INF Application started. Press Ctrl+C to shut down. 
+ ]2022-12-12 16:53:16.662 +02:00 [INF Hosting environment: Development 
+ ]2022-12-12 16:53:16.662 +02:00 [INF Content root path: C:\Users\oracle\Documents\Visual Studio 2022\Projects\Project\Ris2022\Ris2022\ 
+ ]2022-12-12 16:53:16.745 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/Clinics/Details/21 - - 
+ ]2022-12-12 16:53:17.738 +02:00 [INF Executing endpoint 'Ris2022.Controllers.ClinicsController.Details (Ris2022)' 
+ ]2022-12-12 16:53:17.800 +02:00 [INF Route matched with {action = "Details", controller = "Clinics", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Details(System.Nullable`1[System.Int32]) on controller Ris2022.Controllers.ClinicsController (Ris2022). 
+ ]2022-12-12 16:53:20.121 +02:00 [INF Entity Framework Core 6.0.8 initialized 'RisDBContext' using provider 'Oracle.EntityFrameworkCore:6.0.21.1-20220418' with options: None 
+ ]2022-12-12 16:53:22.331 +02:00 [INF Executed DbCommand (370ms) [Parameters=[:id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='0']
+SELECT "c"."Id", "c"."Cost", "c"."Namear", "c"."Nameen"
+FROM "Clinics" "c"
+WHERE "c"."Id" = :id_0
+FETCH FIRST 1 ROWS ONLY 
+ ]2022-12-12 16:53:25.455 +02:00 [INF Executing ViewResult, running view Details. 
+ ]2022-12-12 16:53:32.182 +02:00 [INF Executed ViewResult - view Details executed in 7106.6767ms. 
+ ]2022-12-12 16:53:32.218 +02:00 [INF Executed action Ris2022.Controllers.ClinicsController.Details (Ris2022) in 14411.1877ms 
+ ]2022-12-12 16:53:32.219 +02:00 [INF Executed endpoint 'Ris2022.Controllers.ClinicsController.Details (Ris2022)' 
+ ]2022-12-12 16:53:32.492 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/Clinics/Details/21 - - - 200 - text/html;+charset=utf-8 15752.0171ms 
+ ]2022-12-12 16:53:32.961 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-12-12 16:53:32.967 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11983 application/javascript;+charset=utf-8 5.6763ms 
+ ]2022-12-12 16:53:34.081 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-12-12 16:53:34.114 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 33.2369ms 
  ]
