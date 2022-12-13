@@ -101,7 +101,7 @@ namespace Ris2022.Controllers
         {
             Patient patient = _context.Patients.SingleOrDefault(p => p.Id == order.Patientid);
             order.modality = _context.Modalities.SingleOrDefault(m => m.Id == order.Modalityid);
-            order.Accessionnumber = int.Parse(patient.Id + DateTime.Now.ToString("ssmm"));
+            order.Accessionnumber = int.Parse(patient?.Id + DateTime.Now.ToString("ssmm"));
             order.InsertuserName = User.FindFirstValue(ClaimTypes.Name);
             //order.Startdate = DateTime.Now;
             order.proceduretype = _context.Proceduretypes.SingleOrDefault(proc => proc.Id == order.Proceduretypeid);
