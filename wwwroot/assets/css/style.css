@@ -758,6 +758,7 @@ header .logo-img {
     width: 100%;
     padding: 10px 20px;
     transition: all 0.2s ease-in-out;
+    display: block;
 }
 .scrollmenu .custom-nav-item .dropdown .dropdown-menu li a:hover {
     padding-left: 25px;

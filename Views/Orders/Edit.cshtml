@@ -5,16 +5,20 @@
     Layout = "~/Pages/Shared/_Layout.cshtml";
 }
 
+<script>
+    let activeLink = document.querySelector(".scrollmenu .custom-nav-item#orderLink");
+    activeLink.classList.add("active");
+</script>
+
 <h1 class="main-title">Edit Order</h1>
 
 <hr />
 <div class="row">
-    <div class="col-md-4">
         <form asp-action="Edit" class="create-form">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Id" />
 
-            <div class="row  justify-content-center align-items-center">
+            <div class="row justify-content-center align-items-center">
                 <div class="p-3 col-4 d-flex flex-column">
                     <div class="form-group">
                         <label asp-for="Patientid" class="control-label"></label>
@@ -175,7 +179,6 @@
                 </div>
             </div>
         </form>
-    </div>
 </div>
 
 <div>

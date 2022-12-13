@@ -1,143 +1,138 @@
 ﻿@model Ris2022.Data.Models.Order
 
 @{
-    ViewData["Title"] = "EditSchudledOrder";
+    ViewData["Title"] = "Edit Schudled Order";
     Layout = "~/Pages/Shared/_Layout.cshtml";
 }
 
-<h1>EditSchudledOrder</h1>
+<script>
+    let activeLink = document.querySelector(".scrollmenu .custom-nav-item#orderLink");
+    activeLink.classList.add("active");
+</script>
 
-<h4>Order</h4>
+<h1 class="main-title">Edit Schudled Order</h1>
+
 <hr />
 <div class="row">
-    <div class="col">
-        <form asp-action="EditSchudledOrder">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            @Html.HiddenFor(model=>model.Patientid)
-			@Html.HiddenFor(model=>model.Studyid)
-            <div class="row  justify-content-center align-items-center">
-                <div class="p-3  col d-flex flex-column">
-
-            <div class="row">
-                        <label asp-for="Modalityid" class="control-label col" name="ModalityName">@Resource.ModalityName</label>
-                        <select asp-for="Modalityid" onselect="@Html.DisplayFor(model => model.modality)" class="form-control col" name="ModalityName" asp-items="ViewBag.Modalityid">@Resource.ModalityName</select>
-             </div>
-             </div>
-                
-            <div class="col">
-             <div class="row">
-                        <label asp-for="Proceduretypeid" class="control-label col" name="Proceduretype">@Resource.Proceduretype</label>
-                        <select asp-for="Proceduretypeid" onselect="@Html.DisplayFor(model => model.Proceduretypeid)" class="form-control col" name="Proceduretype" asp-items="ViewBag.Proceduretypeid">@Resource.Proceduretype</select>
-            </div>
+    <form asp-action="EditSchudledOrder">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        @Html.HiddenFor(model=>model.Patientid)
+        @Html.HiddenFor(model=>model.Studyid)
+        <div class="row justify-content-center align-items-center">
+            <div class="p-3 col-4 d-flex flex-column">
+                <div class="form-group">
+                    <label asp-for="Modalityid" class="control-label col" name="ModalityName">@Resource.ModalityName</label>
+                    <select asp-for="Modalityid" onselect="@Html.DisplayFor(model => model.modality)" class="form-control col" name="ModalityName" asp-items="ViewBag.Modalityid">@Resource.ModalityName</select>
+                </div>
             </div>
 
-
-            <div class="col">
-            <div class="row">
-                        <label asp-for="Modalitytypeid" class="control-label col" name="Modalitytype">@Resource.Modalitytype</label>
-                        <select asp-for="Modalitytypeid" onselect="@Html.DisplayFor(model => model.Modalitytypeid)" class="form-control col" name="Modalitytype" asp-items="ViewBag.Modalitytypeid">@Resource.Modalitytype</select>
-            </div>
-            </div>
+            <div class="p-3 col-4 d-flex flex-column">
+                <div class="form-group">
+                    <label asp-for="Proceduretypeid" class="control-label col" name="Proceduretype">@Resource.Proceduretype</label>
+                    <select asp-for="Proceduretypeid" onselect="@Html.DisplayFor(model => model.Proceduretypeid)" class="form-control col" name="Proceduretype" asp-items="ViewBag.Proceduretypeid">@Resource.Proceduretype</select>
+                </div>
             </div>
 
-            <div class="row  justify-content-center align-items-center">
-                <div class="p-3  col d-flex flex-column">
-
-            <div class="row">
-                        <label asp-for="Doctorid" class="control-label col" name="DoctorName">@Resource.DoctorName</label>
-                        <select asp-for="Doctorid" onselect="@Html.DisplayFor(model => model.Doctorid)" class="form-control col" name="DoctorName" asp-items="ViewBag.Doctorid">@Resource.DoctorName</select>
-            </div>
+            <div class="p-3 col-4 d-flex flex-column">
+                <div class="form-group">
+                    <label asp-for="Modalitytypeid" class="control-label col" name="Modalitytype">@Resource.Modalitytype</label>
+                    <select asp-for="Modalitytypeid" onselect="@Html.DisplayFor(model => model.Modalitytypeid)" class="form-control col" name="Modalitytype" asp-items="ViewBag.Modalitytypeid">@Resource.Modalitytype</select>
+                </div>
             </div>
 
-            <div class="col">
-            <div class="row">
-                        <label asp-for="Departmentid" class="control-label col" name="Department">@Resource.Department</label>
-                        <select asp-for="Departmentid" onselect="@Html.DisplayFor(model => model.Departmentid)" class="form-control col" name="Department" asp-items="ViewBag.Departmentid">@Resource.Department</select>
-            </div>
-            </div>
-            
-            <div class="col">
-            <div class="row">
-                        <label asp-for="Documentid" class="control-label col" name="Documentid">@Resource.Documentid</label>
-                        <input asp-for="Documentid" value="@Html.DisplayFor(model => model.Documentid)" class="form-control col" placeholder="@Resource.Documentid" name="Documentid" />
-                <span asp-validation-for="Documentid" class="text-danger"></span>
+            <div class="p-3 col-4 d-flex flex-column">
+                <div class="form-group">
+                    <label asp-for="Doctorid" class="control-label col" name="DoctorName">@Resource.DoctorName</label>
+                    <select asp-for="Doctorid" onselect="@Html.DisplayFor(model => model.Doctorid)" class="form-control col" name="DoctorName" asp-items="ViewBag.Doctorid">@Resource.DoctorName</select>
+                </div>
             </div>
 
-            </div>
-            </div>
-
-            <div class="row justify-content-center align-items-center">
-                <div class="p-3  col d-flex flex-column">
-            <div class="row">
-                        <label asp-for="Ordertypeid" class="control-label col" name="OrderIndex">@Resource.OrderIndex</label>
-                        <select asp-for="Ordertypeid" onselect="@Html.DisplayFor(model => model.Ordertypeid)" class="form-control col" name="OrderIndex" asp-items="ViewBag.Ordertypeid">@Resource.OrderIndex</select>
-            </div>
+            <div class="p-3 col-4 d-flex flex-column">
+                <div class="form-group">
+                    <label asp-for="Departmentid" class="control-label col" name="Department">@Resource.Department</label>
+                    <select asp-for="Departmentid" onselect="@Html.DisplayFor(model => model.Departmentid)" class="form-control col" name="Department" asp-items="ViewBag.Departmentid">@Resource.Department</select>
+                </div>
             </div>
 
-            <div class="col">
-            <div class="row">
-                <label asp-for="Reasonid" class="control-label col"></label>
-                <select asp-for="Reasonid" onselect="@Html.DisplayFor(model => model.Reasonid)" class ="form-control col" asp-items="ViewBag.Reasonid">
-                            <option disabled="disabled" selected="selected" value=""><distributed-cache class="fa fa-chevron-down"></i></option>
-                    @Resource.Reason
-                    </select>
-            </div>
+            <div class="p-3 col-4 d-flex flex-column">
+                <div class="form-group">
+                    <label asp-for="Documentid" class="control-label col" name="Documentid">@Resource.Documentid</label>
+                    <input asp-for="Documentid" value="@Html.DisplayFor(model => model.Documentid)" class="form-control col" placeholder="@Resource.Documentid" name="Documentid" />
+                    <span asp-validation-for="Documentid" class="text-danger"></span>
+                </div>
             </div>
 
-            <div class="col">
-            <div class="row">
-                <label asp-for="Paytypeid" class="control-label col"></label>
-                <i style="position:absolute;left:15px; top:12px; width:20px;" class="fa fa-chevron-down"></i>
-                <select asp-for="Paytypeid" onchange="reasonShow();" class="form-control col" asp-items="ViewBag.Paytypeid"></select>
-            </div>
-            </div>
+            <div class="p-3 col-4 d-flex flex-column">
+                <div class="form-group">
+                    <label asp-for="Ordertypeid" class="control-label col" name="OrderIndex">@Resource.OrderIndex</label>
+                    <select asp-for="Ordertypeid" onselect="@Html.DisplayFor(model => model.Ordertypeid)" class="form-control col" name="OrderIndex" asp-items="ViewBag.Ordertypeid">@Resource.OrderIndex</select>
+                </div>
             </div>
 
-            <div class="row justify-content-center align-items-center">
-                <div class="p-3  col d-flex flex-column">
-            <div id="reasonTable" class="row">
-                        <label asp-for="Payreasonid" class="control-label col" name="Payreasonid">@Resource.Payreasonid</label>
-                <input asp-for="Payreasonid" class="form-control col" placeholder="@Resource.Payreasonid" name="Payreasonid" />
-                <span asp-validation-for="Payreasonid" class="text-danger"></span>
-            </div>
+            <div class="p-3 col-4 d-flex flex-column">
+                <div class="form-group">
+                    <label asp-for="Reasonid" class="control-label col"></label>
+                    <select asp-for="Reasonid" onselect="@Html.DisplayFor(model => model.Reasonid)" class="form-control col" asp-items="ViewBag.Reasonid">@Resource.Reason</select>
+                </div>
             </div>
 
-            <div class="col">
-            <div class="row">
-                        <label asp-for="Clinicid" class="control-label col" name="Clinic">@Resource.Clinic</label>
-                        <select asp-for="Clinicid" class="form-control col" name="Clinic" asp-items="ViewBag.Clinicid">@Resource.Clinic</select>
-            </div>
-            </div>
-            </div>
-
-            <div class="row justify-content-center align-items-center">
-                <div class="p-3  col d-flex flex-column">
-            <div class="row">
-                        <label asp-for="Startdate" class="control-label col" name="StartDate">@Resource.StartDate</label>
-                        <input asp-for="Startdate" asp-format="{0:yyyy-MM-dd}"  name="StartDate" placeholder="@Resource.StartDate" class="form-control col" />
-                <span asp-validation-for="Startdate" class="text-danger col-12"></span>
-            </div>
+            <div class="p-3 col-4 d-flex flex-column">
+                <div class="form-group">
+                    <label asp-for="Paytypeid" class="control-label col"></label>
+                    <i style="position:absolute;left:15px; top:12px; width:20px;" class="fa fa-chevron-down"></i>
+                    <select asp-for="Paytypeid" onchange="reasonShow();" class="form-control col" asp-items="ViewBag.Paytypeid"></select>
+                </div>
             </div>
 
-            <div class="col">
-            <div class="row">
-                 <label asp-for="Startdate" class="control-label col" name="StartDate">@Resource.StartDate</label>
-                        <input asp-for="Startdate" asp-format="{0:yyyy-MM-dd}"  name="StartDate" placeholder="@Resource.StartDate" class="form-control col" />
-                <span asp-validation-for="Startdate" class="text-danger col-12"></span>
+            <div class="p-3 col-4 d-flex flex-column">
+                <div id="reasonTable" class="form-group">
+                    <label asp-for="Payreasonid" class="control-label col" name="Payreasonid">@Resource.Payreasonid</label>
+                    <input asp-for="Payreasonid" class="form-control col" placeholder="@Resource.Payreasonid" name="Payreasonid" />
+                    <span asp-validation-for="Payreasonid" class="text-danger"></span>
+                </div>
             </div>
+
+            <div class="p-3 col-4 d-flex flex-column">
+                <div class="form-group">
+                    <label asp-for="Clinicid" class="control-label col" name="Clinic">@Resource.Clinic</label>
+                    <select asp-for="Clinicid" class="form-control col" name="Clinic" asp-items="ViewBag.Clinicid">@Resource.Clinic</select>
+                </div>
             </div>
+        </div>
+
+        <div class="row justify-content-center align-items-center">
+            <div class="p-3 col-4 d-flex flex-column">
+                <div class="form-group">
+                    <label asp-for="Startdate" class="control-label col" name="StartDate">@Resource.StartDate</label>
+                    <input asp-for="Startdate" asp-format="{0:yyyy-MM-dd}" name="StartDate" placeholder="@Resource.StartDate" class="form-control col" />
+                    <span asp-validation-for="Startdate" class="text-danger col-12"></span>
+                </div>
             </div>
+
+            <div class="p-3 col-4 d-flex flex-column">
+                <div class="form-group">
+                    <label asp-for="Startdate" class="control-label col" name="StartDate">@Resource.StartDate</label>
+                    <input asp-for="Startdate" asp-format="{0:yyyy-MM-dd}" name="StartDate" placeholder="@Resource.StartDate" class="form-control col" />
+                    <span asp-validation-for="Startdate" class="text-danger col-12"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center align-items-center">
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                @*<input type="submit" value="Save" class="btn btn-primary" />*@
+                <button type="submit" value="Save" class="btn create-btn">Save <i class="fa fa-edit"></i></button>
             </div>
-        </form>
-    </div>
+        </div>
+    </form>
 </div>
 
 <div>
-    <a asp-action="IndexSchudledOrder">Back to List</a>
+    <a asp-action="IndexSchudledOrder" class="btn back-btn">Back to List <i class="fa fa-hand-o-right"></i></a>
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

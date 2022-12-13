@@ -1,154 +1,179 @@
 ﻿@model Ris2022.Data.Models.Order
 
 @{
-    ViewData["Title"] = Resource.Delete;
+    ViewData["Title"] = Resource.Delete + ' ' + @Resource.Order;
     Layout = "~/Pages/Shared/_Layout.cshtml";
 }
 
-<h1>@Resource.Delete</h1>
+<script>
+    let activeLink = document.querySelector(".scrollmenu .custom-nav-item#orderLink");
+    activeLink.classList.add("active");
+</script>
 
-<h3>@Resource.ConfirmDelete @Resource.Order?</h3>
-<div>
+<h1 class="main-title">@Resource.Delete</h1>
+
+<div class="show-details">
     <h4>@Resource.Order</h4>
     <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
+    <dl class="row mb-5">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.patient)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-2">
             @Html.DisplayFor(model => model.patient.Firstname)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.modality)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-2">
             @Html.DisplayFor(model => model.modality.Id)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.proceduretype)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-2">
             @Html.DisplayFor(model => model.proceduretype.Id)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Studyid)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-2">
             @Html.DisplayFor(model => model.Studyid)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Startdate)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-2">
             @Html.DisplayFor(model => model.Startdate)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Enddate)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-2">
             @Html.DisplayFor(model => model.Enddate)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Statusid)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-2">
             @Html.DisplayFor(model => model.Statusid)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Doctorid)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-2">
             @Html.DisplayFor(model => model.Doctorid)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Autoexpiredate)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-2">
             @Html.DisplayFor(model => model.Autoexpiredate)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Accessionnumber)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-2">
             @Html.DisplayFor(model => model.Accessionnumber)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.dept)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-2">
             @Html.DisplayFor(model => model.dept.Id)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Documentid)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-2">
             @Html.DisplayFor(model => model.Documentid)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Ordertype)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-2">
             @Html.DisplayFor(model => model.Ordertype.Id)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Insertdate)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-2">
             @Html.DisplayFor(model => model.Insertdate)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.InsertuserName)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-2">
             @Html.DisplayFor(model => model.InsertuserName)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.reason)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-2">
             @Html.DisplayFor(model => model.reason.Id)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.UpdateuserName)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-2">
             @Html.DisplayFor(model => model.UpdateuserName)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Updatedate)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-2">
             @Html.DisplayFor(model => model.Updatedate)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.paytype)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-2">
             @Html.DisplayFor(model => model.paytype.Id)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Payreasonid)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-2">
             @Html.DisplayFor(model => model.Payreasonid)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.clinic)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-2">
             @Html.DisplayFor(model => model.clinic.Id)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.modalitytype)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-2">
             @Html.DisplayFor(model => model.modalitytype.Id)
         </dd>
     </dl>
-    
-    <form asp-action="Delete">
-        <input type="hidden" asp-for="Id" />
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-action="Index">Back to List</a>
-    </form>
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn delete-btn mx-2" data-toggle="modal" data-target="#staticBackdrop">حذف <i class="fa fa-trash"></i></button> |
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-danger" id="staticBackdropLabel"><i class="fa fa-warning"></i> @Resource.Delete @Resource.Order</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    @Resource.ConfirmDelete @Resource.Order?
+                </div>
+                <div class="modal-footer">
+                    <form asp-action="Delete">
+                        <input type="hidden" asp-for="Id" />
+                        <button type="button" class="btn btn-outline-secondary py-2" data-dismiss="modal">Cancel <i class="fa fa-close"></i></button>
+                        <button type="submit" class="btn delete-btn">حذف <i class="fa fa-trash"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a asp-action="Index" class="btn back-btn py-2 mx-2">Back to List <i class="fa fa-hand-o-right"></i></a>
 </div>

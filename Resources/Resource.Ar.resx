@@ -132,6 +132,9 @@
   <data name="AddPatient" xml:space="preserve">
     <value>إضافة مريض</value>
   </data>
+  <data name="AddSchudledOrder" xml:space="preserve">
+    <value>طلب تصوير مجدول</value>
+  </data>
   <data name="AddUser" xml:space="preserve">
     <value>إضافة مستخدم جديد</value>
   </data>
@@ -189,6 +192,9 @@
   <data name="DoctorName" xml:space="preserve">
     <value>اسم الطبيب</value>
   </data>
+  <data name="Documentid" xml:space="preserve">
+    <value>رقم المستند</value>
+  </data>
   <data name="Edit" xml:space="preserve">
     <value>تعديل</value>
   </data>
@@ -200,6 +206,9 @@
   </data>
   <data name="ENARName" xml:space="preserve">
     <value>Namear</value>
+  </data>
+  <data name="EndDate" xml:space="preserve">
+    <value>تاريخ الانتهاء</value>
   </data>
   <data name="failedMes" xml:space="preserve">
     <value>حفظ فاشل</value>
@@ -251,6 +260,9 @@
   </data>
   <data name="Modality" xml:space="preserve">
     <value>آلة التصوير</value>
+  </data>
+  <data name="ModalityName" xml:space="preserve">
+    <value>اسم الآلة</value>
   </data>
   <data name="Modalitytype" xml:space="preserve">
     <value>نوع الآلة</value>
@@ -318,6 +330,9 @@
   <data name="Patients" xml:space="preserve">
     <value>المرضى</value>
   </data>
+  <data name="Payreasonid" xml:space="preserve">
+    <value>سبب القبول</value>
+  </data>
   <data name="Paytype" xml:space="preserve">
     <value>طريقة الدفع</value>
   </data>
@@ -347,6 +362,9 @@
   </data>
   <data name="Save" xml:space="preserve">
     <value>تخزين</value>
+  </data>
+  <data name="SchudledOrder" xml:space="preserve">
+    <value>طلب تصوير مجدول</value>
   </data>
   <data name="StartDate" xml:space="preserve">
     <value>تاريخ البدء</value>

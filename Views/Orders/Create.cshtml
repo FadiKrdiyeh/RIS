@@ -5,6 +5,11 @@
     Layout = "~/Pages/Shared/_Layout.cshtml";
 }
 
+<script>
+    let activeLink = document.querySelector(".scrollmenu .custom-nav-item#orderLink");
+    activeLink.classList.add("active");
+</script>
+
 <h1 class="main-title">@Resource.AddNew @Resource.Order</h1>
 
 <hr />
@@ -14,7 +19,7 @@
         @Html.HiddenFor(model=>model.Patientid)
         @Html.HiddenFor(model=>model.Studyid)
 
-        <div class="row  justify-content-center align-items-center">
+        <div class="row justify-content-center align-items-center">
             <div class="p-3 col-4 d-flex flex-column">
                 <div class="form-group">
                     <label asp-for="Modalityid" class="control-label"></label>

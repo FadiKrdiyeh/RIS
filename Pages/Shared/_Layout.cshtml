@@ -92,8 +92,8 @@
                                     @Resource.OrderIndex
                                 </span>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a asp-controller="Orders" asp-action="Index">@Resource.Order</a></li>
+                                    <li><a asp-controller="Orders" asp-action="IndexSchudledOrder">Schudled Orders</a></li>
                                     <li><a class="dropdown-item" href="#">Something else here</a></li>
                                     <li><a class="dropdown-item" href="#">Test</a></li>
                                 </ul>
@@ -192,7 +192,7 @@
 
 
 <footer class="border-top footer text-muted">
-        <div class="container">
+        <div class="container text-center">
             &copy; 2022 - @Resource.RIS
         </div>
 </footer>
