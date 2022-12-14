@@ -783,7 +783,7 @@ header .logo-img {
 .scrollmenu .custom-nav-item.active > a,
 .scrollmenu .custom-nav-item.active > div.dropdown {
     background-color: #00600a;
-    text-shadow: 0px 6px 3px #fff;
+    text-shadow: 0px 0px 5px #fff;
     border-radius: 10px;
 }
 .scrollmenu .custom-nav-item:not(.active) > a:hover,
@@ -1005,9 +1005,13 @@ hr {
     height: 50px !important;
     transition: all 0.7s ease-in-out;
     padding: 0 !important;
-    padding-left: 55px !important;
+    /*padding-left: 55px !important;*/
     margin-bottom: 0;
     margin: 0 auto;
+}
+.login-form .form-control {
+    padding-left: 55px !important;
+    padding-right: 15px !important;
 }
 .form-control.input-validation-error {
     background-color: #f8c8c8;
@@ -1318,7 +1322,7 @@ hr {
     min-width: 200px;
     min-height: 200px !important;
     resize: both;
-    margin-left: 0;
+    margin-left: 10px;
 }
 .create-form .form-group .form-label[for="Notes"] {
     align-self: flex-start;
@@ -1612,6 +1616,9 @@ footer {
 }
 .select-options li[rel="hide"] {
     display: none;
+}
+.modal .create-form .form-label, .modal .create-form .control-label {
+    margin-left: 0;
 }
 /******** End Global ********/
 

@@ -41,6 +41,10 @@
       "PackagePath": "staticwebassets\\assets\\css\\newsTickerStyle.css"
     },
     {
+      "Id": "C:\\Users\\oracle\\Documents\\Visual Studio 2022\\Projects\\Project\\Ris2022\\Ris2022\\wwwroot\\assets\\css\\rtl.css",
+      "PackagePath": "staticwebassets\\assets\\css\\rtl.css"
+    },
+    {
       "Id": "C:\\Users\\oracle\\Documents\\Visual Studio 2022\\Projects\\Project\\Ris2022\\Ris2022\\wwwroot\\assets\\css\\style.css",
       "PackagePath": "staticwebassets\\assets\\css\\style.css"
     },

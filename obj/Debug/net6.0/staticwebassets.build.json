@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "hYkZ+RnOtzWRPh6ODb+y8OCCZXLhZUhW+MD9Kdep/0Y=",
+  "Hash": "nM00PkOdtXvH66doA/gC2OfMPcqgcQEDvys+Am3QTAQ=",
   "Source": "Ris2022",
   "BasePath": "_content/Ris2022",
   "Mode": "Default",
@@ -1324,6 +1324,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\css\\newsTickerStyle.css"
+    },
+    {
+      "Identity": "C:\\Users\\oracle\\Documents\\Visual Studio 2022\\Projects\\Project\\Ris2022\\Ris2022\\wwwroot\\assets\\css\\rtl.css",
+      "SourceId": "Ris2022",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\oracle\\Documents\\Visual Studio 2022\\Projects\\Project\\Ris2022\\Ris2022\\wwwroot\\",
+      "BasePath": "_content/Ris2022",
+      "RelativePath": "assets/css/rtl.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\css\\rtl.css"
     },
     {
       "Identity": "C:\\Users\\oracle\\Documents\\Visual Studio 2022\\Projects\\Project\\Ris2022\\Ris2022\\wwwroot\\assets\\css\\style.css",

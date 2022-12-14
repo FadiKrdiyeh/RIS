@@ -1,0 +1,180 @@
+/****** Start Header ******/
+header .logo-img {
+    right: 10vw;
+}
+
+header .navse .cinfo .cdetl .icon {
+    padding-right: 0px;
+    padding-left: 10px;
+}
+/****** End Header ******/
+/****** Start Login Page ******/
+.icons-container {
+    left: initial;
+    right: 0;
+}
+
+.form-floating .login-label {
+    right: 0px;
+    left: initial;
+    padding-left: 0px !important;
+    padding-right: 60px !important;
+}
+
+.login-form .checkbox .form-check-input {
+    margin-right: 0px;
+    margin-left: 20px;
+}
+
+.field-validation-error {
+    left: initial;
+    right: 45px;
+}
+
+.login-form .form-control {
+    padding-left: 15px !important;
+    padding-right: 55px !important;
+}
+/****** End Login Page ******/
+
+/****** Start Home Page ******/
+.fa.fa-sign-out-alt {
+    transform: rotate(180deg);
+}
+.scrollmenu .custom-nav-item i {
+    margin-left: 0;
+    margin-right: 5px;
+}
+.scrollmenu .custom-nav-item i.waving-icon {
+    transform: rotate(-30deg);
+    animation: wave-ar 2s infinite ease-in-out;
+}
+@keyframes wave-ar {
+    0% {
+        transform: rotate(-30deg);
+    }
+
+    25% {
+        transform: rotate(-45deg);
+    }
+
+    50% {
+        transform: rotate(-30deg);
+    }
+
+    75% {
+        transform: rotate(-15deg);
+    }
+
+    100% {
+        transform: rotate(-30deg);
+    }
+}
+
+.scrollmenu .custom-nav-item i {
+    margin-left: 0;
+    margin-right: 5px;
+}
+
+.scrollmenu .custom-nav-item button:hover i {
+    margin-left: 0;
+    margin-right: 20px;
+}
+
+.scrollmenu .custom-nav-item .dropdown .dropdown-menu {
+    left: -45px !important;
+    text-align: right;
+}
+.scrollmenu .custom-nav-item .dropdown .dropdown-menu li a:hover {
+    padding-left: 0;
+    padding-right: 25px;
+}
+/****** End Home Page ******/
+
+/****** Start Patient Pages ******/
+.select-styled:after {
+    right: initial;
+    left: 10px;
+}
+
+.custom-btn-container .custom-btn:hover button i {
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+.custom-btn-container .custom-btn button i {
+    margin-left: 0;
+    margin-right: 5px;
+}
+
+.create-form .form-group #Notes {
+    margin-right: 10px;
+    margin-left: auto;
+}
+
+.create-form .form-label, .create-form .control-label {
+    margin-left: 0;
+    margin-right: 20px;
+}
+
+.create-form .form-group .field-validation-error {
+    right: initial;
+    left: 0;
+}
+
+.show-details dl dd {
+    text-align: right;
+    border-right: none;
+    border-left: 5px solid #777;
+}
+
+.show-details dl dt {
+    border-right: none;
+    border-left: 1px solid #777;
+}
+
+.modal-header .btn-close {
+    margin: -0.5rem auto -0.5rem -0.5rem;
+}
+
+.modal .create-form .form-label, .modal .create-form .control-label {
+    margin-right: 0;
+}
+/****** End Patient Pages ******/
+
+/****** End Profile Page ******/
+.register-form .form-floating .login-label {
+    left: initial;
+    right: -30px;
+}
+/****** End Profile Page ******/
+
+/****** Start Global Classes ******/
+.me-auto {
+    margin-right: 0 !important;
+    margin-left: auto !important;
+}
+.hide-show-password {
+    right: initial;
+    left: 13px;
+    top: 15px;
+}
+.back-btn i {
+    margin-left: 0;
+    margin-right: 5px;
+    transform: rotate(180deg);
+}
+.back-btn:hover i {
+    margin-left: 0;
+    margin-right: 15px;
+}
+.create-btn:hover i {
+    transform: scale(1.3) rotate(-90deg);
+}
+.create-btn:hover i {
+    transform: scale(1.3) rotate(-90deg);
+}
+.create-o-btn:hover i {
+    transform: scale(1.3) rotate(-90deg);
+}
+/****** End Global Classes ******/

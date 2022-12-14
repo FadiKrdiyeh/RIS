@@ -13,6 +13,26 @@ $(document).ready(function () {
 
 });
 
+$(function () {
+    let selectedLang = "";
+    let name = ".AspNetCore.Culture=";
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let ca = decodedCookie.split(';');
+    for (let i = 0; i < ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            selectedLang = c.substring(name.length, c.length);
+            console.log(c.substring(name.length, c.length));
+        }
+    }
+
+    if (selectedLang == "c=ar|uic=ar") {
+        $('#lastCssLink').after('<link rel="stylesheet" href="/assets/css/rtl.css" />');
+    }
+});
 
 $(document).ready(function() {
     if ($.isFunction('owlCarousel')) {
@@ -38,11 +58,17 @@ $(document).ready(function() {
         });
     }
 
+    //$('#culture').on('change', function () {
+    //    console.log($(this).val());
+    //    console.log("Changed");
+    //});
+
+
     // Fix Alert Messages bs Attributes
     $('div.alert-dismissible button').attr("data-dismiss", "alert");
 
     // Hide And Show Password Input
-    console.log("asf");
+    // console.log("asf");
     $('input[type="password"]').after("<i class='fa fa-eye hide-show-password'></i>");
     $("i.hide-show-password").on("click", function () {
         if ($(this).hasClass("fa-eye")) {
@@ -98,7 +124,7 @@ $(document).ready(function() {
 
     });
 
-    console.log("Test");
+    // console.log("Test");
 
     $('#registerForm').on('submit', function (e) {
         let userName = $("#Input_UserName").val();
