@@ -1,7 +1,7 @@
 ﻿@model Ris2022.Data.Models.Department
 
 @{
-    ViewData["Title"] = "Details Department";
+    ViewData["Title"] = @Resource.Details + ' ' + @Resource.OneDepartment;
     Layout = "~/Pages/Shared/_Layout.cshtml";
 }
 
@@ -10,10 +10,10 @@
     activeLink.classList.add("active");
 </script>
 
-<h1 class="main-title">Details</h1>
+<h1 class="main-title">@Resource.Details</h1>
 
 <div class="show-details">
-    <h4>Department</h4>
+    <h4>@Resource.OneDepartment</h4>
     <hr />
     <dl class="row justify-content-center">
         <dt class = "col-sm-2">
@@ -31,6 +31,6 @@
     </dl>
 </div>
 <div class="mt-5">
-    <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn edit-btn mx-2">Edit <i class="fa fa-edit"></i></a>
-    <a asp-action="Index" class="btn back-btn mx-2 py-2">Back to List <i class="fa fa-hand-o-right"></i></a>
+    <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn edit-btn mx-2">@Resource.Edit <i class="fa fa-edit"></i></a>
+    <a asp-action="Index" class="btn back-btn mx-2 py-2">@Resource.BackToList <i class="fa fa-hand-o-right"></i></a>
 </div>

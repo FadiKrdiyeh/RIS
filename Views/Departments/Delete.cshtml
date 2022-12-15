@@ -1,7 +1,7 @@
 ﻿@model Ris2022.Data.Models.Department
 
 @{
-    ViewData["Title"] = Resource.Delete + ' ' + @Resource.Department;
+    ViewData["Title"] = Resource.Delete + ' ' + @Resource.OneDepartment;
     Layout = "~/Pages/Shared/_Layout.cshtml";
 }
 
@@ -13,7 +13,7 @@
 <h1 class="main-title">@Resource.Delete</h1>
 
 <div class="show-details">
-    <h4>@Resource.Department</h4>
+    <h4>@Resource.OneDepartment</h4>
     <hr />
     <dl class="row justify-content-center mb-5">
         <dt class = "col-sm-2">
@@ -38,18 +38,18 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title text-danger" id="staticBackdropLabel"><i class="fa fa-warning"></i> @Resource.Delete @Resource.Department</h5>
+                    <h5 class="modal-title text-danger" id="staticBackdropLabel"><i class="fa fa-warning"></i> @Resource.Delete @Resource.OneDepartment</h5>
                     <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    @Resource.ConfirmDelete @Resource.Department?
+                    @Resource.ConfirmDelete @Resource.OneDepartment@Resource.QuesMark
                 </div>
                 <div class="modal-footer">
                     <form asp-action="Delete">
                         <input type="hidden" asp-for="Id" />
                         @*<input type="submit" value="حذف" class="btn btn-danger" /> |*@
-                        <button type="button" class="btn btn-outline-secondary py-2" data-dismiss="modal">Cancel <i class="fa fa-close"></i></button>
-                        <button type="submit" class="btn delete-btn">حذف <i class="fa fa-trash"></i></button>
+                        <button type="button" class="btn btn-outline-secondary py-2" data-dismiss="modal">@Resource.Cancel <i class="fa fa-close"></i></button>
+                        <button type="submit" class="btn delete-btn">@Resource.Delete <i class="fa fa-trash"></i></button>
                         @*<input type="submit" value="حذف" class="btn btn-danger" />*@
                     </form>
                 </div>
@@ -57,5 +57,5 @@
         </div>
     </div>
 
-    <a asp-action="Index" class="btn back-btn py-2 mx-2">Back to List <i class="fa fa-hand-o-right"></i></a>
+    <a asp-action="Index" class="btn back-btn py-2 mx-2">@Resource.BackToList <i class="fa fa-hand-o-right"></i></a>
 </div>

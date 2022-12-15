@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<Ris2022.Data.Models.Modality>
 
 @{
-    ViewData["Title"] = Resource.Modalities;
+    ViewData["Title"] = @Resource.Modalities;
     Layout = "~/Pages/Shared/_Layout.cshtml";
 }
 
@@ -40,7 +40,7 @@
                 <th>
                     @Html.DisplayNameFor(model => model.Department)
                 </th>
-                <th>Actions</th>
+                <th>@Resource.Actions</th>
             </tr>
         </thead>
         <tbody>
@@ -75,9 +75,9 @@
                 </td>*@
                     <td class="position-relative overflow-hidden">
                         <div class="table-buttons">
-                            <a asp-action="Edit" asp-route-id="@item.Id" class="btn edit-btn icon-btn rounded-circle" title="Edit"><i class="fa fa-edit"></i></a>
-                            <a asp-action="Details" asp-route-id="@item.Id" class="btn details-btn icon-btn rounded-circle" title="Details"><i class="fa fa-info"></i></a>
-                            <a asp-action="Delete" asp-route-id="@item.Id" class="btn delete-btn icon-btn rounded-circle" title="Delete"><i class="fa fa-trash"></i></a>
+                            <a asp-action="Edit" asp-route-id="@item.Id" class="btn edit-btn icon-btn rounded-circle" title="@Resource.Edit"><i class="fa fa-edit"></i></a>
+                            <a asp-action="Details" asp-route-id="@item.Id" class="btn details-btn icon-btn rounded-circle" title="@Resource.Details"><i class="fa fa-info"></i></a>
+                            <a asp-action="Delete" asp-route-id="@item.Id" class="btn delete-btn icon-btn rounded-circle" title="@Resource.Delete"><i class="fa fa-trash"></i></a>
                         </div>
                     </td>
                 </tr>

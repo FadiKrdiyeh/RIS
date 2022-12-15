@@ -70,6 +70,15 @@ namespace Ris2022.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Actions.
+        /// </summary>
+        public static string Actions {
+            get {
+                return ResourceManager.GetString("Actions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Add New Modality.
         /// </summary>
         public static string AddModality {
@@ -196,6 +205,15 @@ namespace Ris2022.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Cancel.
+        /// </summary>
+        public static string Cancel {
+            get {
+                return ResourceManager.GetString("Cancel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Clinic.
         /// </summary>
         public static string Clinic {
@@ -219,6 +237,15 @@ namespace Ris2022.Resources {
         public static string ConfirmDelete {
             get {
                 return ResourceManager.GetString("ConfirmDelete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Create.
+        /// </summary>
+        public static string Create {
+            get {
+                return ResourceManager.GetString("Create", resourceCulture);
             }
         }
         
@@ -484,6 +511,15 @@ namespace Ris2022.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Modalities Types.
+        /// </summary>
+        public static string Modalitiestypes {
+            get {
+                return ResourceManager.GetString("Modalitiestypes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Modality.
         /// </summary>
         public static string Modality {
@@ -565,6 +601,15 @@ namespace Ris2022.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Nationalities.
+        /// </summary>
+        public static string Nationalities {
+            get {
+                return ResourceManager.GetString("Nationalities", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Nationality.
         /// </summary>
         public static string Nationality {
@@ -606,6 +651,33 @@ namespace Ris2022.Resources {
         public static string Notes {
             get {
                 return ResourceManager.GetString("Notes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Clinic.
+        /// </summary>
+        public static string OneClinic {
+            get {
+                return ResourceManager.GetString("OneClinic", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OneDepartment.
+        /// </summary>
+        public static string OneDepartment {
+            get {
+                return ResourceManager.GetString("OneDepartment", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Patient.
+        /// </summary>
+        public static string OnePatient {
+            get {
+                return ResourceManager.GetString("OnePatient", resourceCulture);
             }
         }
         
@@ -664,7 +736,7 @@ namespace Ris2022.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Patient.
+        ///   Looks up a localized string similar to Patients.
         /// </summary>
         public static string Patient {
             get {
@@ -727,11 +799,38 @@ namespace Ris2022.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Profile.
+        /// </summary>
+        public static string Profile {
+            get {
+                return ResourceManager.GetString("Profile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ?.
+        /// </summary>
+        public static string QuesMark {
+            get {
+                return ResourceManager.GetString("QuesMark", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Reason.
         /// </summary>
         public static string Reason {
             get {
                 return ResourceManager.GetString("Reason", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Reasons.
+        /// </summary>
+        public static string Reasons {
+            get {
+                return ResourceManager.GetString("Reasons", resourceCulture);
             }
         }
         

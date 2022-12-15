@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<Ris2022.Data.Models.Patient>
 
 @{
-    ViewData["Title"] = "Patients";
+    ViewData["Title"] = @Resource.Patient;
     Layout = "~/Pages/Shared/_Layout.cshtml";
 }
 <script>
@@ -9,7 +9,7 @@
     activeLink.classList.add("active");
 </script>
 
-<h1 class="main-title">Patients</h1>
+<h1 class="main-title">@Resource.Patient</h1>
 
 <p>
     <a asp-action="Create" class="btn create-o-btn mb-5">@Resource.AddPatient <i class="fa fa-plus ms-2"></i></a>
@@ -42,7 +42,7 @@
                 <th>
                     @Html.DisplayNameFor(model => model.Acceptancetypeid)
                 </th>
-                <th>Actions</th>
+                <th>@Resource.Actions</th>
             </tr>
         </thead>
         <tbody>
@@ -90,10 +90,10 @@
                             <a asp-action="Details" asp-route-id="@item.Id">@Resource.Details</a> |
                             <a asp-action="Delete" asp-route-id="@item.Id">@Resource.Delete</a>|
                             <a asp-action="Create" asp-controller="Orders" asp-route-patientId="@item.Id">@Resource.AddOrder</a>*@
-                            <a asp-action="Edit" asp-route-id="@item.Id" class="btn edit-btn icon-btn rounded-circle" title="Edit"><i class="fa fa-edit"></i></a> 
-                            <a asp-action="Details" asp-route-id="@item.Id" class="btn details-btn icon-btn rounded-circle" title="Details"><i class="fa fa-info"></i></a> 
-                            <a asp-action="Delete" asp-route-id="@item.Id" class="btn delete-btn icon-btn rounded-circle" title="Delete"><i class="fa fa-trash"></i></a>
-                            <a asp-action="Create" asp-controller="Orders" asp-route-patientId="@item.Id" class="btn add-btn icon-btn rounded-circle" title="Add Order"><i class="fa fa-plus"></i></a>
+                            <a asp-action="Edit" asp-route-id="@item.Id" class="btn edit-btn icon-btn rounded-circle" title="@Resource.Edit"><i class="fa fa-edit"></i></a>
+                            <a asp-action="Details" asp-route-id="@item.Id" class="btn details-btn icon-btn rounded-circle" title="@Resource.Details"><i class="fa fa-info"></i></a>
+                            <a asp-action="Delete" asp-route-id="@item.Id" class="btn delete-btn icon-btn rounded-circle" title="@Resource.Delete"><i class="fa fa-trash"></i></a>
+                            <a asp-action="Create" asp-controller="Orders" asp-route-patientId="@item.Id" class="btn add-btn icon-btn rounded-circle" title="@Resource.AddOrder"><i class="fa fa-plus"></i></a>
                         </div>
                     </td>
                 </tr>

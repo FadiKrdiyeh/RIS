@@ -120,8 +120,11 @@
   <data name="Acceptancetype" xml:space="preserve">
     <value>نوع القبول</value>
   </data>
+  <data name="Actions" xml:space="preserve">
+    <value>الإجراءات</value>
+  </data>
   <data name="AddModality" xml:space="preserve">
-    <value>إضافة آلة</value>
+    <value>إضافة آلة تصوير</value>
   </data>
   <data name="AddNew" xml:space="preserve">
     <value>إضافة</value>
@@ -162,6 +165,9 @@
   <data name="CallUs" xml:space="preserve">
     <value>اتصل بنا</value>
   </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>إلغاء</value>
+  </data>
   <data name="Clinic" xml:space="preserve">
     <value>العيادات</value>
   </data>
@@ -169,7 +175,10 @@
     <value>تأكيد كلمة السر</value>
   </data>
   <data name="ConfirmDelete" xml:space="preserve">
-    <value>هل أنا متأكد من حذف</value>
+    <value>هل أنت متأكد من حذف</value>
+  </data>
+  <data name="Create" xml:space="preserve">
+    <value>إضافة</value>
   </data>
   <data name="Currentaddress" xml:space="preserve">
     <value>العنوان الحالي</value>
@@ -256,7 +265,10 @@
     <value>رقم الموبايل</value>
   </data>
   <data name="Modalities" xml:space="preserve">
-    <value>الآلات</value>
+    <value>آلات التصوير</value>
+  </data>
+  <data name="Modalitiestypes" xml:space="preserve">
+    <value>أنواع الآلات</value>
   </data>
   <data name="Modality" xml:space="preserve">
     <value>آلة التصوير</value>
@@ -288,6 +300,9 @@
   <data name="NationalidNumber" xml:space="preserve">
     <value>الرقم الوطني</value>
   </data>
+  <data name="Nationalities" xml:space="preserve">
+    <value>الجنسيات</value>
+  </data>
   <data name="Nationality" xml:space="preserve">
     <value>الجنسية</value>
   </data>
@@ -302,6 +317,15 @@
   </data>
   <data name="Notes" xml:space="preserve">
     <value>الملاحظات الاولية والتشخيص المبدئي</value>
+  </data>
+  <data name="OneClinic" xml:space="preserve">
+    <value>عيادة</value>
+  </data>
+  <data name="OneDepartment" xml:space="preserve">
+    <value>قسم</value>
+  </data>
+  <data name="OnePatient" xml:space="preserve">
+    <value>بيانات المريض</value>
   </data>
   <data name="Order" xml:space="preserve">
     <value>طلب تصوير</value>
@@ -322,7 +346,7 @@
     <value>معرف المريض</value>
   </data>
   <data name="Patient" xml:space="preserve">
-    <value>بيانات المريض</value>
+    <value>بيانات المرضى</value>
   </data>
   <data name="PatientName" xml:space="preserve">
     <value>اسم المريض</value>
@@ -342,8 +366,17 @@
   <data name="Proceduretype" xml:space="preserve">
     <value>نوع الوضعية</value>
   </data>
+  <data name="Profile" xml:space="preserve">
+    <value>الملف الشخصي</value>
+  </data>
+  <data name="QuesMark" xml:space="preserve">
+    <value>؟</value>
+  </data>
   <data name="Reason" xml:space="preserve">
     <value>سبب الحذف</value>
+  </data>
+  <data name="Reasons" xml:space="preserve">
+    <value>أسباب الحذف</value>
   </data>
   <data name="Register" xml:space="preserve">
     <value>إنشاء حساب</value>
@@ -361,7 +394,7 @@
     <value>دور المستخدم</value>
   </data>
   <data name="Save" xml:space="preserve">
-    <value>تخزين</value>
+    <value>حفظ</value>
   </data>
   <data name="SchudledOrder" xml:space="preserve">
     <value>طلب تصوير مجدول</value>
@@ -379,7 +412,7 @@
     <value>تاريخ التعديل</value>
   </data>
   <data name="UpdateuserName" xml:space="preserve">
-    <value>قام بالبتعديل</value>
+    <value>قام بالتعديل</value>
   </data>
   <data name="UserName" xml:space="preserve">
     <value>اسم المستخدم</value>

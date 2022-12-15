@@ -78,7 +78,7 @@
                 </div>
             </div>
 
-            <nav class="scrollmenu-container">
+            <nav class="scrollmenu-container not-for-login">
                 <ul class="scrollmenu">
                     @if (SignInManager.IsSignedIn(User))
                     {
@@ -92,7 +92,7 @@
                                 </span>
                                 <ul class="dropdown-menu">
                                     <li><a asp-controller="Orders" asp-action="Index">@Resource.Order</a></li>
-                                    <li><a asp-controller="Orders" asp-action="IndexSchudledOrder">Schudled Orders</a></li>
+                                    <li><a asp-controller="Orders" asp-action="IndexSchudledOrder">@Resource.SchudledOrder</a></li>
                                     <li><a class="dropdown-item" href="#">Something else here</a></li>
                                     <li><a class="dropdown-item" href="#">Test</a></li>
                                 </ul>
@@ -129,7 +129,7 @@
                     {
                         <li class="custom-nav-item">
                             <form id="logoutForm" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Page("/Index", new { area = "" })">
-                                <button class="btn-sm" id="logout" type="submit">Logout <i class="fa fa-sign-out-alt"></i></button>
+                                <button class="btn-sm" id="logout" type="submit">@Resource.LogOut <i class="fa fa-sign-out-alt"></i></button>
                             </form>
                         </li>
 

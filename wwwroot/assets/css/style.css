@@ -646,6 +646,7 @@ header {
   padding-bottom: 0px;
   background-color: #444;
   color: #FFF;
+  width: 100vw;
   padding-bottom: 60px; }
   @media screen and (max-width: 940px) {
     .footer {
@@ -724,6 +725,9 @@ header .logo-img {
 }
 .scrollmenu-container {
     margin-top: 55px;
+}
+.scrollmenu-container.not-for-login {
+    width: 100vw;
 }
 .scrollmenu-container .scrollmenu {
     padding: 0 30px;

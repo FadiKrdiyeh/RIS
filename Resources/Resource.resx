@@ -120,6 +120,9 @@
   <data name="Acceptancetype" xml:space="preserve">
     <value>Acceptance Type</value>
   </data>
+  <data name="Actions" xml:space="preserve">
+    <value>Actions</value>
+  </data>
   <data name="AddModality" xml:space="preserve">
     <value>Add New Modality</value>
   </data>
@@ -162,6 +165,9 @@
   <data name="CallUs" xml:space="preserve">
     <value>Call Us</value>
   </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
   <data name="Clinic" xml:space="preserve">
     <value>Clinic</value>
   </data>
@@ -170,6 +176,9 @@
   </data>
   <data name="ConfirmDelete" xml:space="preserve">
     <value>Are you sure you want to delete this</value>
+  </data>
+  <data name="Create" xml:space="preserve">
+    <value>Create</value>
   </data>
   <data name="Currentaddress" xml:space="preserve">
     <value>Current Address</value>
@@ -258,6 +267,9 @@
   <data name="Modalities" xml:space="preserve">
     <value>Modalities</value>
   </data>
+  <data name="Modalitiestypes" xml:space="preserve">
+    <value>Modalities Types</value>
+  </data>
   <data name="Modality" xml:space="preserve">
     <value>Modality</value>
   </data>
@@ -285,6 +297,9 @@
   <data name="NationalidNumber" xml:space="preserve">
     <value>National id Number</value>
   </data>
+  <data name="Nationalities" xml:space="preserve">
+    <value>Nationalities</value>
+  </data>
   <data name="Nationality" xml:space="preserve">
     <value>Nationality</value>
   </data>
@@ -299,6 +314,15 @@
   </data>
   <data name="Notes" xml:space="preserve">
     <value>Notes</value>
+  </data>
+  <data name="OneClinic" xml:space="preserve">
+    <value>Clinic</value>
+  </data>
+  <data name="OneDepartment" xml:space="preserve">
+    <value>OneDepartment</value>
+  </data>
+  <data name="OnePatient" xml:space="preserve">
+    <value>Patient</value>
   </data>
   <data name="Order" xml:space="preserve">
     <value>Order</value>
@@ -319,7 +343,7 @@
     <value>Patient Id</value>
   </data>
   <data name="Patient" xml:space="preserve">
-    <value>Patient</value>
+    <value>Patients</value>
   </data>
   <data name="PatientName" xml:space="preserve">
     <value>PatientName</value>
@@ -339,8 +363,17 @@
   <data name="Proceduretype" xml:space="preserve">
     <value>Procedure Type</value>
   </data>
+  <data name="Profile" xml:space="preserve">
+    <value>Profile</value>
+  </data>
+  <data name="QuesMark" xml:space="preserve">
+    <value>?</value>
+  </data>
   <data name="Reason" xml:space="preserve">
     <value>Reason</value>
+  </data>
+  <data name="Reasons" xml:space="preserve">
+    <value>Reasons</value>
   </data>
   <data name="Register" xml:space="preserve">
     <value>Register</value>

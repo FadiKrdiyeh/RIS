@@ -1,7 +1,7 @@
 ﻿@model Ris2022.Data.Models.Department
 
 @{
-    ViewData["Title"] = "Edit Department";
+    ViewData["Title"] = @Resource.Edit + ' ' + @Resource.OneDepartment;
     Layout = "~/Pages/Shared/_Layout.cshtml";
 }
 
@@ -10,7 +10,7 @@
     activeLink.classList.add("active");
 </script>
 
-<h1 class="main-title">Edit Department</h1>
+<h1 class="main-title">@Resource.Edit @Resource.OneDepartment</h1>
 
 @*<h4></h4>*@
 <hr />
@@ -31,14 +31,14 @@
             </div>
             <div class="form-group">
                 @*<input type="submit" value="Save" class="btn create-btn" />*@
-                <button type="submit" value="Save" class="btn create-btn">Save <i class="fa fa-edit"></i></button>
+                <button type="submit" value="Save" class="btn create-btn">@Resource.Save <i class="fa fa-edit"></i></button>
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index" class="btn back-btn">Back to List <i class="fa fa-hand-o-right"></i></a>
+    <a asp-action="Index" class="btn back-btn">@Resource.BackToList <i class="fa fa-hand-o-right"></i></a>
 </div>
 
 @section Scripts {

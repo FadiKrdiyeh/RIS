@@ -1,7 +1,7 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Profile";
+    ViewData["Title"] = @Resource.Profile;
     ViewData["ActivePage"] = ManageNavPages.Index;
 }
 
@@ -22,7 +22,7 @@
                 <span asp-validation-for="Input.PhoneNumber" class="text-danger"></span>
             </div>
             @*<button id="update-profile-button" type="submit" class="w-100 btn btn-lg btn-primary">Save</button>*@
-            <button id="update-profile-button" type="submit" class="w-75 btn btn-lg custom-button">Save</button>
+                <button id="update-profile-button" type="submit" class="w-75 btn btn-lg custom-button">@Resource.Save <i class="fa fa-edit"></i></button>
         </form>
     </div>
 </div>
