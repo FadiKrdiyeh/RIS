@@ -45,9 +45,16 @@
                 </div>
 
                 <div class="form-floating mt-5 mb-5 mx-auto">
-                    <div class="checkbox">
+                    @*<div class="checkbox">
                         <label asp-for="Input.IsDoctor" class="form-label">
                             <input class="form-check-input" asp-for="Input.IsDoctor" />
+                            @Html.DisplayNameFor(m => m.Input.IsDoctor)
+                        </label>
+                    </div>*@
+                    <div class="checkbox">
+                        <label asp-for="Input.IsDoctor" class="custom-checkbox">
+                            <input asp-for="Input.IsDoctor" type="checkbox" />
+                            <span class="input-check"></span>
                             @Html.DisplayNameFor(m => m.Input.IsDoctor)
                         </label>
                     </div>

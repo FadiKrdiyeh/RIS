@@ -177,4 +177,8 @@ header .navse .cinfo .cdetl .icon {
 .create-o-btn:hover i {
     transform: scale(1.3) rotate(-90deg);
 }
+.custom-checkbox .input-check {
+    margin-right: 0;
+    margin-left: 5px;
+}
 /****** End Global Classes ******/

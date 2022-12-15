@@ -33,9 +33,16 @@
                         <span asp-validation-for="Input.Password" class="text-danger text-start"></span>
                     </div>
                     <div class="form-floating mt-5 mb-5">
-                        <div class="checkbox">
+                        @*<div class="checkbox">
                             <label asp-for="Input.RememberMe" class="form-label checkbox-label">
                                 <input class="form-check-input" asp-for="Input.RememberMe" />
+                                @Html.DisplayNameFor(m => m.Input.RememberMe)
+                            </label>
+                        </div>*@
+                        <div class="checkbox">
+                            <label asp-for="Input.RememberMe" class="custom-checkbox">
+                                <input asp-for="Input.RememberMe" type="checkbox" />
+                                <span class="input-check"></span>
                                 @Html.DisplayNameFor(m => m.Input.RememberMe)
                             </label>
                         </div>
