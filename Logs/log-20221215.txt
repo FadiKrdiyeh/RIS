@@ -6796,4 +6796,74 @@ FETCH FIRST 1 ROWS ONLY
  ]2022-12-15 15:26:12.794 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
  ]2022-12-15 15:26:12.797 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11983 application/javascript;+charset=utf-8 2.5168ms 
  ]2022-12-15 15:26:12.828 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 34.4585ms 
+ ]2022-12-15 15:31:39.146 +02:00 [INF User profile is available. Using 'C:\Users\oracle\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+ ]2022-12-15 15:31:39.311 +02:00 [INF Application Is Starting 
+ ]2022-12-15 15:31:39.365 +02:00 [INF Application started. Press Ctrl+C to shut down. 
+ ]2022-12-15 15:31:39.366 +02:00 [INF Hosting environment: Development 
+ ]2022-12-15 15:31:39.366 +02:00 [INF Content root path: C:\Users\oracle\Documents\Visual Studio 2022\Projects\Project\Ris2022\Ris2022\ 
+ ]2022-12-15 15:31:39.382 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/Account/Manage - - 
+ ]2022-12-15 15:31:39.452 +02:00 [INF Identity.Application was not authenticated. Failure message: Ticket expired 
+ ]2022-12-15 15:31:39.455 +02:00 [INF Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user. 
+ ]2022-12-15 15:31:39.458 +02:00 [INF AuthenticationScheme: Identity.Application was challenged. 
+ ]2022-12-15 15:31:39.471 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/Index?ReturnUrl=%2FAccount%2FManage - - 
+ ]2022-12-15 15:31:39.480 +02:00 [INF Identity.Application was not authenticated. Failure message: Ticket expired 
+ ]2022-12-15 15:31:39.480 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/Account/Manage - - - 302 - - 102.0875ms 
+ ]2022-12-15 15:31:39.501 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-12-15 15:31:39.562 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-12-15 15:31:39.686 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnGetAsync - ModelState is "Valid" 
+ ]2022-12-15 15:31:39.712 +02:00 [INF AuthenticationScheme: Identity.External signed out. 
+ ]2022-12-15 15:31:39.713 +02:00 [INF Executed handler method OnGetAsync, returned result . 
+ ]2022-12-15 15:31:39.718 +02:00 [INF Executing an implicit handler method - ModelState is "Valid" 
+ ]2022-12-15 15:31:39.718 +02:00 [INF Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-12-15 15:31:40.017 +02:00 [INF Executed page /Index in 450.0085ms 
+ ]2022-12-15 15:31:40.018 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-12-15 15:31:40.037 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/Index?ReturnUrl=%2FAccount%2FManage - - - 200 - text/html;+charset=utf-8 566.1659ms 
+ ]2022-12-15 15:31:40.164 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-12-15 15:31:40.168 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/style.css - - 
+ ]2022-12-15 15:31:40.171 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11983 application/javascript;+charset=utf-8 7.4700ms 
+ ]2022-12-15 15:31:40.173 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-12-15 15:31:40.176 +02:00 [INF The file /assets/css/style.css was not modified 
+ ]2022-12-15 15:31:40.177 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/style.css - - - 304 - text/css 8.1715ms 
+ ]2022-12-15 15:31:40.212 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 38.3933ms 
+ ]2022-12-15 17:11:51.210 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/bootstrap.min.js.map - - 
+ ]2022-12-15 17:11:51.210 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/style.css - - 
+ ]2022-12-15 17:11:51.210 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/popper.min.js.map - - 
+ ]2022-12-15 17:11:51.210 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/rtl.css - - 
+ ]2022-12-15 17:11:51.258 +02:00 [INF The file /assets/css/style.css was not modified 
+ ]2022-12-15 17:11:51.258 +02:00 [INF The file /assets/css/rtl.css was not modified 
+ ]2022-12-15 17:11:51.300 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/rtl.css - - - 304 - text/css 109.3595ms 
+ ]2022-12-15 17:11:51.300 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/style.css - - - 304 - text/css 109.3972ms 
+ ]2022-12-15 17:11:51.410 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css.map - - 
+ ]2022-12-15 17:11:51.416 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/style.css.map - - 
+ ]2022-12-15 17:11:51.741 +02:00 [INF Sending file. Request path: '/assets/css/style.css.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Project\Ris2022\Ris2022\wwwroot\assets\css\style.css.map' 
+ ]2022-12-15 17:11:51.742 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/style.css.map - - - 200 11116 text/plain 325.1343ms 
+ ]2022-12-15 17:11:51.825 +02:00 [INF Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Project\Ris2022\Ris2022\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map' 
+ ]2022-12-15 17:11:51.838 +02:00 [INF Sending file. Request path: '/assets/js/popper.min.js.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Project\Ris2022\Ris2022\wwwroot\assets\js\popper.min.js.map' 
+ ]2022-12-15 17:11:51.886 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/popper.min.js.map - - - 200 122908 text/plain 691.3906ms 
+ ]2022-12-15 17:11:51.889 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css.map - - - 200 431289 text/plain 478.8719ms 
+ ]2022-12-15 17:11:52.083 +02:00 [INF Sending file. Request path: '/assets/js/bootstrap.min.js.map'. Physical path: 'C:\Users\oracle\Documents\Visual Studio 2022\Projects\Project\Ris2022\Ris2022\wwwroot\assets\js\bootstrap.min.js.map' 
+ ]2022-12-15 17:11:52.088 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/bootstrap.min.js.map - - - 200 176087 text/plain 897.1773ms 
+ ]2022-12-15 17:12:06.549 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/scss/style.scss - - 
+ ]2022-12-15 17:12:06.586 +02:00 [INF Identity.Application was not authenticated. Failure message: Ticket expired 
+ ]2022-12-15 17:12:06.677 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/scss/style.scss - - - 404 - - 128.5097ms 
+ ]2022-12-15 17:12:14.254 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/Index?ReturnUrl=%2FAccount%2FManage - - 
+ ]2022-12-15 17:12:14.303 +02:00 [INF Identity.Application was not authenticated. Failure message: Ticket expired 
+ ]2022-12-15 17:12:14.329 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-12-15 17:12:14.381 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-12-15 17:12:14.565 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnGetAsync - ModelState is "Valid" 
+ ]2022-12-15 17:12:14.566 +02:00 [INF AuthenticationScheme: Identity.External signed out. 
+ ]2022-12-15 17:12:14.566 +02:00 [INF Executed handler method OnGetAsync, returned result . 
+ ]2022-12-15 17:12:14.566 +02:00 [INF Executing an implicit handler method - ModelState is "Valid" 
+ ]2022-12-15 17:12:14.566 +02:00 [INF Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-12-15 17:12:14.641 +02:00 [INF Executed page /Index in 260.1912ms 
+ ]2022-12-15 17:12:14.642 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-12-15 17:12:14.644 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/Index?ReturnUrl=%2FAccount%2FManage - - - 200 - text/html;+charset=utf-8 389.4034ms 
+ ]2022-12-15 17:12:14.734 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-12-15 17:12:14.734 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11983 application/javascript;+charset=utf-8 0.5757ms 
+ ]2022-12-15 17:12:14.834 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/script.js - - 
+ ]2022-12-15 17:12:14.834 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-12-15 17:12:14.871 +02:00 [INF The file /assets/js/script.js was not modified 
+ ]2022-12-15 17:12:14.872 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/script.js - - - 304 - application/javascript 38.0589ms 
+ ]2022-12-15 17:12:15.051 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 217.5707ms 
  ]

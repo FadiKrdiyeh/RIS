@@ -1,0 +1,32 @@
+2022-12-17 11:49:07.227 +02:00 [INF User profile is available. Using 'C:\Users\oracle\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+ ]2022-12-17 11:49:07.760 +02:00 [INF Application Is Starting 
+ ]2022-12-17 11:49:08.068 +02:00 [INF Application started. Press Ctrl+C to shut down. 
+ ]2022-12-17 11:49:08.068 +02:00 [INF Hosting environment: Development 
+ ]2022-12-17 11:49:08.068 +02:00 [INF Content root path: C:\Users\oracle\Documents\Visual Studio 2022\Projects\Project\Ris2022\Ris2022\ 
+ ]2022-12-17 11:49:08.085 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/ - - 
+ ]2022-12-17 11:49:11.054 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-12-17 11:49:11.331 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-12-17 11:49:11.452 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnGetAsync - ModelState is "Valid" 
+ ]2022-12-17 11:49:12.119 +02:00 [INF AuthenticationScheme: Identity.External signed out. 
+ ]2022-12-17 11:49:12.227 +02:00 [INF Executed handler method OnGetAsync, returned result . 
+ ]2022-12-17 11:49:12.230 +02:00 [INF Executing an implicit handler method - ModelState is "Valid" 
+ ]2022-12-17 11:49:12.230 +02:00 [INF Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-12-17 11:49:14.922 +02:00 [INF Executed page /Index in 3585.66ms 
+ ]2022-12-17 11:49:14.923 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-12-17 11:49:15.106 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/ - - - 200 - text/html;+charset=utf-8 7025.1940ms 
+ ]2022-12-17 11:49:15.409 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/style.css - - 
+ ]2022-12-17 11:49:15.455 +02:00 [INF The file /assets/css/style.css was not modified 
+ ]2022-12-17 11:49:15.457 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/style.css - - - 304 - text/css 48.0925ms 
+ ]2022-12-17 11:49:15.560 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-12-17 11:49:15.565 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 1.4042ms 
+ ]2022-12-17 11:49:15.573 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/script.js - - 
+ ]2022-12-17 11:49:15.574 +02:00 [INF The file /assets/js/script.js was not modified 
+ ]2022-12-17 11:49:15.574 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/script.js - - - 304 - application/javascript 0.5873ms 
+ ]2022-12-17 11:49:17.664 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/rtl.css - - 
+ ]2022-12-17 11:49:17.664 +02:00 [INF The file /assets/css/rtl.css was not modified 
+ ]2022-12-17 11:49:17.664 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/rtl.css - - - 304 - text/css 0.3250ms 
+ ]2022-12-17 11:49:18.121 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/images/fav.jpg - - 
+ ]2022-12-17 11:49:18.436 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/images/fav.jpg - - - 404 - - 314.7079ms 
+ ]2022-12-17 11:49:18.527 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/images/fav.png - - 
+ ]2022-12-17 11:49:18.531 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/images/fav.png - - - 404 - - 3.7289ms 
+ ]
