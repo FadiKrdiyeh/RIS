@@ -413,4 +413,75 @@ FETCH FIRST 1 ROWS ONLY
  ]2022-12-17 14:32:38.682 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 30.7202ms 
  ]2022-12-17 14:32:38.719 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/images/fav.png - - 
  ]2022-12-17 14:32:38.720 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/images/fav.png - - - 0 - - 1.0656ms 
+ ]2022-12-17 14:36:02.176 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/MainPage - - 
+ ]2022-12-17 14:36:02.303 +02:00 [INF Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user. 
+ ]2022-12-17 14:36:02.315 +02:00 [INF AuthenticationScheme: Identity.Application was challenged. 
+ ]2022-12-17 14:36:02.316 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/MainPage - - - 302 - - 139.2171ms 
+ ]2022-12-17 14:36:02.317 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/Index?ReturnUrl=%2FMainPage - - 
+ ]2022-12-17 14:36:02.324 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-12-17 14:36:02.326 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-12-17 14:36:02.327 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnGetAsync - ModelState is "Valid" 
+ ]2022-12-17 14:36:02.328 +02:00 [INF AuthenticationScheme: Identity.External signed out. 
+ ]2022-12-17 14:36:02.328 +02:00 [INF Executed handler method OnGetAsync, returned result . 
+ ]2022-12-17 14:36:02.328 +02:00 [INF Executing an implicit handler method - ModelState is "Valid" 
+ ]2022-12-17 14:36:02.328 +02:00 [INF Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-12-17 14:36:02.348 +02:00 [INF Executed page /Index in 21.1263ms 
+ ]2022-12-17 14:36:02.348 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-12-17 14:36:02.350 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/Index?ReturnUrl=%2FMainPage - - - 200 - text/html;+charset=utf-8 32.0905ms 
+ ]2022-12-17 14:36:02.490 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css - - 
+ ]2022-12-17 14:36:02.491 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/all.min.css - - 
+ ]2022-12-17 14:36:02.493 +02:00 [INF Sending file. Request path: '/assets/css/all.min.css'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\wwwroot\assets\css\all.min.css' 
+ ]2022-12-17 14:36:02.494 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/animate.css - - 
+ ]2022-12-17 14:36:02.494 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/plugins/slider/css/owl.carousel.min.css - - 
+ ]2022-12-17 14:36:02.495 +02:00 [INF Sending file. Request path: '/assets/plugins/slider/css/owl.carousel.min.css'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\wwwroot\assets\plugins\slider\css\owl.carousel.min.css' 
+ ]2022-12-17 14:36:02.495 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/plugins/slider/css/owl.carousel.min.css - - - 200 3292 text/css 0.8949ms 
+ ]2022-12-17 14:36:02.495 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/style.css - - 
+ ]2022-12-17 14:36:02.495 +02:00 [INF Sending file. Request path: '/assets/css/animate.css'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\wwwroot\assets\css\animate.css' 
+ ]2022-12-17 14:36:02.496 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/all.min.css - - - 200 57184 text/css 5.2669ms 
+ ]2022-12-17 14:36:02.496 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/images/logo.gif - - 
+ ]2022-12-17 14:36:02.496 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/jquery-3.2.1.min.js - - 
+ ]2022-12-17 14:36:02.497 +02:00 [INF Sending file. Request path: '/assets/css/style.css'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\wwwroot\assets\css\style.css' 
+ ]2022-12-17 14:36:02.497 +02:00 [INF Sending file. Request path: '/assets/images/logo.gif'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\wwwroot\assets\images\logo.gif' 
+ ]2022-12-17 14:36:02.497 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/images/logo.gif - - - 200 6230 image/gif 0.5561ms 
+ ]2022-12-17 14:36:02.497 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/popper.min.js - - 
+ ]2022-12-17 14:36:02.498 +02:00 [INF Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css' 
+ ]2022-12-17 14:36:02.500 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/bootstrap.min.js - - 
+ ]2022-12-17 14:36:02.500 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/plugins/slider/css/owl.theme.default.css - - 
+ ]2022-12-17 14:36:02.500 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/animate.css - - - 200 81372 text/css 5.5263ms 
+ ]2022-12-17 14:36:02.500 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js - - 
+ ]2022-12-17 14:36:02.501 +02:00 [INF Sending file. Request path: '/assets/plugins/slider/css/owl.theme.default.css'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\wwwroot\assets\plugins\slider\css\owl.theme.default.css' 
+ ]2022-12-17 14:36:02.501 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/plugins/slider/css/owl.theme.default.css - - - 200 1353 text/css 1.0178ms 
+ ]2022-12-17 14:36:02.501 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/style.css - - - 200 39332 text/css 5.5647ms 
+ ]2022-12-17 14:36:02.504 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/lib/bootstrap/dist/css/bootstrap.min.css - - - 200 155851 text/css 13.6196ms 
+ ]2022-12-17 14:36:02.505 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/js/script.js - - 
+ ]2022-12-17 14:36:02.505 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-12-17 14:36:02.505 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js - - 
+ ]2022-12-17 14:36:02.505 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/plugins/slider/js/owl.carousel.min.js - - 
+ ]2022-12-17 14:36:02.505 +02:00 [INF Sending file. Request path: '/assets/js/script.js'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\wwwroot\assets\js\script.js' 
+ ]2022-12-17 14:36:02.505 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-12-17 14:36:02.505 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/script.js - - - 200 7795 application/javascript 0.7898ms 
+ ]2022-12-17 14:36:02.506 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 0.8332ms 
+ ]2022-12-17 14:36:02.508 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/lib/jquery-validation/dist/jquery.validate.min.js - - 
+ ]2022-12-17 14:36:02.536 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 31.4097ms 
+ ]2022-12-17 14:36:02.578 +02:00 [INF Sending file. Request path: '/lib/jquery-validation/dist/jquery.validate.min.js'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js' 
+ ]2022-12-17 14:36:02.578 +02:00 [INF Sending file. Request path: '/assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\wwwroot\assets\plugins\scroll-fixed\jquery-scrolltofixed-min.js' 
+ ]2022-12-17 14:36:02.578 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js - - - 200 5853 application/javascript 78.6752ms 
+ ]2022-12-17 14:36:02.579 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/lib/jquery-validation/dist/jquery.validate.min.js - - - 200 23264 application/javascript 70.2450ms 
+ ]2022-12-17 14:36:02.579 +02:00 [INF Sending file. Request path: '/assets/js/popper.min.js'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\wwwroot\assets\js\popper.min.js' 
+ ]2022-12-17 14:36:02.579 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/popper.min.js - - - 200 19038 application/javascript 82.2070ms 
+ ]2022-12-17 14:36:02.644 +02:00 [INF Sending file. Request path: '/assets/plugins/slider/js/owl.carousel.min.js'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\wwwroot\assets\plugins\slider\js\owl.carousel.min.js' 
+ ]2022-12-17 14:36:02.645 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/plugins/slider/js/owl.carousel.min.js - - - 200 42772 application/javascript 139.8981ms 
+ ]2022-12-17 14:36:02.679 +02:00 [INF Sending file. Request path: '/assets/js/bootstrap.min.js'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\wwwroot\assets\js\bootstrap.min.js' 
+ ]2022-12-17 14:36:02.681 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/bootstrap.min.js - - - 200 48950 application/javascript 180.7695ms 
+ ]2022-12-17 14:36:02.682 +02:00 [INF Sending file. Request path: '/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js' 
+ ]2022-12-17 14:36:02.682 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js - - - 200 5873 application/javascript 177.2654ms 
+ ]2022-12-17 14:36:02.702 +02:00 [INF Sending file. Request path: '/assets/js/jquery-3.2.1.min.js'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\wwwroot\assets\js\jquery-3.2.1.min.js' 
+ ]2022-12-17 14:36:02.704 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/js/jquery-3.2.1.min.js - - - 200 86663 application/javascript 208.1218ms 
+ ]2022-12-17 14:36:17.472 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/webfonts/fa-solid-900.woff2 - - 
+ ]2022-12-17 14:36:17.473 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/webfonts/fa-regular-400.woff2 - - 
+ ]2022-12-17 14:36:17.473 +02:00 [INF Sending file. Request path: '/assets/webfonts/fa-solid-900.woff2'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\wwwroot\assets\webfonts\fa-solid-900.woff2' 
+ ]2022-12-17 14:36:17.473 +02:00 [INF Sending file. Request path: '/assets/webfonts/fa-regular-400.woff2'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\wwwroot\assets\webfonts\fa-regular-400.woff2' 
+ ]2022-12-17 14:36:17.474 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/webfonts/fa-regular-400.woff2 - - - 200 13576 font/woff2 0.6397ms 
+ ]2022-12-17 14:36:17.474 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/webfonts/fa-solid-900.woff2 - - - 200 76084 font/woff2 1.3553ms 
  ]
