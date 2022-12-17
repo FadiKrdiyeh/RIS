@@ -29,4 +29,218 @@
  ]2022-12-17 11:49:18.436 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/images/fav.jpg - - - 404 - - 314.7079ms 
  ]2022-12-17 11:49:18.527 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/images/fav.png - - 
  ]2022-12-17 11:49:18.531 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/images/fav.png - - - 404 - - 3.7289ms 
+ ]2022-12-17 11:49:28.734 +02:00 [INF Request starting HTTP/2 POST https://localhost:44392/ application/x-www-form-urlencoded 250 
+ ]2022-12-17 11:49:28.736 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-12-17 11:49:28.737 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-12-17 11:49:29.708 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnPostAsync - ModelState is "Valid" 
+ ]2022-12-17 11:49:37.644 +02:00 [INF Entity Framework Core 6.0.8 initialized 'RisDBContext' using provider 'Oracle.EntityFrameworkCore:6.0.21.1-20220418' with options: None 
+ ]2022-12-17 11:49:57.075 +02:00 [INF Executed DbCommand (587ms) [Parameters=[:normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='0']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ClinicId", "a"."ConcurrencyStamp", "a"."Departmentid", "a"."Email", "a"."EmailConfirmed", "a"."Firstname", "a"."Isdoctor", "a"."Languageid", "a"."Lastname", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AppUser" "a"
+WHERE "a"."NormalizedUserName" = :normalizedUserName_0
+FETCH FIRST 1 ROWS ONLY 
+ ]2022-12-17 11:49:58.871 +02:00 [INF Executed DbCommand (1ms) [Parameters=[:user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='0']
+SELECT "u"."Id", "u"."ClaimType", "u"."ClaimValue", "u"."UserId"
+FROM "UserClaims" "u"
+WHERE "u"."UserId" = :user_Id_0 
+ ]2022-12-17 11:49:58.912 +02:00 [INF Executed DbCommand (1ms) [Parameters=[:userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='0']
+SELECT "r"."Name"
+FROM "UserRoles" "u"
+INNER JOIN "Role" "r" ON "u"."RoleId" = "r"."Id"
+WHERE "u"."UserId" = :userId_0 
+ ]2022-12-17 11:49:58.914 +02:00 [INF AuthenticationScheme: Identity.Application signed in. 
+ ]2022-12-17 11:49:58.914 +02:00 [INF fadi User logged in. 
+ ]2022-12-17 11:49:58.975 +02:00 [INF Executed handler method OnPostAsync, returned result Microsoft.AspNetCore.Mvc.RedirectToPageResult. 
+ ]2022-12-17 11:49:58.982 +02:00 [INF Executing RedirectToPageResult, redirecting to MainPage. 
+ ]2022-12-17 11:49:58.983 +02:00 [INF Executed page /Index in 30246.0531ms 
+ ]2022-12-17 11:49:58.983 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-12-17 11:49:58.986 +02:00 [INF Request finished HTTP/2 POST https://localhost:44392/ application/x-www-form-urlencoded 250 - 302 - - 30251.7141ms 
+ ]2022-12-17 11:49:59.013 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/MainPage - - 
+ ]2022-12-17 11:49:59.092 +02:00 [INF Executing endpoint '/MainPage' 
+ ]2022-12-17 11:49:59.097 +02:00 [INF Route matched with {page = "/MainPage", action = "", controller = "", area = ""}. Executing page /MainPage 
+ ]2022-12-17 11:49:59.098 +02:00 [INF Executing handler method Ris2022.Pages.IndexModel.OnGet - ModelState is "Valid" 
+ ]2022-12-17 11:49:59.098 +02:00 [INF Executed handler method OnGet, returned result . 
+ ]2022-12-17 11:49:59.098 +02:00 [INF Executing an implicit handler method - ModelState is "Valid" 
+ ]2022-12-17 11:49:59.098 +02:00 [INF Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-12-17 11:50:03.148 +02:00 [INF Executed page /MainPage in 4050.1446ms 
+ ]2022-12-17 11:50:03.148 +02:00 [INF Executed endpoint '/MainPage' 
+ ]2022-12-17 11:50:04.720 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/MainPage - - - 200 - text/html;+charset=utf-8 5706.8138ms 
+ ]2022-12-17 11:50:04.889 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-12-17 11:50:04.891 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 1.5186ms 
+ ]2022-12-17 11:50:04.995 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-12-17 11:50:08.337 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 3341.9764ms 
+ ]2022-12-17 11:50:26.218 +02:00 [INF Request starting HTTP/2 POST https://localhost:44392/Home/ChangeLanguage application/x-www-form-urlencoded 261 
+ ]2022-12-17 11:50:26.220 +02:00 [INF Executing endpoint 'Ris2022.Controllers.HomeController.ChangeLanguage (Ris2022)' 
+ ]2022-12-17 11:50:26.954 +02:00 [INF Route matched with {action = "ChangeLanguage", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ChangeLanguage(System.String, System.String) on controller Ris2022.Controllers.HomeController (Ris2022). 
+ ]2022-12-17 11:50:27.479 +02:00 [INF Executing LocalRedirectResult, redirecting to /MainPage. 
+ ]2022-12-17 11:50:27.479 +02:00 [INF Executed action Ris2022.Controllers.HomeController.ChangeLanguage (Ris2022) in 524.328ms 
+ ]2022-12-17 11:50:27.479 +02:00 [INF Executed endpoint 'Ris2022.Controllers.HomeController.ChangeLanguage (Ris2022)' 
+ ]2022-12-17 11:50:27.479 +02:00 [INF Request finished HTTP/2 POST https://localhost:44392/Home/ChangeLanguage application/x-www-form-urlencoded 261 - 302 - - 1260.9094ms 
+ ]2022-12-17 11:50:27.483 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/MainPage - - 
+ ]2022-12-17 11:50:27.486 +02:00 [INF Executing endpoint '/MainPage' 
+ ]2022-12-17 11:50:27.486 +02:00 [INF Route matched with {page = "/MainPage", action = "", controller = "", area = ""}. Executing page /MainPage 
+ ]2022-12-17 11:50:27.487 +02:00 [INF Executing handler method Ris2022.Pages.IndexModel.OnGet - ModelState is "Valid" 
+ ]2022-12-17 11:50:27.487 +02:00 [INF Executed handler method OnGet, returned result . 
+ ]2022-12-17 11:50:27.487 +02:00 [INF Executing an implicit handler method - ModelState is "Valid" 
+ ]2022-12-17 11:50:27.487 +02:00 [INF Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-12-17 11:50:28.564 +02:00 [INF Executed page /MainPage in 1077.8475ms 
+ ]2022-12-17 11:50:30.853 +02:00 [INF Executed endpoint '/MainPage' 
+ ]2022-12-17 11:50:30.858 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/MainPage - - - 200 - text/html;+charset=utf-8 3374.4760ms 
+ ]2022-12-17 11:50:30.999 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-12-17 11:50:31.001 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-12-17 11:50:31.001 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 1.8375ms 
+ ]2022-12-17 11:50:31.032 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 31.6723ms 
+ ]2022-12-17 12:41:09.709 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/Orders/IndexSchudledOrder - - 
+ ]2022-12-17 12:41:12.153 +02:00 [INF Identity.Application was not authenticated. Failure message: Ticket expired 
+ ]2022-12-17 12:41:13.178 +02:00 [INF Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user. 
+ ]2022-12-17 12:41:14.071 +02:00 [INF AuthenticationScheme: Identity.Application was challenged. 
+ ]2022-12-17 12:41:15.125 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/Orders/IndexSchudledOrder - - - 302 - - 5777.0321ms 
+ ]2022-12-17 12:41:15.145 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/Index?ReturnUrl=%2FOrders%2FIndexSchudledOrder - - 
+ ]2022-12-17 12:41:16.239 +02:00 [INF Identity.Application was not authenticated. Failure message: Ticket expired 
+ ]2022-12-17 12:41:16.239 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-12-17 12:41:17.578 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-12-17 12:41:17.626 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnGetAsync - ModelState is "Valid" 
+ ]2022-12-17 12:41:17.632 +02:00 [INF AuthenticationScheme: Identity.External signed out. 
+ ]2022-12-17 12:41:17.632 +02:00 [INF Executed handler method OnGetAsync, returned result . 
+ ]2022-12-17 12:41:17.632 +02:00 [INF Executing an implicit handler method - ModelState is "Valid" 
+ ]2022-12-17 12:41:17.632 +02:00 [INF Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-12-17 12:41:18.548 +02:00 [INF Executed page /Index in 970.1353ms 
+ ]2022-12-17 12:41:18.548 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-12-17 12:41:18.636 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/Index?ReturnUrl=%2FOrders%2FIndexSchudledOrder - - - 200 - text/html;+charset=utf-8 3491.3820ms 
+ ]2022-12-17 12:41:19.892 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-12-17 12:41:19.949 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 1.1422ms 
+ ]2022-12-17 12:41:20.055 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-12-17 12:41:20.128 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 73.4729ms 
+ ]2022-12-17 12:43:50.752 +02:00 [INF Request starting HTTP/2 POST https://localhost:44392/Index?ReturnUrl=%2FOrders%2FIndexSchudledOrder application/x-www-form-urlencoded 250 
+ ]2022-12-17 12:43:50.755 +02:00 [INF Identity.Application was not authenticated. Failure message: Ticket expired 
+ ]2022-12-17 12:43:50.755 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-12-17 12:43:50.755 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-12-17 12:43:51.095 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnPostAsync - ModelState is "Valid" 
+ ]2022-12-17 12:43:53.133 +02:00 [INF Entity Framework Core 6.0.8 initialized 'RisDBContext' using provider 'Oracle.EntityFrameworkCore:6.0.21.1-20220418' with options: None 
+ ]2022-12-17 12:43:55.684 +02:00 [INF Executed DbCommand (988ms) [Parameters=[:normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='0']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ClinicId", "a"."ConcurrencyStamp", "a"."Departmentid", "a"."Email", "a"."EmailConfirmed", "a"."Firstname", "a"."Isdoctor", "a"."Languageid", "a"."Lastname", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AppUser" "a"
+WHERE "a"."NormalizedUserName" = :normalizedUserName_0
+FETCH FIRST 1 ROWS ONLY 
+ ]2022-12-17 12:43:56.185 +02:00 [INF Executed DbCommand (0ms) [Parameters=[:user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='0']
+SELECT "u"."Id", "u"."ClaimType", "u"."ClaimValue", "u"."UserId"
+FROM "UserClaims" "u"
+WHERE "u"."UserId" = :user_Id_0 
+ ]2022-12-17 12:43:56.296 +02:00 [INF Executed DbCommand (1ms) [Parameters=[:userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='0']
+SELECT "r"."Name"
+FROM "UserRoles" "u"
+INNER JOIN "Role" "r" ON "u"."RoleId" = "r"."Id"
+WHERE "u"."UserId" = :userId_0 
+ ]2022-12-17 12:43:56.308 +02:00 [INF AuthenticationScheme: Identity.Application signed in. 
+ ]2022-12-17 12:43:56.308 +02:00 [INF fadi User logged in. 
+ ]2022-12-17 12:43:56.437 +02:00 [INF Executed handler method OnPostAsync, returned result Microsoft.AspNetCore.Mvc.RedirectToPageResult. 
+ ]2022-12-17 12:43:56.437 +02:00 [INF Executing RedirectToPageResult, redirecting to MainPage. 
+ ]2022-12-17 12:43:56.437 +02:00 [INF Executed page /Index in 5682.0266ms 
+ ]2022-12-17 12:43:56.437 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-12-17 12:43:56.438 +02:00 [INF Request finished HTTP/2 POST https://localhost:44392/Index?ReturnUrl=%2FOrders%2FIndexSchudledOrder application/x-www-form-urlencoded 250 - 302 - - 5912.8234ms 
+ ]2022-12-17 12:43:56.441 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/MainPage - - 
+ ]2022-12-17 12:43:56.442 +02:00 [INF Executing endpoint '/MainPage' 
+ ]2022-12-17 12:43:56.442 +02:00 [INF Route matched with {page = "/MainPage", action = "", controller = "", area = ""}. Executing page /MainPage 
+ ]2022-12-17 12:43:56.443 +02:00 [INF Executing handler method Ris2022.Pages.IndexModel.OnGet - ModelState is "Valid" 
+ ]2022-12-17 12:43:56.443 +02:00 [INF Executed handler method OnGet, returned result . 
+ ]2022-12-17 12:43:56.443 +02:00 [INF Executing an implicit handler method - ModelState is "Valid" 
+ ]2022-12-17 12:43:56.443 +02:00 [INF Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-12-17 12:43:57.089 +02:00 [INF Executed page /MainPage in 646.7864ms 
+ ]2022-12-17 12:43:57.089 +02:00 [INF Executed endpoint '/MainPage' 
+ ]2022-12-17 12:43:57.180 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/MainPage - - - 200 - text/html;+charset=utf-8 739.4353ms 
+ ]2022-12-17 12:43:59.188 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-12-17 12:43:59.189 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 0.5081ms 
+ ]2022-12-17 12:43:59.693 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-12-17 12:43:59.730 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 36.5032ms 
+ ]2022-12-17 13:13:57.860 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/Patients - - 
+ ]2022-12-17 13:13:57.860 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/Patients - - 
+ ]2022-12-17 13:13:57.862 +02:00 [INF Identity.Application was not authenticated. Failure message: Ticket expired 
+ ]2022-12-17 13:13:57.862 +02:00 [INF Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user. 
+ ]2022-12-17 13:13:57.862 +02:00 [INF AuthenticationScheme: Identity.Application was challenged. 
+ ]2022-12-17 13:13:57.862 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/Patients - - - 0 - - 322.6043ms 
+ ]2022-12-17 13:13:58.165 +02:00 [INF Identity.Application was not authenticated. Failure message: Ticket expired 
+ ]2022-12-17 13:13:58.172 +02:00 [INF Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user. 
+ ]2022-12-17 13:13:58.172 +02:00 [INF AuthenticationScheme: Identity.Application was challenged. 
+ ]2022-12-17 13:13:58.173 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/Patients - - - 302 - - 421.2635ms 
+ ]2022-12-17 13:13:58.291 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/Index?ReturnUrl=%2FPatients - - 
+ ]2022-12-17 13:13:58.292 +02:00 [INF Identity.Application was not authenticated. Failure message: Ticket expired 
+ ]2022-12-17 13:13:58.292 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-12-17 13:13:58.292 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-12-17 13:13:58.375 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnGetAsync - ModelState is "Valid" 
+ ]2022-12-17 13:13:58.455 +02:00 [INF AuthenticationScheme: Identity.External signed out. 
+ ]2022-12-17 13:13:58.455 +02:00 [INF Executed handler method OnGetAsync, returned result . 
+ ]2022-12-17 13:13:58.455 +02:00 [INF Executing an implicit handler method - ModelState is "Valid" 
+ ]2022-12-17 13:13:58.455 +02:00 [INF Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-12-17 13:13:58.583 +02:00 [INF Executed page /Index in 210.0481ms 
+ ]2022-12-17 13:13:58.583 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-12-17 13:13:58.793 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/Index?ReturnUrl=%2FPatients - - - 200 - text/html;+charset=utf-8 502.6774ms 
+ ]2022-12-17 13:13:59.065 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-12-17 13:13:59.066 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-12-17 13:13:59.067 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 1.6959ms 
+ ]2022-12-17 13:13:59.104 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 38.2187ms 
+ ]2022-12-17 13:14:11.351 +02:00 [INF Request starting HTTP/2 POST https://localhost:44392/Index?ReturnUrl=%2FPatients application/x-www-form-urlencoded 250 
+ ]2022-12-17 13:14:11.489 +02:00 [INF Identity.Application was not authenticated. Failure message: Ticket expired 
+ ]2022-12-17 13:14:11.490 +02:00 [INF Executing endpoint '/Index' 
+ ]2022-12-17 13:14:11.490 +02:00 [INF Route matched with {page = "/Index", action = "", controller = "", area = ""}. Executing page /Index 
+ ]2022-12-17 13:14:11.580 +02:00 [INF Executing handler method Ris2022.Pages.Account.LoginIModel.OnPostAsync - ModelState is "Valid" 
+ ]2022-12-17 13:14:11.752 +02:00 [INF Entity Framework Core 6.0.8 initialized 'RisDBContext' using provider 'Oracle.EntityFrameworkCore:6.0.21.1-20220418' with options: None 
+ ]2022-12-17 13:14:11.755 +02:00 [INF Executed DbCommand (1ms) [Parameters=[:normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='0']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ClinicId", "a"."ConcurrencyStamp", "a"."Departmentid", "a"."Email", "a"."EmailConfirmed", "a"."Firstname", "a"."Isdoctor", "a"."Languageid", "a"."Lastname", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AppUser" "a"
+WHERE "a"."NormalizedUserName" = :normalizedUserName_0
+FETCH FIRST 1 ROWS ONLY 
+ ]2022-12-17 13:14:11.853 +02:00 [INF Executed DbCommand (0ms) [Parameters=[:user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='0']
+SELECT "u"."Id", "u"."ClaimType", "u"."ClaimValue", "u"."UserId"
+FROM "UserClaims" "u"
+WHERE "u"."UserId" = :user_Id_0 
+ ]2022-12-17 13:14:11.855 +02:00 [INF Executed DbCommand (0ms) [Parameters=[:userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='0']
+SELECT "r"."Name"
+FROM "UserRoles" "u"
+INNER JOIN "Role" "r" ON "u"."RoleId" = "r"."Id"
+WHERE "u"."UserId" = :userId_0 
+ ]2022-12-17 13:14:11.856 +02:00 [INF AuthenticationScheme: Identity.Application signed in. 
+ ]2022-12-17 13:14:11.856 +02:00 [INF fadi User logged in. 
+ ]2022-12-17 13:14:11.856 +02:00 [INF Executed handler method OnPostAsync, returned result Microsoft.AspNetCore.Mvc.RedirectToPageResult. 
+ ]2022-12-17 13:14:11.856 +02:00 [INF Executing RedirectToPageResult, redirecting to MainPage. 
+ ]2022-12-17 13:14:11.856 +02:00 [INF Executed page /Index in 366.311ms 
+ ]2022-12-17 13:14:11.856 +02:00 [INF Executed endpoint '/Index' 
+ ]2022-12-17 13:14:11.856 +02:00 [INF Request finished HTTP/2 POST https://localhost:44392/Index?ReturnUrl=%2FPatients application/x-www-form-urlencoded 250 - 302 - - 505.7628ms 
+ ]2022-12-17 13:14:11.928 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/MainPage - - 
+ ]2022-12-17 13:14:11.957 +02:00 [INF Executing endpoint '/MainPage' 
+ ]2022-12-17 13:14:11.957 +02:00 [INF Route matched with {page = "/MainPage", action = "", controller = "", area = ""}. Executing page /MainPage 
+ ]2022-12-17 13:14:11.958 +02:00 [INF Executing handler method Ris2022.Pages.IndexModel.OnGet - ModelState is "Valid" 
+ ]2022-12-17 13:14:11.958 +02:00 [INF Executed handler method OnGet, returned result . 
+ ]2022-12-17 13:14:11.958 +02:00 [INF Executing an implicit handler method - ModelState is "Valid" 
+ ]2022-12-17 13:14:11.958 +02:00 [INF Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult. 
+ ]2022-12-17 13:14:11.971 +02:00 [INF Executed page /MainPage in 13.9849ms 
+ ]2022-12-17 13:14:11.972 +02:00 [INF Executed endpoint '/MainPage' 
+ ]2022-12-17 13:14:11.974 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/MainPage - - - 200 - text/html;+charset=utf-8 45.4355ms 
+ ]2022-12-17 13:14:12.139 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-12-17 13:14:12.140 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 1.0393ms 
+ ]2022-12-17 13:14:12.179 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-12-17 13:14:12.208 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 28.6287ms 
+ ]2022-12-17 13:14:20.512 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/Patients - - 
+ ]2022-12-17 13:14:20.540 +02:00 [INF Executing endpoint 'Ris2022.Controllers.PatientsController.Index (Ris2022)' 
+ ]2022-12-17 13:14:20.928 +02:00 [INF Route matched with {action = "Index", controller = "Patients", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller Ris2022.Controllers.PatientsController (Ris2022). 
+ ]2022-12-17 13:14:21.558 +02:00 [INF Entity Framework Core 6.0.8 initialized 'RisDBContext' using provider 'Oracle.EntityFrameworkCore:6.0.21.1-20220418' with options: None 
+ ]2022-12-17 13:14:25.584 +02:00 [INF Executed DbCommand (2,151ms) [Parameters=[], CommandType='"Text"', CommandTimeout='0']
+SELECT "p"."Id", "p"."Acceptancetypeid", "p"."Age", "p"."Birthdate", "p"."Birthplace", "p"."Currentaddress", "p"."Firstname", "p"."Gendre", "p"."Givenid", "p"."InsertUserName", "p"."Insertdate", "p"."Landphone", "p"."Lastname", "p"."Martialstatusid", "p"."Middlename", "p"."Mobilephone", "p"."Mothername", "p"."NationalIdNumber", "p"."Nationalityid", "p"."Nearestperson", "p"."Nearestpersonphone", "p"."Notes", "p"."Reasonid", "p"."Residentaddress", "p"."Translatedfathername", "p"."Translatedfname", "p"."Translatedlname", "p"."Translatedmothername", "p"."Updatedate", "p"."UpdateuserName", "p"."Workaddress", "p"."Workphone", "p"."Worktypeid", "a"."Id", "a"."Namear", "a"."Nameen", "m"."Id", "m"."Namear", "m"."Nameen", "n"."Id", "n"."Namear", "n"."Nameen", "w"."Id", "w"."Namear", "w"."Nameen", "r"."Id", "r"."Namear", "r"."Nameen"
+FROM "Patients" "p"
+INNER JOIN "Acceptancetypes" "a" ON "p"."Acceptancetypeid" = "a"."Id"
+LEFT JOIN "Martialstatuses" "m" ON "p"."Martialstatusid" = "m"."Id"
+LEFT JOIN "Nationalities" "n" ON "p"."Nationalityid" = "n"."Id"
+LEFT JOIN "Worktypes" "w" ON "p"."Worktypeid" = "w"."Id"
+LEFT JOIN "Reasons" "r" ON "p"."Reasonid" = "r"."Id" 
+ ]2022-12-17 13:14:26.360 +02:00 [INF Executing ViewResult, running view Index. 
+ ]2022-12-17 13:14:26.732 +02:00 [INF Executed ViewResult - view Index executed in 394.2038ms. 
+ ]2022-12-17 13:14:26.732 +02:00 [INF Executed action Ris2022.Controllers.PatientsController.Index (Ris2022) in 5804.192ms 
+ ]2022-12-17 13:14:26.732 +02:00 [INF Executed endpoint 'Ris2022.Controllers.PatientsController.Index (Ris2022)' 
+ ]2022-12-17 13:14:26.769 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/Patients - - - 200 - text/html;+charset=utf-8 6256.6751ms 
+ ]2022-12-17 13:14:26.778 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - 
+ ]2022-12-17 13:14:26.779 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/_vs/browserLink - - 
+ ]2022-12-17 13:14:26.779 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 0.7373ms 
+ ]2022-12-17 13:14:26.807 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 28.1752ms 
  ]
