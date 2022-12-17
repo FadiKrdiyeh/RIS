@@ -1,7 +1,7 @@
 ﻿@model Ris2022.Data.Models.Order
 
 @{
-    ViewData["Title"] = "Edit Order";
+    ViewData["Title"] = @Resource.Edit + ' ' + @Resource.Order;
     Layout = "~/Pages/Shared/_Layout.cshtml";
 }
 
@@ -10,7 +10,7 @@
     activeLink.classList.add("active");
 </script>
 
-<h1 class="main-title">Edit Order</h1>
+<h1 class="main-title">@Resource.Edit @Resource.Order</h1>
 
 <hr />
 <div class="row">
@@ -175,14 +175,14 @@
                 </div>
                 <div class="form-group">
                     @*<input type="submit" value="Save" class="btn btn-primary" />*@
-                    <button type="submit" value="Save" class="btn create-btn">Save <i class="fa fa-edit"></i></button>
+                <button type="submit" value="Save" class="btn create-btn">@Resource.Save <i class="fa fa-edit"></i></button>
                 </div>
             </div>
         </form>
 </div>
 
 <div>
-    <a asp-action="Index" class="btn back-btn">Back to List <i class="fa fa-hand-o-right"></i></a>
+    <a asp-action="Index" class="btn back-btn">@Resource.BackToList <i class="fa fa-hand-o-right"></i></a>
 </div>
 
 @section Scripts {
