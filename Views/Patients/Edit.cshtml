@@ -18,16 +18,16 @@
 		<div asp-validation-summary="ModelOnly" class="text-danger"></div>
 		@Html.HiddenFor(model=>model.InsertUserName)
 		@Html.HiddenFor(model=>model.Givenid)
-		<div class="row  justify-content-center align-items-center">
-			<div class="p-3  col d-flex flex-column">
-
+		<div class="row justify-content-center align-items-center">
+			<div class="p-3 col-4 d-flex flex-column">
 				<div class="form-group">
 					<label asp-for="Firstname" class="form-label"></label>
 					<input type="text" class="form-control" placeholder="First name" name="Firstname" value="@Html.DisplayFor(model => model.Firstname)">
 					<span asp-validation-for="Firstname" class="text-danger"></span>
 				</div>
 			</div>
-			<div class="col">
+
+			<div class="p-3 col-4 d-flex flex-column">
 				<div class="form-group">
 					<label asp-for="Middlename" class="form-label"></label>
 					<input type="text" class="form-control" placeholder="Middle name" name="Middlename">
@@ -36,8 +36,7 @@
 				</div>
 			</div>
 
-
-			<div class="col">
+			<div class="p-3 col-4 d-flex flex-column">
 				<div class="form-group">
 					<label asp-for="Lastname" class="form-label"></label>
 					<input type="text" class="form-control" placeholder="Last name" name="Lastname">
@@ -46,19 +45,15 @@
 				</div>
 			</div>
 
-			<div class="col">
+			<div class="p-3 col-4 d-flex flex-column">
 				<div class="form-group">
 					<label asp-for="Mothername" class="form-label"></label>
 					<input type="text" class="form-control" placeholder=@Resource.MotherName name="Mothername">
 					<span asp-validation-for="Mothername" class="text-danger"></span>
 				</div>
 			</div>
-		</div>
 
-
-		<div class="row justify-content-center align-items-center">
-			<div class="p-3  col d-flex flex-column">
-
+			<div class="p-3 col-4 d-flex flex-column">
 				<div class="form-group">
 					<label asp-for="Gendre" class="form-label"></label>
 					@*						<input type="number" class="form-control" name="Gendre">
@@ -69,74 +64,70 @@
 				</div>
 			</div>
 
-			<div class="col">
+			<div class="p-3 col-4 d-flex flex-column">
 				<div class="form-group">
 					<label asp-for="Birthdate" class="form-label"></label>
 					<input asp-for="Birthdate" asp-format="{0:yyyy-MM-dd}" class="form-control" placeholder="Birthdate" name="Birthdate">
 					<span asp-validation-for="Birthdate" class="text-danger"></span>
 				</div>
 			</div>
-			<div class="col">
+
+			<div class="p-3 col-4 d-flex flex-column">
 				<div class="form-group">
 					<label asp-for="Age" class="form-label"></label>
 					<input id="Age" type="text" class="form-control" placeholder=@Resource.Age name="Age">
 					<span asp-validation-for="Age" class="text-danger"></span>
 				</div>
 			</div>
-			<div class="col">
+
+			<div class="p-3 col-4 d-flex flex-column">
 				<div class="form-group">
 					<label asp-for="NationalIdNumber" class="form-label"></label>
 					<input type="text" class="form-control" placeholder=@Resource.NationalidNumber name="NationalidNumber">
 					<span asp-validation-for="NationalIdNumber" class="text-danger"></span>
 				</div>
 			</div>
-		</div>
-		<div class="row justify-content-center align-items-center">
-			<div class="p-3  col d-flex flex-column">
-				<div class="form-group d-flex justify-content-center">
-					@*<button id="otherInfo" type="button" style="width:150px; background-color:aqua !important; height:50px; color:white;" name="Otherinfo" class="btn btn-primary"> @Resource.Otherinfo </button>*@
-					<div class="custom-btn-container">
-						<div class="custom-btn">
-							<button id="otherInfo" type="button" name="Otherinfo">@Resource.Otherinfo <i class="fa fa-angle-double-down"></i></button>
+
+			<div class="row justify-content-center align-items-center">
+				<div class="p-3 col d-flex flex-column">
+					<div class="form-group d-flex justify-content-center">
+						@*<button id="otherInfo" type="button" style="width:150px; background-color:aqua !important; height:50px; color:white;" name="Otherinfo" class="btn btn-primary"> @Resource.Otherinfo </button>*@
+						<div class="custom-btn-container">
+							<div class="custom-btn">
+								<button id="otherInfo" type="button" name="Otherinfo">@Resource.Otherinfo <i class="fa fa-angle-double-down"></i></button>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+
+
 		<div id="infoToShow" style="display: none;">
-
-
 			<div class="row justify-content-center align-items-center">
-				<div class="p-3 col d-flex flex-column">
-
+				<div class="p-3 col-4 d-flex flex-column">
 					<div class="form-group">
 						<label asp-for="Nationalityid" class="form-label"></label>
 						<select asp-for="Nationalityid" class="form-control" asp-items="ViewBag.Nationalityid"></select>
 					</div>
 				</div>
 
-
-				<div class="col">
+				<div class="p-3 col-4 d-flex flex-column">
 					<div class="form-group">
 						<label asp-for="Martialstatusid" class="form-label"></label>
 						<select asp-for="Martialstatusid" class="form-control" asp-items="ViewBag.Martialstatusid"></select>
 					</div>
 				</div>
 
-				<div class="col">
+				<div class="p-3 col-4 d-flex flex-column">
 					<div class="form-group">
 						<label asp-for="Birthplace" class="form-label"></label>
 						<input type="text" class="form-control" placeholder="Birthplace" name="Birthplace">
 						<span asp-validation-for="Birthplace" class="text-danger"></span>
 					</div>
 				</div>
-			</div>
 
-
-
-			<div class="row justify-content-center align-items-center">
-				<div class="p-3 col d-flex flex-column">
-
+				<div class="p-3 col-4 d-flex flex-column">
 					<div class="form-group">
 						<label asp-for="Currentaddress" class="form-label"></label>
 						<input asp-for="Currentaddress" class="form-control" />
@@ -144,9 +135,7 @@
 					</div>
 				</div>
 
-
-
-				<div class="col">
+				<div class="p-3 col-4 d-flex flex-column">
 					<div class="form-group">
 						<label asp-for="Residentaddress" class="form-label"></label>
 						<input asp-for="Residentaddress" class="form-control" />
@@ -154,17 +143,15 @@
 					</div>
 				</div>
 
-				<div class="col">
+				<div class="p-3 col-4 d-flex flex-column">
 					<div class="form-group">
 						<label asp-for="Insertdate" class="form-label"></label>
 						<input asp-for="Insertdate" asp-format="{0:yyyy-MM-dd}" class="form-control" placeholder="@Resource.Insertdate" name="Insertdate">
 						<span asp-validation-for="Insertdate" class="text-danger"></span>
 					</div>
 				</div>
-			</div>
 
-			<div class="row justify-content-center align-items-center">
-				<div class="col">
+				<div class="p-3 col-4 d-flex flex-column">
 					<div class="form-group">
 						<label asp-for="Mobilephone" class="form-label"></label>
 						<input type="number" class="form-control" name="Mobilephone">
@@ -172,7 +159,7 @@
 					</div>
 				</div>
 
-				<div class="col">
+				<div class="p-3 col-4 d-flex flex-column">
 					<div class="form-group">
 						<label asp-for="Landphone" class="form-label"></label>
 						<input asp-for="Landphone" class="form-control" />
@@ -180,25 +167,23 @@
 					</div>
 				</div>
 
-				<div class="col">
+				<div class="p-3 col-4 d-flex flex-column">
 					<div class="form-group">
 						<label asp-for="Acceptancetype" class="form-label"></label>
 						<input asp-for="Acceptancetype" class="form-control" name="Acceptancetype" />
 						<span asp-validation-for="Acceptancetype" class="text-danger"></span>
 					</div>
 				</div>
-			</div>
 
-			<div class="row justify-content-center align-items-center">
-
-				<div class=" col">
+				<div class="p-3 col-4 d-flex flex-column">
 					<div class="form-group">
 						<label asp-for="Workphone" class="form-label"></label>
 						<input asp-for="Workphone" class="form-control" />
 						<span asp-validation-for="Workphone" class="text-danger"></span>
 					</div>
 				</div>
-				<div class="col">
+
+				<div class="p-3 col-4 d-flex flex-column">
 					<div class="form-group">
 						<label asp-for="Workaddress" class="form-label"></label>
 						<input asp-for="Workaddress" class="form-control" />
@@ -206,18 +191,14 @@
 					</div>
 				</div>
 
-
-				<div class=" col">
+				<div class=" p-3 col-4 d-flex flex-column">
 					<div class="form-group">
 						<label asp-for="Worktypeid" class="form-label"></label>
 						<select asp-for="Worktypeid" class="form-control" asp-items="ViewBag.Worktypeid"></select>
 					</div>
 				</div>
-			</div>
 
-
-			<div class="row justify-content-center align-items-center">
-				<div class="col">
+				<div class="p-3 col-4 d-flex flex-column">
 					<div class="form-group">
 						<label asp-for="Nearestperson" class="form-label"></label>
 						<input asp-for="Nearestperson" class="form-control" />
@@ -225,17 +206,15 @@
 					</div>
 				</div>
 
-				<div class="col">
+				<div class="p-3 col-4 d-flex flex-column">
 					<div class="form-group">
 						<label asp-for="Nearestpersonphone" class="form-label"></label>
 						<input asp-for="Nearestpersonphone" class="form-control" />
 						<span asp-validation-for="Nearestpersonphone" class="text-danger"></span>
 					</div>
 				</div>
-			</div>
 
-			<div class="row justify-content-center align-items-center">
-				<div class="col">
+				<div class="p-3 col d-flex flex-column">
 					<div class="form-group">
 						<label asp-for="Notes" class="form-label"></label>
 						<textarea asp-for="Notes" type="text" class="form-control"></textarea>
