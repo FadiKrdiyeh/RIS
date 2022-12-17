@@ -484,4 +484,7 @@ DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
  ]2022-12-17 14:36:17.473 +02:00 [INF Sending file. Request path: '/assets/webfonts/fa-regular-400.woff2'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\wwwroot\assets\webfonts\fa-regular-400.woff2' 
  ]2022-12-17 14:36:17.474 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/webfonts/fa-regular-400.woff2 - - - 200 13576 font/woff2 0.6397ms 
  ]2022-12-17 14:36:17.474 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/webfonts/fa-solid-900.woff2 - - - 200 76084 font/woff2 1.3553ms 
+ ]2022-12-17 14:39:14.542 +02:00 [INF Request starting HTTP/2 GET https://localhost:44392/assets/css/rtl.css?__browserLink_refresh=bd57c74b0c434359978aaf36548d4bb2 - - 
+ ]2022-12-17 14:39:14.548 +02:00 [INF Sending file. Request path: '/assets/css/rtl.css'. Physical path: 'C:\Users\khalidD\Documents\Visual Studio 2022\Projects\Ris2022\Ris2022\wwwroot\assets\css\rtl.css' 
+ ]2022-12-17 14:39:14.548 +02:00 [INF Request finished HTTP/2 GET https://localhost:44392/assets/css/rtl.css?__browserLink_refresh=bd57c74b0c434359978aaf36548d4bb2 - - - 200 3637 text/css 5.6180ms 
  ]
