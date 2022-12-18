@@ -146,7 +146,7 @@
 				<div class="p-3 col-4 d-flex flex-column">
 					<div class="form-group">
 						<label asp-for="Insertdate" class="form-label"></label>
-						<input asp-for="Insertdate" asp-format="{0:yyyy-MM-dd}" class="form-control" placeholder="@Resource.Insertdate" name="Insertdate">
+						<input asp-for="Insertdate" asp-format="{0:yyyy-MM-dd}" class="form-control" placeholder="@Resource.Insertdate">
 						<span asp-validation-for="Insertdate" class="text-danger"></span>
 					</div>
 				</div>
@@ -211,6 +211,14 @@
 						<label asp-for="Nearestpersonphone" class="form-label"></label>
 						<input asp-for="Nearestpersonphone" class="form-control" />
 						<span asp-validation-for="Nearestpersonphone" class="text-danger"></span>
+					</div>
+				</div>
+
+				<div class="p-3 col-4 d-flex flex-column">
+					<div class="form-group">
+						<label asp-for="InsertUserName" class="form-label"></label>
+						<input asp-for="InsertUserName" class="form-control" />
+						<span asp-validation-for="InsertUserName" class="text-danger"></span>
 					</div>
 				</div>
 
