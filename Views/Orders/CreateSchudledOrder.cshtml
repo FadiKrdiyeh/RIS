@@ -19,7 +19,7 @@
         @Html.HiddenFor(model=>model.Patientid)
         @Html.HiddenFor(model=>model.Studyid)
         <div class="row justify-content-center align-items-center">
-            <div class="p-3 col d-flex flex-column">
+            <div class="p-3 col-4 d-flex flex-column">
                 <div class="form-group">
                     <label asp-for="Modalityid" class="control-label" name="ModalityName">@Resource.ModalityName</label>
                     <select asp-for="Modalityid" class="form-control" name="ModalityName" asp-items="ViewBag.Modalityid">@Resource.ModalityName</select>
