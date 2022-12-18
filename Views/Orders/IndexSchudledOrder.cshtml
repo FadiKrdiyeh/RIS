@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<Order>
 
 @{
-    ViewData["Title"] = "Schudled Orders";
+	ViewData["Title"] = @Resource.SchudledOrder;
     Layout = "~/Pages/Shared/_Layout.cshtml";
 }
 
@@ -10,10 +10,10 @@
 	activeLink.classList.add("active");
 </script>
 
-<h1 class="main-title">Schudled Orders</h1>
+<h1 class="main-title">@Resource.SchudledOrder</h1>
 
 <p>
-	<a asp-action="CreateSchudledOrder" class="btn create-o-btn mb-5">@Resource.AddOrder <i class="fa fa-plus ms-2"></i></a>
+	<a asp-action="CreateSchudledOrder" class="btn create-o-btn mb-5">@Resource.Create @Resource.SchudledOrder <i class="fa fa-plus ms-2"></i></a>
 </p>
 <div class="table-responsive">
 	<table class="table table-striped table-hover">
@@ -40,16 +40,13 @@
 				<th>
 					@Html.DisplayNameFor(model => model.dept.Namear)
 				</th>
-
-
-
 				<th>
 					@Html.DisplayNameFor(model => model.Clinicid)
 				</th>
 				<th>
 					@Html.DisplayNameFor(model => model.Modalitytypeid)
 				</th>
-				<th>Actions</th>
+				<th>@Resource.Actions</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -117,9 +114,9 @@
 					</td>*@
 					<td class="position-relative overflow-hidden">
 						<div class="table-buttons">
-							<a asp-action="EditSchudledOrder" asp-route-id="@item.Id" class="btn edit-btn icon-btn rounded-circle" title="Edit"><i class="fa fa-edit"></i></a>
-							<a asp-action="DetailsSchudledOrder" asp-route-id="@item.Id" class="btn details-btn icon-btn rounded-circle" title="Details"><i class="fa fa-info"></i></a>
-							<a asp-action="DeleteSchudledOrder" asp-route-id="@item.Id" class="btn delete-btn icon-btn rounded-circle" title="Delete"><i class="fa fa-trash"></i></a>
+							<a asp-action="EditSchudledOrder" asp-route-id="@item.Id" class="btn edit-btn icon-btn rounded-circle" title="@Resource.Edit"><i class="fa fa-edit"></i></a>
+							<a asp-action="DetailsSchudledOrder" asp-route-id="@item.Id" class="btn details-btn icon-btn rounded-circle" title="@Resource.Details"><i class="fa fa-info"></i></a>
+							<a asp-action="DeleteSchudledOrder" asp-route-id="@item.Id" class="btn delete-btn icon-btn rounded-circle" title="@Resource.Delete"><i class="fa fa-trash"></i></a>
 						</div>
 					</td>
 				</tr>
@@ -129,7 +126,7 @@
 </div>
 
 <div>
-    <a asp-action="Index" class="btn back-btn">Back to List <i class="fa fa-hand-o-right"></i></a>
+	<a asp-action="Index" class="btn back-btn">@Resource.BackToList <i class="fa fa-hand-o-right"></i></a>
 </div>
 
 
