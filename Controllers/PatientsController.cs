@@ -128,6 +128,7 @@ namespace Ris2022.Controllers
             ViewData["Nationalityid"] = new SelectList(_context.Nationalities, "Id", "Id", patient.Nationalityid);
             ViewData["Worktypeid"] = new SelectList(_context.Worktypes, "Id", "Id", patient.Worktypeid);
             ViewData["Reasonid"] = new SelectList(_context.Reasons, "Id", Resource.ENARName, patient.Reasonid);
+            ViewData["Gendre"] = new SelectList(Enum.GetValues(typeof(gender)), patient.Gendre);
 
             return View(patient);
         }

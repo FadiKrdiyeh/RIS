@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Security.Claims;
+using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
@@ -140,6 +142,24 @@ namespace Ris2022.Controllers
             return View(order);
         }
 
+        // function to get modalities names
+        [HttpPost]
+        public IActionResult getDeptModalities(int patientId)
+        {
+            Order order = new()
+            {
+                Patientid = patientId,
+                Studyid = "1.2.4.0.13.1.4.2252867." + patientId
+            };
+
+            ViewData["Clinicid"] = new SelectList(_context.Clinics, "Id", Resource.ENARName);
+            ViewData["Departmentid"] = new SelectList(_context.Departments, "Id", Resource.ENARName);
+            ViewData["Modalityid"] = new SelectList(_context.Modalities, "Id", "Name");
+            ViewData["Modalitytypeid"] = new SelectList(_context.Modalitytypes, "Id", Resource.ENARName);
+
+            return View(order);
+        }
+
 
         // GET: Orders/CreateSchudledOrder
         public IActionResult CreateSchudledOrder(int patientId)
@@ -162,6 +182,70 @@ namespace Ris2022.Controllers
             return View(order);
 
         }
+
+        // post: Orders/Convert Arabic Text toEnglish
+
+        [HttpPost]
+
+        public string toEnglish(string araString)
+        {
+            string result = "";
+            StringBuilder sb = new StringBuilder(araString);
+            #region Mapping letters
+            sb.Replace("ا", "a");
+            sb.Replace(" ", " ");
+
+            sb.Replace("ء", "a");
+            sb.Replace("ؤ", "ou");
+            sb.Replace("ئ", "e");
+            sb.Replace("أ", "a");
+            sb.Replace("ة", "a");
+            sb.Replace("إ", "e");
+            sb.Replace("ى", "a");
+            sb.Replace("ب", "b");
+            sb.Replace("ت", "t");
+            sb.Replace("ث", "th");
+            sb.Replace("ج", "g");
+            sb.Replace("ح", "h");
+            sb.Replace("خ", "kh");
+            sb.Replace("د", "d");
+            sb.Replace("ذ", "th");
+            sb.Replace("ر", "r");
+            sb.Replace("ز", "z");
+            sb.Replace("س", "s");
+            sb.Replace("ش", "sh");
+            sb.Replace("ص", "s");
+            sb.Replace("ض", "d");
+            sb.Replace("ط", "t");
+            sb.Replace("ظ", "z");
+            sb.Replace("ع", "a");
+            sb.Replace("غ", "g");
+            sb.Replace("ف", "f");
+            sb.Replace("ق", "k");
+            sb.Replace("ك", "k");
+            sb.Replace("ل", "l");
+            sb.Replace("م", "m");
+            sb.Replace("ن", "n");
+            sb.Replace("ه", "h");
+            sb.Replace("و", "w");
+            sb.Replace("ي", "y");
+            #endregion
+            result = sb.ToString();
+            return result;
+        }
+
+        [HttpPost]
+
+        public Boolean isArabic(string t)
+        {
+            Boolean s = false;
+            if (t != null)
+                if (Regex.IsMatch(t, @"\p{IsArabic}"))
+                    s = true;
+            return s;
+        }
+
+
 
         // POST: Orders/CreateSchudledOrder
         // To protect from overposting attacks, enable the specific properties you want to bind to.
