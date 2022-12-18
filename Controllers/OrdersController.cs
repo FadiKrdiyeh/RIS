@@ -21,7 +21,7 @@ namespace Ris2022.Controllers
         private readonly RisDBContext _context;
         private readonly UserManager<RisAppUser> _userManager;
 
-        public OrdersController(RisDBContext context, UserManager<RisAppUser> userManager)
+        public OrdersController(RisDBContext context,UserManager<RisAppUser> userManager)
         {
             _context = context;
             _userManager = userManager;
@@ -40,8 +40,8 @@ namespace Ris2022.Controllers
                 .Include(o => o.paytype)
                 .Include(o => o.proceduretype)
                 .Include(o => o.reason)
-                .Include(o => o.RisAppDoctor);
-            return View(await risDBContext.ToListAsync());
+                .Include(o=>o.RisAppDoctor);
+             return View(await risDBContext.ToListAsync());
         }
 
         // GET: Orders/IndexSchudledOrder
@@ -193,13 +193,13 @@ namespace Ris2022.Controllers
                 procedureName = order.proceduretype.Nameen
             };
             if (ModelState.IsValid && Hl7Client.SendHl7Msg(hL7Message))
-            //if (ModelState.IsValid)
+                //if (ModelState.IsValid)
             {
                 _context.Add(order);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["Doctorid"] = new SelectList(_userManager.Users.Where(user => user.Isdoctor == true), "Id", "UserName", order.InsertuserName);
+            ViewData["Doctorid"] = new SelectList(_userManager.Users.Where(user => user.Isdoctor == true), "Id", "UserName",order.InsertuserName);
             ViewData["Ordertypeid"] = new SelectList(_context.Ordetypes, "Id", Resource.ENARName, order.Ordertypeid);
             ViewData["Clinicid"] = new SelectList(_context.Clinics, "Id", Resource.ENARName, order.Clinicid);
             ViewData["Departmentid"] = new SelectList(_context.Departments, "Id", Resource.ENARName, order.Departmentid);
@@ -275,7 +275,7 @@ namespace Ris2022.Controllers
             {
                 return NotFound();
             }
-            ViewData["Doctorid"] = new SelectList(_userManager.Users.Where(user => user.Isdoctor == true), "Id", "UserName", order.InsertuserName);
+            ViewData["Doctorid"] = new SelectList(_userManager.Users.Where(user => user.Isdoctor == true), "Id", "UserName",order.InsertuserName);
             ViewData["Ordertypeid"] = new SelectList(_context.Ordetypes, "Id", Resource.ENARName, order.Ordertypeid);
             ViewData["Clinicid"] = new SelectList(_context.Clinics, "Id", Resource.ENARName, order.Clinicid);
             ViewData["Departmentid"] = new SelectList(_context.Departments, "Id", Resource.ENARName, order.Departmentid);
@@ -476,7 +476,7 @@ namespace Ris2022.Controllers
             {
                 _context.Orders.Remove(order);
             }
-
+            
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
@@ -503,7 +503,7 @@ namespace Ris2022.Controllers
 
         private bool OrderExists(int id)
         {
-            return (_context.Orders?.Any(e => e.Id == id)).GetValueOrDefault();
+          return (_context.Orders?.Any(e => e.Id == id)).GetValueOrDefault();
         }
 
     }

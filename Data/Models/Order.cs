@@ -51,7 +51,7 @@ namespace Ris2022.Data.Models
 
         [Display(ResourceType = typeof(Resource), Name = "Ordertype")]
         [ForeignKey("OrdertypeFK")]
-        public int?  Ordertypeid{ get; set; }
+        public int? Ordertypeid { get; set; }
         public virtual Ordertype? Ordertype { get; set; }
 
         public DateTime? Insertdate { get; set; } = DateTime.Now;
@@ -64,14 +64,14 @@ namespace Ris2022.Data.Models
         public virtual Reason? reason { get; set; }
 
         public string? UpdateuserName { get; set; }
-        public DateTime? Updatedate { get; set; }= DateTime.Now;
+        public DateTime? Updatedate { get; set; } = DateTime.Now;
 
         [Display(ResourceType = typeof(Resource), Name = "Paytype")]
         [ForeignKey("PaytypeFK")]
         public int? Paytypeid { get; set; }
         public virtual Paytype? paytype { get; set; }
 
-        public int? Payreasonid { get; set; }
+        public string? Payreasonid { get; set; }
 
         [Display(ResourceType = typeof(Resource), Name = "Clinic")]
         public int? Clinicid { get; set; }

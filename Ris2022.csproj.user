@@ -22,6 +22,7 @@
     <_SelectedScaffolderCategoryPath>root/Identity</_SelectedScaffolderCategoryPath>
     <WebStackScaffolding_DbContextDialogWidth>650</WebStackScaffolding_DbContextDialogWidth>
     <WebStackScaffolding_IdentityDialogWidth>650</WebStackScaffolding_IdentityDialogWidth>
+    <NameOfLastUsedPublishProfile>C:\Users\oracle\Documents\Visual Studio 2022\Projects\Project\Ris2022\Ris2022\Properties\PublishProfiles\FolderProfile.pubxml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
   <ItemGroup>
     <EmbeddedResource Update="Resources\Resource.Ar.resx">
