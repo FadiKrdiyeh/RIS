@@ -156,7 +156,7 @@
 				<div class="p-3 col-4 d-flex flex-column">
 					<div class="form-group">
 						<label asp-for="Insertdate" class="form-label"></label>
-						<input asp-for="Insertdate" asp-format="{0:yyyy-MM-dd}" class="form-control" placeholder="@Resource.Insertdate" name="Insertdate">
+						<input asp-for="Insertdate" type="datetime-local" value="@Model.Insertdate"  asp-format="{0:yyyy-MM-ddTHH:mm}" class="form-control" placeholder="@Resource.Insertdate" name="Insertdate">
 						<span asp-validation-for="Insertdate" class="text-danger"></span>
 					</div>
 				</div>
@@ -322,7 +322,7 @@
 
 	@{
 		await Html.RenderPartialAsync("_ValidationScriptsPartial");
-		@await Component.InvokeAsync("Notyf")
+	@await Component.InvokeAsync("Notyf")
 
 
 

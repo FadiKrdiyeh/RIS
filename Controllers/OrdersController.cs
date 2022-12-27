@@ -6,6 +6,7 @@ using System.Security.Claims;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -143,21 +144,10 @@ namespace Ris2022.Controllers
         }
 
         // function to get modalities names
-        [HttpPost]
-        public IActionResult getDeptModalities(int patientId)
+        public IActionResult getDeptModalities(int Departmentid)
         {
-            Order order = new()
-            {
-                Patientid = patientId,
-                Studyid = "1.2.4.0.13.1.4.2252867." + patientId
-            };
-
-            ViewData["Clinicid"] = new SelectList(_context.Clinics, "Id", Resource.ENARName);
-            ViewData["Departmentid"] = new SelectList(_context.Departments, "Id", Resource.ENARName);
-            ViewData["Modalityid"] = new SelectList(_context.Modalities, "Id", "Name");
-            ViewData["Modalitytypeid"] = new SelectList(_context.Modalitytypes, "Id", Resource.ENARName);
-
-            return View(order);
+            var modalities = _context.Modalities.Where(x => x.Departmentid == Departmentid).ToList();
+            return Json(modalities);
         }
 
 
@@ -315,8 +305,8 @@ namespace Ris2022.Controllers
                 aeTitle = order.modality.Aetitle,
                 sStationName = order.modality.Name,
                 obsOrderPFNum = patient.Id,
-                patientFirstName = patient.Firstname,
-                patientLastName = patient.Lastname,
+                patientFirstName = patient.Translatedfname,
+                patientLastName = patient.Translatedlname,
                 modalityName = order.modality.Name,
                 startDateTime = DateTime.Now.ToString("yyyyMMddHHmmss"),
                 //startDateTime = DateTime.ParseExact(order.Startdate.ToString(), "yyyyMMddHHmmss", CultureInfo.InvariantCulture).ToString(),

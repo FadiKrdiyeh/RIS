@@ -135,6 +135,9 @@
   <data name="AddPatient" xml:space="preserve">
     <value>Add Patient</value>
   </data>
+  <data name="AddRole" xml:space="preserve">
+    <value>Add User Role</value>
+  </data>
   <data name="AddSchudledOrder" xml:space="preserve">
     <value>Add Schudled Radioghraphy</value>
   </data>

@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations;
 using Ris2022.Resources;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Ris2022.Data.Models
 {
@@ -89,6 +90,8 @@ namespace Ris2022.Data.Models
         public string? Translatedmothername { get; set; }
 
         [Display(ResourceType = typeof(Resource), Name = "Insertdate")]
+
+        [BindProperty, DataType(DataType.DateTime), DisplayFormat(DataFormatString = "{0:yyyy-MM-ddTHH:mm}", ApplyFormatInEditMode=true)]
         public DateTime? Insertdate { get; set; }
 
         [Display(ResourceType = typeof(Resource), Name = "UpdateuserName")]

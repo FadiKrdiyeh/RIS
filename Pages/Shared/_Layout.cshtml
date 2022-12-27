@@ -110,6 +110,7 @@
                         <li class="custom-nav-item" id="reasonLink"><a asp-controller="Reasons" asp-action="Index">@Resource.Reason</a></li>
                         <li class="custom-nav-item" id="nationalityLink"><a asp-controller="Nationalities" asp-action="Index">@Resource.Nationality</a></li>
                         <li class="custom-nav-item" id="acceptanceTypeLink"><a asp-controller="Acceptancetypes" asp-action="Index">@Resource.Acceptancetype</a></li>
+                        
                     }
 
                     <li class="custom-nav-item" style="display: flex; align-items: center; position: relative">
@@ -137,11 +138,12 @@
                             <a id="manage" asp-page="/Account/Manage/Index" title="Manage">Hello @UserManager.GetUserName(User)! <i class="fa fa-hand-paper waving-icon"></i></a>
                         </li>
                     }
-                    @if (!User.IsInRole("Administrator"))
+                    @if (User.IsInRole("Administrator"))
                     {
                         <li class="custom-nav-item">
                             <a id="AddUser" asp-page="/Account/AddUser" title="AddUser">@Resource.AddUser <i class="fa fa-plus"></i></a>
                         </li>
+                        <li class="custom-nav-item" id="administrationLink"><a asp-controller="Administration" asp-action="createrole">@Resource.AddRole</a></li>
                     }
                 </ul>
             </nav>

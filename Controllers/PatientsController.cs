@@ -15,6 +15,9 @@ using Microsoft.DotNet.Scaffolding.Shared.Messaging;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using AspNetCoreHero.ToastNotification.Abstractions;
 using NToastNotify;
+using System.Text;
+using System.Text.RegularExpressions;
+using Microsoft.ReportingServices.ReportProcessing.OnDemandReportObjectModel;
 
 namespace Ris2022.Controllers
 {
@@ -23,6 +26,7 @@ namespace Ris2022.Controllers
     {
         private readonly RisDBContext _context;
         private readonly IToastNotification _toastNotification;
+        
         
         public PatientsController(RisDBContext context, IToastNotification toastNotification)
         {
@@ -74,13 +78,67 @@ namespace Ris2022.Controllers
             ViewData["Gendre"] = new SelectList(Enum.GetValues(typeof(gender)));
             Patient patient = new()
             {
+                
                 InsertUserName = User.FindFirstValue(ClaimTypes.Name),
-                Givenid = "pat" + DateTime.Today.ToString("ddMMyyyy")
+                Givenid = "pat" + DateTime.Now.ToString("ddMMyyyyHHmmss")
             };
             return View(patient);
             
             
         }
+
+        // post: Patients/Convert Arabic Text toEnglish
+
+        [HttpPost]
+
+        public string toEnglish(string araString)
+        {
+            string result = "";
+            StringBuilder sb = new StringBuilder(araString);
+            #region Mapping letters
+            sb.Replace("ا", "a");
+            sb.Replace(" ", " ");
+
+            sb.Replace("ء", "a");
+            sb.Replace("ؤ", "ou");
+            sb.Replace("ئ", "e");
+            sb.Replace("أ", "a");
+            sb.Replace("ة", "a");
+            sb.Replace("إ", "e");
+            sb.Replace("ى", "a");
+            sb.Replace("ب", "b");
+            sb.Replace("ت", "t");
+            sb.Replace("ث", "th");
+            sb.Replace("ج", "g");
+            sb.Replace("ح", "h");
+            sb.Replace("خ", "kh");
+            sb.Replace("د", "d");
+            sb.Replace("ذ", "th");
+            sb.Replace("ر", "r");
+            sb.Replace("ز", "z");
+            sb.Replace("س", "s");
+            sb.Replace("ش", "sh");
+            sb.Replace("ص", "s");
+            sb.Replace("ض", "d");
+            sb.Replace("ط", "t");
+            sb.Replace("ظ", "z");
+            sb.Replace("ع", "a");
+            sb.Replace("غ", "g");
+            sb.Replace("ف", "f");
+            sb.Replace("ق", "k");
+            sb.Replace("ك", "k");
+            sb.Replace("ل", "l");
+            sb.Replace("م", "m");
+            sb.Replace("ن", "n");
+            sb.Replace("ه", "h");
+            sb.Replace("و", "w");
+            sb.Replace("ي", "y");
+            #endregion
+            result = sb.ToString();
+            return result;
+        }
+
+        
 
         // POST: Patients/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
@@ -89,6 +147,8 @@ namespace Ris2022.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(Patient patient)
         {
+            patient.Translatedfname = toEnglish(patient.Firstname);
+            patient.Translatedlname = toEnglish(patient.Lastname);
 
             if (ModelState.IsValid)
             {
@@ -104,6 +164,7 @@ namespace Ris2022.Controllers
             ViewData["Worktypeid"] = new SelectList(_context.Worktypes, "Id", Resource.ENARName, patient.Worktypeid);
             ViewData["Reasonid"] = new SelectList(_context.Reasons, "Id", Resource.ENARName, patient.Reasonid);
             ViewData["Gendre"] = new SelectList(Enum.GetValues(typeof(gender)),patient.Gendre);
+            ViewData["Gendre"] = new SelectList(Enum.GetValues(typeof(gender)), patient.Gendre);
             return View(patient);
          
 
@@ -149,6 +210,8 @@ namespace Ris2022.Controllers
             {
                 try
                 {
+                    patient.Translatedfname = toEnglish(patient.Firstname);
+                    patient.Translatedlname = toEnglish(patient.Lastname);
                     _context.Update(patient);
                     await _context.SaveChangesAsync();
                     _toastNotification.AddSuccessToastMessage("تم التعديل بنجاح");

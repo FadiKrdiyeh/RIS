@@ -135,6 +135,9 @@
   <data name="AddPatient" xml:space="preserve">
     <value>إضافة مريض</value>
   </data>
+  <data name="AddRole" xml:space="preserve">
+    <value>اضافة دور مستخدم</value>
+  </data>
   <data name="AddSchudledOrder" xml:space="preserve">
     <value>طلب تصوير مجدول</value>
   </data>

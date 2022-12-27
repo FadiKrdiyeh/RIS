@@ -37,7 +37,7 @@
             <div class="p-3 col-4 d-flex flex-column">
                 <div class="form-group">
                     <label asp-for="Modalitytypeid" class="control-label" name="Modalitytype">@Resource.Modalitytype</label>
-                    <select asp-for="Modalitytypeid" class="form-control" name="Modalitytype" asp-items="ViewBag.Modalitytypeid">@Resource.Modalitytype</select>
+                    <select asp-for="Modalitytypeid" class="form-control original" name="Modalitytype" asp-items="ViewBag.Modalitytypeid">@Resource.Modalitytype</select>
                 </div>
             </div>
 
@@ -51,7 +51,7 @@
             <div class="p-3 col-4 d-flex flex-column">
                 <div class="form-group">
                     <label asp-for="Departmentid" class="control-label" name="Department">@Resource.Department</label>
-                    <select asp-for="Departmentid" class="form-control" name="Department" asp-items="ViewBag.Departmentid">@Resource.Department</select>
+                    <select asp-for="Departmentid" class="form-control original" name="Department" asp-items="ViewBag.Departmentid">@Resource.Department</select>
                 </div>
             </div>
 
@@ -81,7 +81,7 @@
             <div class="p-3 col-4 d-flex flex-column">
                 <div class="form-group">
                     <label asp-for="Paytypeid" class="control-label"></label>
-                    <select asp-for="Paytypeid" onchange="reasonShow();" class="form-control" asp-items="ViewBag.Paytypeid"></select>
+                    <select asp-for="Paytypeid" onchange="reasonShow();" class="form-control original" asp-items="ViewBag.Paytypeid"></select>
                 </div>
             </div>
             <div class="p-3 col-4 d-flex flex-column">
@@ -110,9 +110,9 @@
             </div>
             <div class="p-3 col-4 d-flex flex-column">
                 <div class="form-group">
-                    <label class="control-label" name="EndDate">@Resource.EndDate</label>
-                    <input asp-for="Startdate" asp-format="{0:yyyy-MM-dd}" name="StartDate" placeholder="@Resource.StartDate" class="form-control" />
-                    <span asp-validation-for="Startdate" class="text-danger"></span>
+                    <label asp-for="Enddate" class="control-label" name="EndDate">@Resource.EndDate</label>
+                    <input asp-for="Enddate" asp-format="{0:yyyy-MM-dd}" name="StartDate" placeholder="@Resource.StartDate" class="form-control" />
+                    <span asp-validation-for="Enddate" class="text-danger"></span>
                 </div>
             </div>
         </div>
@@ -141,10 +141,10 @@
             var PaytypeValue = document.getElementById("Paytypeid").value;
             debugger;
             if (PaytypeValue == 2) {
-                $("#reasonTable").show();
+                $("#reasonTable").fadeIn();
             }
             else {
-                $("#reasonTable").hide();
+                $("#reasonTable").fadeOut();
             }
 
         }
@@ -152,30 +152,28 @@
 
     <script>
         $(document).ready(function () {
-            console.log("Start");
-            $("#Departmentid").change(function () {
-                console.log("Change");
+            $("#Departmentid").on("change", function () {
                 var selectedText = $(this).find("option:selected").text();
                 var selectedValue = $(this).val();
-                alert("Selected Text: " + selectedText + " Value: " + selectedValue);
+
+                var dataToSend = { Departmentid: selectedValue };
+
+                // alert("Selected Text: " + selectedText + " Value: " + selectedValue);
+
                 $.ajax({
-
-                    type: 'POST',
-
+                    type: 'GET',
                     url: '/Orders/getDeptModalities',
-
-                    data: '{ "Departmentid" : "' + selectedValue + '" }',
-
+                    data: dataToSend,
                     contentType: 'application/json; charset=utf-8',
-
                     dataType: 'json',
-
 
                     success: function (data) {
                         var ddlMod = document.getElementById("Modalitytypeid");
                         ddlMod.innerHTML = "";
 
                         console.log(data);
+                        console.log(data[0].id);
+                        console.log(data[0].name);
 
                         for (var i = 0; i < data.length; i++) {
                             var option = document.createElement("option");
@@ -184,20 +182,17 @@
                             option.innerHTML = data[i].name;
 
                             //Set CustomerId in Value part.
-                            option.value = data[i].num;
+                            option.value = data[i].id;
 
                             //Add the Option element to DropDownList.
                             ddlMod.options.add(option);
                         }
-
                     },
                     error: function () {
 
                     }
-
                 });
             });
-            console.log("End");
         });
     </script>
 }
