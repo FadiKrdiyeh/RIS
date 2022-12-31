@@ -1,4 +1,5 @@
 ﻿@model Ris2022.Data.Models.Order
+@inject IAuthorizationService authorizationService
 
 @{
     ViewData["Title"] = "Order Details";
@@ -151,6 +152,9 @@
     </dl>
 </div>
 <div class="mt-5">
-    <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn edit-btn mx-2">Edit <i class="fa fa-edit"></i></a> |
+    @if ((await authorizationService.AuthorizeAsync(User, "EditOrdersPolicy")).Succeeded)
+    {
+        <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn edit-btn mx-2">Edit <i class="fa fa-edit"></i></a><span> | </span>
+    }
     <a asp-action="Index" class="btn back-btn mx-2 py-2">Back to List <i class="fa fa-hand-o-right"></i></a>
 </div>

@@ -1174,6 +1174,10 @@ hr {
     transition-delay: 0.21s !important;
     transition-property: top;
 }
+.show-buttons td .table-buttons a:nth-child(5) {
+    transition-delay: 0.28s !important;
+    transition-property: top;
+}
 
 .custom-btn-container {
     width: 600px;

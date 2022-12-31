@@ -1,48 +1,60 @@
 ﻿@model IEnumerable<RisAppUser>
+@inject IAuthorizationService authorizationService
+
 @{
     ViewData["Title"] = "All Users";
     Layout = "_Layout";
 }
+
+<script>
+    let activeLink = document.querySelector(".scrollmenu .custom-nav-item#listUsersLink");
+    activeLink.classList.add("active");
+</script>
+
 <h1 class="mt-5">All Users</h1>
 @if (Model.Any())
 {
-    <a class="btn btn-primary mb-3" style="width:auto" asp-controller="Account" asp-action="Register">@Resource.AddUser</a>
+    @if ((await authorizationService.AuthorizeAsync(User, "CreateUsersPolicy")).Succeeded)
+    {
+        <a class="btn btn-primary mb-3" style="width:auto" asp-controller="Account" asp-action="AddUser">@Resource.AddUser</a>
+    }
 
     foreach (var user in Model)
     {
         <div class="card mb-3">
-        <div class="card-header">
-           User Id= @user.Id 
-        </div>
+            <div class="card-header">
+                User Id= @user.Id
+            </div>
         </div>
         <div class="card-body">
             <h5 class="card-title">
                 @user.UserName
             </h5>
-            </div>
-
-        <div class="card-footer">
-            <a href="#" class="btn btn-danger" >Edit</a>
-            <a href="#" class="btn btn-danger">Delete</a>
-
         </div>
-
+        @*@if ((await authorizationService.AuthorizeAsync(User, "EditUsersPolicy")).Succeeded)*@
+        @if (true)
+        {
+            <div class="card-footer">
+                <a asp-action="EditUser" asp-controller="Administration" asp-route-id="@user.Id" class="btn btn-primary">Edit</a>
+            </div>
+        }
     }
-
 }
 else
 {
-<div class="card">
+    <div class="card">
         <div class="card-header">
             <h2>No Users Created yet</h2>
         </div>
-        </div>
-        <div class="card-body">
-            <h5 class="card-title">
-                Use the button below to create a user
-            </h5>
-
+    </div>
+    <div class="card-body">
+        <h5 class="card-title">
+            Use the button below to create a user
+        </h5>
+        @if ((await authorizationService.AuthorizeAsync(User, "CreateUsersPolicy")).Succeeded)
+        {
             <a class="btn btn-primary" style="width:auto" asp-controller="Account" asp-action="Register">@Resource.AddUser</a>
-            </div>
+        }
+    </div>
 }
 

@@ -1,4 +1,5 @@
 ﻿@model IEnumerable<Ris2022.Data.Models.Clinic>
+@inject IAuthorizationService authorizationService
 
 @{
     ViewData["Title"] = @Resource.Clinic;
@@ -12,9 +13,12 @@
 
 <h1 class="main-title">@Resource.Clinic</h1>
 
-<p>
-    <a asp-action="Create" class="btn create-o-btn mb-5">@Resource.Create @Resource.OneClinic <i class="fa fa-plus ms-2"></i></a>
-</p>
+@if ((await authorizationService.AuthorizeAsync(User, "CreateClinicsPolicy")).Succeeded)
+{
+    <p>
+        <a asp-action="Create" class="btn create-o-btn mb-5">@Resource.Create @Resource.OneClinic <i class="fa fa-plus ms-2"></i></a>
+    </p>
+}
 <div class="table-responsive">
     <table class="table table-striped table-hover">
     <thead>
@@ -48,9 +52,18 @@
                 <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
                 <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>*@
                 <div class="table-buttons">
-                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn edit-btn icon-btn rounded-circle" title="@Resource.Edit"><i class="fa fa-edit"></i></a>
-                    <a asp-action="Details" asp-route-id="@item.Id" class="btn details-btn icon-btn rounded-circle" title="@Resource.Details"><i class="fa fa-info"></i></a>
-                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn delete-btn icon-btn rounded-circle" title="@Resource.Delete"><i class="fa fa-trash"></i></a>
+                    @if ((await authorizationService.AuthorizeAsync(User, "EditClinicsPolicy")).Succeeded)
+                    {
+                        <a asp-action="Edit" asp-route-id="@item.Id" class="btn edit-btn icon-btn rounded-circle" title="@Resource.Edit"><i class="fa fa-edit"></i></a>
+                    }
+                    @if ((await authorizationService.AuthorizeAsync(User, "Index+DetailsClinicsPolicy")).Succeeded)
+                    {
+                        <a asp-action="Details" asp-route-id="@item.Id" class="btn details-btn icon-btn rounded-circle" title="@Resource.Details"><i class="fa fa-info"></i></a>
+                    }
+                    @if ((await authorizationService.AuthorizeAsync(User, "DeleteClinicsPolicy")).Succeeded)
+                    {
+                        <a asp-action="Delete" asp-route-id="@item.Id" class="btn delete-btn icon-btn rounded-circle" title="@Resource.Delete"><i class="fa fa-trash"></i></a>
+                    }
                 </div>
             </td>
         </tr>

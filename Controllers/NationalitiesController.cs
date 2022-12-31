@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -20,6 +21,7 @@ namespace Ris2022.Controllers
         }
 
         // GET: Nationalities
+        [Authorize(Policy = "Index+DetailsNationalitiesPolicy")]
         public async Task<IActionResult> Index()
         {
               return _context.Nationalities != null ? 
@@ -28,6 +30,7 @@ namespace Ris2022.Controllers
         }
 
         // GET: Nationalities/Details/5
+        [Authorize(Policy = "Index+DetailsNationalitiesPolicy")]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.Nationalities == null)
@@ -46,6 +49,7 @@ namespace Ris2022.Controllers
         }
 
         // GET: Nationalities/Create
+        [Authorize(Policy = "CreateNationalitiesPolicy")]
         public IActionResult Create()
         {
             return View();
@@ -56,6 +60,7 @@ namespace Ris2022.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Policy = "CreateNationalitiesPolicy")]
         public async Task<IActionResult> Create([Bind("Id,Namear,Nameen")] Nationality nationality)
         {
             if (ModelState.IsValid)
@@ -68,6 +73,7 @@ namespace Ris2022.Controllers
         }
 
         // GET: Nationalities/Edit/5
+        [Authorize(Policy = "EditNationalitiesPolicy")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.Nationalities == null)
@@ -88,6 +94,7 @@ namespace Ris2022.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Policy = "EditNationalitiesPolicy")]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Namear,Nameen")] Nationality nationality)
         {
             if (id != nationality.Id)
@@ -119,6 +126,7 @@ namespace Ris2022.Controllers
         }
 
         // GET: Nationalities/Delete/5
+        [Authorize(Policy = "DeleteNationalitiesPolicy")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.Nationalities == null)
@@ -139,6 +147,7 @@ namespace Ris2022.Controllers
         // POST: Nationalities/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Policy = "DeleteNationalitiesPolicy")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             if (_context.Nationalities == null)

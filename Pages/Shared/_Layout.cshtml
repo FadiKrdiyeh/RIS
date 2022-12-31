@@ -1,4 +1,4 @@
-﻿
+﻿@inject IAuthorizationService authorizationService
 
 @{
     string returnUrl = ViewContext.HttpContext.Request.Path;
@@ -82,35 +82,89 @@
                 <ul class="scrollmenu">
                     @if (SignInManager.IsSignedIn(User))
                     {
+                        @if ((await authorizationService.AuthorizeAsync(User, "Index+DetailsUsersPolicy")).Succeeded)
+                        {
+                            <li class="custom-nav-item" id="listUsersLink"><a asp-action="ListUsers" asp-controller="Administration">List Users</a></li>
+                        }
+                        @if ((await authorizationService.AuthorizeAsync(User, "CreateRolesPolicy")).Succeeded)
+                        {
+                            <li class="custom-nav-item" id="administrationLink"><a asp-controller="Administration" asp-action="createrole">@Resource.AddRole</a></li>
+                        }
                         <li class="custom-nav-item" id="homeLink"><a asp-page="/MainPage">@Resource.Home</a></li>
-                        <li class="custom-nav-item" id="patientLink"><a asp-controller="Patients" asp-action="Index">@Resource.Patients</a></li>
+                        @if ((await authorizationService.AuthorizeAsync(User, "Index+DetailsPatientsPolicy")).Succeeded)
+                        {
+                            <li class="custom-nav-item" id="patientLink"><a asp-controller="Patients" asp-action="Index">@Resource.Patients</a></li>
+                        }
                         <!--<li class="nav-item"><a  asp-controller="Orders" asp-action="Index">@Resource.OrderIndex</a></li>-->
-                        <li class="custom-nav-item" id="orderLink">
-                            <div class="dropdown">
-                                <span class="dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
-                                    @Resource.OrderIndex
-                                </span>
-                                <ul class="dropdown-menu">
-                                    <li><a asp-controller="Orders" asp-action="Index">@Resource.Order</a></li>
-                                    <li><a asp-controller="Orders" asp-action="IndexSchudledOrder">@Resource.SchudledOrder</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Test</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="custom-nav-item" id="clinicLink"><a asp-controller="Clinics" asp-action="Index">@Resource.Clinic</a></li>
-                        <li class="custom-nav-item" id="departmentLink"><a asp-controller="Departments" asp-action="Index">@Resource.Department</a></li>
-                        <li class="custom-nav-item" id="martialStatusLink"><a asp-controller="Martialstatus" asp-action="Index">@Resource.Martialstatus</a></li>
-                        <li class="custom-nav-item" id="modalityLink"><a asp-controller="Modalities" asp-action="Index">@Resource.Modality</a></li>
-                        <li class="custom-nav-item" id="modalityTypeLink"><a asp-controller="ModalityTypes" asp-action="Index">@Resource.Modalitytype</a></li>
-                        <li class="custom-nav-item" id="orderTypeLink"><a asp-controller="Ordertypes" asp-action="Index">@Resource.Ordertype</a></li>
-                        <li class="custom-nav-item" id="payTypeLink"><a asp-controller="Paytypes" asp-action="Index">@Resource.Paytype</a></li>
-                        <li class="custom-nav-item" id="procedureTypeLink"><a asp-controller="Proceduretypes" asp-action="Index">@Resource.Proceduretype</a></li>
-                        <li class="custom-nav-item" id="workTypeLink"><a asp-controller="Worktypes" asp-action="Index">@Resource.Worktype</a></li>
-                        <li class="custom-nav-item" id="reasonLink"><a asp-controller="Reasons" asp-action="Index">@Resource.Reason</a></li>
-                        <li class="custom-nav-item" id="nationalityLink"><a asp-controller="Nationalities" asp-action="Index">@Resource.Nationality</a></li>
-                        <li class="custom-nav-item" id="acceptanceTypeLink"><a asp-controller="Acceptancetypes" asp-action="Index">@Resource.Acceptancetype</a></li>
-                        
+                        @if ((await authorizationService.AuthorizeAsync(User, "Index+DetailsOrdersPolicy")).Succeeded || (await authorizationService.AuthorizeAsync(User, "Index+DetailsScheduledOrdersPolicy")).Succeeded)
+                        {
+                            <li class="custom-nav-item" id="orderLink">
+                                <div class="dropdown">
+                                    <span class="dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                                        @Resource.OrderIndex
+                                    </span>
+                                    <ul class="dropdown-menu">
+                                        @if ((await authorizationService.AuthorizeAsync(User, "Index+DetailsOrdersPolicy")).Succeeded)
+                                        {
+                                            <li><a asp-controller="Orders" asp-action="Index">@Resource.Order</a></li>
+                                        }
+                                        @if ((await authorizationService.AuthorizeAsync(User, "Index+DetailsScheduledOrdersPolicy")).Succeeded)
+                                        {
+                                            <li><a asp-controller="Orders" asp-action="IndexSchudledOrder">@Resource.SchudledOrder</a></li>
+                                        }
+                                    </ul>
+                                </div>
+                            </li>
+                        }
+                        @if ((await authorizationService.AuthorizeAsync(User, "Index+DetailsClinicsPolicy")).Succeeded)
+                        {
+                            <li class="custom-nav-item" id="clinicLink"><a asp-controller="Clinics" asp-action="Index">@Resource.Clinic</a></li>
+                        }
+                        @if ((await authorizationService.AuthorizeAsync(User, "Index+DetailsDepartmentsPolicy")).Succeeded)
+                        {
+                            <li class="custom-nav-item" id="departmentLink"><a asp-controller="Departments" asp-action="Index">@Resource.Department</a></li>
+                        }
+                        @if ((await authorizationService.AuthorizeAsync(User, "Index+DetailsMartialStatusPolicy")).Succeeded)
+                        {
+                            <li class="custom-nav-item" id="martialStatusLink"><a asp-controller="Martialstatus" asp-action="Index">@Resource.Martialstatus</a></li>
+                        }
+                        @if ((await authorizationService.AuthorizeAsync(User, "Index+DetailsModalitiesPolicy")).Succeeded)
+                        {
+                            <li class="custom-nav-item" id="modalityLink"><a asp-controller="Modalities" asp-action="Index">@Resource.Modality</a></li>
+                        }
+                        @if ((await authorizationService.AuthorizeAsync(User, "Index+DetailsModalityTypesPolicy")).Succeeded)
+                        {
+                            <li class="custom-nav-item" id="modalityTypeLink"><a asp-controller="ModalityTypes" asp-action="Index">@Resource.Modalitytype</a></li>
+                        }
+                        @if ((await authorizationService.AuthorizeAsync(User, "Index+DetailsOrderTypesPolicy")).Succeeded)
+                        {
+                            <li class="custom-nav-item" id="orderTypeLink"><a asp-controller="Ordertypes" asp-action="Index">@Resource.Ordertype</a></li>
+                        }
+                        @if ((await authorizationService.AuthorizeAsync(User, "Index+DetailsPayTypesPolicy")).Succeeded)
+                        {
+                            <li class="custom-nav-item" id="payTypeLink"><a asp-controller="Paytypes" asp-action="Index">@Resource.Paytype</a></li>
+                        }
+                        @if ((await authorizationService.AuthorizeAsync(User, "Index+DetailsProcedureTypesPolicy")).Succeeded)
+                        {
+                            <li class="custom-nav-item" id="procedureTypeLink"><a asp-controller="Proceduretypes" asp-action="Index">@Resource.Proceduretype</a></li>
+                        }
+                        @if ((await authorizationService.AuthorizeAsync(User, "Index+DetailsWorkTypesPolicy")).Succeeded)
+                        {
+                            <li class="custom-nav-item" id="workTypeLink"><a asp-controller="Worktypes" asp-action="Index">@Resource.Worktype</a></li>
+                        }
+                        @if ((await authorizationService.AuthorizeAsync(User, "Index+DetailsReasonsPolicy")).Succeeded)
+                        {
+                            <li class="custom-nav-item" id="reasonLink"><a asp-controller="Reasons" asp-action="Index">@Resource.Reason</a></li>
+                        }
+                        @if ((await authorizationService.AuthorizeAsync(User, "Index+DetailsNationalitiesPolicy")).Succeeded)
+                        {
+                            <li class="custom-nav-item" id="nationalityLink"><a asp-controller="Nationalities" asp-action="Index">@Resource.Nationality</a></li>
+                        }
+                        @if ((await authorizationService.AuthorizeAsync(User, "Index+DetailsAcceptanceTypesPolicy")).Succeeded)
+                        {
+                            <li class="custom-nav-item" id="acceptanceTypeLink"><a asp-controller="Acceptancetypes" asp-action="Index">@Resource.Acceptancetype</a></li>
+                        }
+
                     }
 
                     <li class="custom-nav-item" style="display: flex; align-items: center; position: relative">
@@ -138,12 +192,11 @@
                             <a id="manage" asp-page="/Account/Manage/Index" title="Manage">Hello @UserManager.GetUserName(User)! <i class="fa fa-hand-paper waving-icon"></i></a>
                         </li>
                     }
-                    @if (User.IsInRole("Administrator"))
+                    @if ((await authorizationService.AuthorizeAsync(User, "CreateUsersPolicy")).Succeeded)
                     {
                         <li class="custom-nav-item">
                             <a id="AddUser" asp-page="/Account/AddUser" title="AddUser">@Resource.AddUser <i class="fa fa-plus"></i></a>
                         </li>
-                        <li class="custom-nav-item" id="administrationLink"><a asp-controller="Administration" asp-action="createrole">@Resource.AddRole</a></li>
                     }
                 </ul>
             </nav>

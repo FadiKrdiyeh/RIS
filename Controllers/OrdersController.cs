@@ -31,6 +31,7 @@ namespace Ris2022.Controllers
         }
 
         // GET: Orders
+        [Authorize(Policy = "Index+DetailsOrdersPolicy")]
         public async Task<IActionResult> Index()
         {
             var risDBContext = _context.Orders
@@ -48,7 +49,7 @@ namespace Ris2022.Controllers
         }
 
         // GET: Orders/IndexSchudledOrder
-
+        [Authorize(Policy = "Index+DetailsScheduledOrdersPolicy")]
         public async Task<IActionResult> IndexSchudledOrder()
         {
             var risDBContext = _context.Orders
@@ -65,9 +66,8 @@ namespace Ris2022.Controllers
             return View(await risDBContext.ToListAsync());
         }
 
-
-
         // GET: Orders/Details/5
+        [Authorize(Policy = "Index+DetailsOrdersPolicy")]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.Orders == null)
@@ -95,7 +95,7 @@ namespace Ris2022.Controllers
         }
 
         // GET: Orders/DetailsSchudledOrder/5
-
+        [Authorize(Policy = "Index+DetailsScheduledOrdersPolicy")]
         public async Task<IActionResult> DetailsSchudledOrder(int? id)
         {
             if (id == null || _context.Orders == null)
@@ -123,6 +123,7 @@ namespace Ris2022.Controllers
         }
 
         // GET: Orders/Create
+        [Authorize(Policy = "CreateOrdersPolicy")]
         public IActionResult Create(int patientId)
         {
             Order order = new()
@@ -152,6 +153,7 @@ namespace Ris2022.Controllers
 
 
         // GET: Orders/CreateSchudledOrder
+        [Authorize(Policy = "CreateScheduledOrdersPolicy")]
         public IActionResult CreateSchudledOrder(int patientId)
         {
             Order order = new()
@@ -176,7 +178,6 @@ namespace Ris2022.Controllers
         // post: Orders/Convert Arabic Text toEnglish
 
         [HttpPost]
-
         public string toEnglish(string araString)
         {
             string result = "";
@@ -225,7 +226,6 @@ namespace Ris2022.Controllers
         }
 
         [HttpPost]
-
         public Boolean isArabic(string t)
         {
             Boolean s = false;
@@ -235,13 +235,12 @@ namespace Ris2022.Controllers
             return s;
         }
 
-
-
         // POST: Orders/CreateSchudledOrder
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Policy = "CreateScheduledOrdersPolicy")]
         public async Task<IActionResult> CreateSchudledOrder(Order order)
         {
             Patient patient = _context.Patients.SingleOrDefault(p => p.Id == order.Patientid);
@@ -288,7 +287,7 @@ namespace Ris2022.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-
+        [Authorize(Policy = "CreateOrdersPolicy")]
         public async Task<IActionResult> Create(Order order)
         {
             Patient patient = _context.Patients.SingleOrDefault(p => p.Id == order.Patientid);
@@ -337,6 +336,7 @@ namespace Ris2022.Controllers
 
 
         // GET: Orders/Edit/5
+        [Authorize(Policy = "EditOrdersPolicy")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.Orders == null)
@@ -363,7 +363,7 @@ namespace Ris2022.Controllers
         }
 
         // GET: Orders/EditSchudledOrder/5 
-
+        [Authorize(Policy = "EditScheduledOrdersPolicy")]
         public async Task<IActionResult> EditSchudledOrder(int? id)
         {
             if (id == null || _context.Orders == null)
@@ -394,6 +394,7 @@ namespace Ris2022.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Policy = "EditOrdersPolicy")]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Patientid,Modalityid,Proceduretypeid,Studyid,Startdate,Enddate,Statusid,Doctorid,Autoexpiredate,Accessionnumber,Departmentid,Documentid,Ordertypeid,Insertdate,InsertuserName,Reasonid,UpdateuserName,Updatedate,Paytypeid,Payreasonid,Clinicid,Modalitytypeid")] Order order)
         {
             if (id != order.Id)
@@ -439,7 +440,7 @@ namespace Ris2022.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-
+        [Authorize(Policy = "EditScheduledOrdersPolicy")]
         public async Task<IActionResult> EditSchudledOrder(int id, [Bind("Id,Patientid,Modalityid,Proceduretypeid,Studyid,Startdate,Enddate,Statusid,Doctorid,Autoexpiredate,Accessionnumber,Departmentid,Documentid,Ordertypeid,Insertdate,InsertuserName,Reasonid,UpdateuserName,Updatedate,Paytypeid,Payreasonid,Clinicid,Modalitytypeid")] Order order)
         {
             if (id != order.Id)
@@ -482,6 +483,7 @@ namespace Ris2022.Controllers
 
 
         // GET: Orders/Delete/5
+        [Authorize(Policy = "DeleteOrdersPolicy")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.Orders == null)
@@ -509,7 +511,7 @@ namespace Ris2022.Controllers
         }
 
         // GET: Orders/DeleteSchudledOrder/5 
-
+        [Authorize(Policy = "DeleteScheduledOrdersPolicy")]
         public async Task<IActionResult> DeleteSchudledOrder(int? id)
         {
             if (id == null || _context.Orders == null)
@@ -539,6 +541,7 @@ namespace Ris2022.Controllers
         // POST: Orders/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Policy = "DeleteOrdersPolicy")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             if (_context.Orders == null)
@@ -558,7 +561,7 @@ namespace Ris2022.Controllers
         // POST: Orders/Delete/5
         [HttpPost, ActionName("DeleteSchudledOrder")]
         [ValidateAntiForgeryToken]
-
+        [Authorize(Policy = "DeleteScheduledOrdersPolicy")]
         public async Task<IActionResult> DeleteSchudledOrder(int id)
         {
             if (_context.Orders == null)

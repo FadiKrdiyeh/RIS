@@ -23,6 +23,7 @@ using Ris2022.Resources;
 
 namespace Ris2022.Pages.Account
 {
+    //[Authorize(Policy = "CreateUsersPolicy")]
     public class RegisterModel : PageModel
     {
         private readonly SignInManager<RisAppUser> _signInManager;
@@ -111,7 +112,6 @@ namespace Ris2022.Pages.Account
             [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
             public string ConfirmPassword { get; set; }
         }
-
 
         public async Task OnGetAsync(string returnUrl = null)
         {

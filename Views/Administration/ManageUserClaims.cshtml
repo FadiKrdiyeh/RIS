@@ -1,0 +1,53 @@
+﻿@model UserClaimsViewModel
+
+@{
+    ViewBag.Title = "Manage User Claims";
+}
+
+<form method="post">
+    <div class="card">
+        <div class="card-header">
+            <h2>Manage User Claims</h2>
+        </div>
+        <div class="card-body">
+            
+            @for (int i = 0; i < Model.Claims.Count; i++)
+            {
+                @*@if (i == 0 && Model.Claims[i].ClaimTitle != Model.Claims[i - 1].ClaimTitle)
+                {
+                    @Model.Claims[i].ClaimTitle
+                }*@
+                @if (i == 0)
+                {
+                    <h1>@Model.Claims[i].ClaimTitle</h1>
+                }
+                else if (Model.Claims[i].ClaimTitle != Model.Claims[i - 1].ClaimTitle)
+                {
+                    <h1>@Model.Claims[i].ClaimTitle</h1>
+                }
+                <div class="form-check m-1">
+                    <input type="hidden" asp-for="@Model.Claims[i].ClaimType" />
+                    <input asp-for="@Model.Claims[i].IsSelected" class="form-check-input" />
+                    <label asp-for="@Model.Claims[i].IsSelected">@Model.Claims[i].ClaimType.Replace("-->", " ")</label>
+                </div>
+            }
+            <div asp-validation-summary="All" class="text-danger"></div>
+        </div>
+        @*<div class="card-body">
+            @for (int i = 0; i < Model.Claims.Count; i++)
+            {
+                @Model.Claims[i].ClaimTitle
+                <div class="form-check m-1">
+                    <input type="hidden" asp-for="@Model.Claims[i].ClaimType" />
+                    <input asp-for="@Model.Claims[i].IsSelected" class="form-check-input" />
+                    <label asp-for="@Model.Claims[i].IsSelected">@Model.Claims[i].ClaimType.Replace("-->", " ") : @Model.Claims[i].IsSelected</label>
+                </div>
+            }
+            <div asp-validation-summary="All" class="text-danger"></div>
+        </div>*@
+        <div class="card-footer">
+            <button type="submit" class="btn btn-primary">Update</button>
+            <a asp-action="EditUser" asp-route-id="@Model.UserId" class="btn btn-outline-primary">Cancel</a>
+        </div>
+    </div>
+</form>

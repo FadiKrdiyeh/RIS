@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -20,6 +21,7 @@ namespace Ris2022.Controllers
         }
 
         // GET: Ordertypes
+        [Authorize(Policy = "Index+DetailsOrderTypesPolicy")]
         public async Task<IActionResult> Index()
         {
               return _context.Ordetypes != null ? 
@@ -28,6 +30,7 @@ namespace Ris2022.Controllers
         }
 
         // GET: Ordertypes/Details/5
+        [Authorize(Policy = "Index+DetailsOrderTypesPolicy")]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.Ordetypes == null)
@@ -46,6 +49,7 @@ namespace Ris2022.Controllers
         }
 
         // GET: Ordertypes/Create
+        [Authorize(Policy = "CreateOrderTypesPolicy")]
         public IActionResult Create()
         {
             return View();
@@ -56,6 +60,7 @@ namespace Ris2022.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Policy = "CreateOrderTypesPolicy")]
         public async Task<IActionResult> Create([Bind("Id,Namear,Nameen")] Ordertype ordertype)
         {
             if (ModelState.IsValid)
@@ -68,6 +73,7 @@ namespace Ris2022.Controllers
         }
 
         // GET: Ordertypes/Edit/5
+        [Authorize(Policy = "EditOrderTypesPolicy")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.Ordetypes == null)
@@ -88,6 +94,7 @@ namespace Ris2022.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Policy = "EditOrderTypesPolicy")]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Namear,Nameen")] Ordertype ordertype)
         {
             if (id != ordertype.Id)
@@ -119,6 +126,7 @@ namespace Ris2022.Controllers
         }
 
         // GET: Ordertypes/Delete/5
+        [Authorize(Policy = "DeleteOrderTypesPolicy")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.Ordetypes == null)
@@ -139,6 +147,7 @@ namespace Ris2022.Controllers
         // POST: Ordertypes/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Policy = "DeleteOrderTypesPolicy")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             if (_context.Ordetypes == null)

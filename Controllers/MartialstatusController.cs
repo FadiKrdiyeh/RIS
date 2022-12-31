@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -20,6 +21,7 @@ namespace Ris2022.Controllers
         }
 
         // GET: Martialstatus
+        [Authorize(Policy = "Index+DetailsMartialStatusPolicy")]
         public async Task<IActionResult> Index()
         {
               return _context.Martialstatuses != null ? 
@@ -28,6 +30,7 @@ namespace Ris2022.Controllers
         }
 
         // GET: Martialstatus/Details/5
+        [Authorize(Policy = "Index+DetailsMartialStatusPolicy")]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.Martialstatuses == null)
@@ -46,6 +49,7 @@ namespace Ris2022.Controllers
         }
 
         // GET: Martialstatus/Create
+        [Authorize(Policy = "CreateMartialStatusPolicy")]
         public IActionResult Create()
         {
             return View();
@@ -56,6 +60,7 @@ namespace Ris2022.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Policy = "CreateMartialStatusPolicy")]
         public async Task<IActionResult> Create([Bind("Id,Namear,Nameen")] Martialstatus martialstatus)
         {
             if (ModelState.IsValid)
@@ -68,6 +73,7 @@ namespace Ris2022.Controllers
         }
 
         // GET: Martialstatus/Edit/5
+        [Authorize(Policy = "EditMartialStatusPolicy")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.Martialstatuses == null)
@@ -88,6 +94,7 @@ namespace Ris2022.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Policy = "EditMartialStatusPolicy")]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Namear,Nameen")] Martialstatus martialstatus)
         {
             if (id != martialstatus.Id)
@@ -119,6 +126,7 @@ namespace Ris2022.Controllers
         }
 
         // GET: Martialstatus/Delete/5
+        [Authorize(Policy = "DeleteMartialStatusPolicy")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.Martialstatuses == null)
@@ -139,6 +147,7 @@ namespace Ris2022.Controllers
         // POST: Martialstatus/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Policy = "DeleteMartialStatusPolicy")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             if (_context.Martialstatuses == null)

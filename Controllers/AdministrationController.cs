@@ -9,10 +9,14 @@ using Ris2022.Pages.Shared;
 using Ris2022.Pages.Account;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Microsoft.ReportingServices.ReportProcessing.ReportObjectModel;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
+using System.Security.Claims;
+using Newtonsoft.Json.Linq;
+using System;
 
 namespace Ris2022.Controllers
 {
-    [Authorize(Roles ="administrator")]
+    //[Authorize(Roles ="administrator")]
    // [Authorize(Roles ="User")]
     public class AdministrationController : Controller
     {
@@ -31,19 +35,151 @@ namespace Ris2022.Controllers
         }
 
         [HttpGet]
+        [Authorize(Policy = "Index+DetailsUsersPolicy")]
         public IActionResult ListUsers()
         {
-
             var users = userManager.Users;
             return View(users);
         }
 
         [HttpGet]
+        [Authorize(Policy = "EditUsersPolicy")]
+        public async Task<IActionResult> EditUser(string id)
+        {
+            var user = await userManager.FindByIdAsync(id);
+
+            if(user == null)
+            {
+                ViewBag.ErrorMessage = $"User With ID: {id} Cannot Be Found";
+                return View("NotFound");
+            }
+
+            var userClaims = await userManager.GetClaimsAsync(user);
+            var userRoles = await userManager.GetRolesAsync(user);
+
+            var model = new EditUserViewModel()
+            {
+                Id = user.Id,
+                Email = user.Email,
+                UserName = user.UserName,
+                Claims = userClaims.ToList(),
+                Roles = userRoles
+            };
+
+            return View(model);
+        }
+        [HttpPost]
+        [Authorize(Policy = "EditUsersPolicy")]
+        public async Task<IActionResult> EditUser(EditUserViewModel model)
+        {
+            var user = await userManager.FindByIdAsync(model.Id);
+
+            if(user == null)
+            {
+                ViewBag.ErrorMessage = $"User With ID: {model.Id} Cannot Be Found";
+                return View("NotFound");
+            }
+            else
+            {
+                user.Email = model.Email;
+                user.UserName = model.UserName;
+
+                var result = await userManager.UpdateAsync(user);
+
+                if(result.Succeeded)
+                {
+                    return RedirectToAction("ListUsers");
+                }
+
+                foreach(var error in result.Errors)
+                {
+                    ModelState.AddModelError(string.Empty, error.Description);
+                }
+
+                return View(model);
+            }
+        }
+
+        [HttpGet]
+        [Authorize(Policy = "ManageClaimsUsersPolicy")]
+        public async Task<IActionResult> ManageUserClaims(string userId)
+        {
+            var user = await userManager.FindByIdAsync(userId);
+
+            if (user == null)
+            {
+                ViewBag.ErrorMessage = $"User With ID: {userId} Cannot Be Found";
+                return View("NotFound");
+            }
+
+            var existingUserClaims = await userManager.GetClaimsAsync(user);
+
+            var model = new UserClaimsViewModel
+            {
+                UserId = user.Id,
+            };
+
+            foreach (Claim claim in ClaimsStore.AllClaims)
+            {
+                //string[] strings = claim.Type.Split("-->");
+                string claimTitle = claim.Type.Split("-->").Skip(1).First();
+
+                UserClaim userClaim = new UserClaim
+                {
+                    ClaimType = claim.Type,
+                    //ClaimTitle = claim.Type.Split("-->").Skip(1).First()
+                    ClaimTitle = claimTitle
+                };
+
+                if (existingUserClaims.Any(c => c.Type == claim.Type && c.Value == "true"))
+                {
+                    userClaim.IsSelected = true;
+                }
+                model.Claims.Add(userClaim);
+            }
+
+            return View(model);
+        }
+        [HttpPost]
+        [Authorize(Policy = "ManageClaimsUsersPolicy")]
+        public async Task<IActionResult> ManageUserClaims(UserClaimsViewModel model)
+        {
+            var user = await userManager.FindByIdAsync(model.UserId);
+
+            if (user == null)
+            {
+                ViewBag.ErrorMessage = $"User With ID: {model.UserId} Cannot Be Found";
+                return View("NotFound");
+            }
+
+            var claims = await userManager.GetClaimsAsync(user);
+            var result = await userManager.RemoveClaimsAsync(user, claims);
+
+            if(!result.Succeeded)
+            {
+                ModelState.AddModelError(string.Empty, "Cannot remove user existing claims");
+                return View(model);
+            }
+
+            result = await userManager.AddClaimsAsync(user, model.Claims.Select(c => new Claim(c.ClaimType, c.IsSelected ? "true" : "false")));
+
+            if(!result.Succeeded)
+            {
+                ModelState.AddModelError(string.Empty, "Canot add selected roles to user");
+                return View(model);
+            }
+
+            return RedirectToAction("EditUser", new { Id = model.UserId });
+        }
+
+        [HttpGet]
+        [Authorize(Policy = "CreateRolesPolicy")]
         public IActionResult CreateRole()
         {
             return View();
         }
         [HttpPost]
+        [Authorize(Policy = "CreateRolesPolicy")]
         public async Task<IActionResult> CreateRole(CreateRoleViewModel model)
         {
             if (ModelState.IsValid)
@@ -64,6 +200,7 @@ namespace Ris2022.Controllers
         }
 
         [HttpGet]
+        [Authorize(Policy = "Index+DetailsRolesPolicy")]
         public IActionResult ListRoles()
         {
             var roles = _roleManager.Roles;
@@ -71,6 +208,7 @@ namespace Ris2022.Controllers
         }
 
         [HttpGet]
+        [Authorize(Policy = "EditRolesPolicy")]
         public async Task<IActionResult> EditRole(string id)
         {
            var role=await _roleManager.FindByIdAsync(id);
@@ -97,6 +235,7 @@ namespace Ris2022.Controllers
         }
 
         [HttpPost]
+        [Authorize(Policy = "EditRolesPolicy")]
         public async Task<IActionResult> EditRole(EditRoleViewModel model)
         {
             var role = await _roleManager.FindByIdAsync(model.id);
@@ -128,6 +267,7 @@ namespace Ris2022.Controllers
         }
 
         [HttpGet]
+        [Authorize(Policy = "EditUserInRolesPolicy")]
         public async Task<IActionResult> EditUsersInRole(string RoleId)
         {
             ViewBag.roleId = RoleId;
@@ -167,6 +307,7 @@ namespace Ris2022.Controllers
         }
 
         [HttpPost]
+        [Authorize(Policy = "EditUserInRolesPolicy")]
         public async Task<IActionResult> EditUsersInRole(List<UserRoleViewModel> model,string RoleId)
         {
 
@@ -218,7 +359,5 @@ namespace Ris2022.Controllers
         {
             return View();
         }
-
-
     }
 }

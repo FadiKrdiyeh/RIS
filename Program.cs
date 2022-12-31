@@ -14,6 +14,7 @@ using AspNetCoreHero.ToastNotification.Extensions;
 using Ris2022.Controllers;
 using AspNetCoreHero.ToastNotification.Abstractions;
 using NToastNotify;
+using System.Security.Claims;
 
 Log.Logger = new LoggerConfiguration()
     .WriteTo.File(
@@ -109,6 +110,11 @@ builder.Services.AddAuthorization(options =>
 {
     options.AddPolicy("RequireAdministratorRole",
          policy => policy.RequireRole("Administrator"));
+    foreach (Claim claim in ClaimsStore.AllClaims)
+    {
+        //Console.WriteLine(claim.Type + ": " + claim.Value + " => " + claim.Type.Replace(" ", "").Replace("-->", "") + "Policy");
+        options.AddPolicy(claim.Type.Replace(" ", "").Replace("-->", "") + "Policy", policy => policy.RequireClaim(claim.Type, "true"));
+    }
 });
 var app = builder.Build();
 

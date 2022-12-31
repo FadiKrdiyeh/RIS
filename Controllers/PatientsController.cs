@@ -37,6 +37,7 @@ namespace Ris2022.Controllers
 
 
         // GET: Patients
+        [Authorize(Policy = "Index+DetailsPatientsPolicy")]
         public async Task<IActionResult> Index()
         {
             var risDBContext = _context.Patients.Include(p => p.Acceptancetype).Include(p => p.Martialstatus).Include(p => p.Nationality).Include(p => p.Worktype).Include(p => p.Reason);
@@ -44,6 +45,7 @@ namespace Ris2022.Controllers
         }
 
         // GET: Patients/Details/5
+        [Authorize(Policy = "Index+DetailsPatientsPolicy")]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.Patients == null)
@@ -68,6 +70,7 @@ namespace Ris2022.Controllers
         }
 
         // GET: Patients/Create
+        [Authorize(Policy = "CreatePatientsPolicy")]
         public IActionResult Create()
         {
             ViewData["Acceptancetypeid"] = new SelectList(_context.Acceptancetypes, "Id", Resource.ENARName);
@@ -90,7 +93,6 @@ namespace Ris2022.Controllers
         // post: Patients/Convert Arabic Text toEnglish
 
         [HttpPost]
-
         public string toEnglish(string araString)
         {
             string result = "";
@@ -138,13 +140,12 @@ namespace Ris2022.Controllers
             return result;
         }
 
-        
-
         // POST: Patients/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Policy = "CreatePatientsPolicy")]
         public async Task<IActionResult> Create(Patient patient)
         {
             patient.Translatedfname = toEnglish(patient.Firstname);
@@ -169,9 +170,9 @@ namespace Ris2022.Controllers
          
 
         }
-        
 
         // GET: Patients/Edit/5
+        [Authorize(Policy = "EditPatientsPolicy")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.Patients == null)
@@ -199,6 +200,7 @@ namespace Ris2022.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Policy = "EditPatientsPolicy")]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Givenid,Firstname,Middlename,Lastname,Gendre,Mothername,Birthdate,Age,Mobilephone,Landphone,Currentaddress,Residentaddress,Workphone,Workaddress,Nearestperson,Nearestpersonphone,Birthplace,Notes,Translatedfname,Translatedlname,Translatedfathername,Translatedmothername,Insertdate,UpdateuserName,Updatedate,Reasonid,InsertUserName,Nationalityid,Worktypeid,Martialstatusid,Acceptancetypeid")] Patient patient)
         {
             if (id != patient.Id)
@@ -238,9 +240,10 @@ namespace Ris2022.Controllers
 
             return View(patient);
         }
-        
-            
+
+
         // GET: Patients/Delete/5
+        [Authorize(Policy = "DeletePatientsPolicy")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.Patients == null)
@@ -267,6 +270,7 @@ namespace Ris2022.Controllers
         // POST: Patients/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Policy = "DeletePatientsPolicy")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             if (_context.Patients == null)

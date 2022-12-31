@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -20,6 +21,7 @@ namespace Ris2022.Controllers
         }
 
         // GET: Clinics
+        [Authorize(Policy = "Index+DetailsClinicsPolicy")]
         public async Task<IActionResult> Index()
         {
               return _context.Clinics != null ? 
@@ -28,6 +30,7 @@ namespace Ris2022.Controllers
         }
 
         // GET: Clinics/Details/5
+        [Authorize(Policy = "Index+DetailsClinicsPolicy")]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.Clinics == null)
@@ -46,6 +49,7 @@ namespace Ris2022.Controllers
         }
 
         // GET: Clinics/Create
+        [Authorize(Policy = "CreateClinicsPolicy")]
         public IActionResult Create()
         {
             return View();
@@ -56,6 +60,7 @@ namespace Ris2022.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Policy = "CreateClinicsPolicy")]
         public async Task<IActionResult> Create([Bind("Id,Namear,Nameen,Cost")] Clinic clinic)
         {
             if (ModelState.IsValid)
@@ -68,6 +73,7 @@ namespace Ris2022.Controllers
         }
 
         // GET: Clinics/Edit/5
+        [Authorize(Policy = "EditClinicsPolicy")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.Clinics == null)
@@ -88,6 +94,7 @@ namespace Ris2022.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Policy = "EditClinicsPolicy")]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Namear,Nameen,Cost")] Clinic clinic)
         {
             if (id != clinic.Id)
@@ -119,6 +126,7 @@ namespace Ris2022.Controllers
         }
 
         // GET: Clinics/Delete/5
+        [Authorize(Policy = "DeleteClinicsPolicy")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.Clinics == null)
@@ -139,6 +147,7 @@ namespace Ris2022.Controllers
         // POST: Clinics/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Policy = "DeleteClinicsPolicy")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             if (_context.Clinics == null)

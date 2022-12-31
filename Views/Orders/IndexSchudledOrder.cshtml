@@ -1,4 +1,5 @@
 ﻿@model IEnumerable<Order>
+@inject IAuthorizationService authorizationService
 
 @{
 	ViewData["Title"] = @Resource.SchudledOrder;
@@ -12,9 +13,9 @@
 
 <h1 class="main-title">@Resource.SchudledOrder</h1>
 
-<p>
+@*<p>
 	<a asp-action="CreateSchudledOrder" class="btn create-o-btn mb-5">@Resource.Create @Resource.SchudledOrder <i class="fa fa-plus ms-2"></i></a>
-</p>
+</p>*@
 <div class="table-responsive">
 	<table class="table table-striped table-hover">
 		<thead>
@@ -114,9 +115,18 @@
 				</td>*@
 					<td class="position-relative overflow-hidden">
 						<div class="table-buttons">
-							<a asp-action="EditSchudledOrder" asp-route-id="@item.Id" class="btn edit-btn icon-btn rounded-circle" title="@Resource.Edit"><i class="fa fa-edit"></i></a>
-							<a asp-action="DetailsSchudledOrder" asp-route-id="@item.Id" class="btn details-btn icon-btn rounded-circle" title="@Resource.Details"><i class="fa fa-info"></i></a>
-							<a asp-action="DeleteSchudledOrder" asp-route-id="@item.Id" class="btn delete-btn icon-btn rounded-circle" title="@Resource.Delete"><i class="fa fa-trash"></i></a>
+							@if ((await authorizationService.AuthorizeAsync(User, "EditScheduledOrdersPolicy")).Succeeded)
+							{
+								<a asp-action="EditSchudledOrder" asp-route-id="@item.Id" class="btn edit-btn icon-btn rounded-circle" title="@Resource.Edit"><i class="fa fa-edit"></i></a>
+							}
+							@if ((await authorizationService.AuthorizeAsync(User, "Index+DetailsScheduledOrdersPolicy")).Succeeded)
+							{
+								<a asp-action="DetailsSchudledOrder" asp-route-id="@item.Id" class="btn details-btn icon-btn rounded-circle" title="@Resource.Details"><i class="fa fa-info"></i></a>
+							}
+							@if ((await authorizationService.AuthorizeAsync(User, "EditScheduledOrdersPolicy")).Succeeded)
+							{
+								<a asp-action="DeleteSchudledOrder" asp-route-id="@item.Id" class="btn delete-btn icon-btn rounded-circle" title="@Resource.Delete"><i class="fa fa-trash"></i></a>
+							}
 						</div>
 					</td>
 				</tr>

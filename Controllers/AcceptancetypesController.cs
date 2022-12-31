@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -20,6 +21,7 @@ namespace Ris2022.Controllers
         }
 
         // GET: Acceptancetypes
+        [Authorize(Policy = "Index+DetailsAcceptanceTypesPolicy")]
         public async Task<IActionResult> Index()
         {
               return _context.Acceptancetypes != null ? 
@@ -28,6 +30,7 @@ namespace Ris2022.Controllers
         }
 
         // GET: Acceptancetypes/Details/5
+        [Authorize(Policy = "Index+DetailsAcceptanceTypesPolicy")]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.Acceptancetypes == null)
@@ -46,6 +49,7 @@ namespace Ris2022.Controllers
         }
 
         // GET: Acceptancetypes/Create
+        [Authorize(Policy = "CreateAcceptanceTypesPolicy")]
         public IActionResult Create()
         {
             return View();
@@ -56,6 +60,7 @@ namespace Ris2022.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Policy = "CreateAcceptanceTypesPolicy")]
         public async Task<IActionResult> Create([Bind("Id,Namear,Nameen")] Acceptancetype acceptancetype)
         {
             if (ModelState.IsValid)
@@ -68,6 +73,7 @@ namespace Ris2022.Controllers
         }
 
         // GET: Acceptancetypes/Edit/5
+        [Authorize(Policy = "EditAcceptanceTypesPolicy")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.Acceptancetypes == null)
@@ -88,6 +94,7 @@ namespace Ris2022.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Policy = "EditAcceptanceTypesPolicy")]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Namear,Nameen")] Acceptancetype acceptancetype)
         {
             if (id != acceptancetype.Id)
@@ -119,6 +126,7 @@ namespace Ris2022.Controllers
         }
 
         // GET: Acceptancetypes/Delete/5
+        [Authorize(Policy = "DeleteAcceptanceTypesPolicy")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.Acceptancetypes == null)
@@ -137,6 +145,7 @@ namespace Ris2022.Controllers
         }
 
         // POST: Acceptancetypes/Delete/5
+        [Authorize(Policy = "DeleteAcceptanceTypesPolicy")]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)

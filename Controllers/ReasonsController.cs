@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -20,6 +21,7 @@ namespace Ris2022.Controllers
         }
 
         // GET: Reasons
+        [Authorize(Policy = "Index+DetailsReasonsPolicy")]
         public async Task<IActionResult> Index()
         {
               return _context.Reasons != null ? 
@@ -28,6 +30,7 @@ namespace Ris2022.Controllers
         }
 
         // GET: Reasons/Details/5
+        [Authorize(Policy = "Index+DetailsReasonsPolicy")]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.Reasons == null)
@@ -46,6 +49,7 @@ namespace Ris2022.Controllers
         }
 
         // GET: Reasons/Create
+        [Authorize(Policy = "CreateReasonsPolicy")]
         public IActionResult Create()
         {
             return View();
@@ -56,6 +60,7 @@ namespace Ris2022.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Policy = "CreateReasonsPolicy")]
         public async Task<IActionResult> Create([Bind("Id,Namear,Nameen")] Reason reason)
         {
             if (ModelState.IsValid)
@@ -68,6 +73,7 @@ namespace Ris2022.Controllers
         }
 
         // GET: Reasons/Edit/5
+        [Authorize(Policy = "EditReasonsPolicy")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.Reasons == null)
@@ -88,6 +94,7 @@ namespace Ris2022.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Policy = "EditReasonsPolicy")]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Namear,Nameen")] Reason reason)
         {
             if (id != reason.Id)
@@ -119,6 +126,7 @@ namespace Ris2022.Controllers
         }
 
         // GET: Reasons/Delete/5
+        [Authorize(Policy = "DeleteReasonsPolicy")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.Reasons == null)
@@ -139,6 +147,7 @@ namespace Ris2022.Controllers
         // POST: Reasons/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Policy = "DeleteReasonsPolicy")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             if (_context.Reasons == null)

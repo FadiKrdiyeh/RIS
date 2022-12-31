@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -20,6 +21,7 @@ namespace Ris2022.Controllers
         }
 
         // GET: Modalities
+        [Authorize(Policy = "Index+DetailsModalitiesPolicy")]
         public async Task<IActionResult> Index()
         {
             var risDBContext = _context.Modalities.Include(m => m.Department).Include(m => m.Modalitytype);
@@ -27,6 +29,7 @@ namespace Ris2022.Controllers
         }
 
         // GET: Modalities/Details/5
+        [Authorize(Policy = "Index+DetailsModalitiesPolicy")]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.Modalities == null)
@@ -47,6 +50,7 @@ namespace Ris2022.Controllers
         }
 
         // GET: Modalities/Create
+        [Authorize(Policy = "CreateModalitiesPolicy")]
         public IActionResult Create()
         {
             ViewData["Departmentid"] = new SelectList(_context.Departments, "Id", "Namear");
@@ -59,6 +63,7 @@ namespace Ris2022.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Policy = "CreateModalitiesPolicy")]
         public async Task<IActionResult> Create([Bind("Id,Name,Aetitle,Ipaddress,Port,Modalitytypeid,Description,Departmentid")] Modality modality)
         {
             if (ModelState.IsValid)
@@ -73,6 +78,7 @@ namespace Ris2022.Controllers
         }
 
         // GET: Modalities/Edit/5
+        [Authorize(Policy = "EditModalitiesPolicy")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.Modalities == null)
@@ -95,6 +101,7 @@ namespace Ris2022.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Policy = "EditModalitiesPolicy")]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Aetitle,Ipaddress,Port,Modalitytypeid,Description,Departmentid")] Modality modality)
         {
             if (id != modality.Id)
@@ -128,6 +135,7 @@ namespace Ris2022.Controllers
         }
 
         // GET: Modalities/Delete/5
+        [Authorize(Policy = "DeleteModalitiesPolicy")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.Modalities == null)
@@ -151,6 +159,7 @@ namespace Ris2022.Controllers
         // POST: Modalities/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Policy = "DeleteModalitiesPolicy")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             if (_context.Modalities == null)
