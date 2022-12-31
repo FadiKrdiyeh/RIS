@@ -162,9 +162,9 @@ namespace Ris2022.Pages.Account
 
                 if (result1.Succeeded && result2.Succeeded)
                 {
-                    await _signInManager.SignInAsync(user, isPersistent: false);
+                    //await _signInManager.SignInAsync(user, isPersistent: false);
 
-                    return RedirectToPage("/MainPage");
+                    return RedirectToAction("ManageUserClaims", "Administration", new { userId = user.Id });
                 }
 
                 foreach (var error in result1.Errors)
