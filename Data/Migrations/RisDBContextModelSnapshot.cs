@@ -51,15 +51,15 @@ namespace Ris2022.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "4a208d09-5385-4890-aba1-9a74fb1e3067",
-                            ConcurrencyStamp = "d3614cb7-3cc3-4b59-94cf-59567bc949b1",
+                            Id = "2ff897b9-ae2b-4143-98ec-a22c33e80e84",
+                            ConcurrencyStamp = "744779a2-1b0b-45b6-934d-5bd43d4e9fc3",
                             Name = "User",
                             NormalizedName = "USER"
                         },
                         new
                         {
-                            Id = "de9ded45-c35f-457a-9ff1-2693c3b56ac0",
-                            ConcurrencyStamp = "04a47c88-cc78-4478-8173-5d3268a75f50",
+                            Id = "98529f63-55e0-4885-9400-8e3b3d90c565",
+                            ConcurrencyStamp = "d83035ee-f95c-412f-85f0-15b7a50e48b1",
                             Name = "Administrator",
                             NormalizedName = "ADMINISTRATOR"
                         });
@@ -247,7 +247,7 @@ namespace Ris2022.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Acceptancetypes");
+                    b.ToTable("Acceptancetypes", (string)null);
                 });
 
             modelBuilder.Entity("Ris2022.Data.Models.Clinic", b =>
@@ -273,7 +273,7 @@ namespace Ris2022.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Clinics");
+                    b.ToTable("Clinics", (string)null);
                 });
 
             modelBuilder.Entity("Ris2022.Data.Models.Department", b =>
@@ -296,7 +296,7 @@ namespace Ris2022.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Departments");
+                    b.ToTable("Departments", (string)null);
                 });
 
             modelBuilder.Entity("Ris2022.Data.Models.Language", b =>
@@ -323,7 +323,7 @@ namespace Ris2022.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Languages");
+                    b.ToTable("Languages", (string)null);
                 });
 
             modelBuilder.Entity("Ris2022.Data.Models.Martialstatus", b =>
@@ -346,7 +346,7 @@ namespace Ris2022.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Martialstatuses");
+                    b.ToTable("Martialstatuses", (string)null);
                 });
 
             modelBuilder.Entity("Ris2022.Data.Models.Modality", b =>
@@ -394,7 +394,7 @@ namespace Ris2022.Data.Migrations
 
                     b.HasIndex("Modalitytypeid");
 
-                    b.ToTable("Modalities");
+                    b.ToTable("Modalities", (string)null);
                 });
 
             modelBuilder.Entity("Ris2022.Data.Models.Modalitytype", b =>
@@ -417,7 +417,7 @@ namespace Ris2022.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Modalitytypes");
+                    b.ToTable("Modalitytypes", (string)null);
                 });
 
             modelBuilder.Entity("Ris2022.Data.Models.Nationality", b =>
@@ -440,7 +440,7 @@ namespace Ris2022.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Nationalities");
+                    b.ToTable("Nationalities", (string)null);
                 });
 
             modelBuilder.Entity("Ris2022.Data.Models.Order", b =>
@@ -491,8 +491,8 @@ namespace Ris2022.Data.Migrations
                     b.Property<int>("Patientid")
                         .HasColumnType("NUMBER(10)");
 
-                    b.Property<int?>("Payreasonid")
-                        .HasColumnType("NUMBER(10)");
+                    b.Property<string>("Payreasonid")
+                        .HasColumnType("NVARCHAR2(2000)");
 
                     b.Property<int?>("Paytypeid")
                         .HasColumnType("NUMBER(10)");
@@ -544,7 +544,7 @@ namespace Ris2022.Data.Migrations
 
                     b.HasIndex("RisAppDoctorId");
 
-                    b.ToTable("Orders");
+                    b.ToTable("Orders", (string)null);
                 });
 
             modelBuilder.Entity("Ris2022.Data.Models.Ordertype", b =>
@@ -567,7 +567,7 @@ namespace Ris2022.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Ordetypes");
+                    b.ToTable("Ordetypes", (string)null);
                 });
 
             modelBuilder.Entity("Ris2022.Data.Models.Patient", b =>
@@ -694,7 +694,7 @@ namespace Ris2022.Data.Migrations
 
                     b.HasIndex("Worktypeid");
 
-                    b.ToTable("Patients");
+                    b.ToTable("Patients", (string)null);
                 });
 
             modelBuilder.Entity("Ris2022.Data.Models.Paytype", b =>
@@ -717,7 +717,7 @@ namespace Ris2022.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Paytypes");
+                    b.ToTable("Paytypes", (string)null);
                 });
 
             modelBuilder.Entity("Ris2022.Data.Models.Proceduretype", b =>
@@ -743,7 +743,7 @@ namespace Ris2022.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Proceduretypes");
+                    b.ToTable("Proceduretypes", (string)null);
                 });
 
             modelBuilder.Entity("Ris2022.Data.Models.Reason", b =>
@@ -766,7 +766,7 @@ namespace Ris2022.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Reasons");
+                    b.ToTable("Reasons", (string)null);
                 });
 
             modelBuilder.Entity("Ris2022.Data.Models.Report", b =>
@@ -830,7 +830,7 @@ namespace Ris2022.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Reports");
+                    b.ToTable("Reports", (string)null);
                 });
 
             modelBuilder.Entity("Ris2022.Data.Models.RisAppUser", b =>
@@ -923,9 +923,9 @@ namespace Ris2022.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "3f918696-c57b-4b62-99ac-b15d56dd293d",
+                            Id = "2fc1ecf9-571e-43e2-ae89-31a34bd391ba",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "f86edf09-60f6-4c33-a0c1-1c3de076c049",
+                            ConcurrencyStamp = "8e0c92ca-3c76-4694-a8c8-fbe177fa4898",
                             Email = "RISAdmin@yy.com",
                             EmailConfirmed = true,
                             Firstname = "RIS",
@@ -935,7 +935,7 @@ namespace Ris2022.Data.Migrations
                             LockoutEnabled = false,
                             PasswordHash = "P@ssw0rd123",
                             PhoneNumberConfirmed = true,
-                            SecurityStamp = "0831dc2d-9908-4015-adcf-053246f29b3f",
+                            SecurityStamp = "93f53403-f09f-4dd5-807a-1493bcbe6553",
                             TwoFactorEnabled = false,
                             UserName = "RISAdmin"
                         });
@@ -961,7 +961,7 @@ namespace Ris2022.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Worktypes");
+                    b.ToTable("Worktypes", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

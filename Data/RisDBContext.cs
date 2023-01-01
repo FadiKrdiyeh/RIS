@@ -111,6 +111,11 @@ namespace Ris2022.Data
             //}
             //modelBuilder.Entity<Patient>().HasData(patsToSeed);
 
+
+            //foreach(var foreignkey in modelBuilder.Model.GetEntityTypes().SelectMany(e => e.GetForeignKeys()))
+            //{
+            //    foreignkey.DeleteBehavior = DeleteBehavior.Restrict;
+            //}
         }
     }
 

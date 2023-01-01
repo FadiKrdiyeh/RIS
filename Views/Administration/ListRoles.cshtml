@@ -1,43 +1,74 @@
 ﻿@model IEnumerable<IdentityRole>
 
-<h1 class="mt-5">List Roles</h1>
+
+@{
+    ViewData["Title"] = "All Roles";
+    Layout = "_Layout";
+}
+
+<script>
+    let activeLink = document.querySelector(".scrollmenu .custom-nav-item#listRolesLink");
+    activeLink.classList.add("active");
+</script>
+
+<h1 class="main-title">All Roles</h1>
 @if (Model.Any())
 {
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>Name</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var role in Model)
-            {
-                @*<tr>
-                    <td>@role.Id</td>
-                    <td>@role.Name</td>
-                </tr>*@
-                <tr>
-                    <td>
-                        <div class="card-body">
-                            <h5 class="card-title">@role.Name</h5>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="card-footer">
-                            <a class="btn btn-primary" asp-action="EditRole" asp-controller="Administration" asp-route-id="@role.Id">Edit</a>
-                            <a href="#" class="btn btn-danger">Delete</a>
-                        </div>
-                    </td>
-                </tr>
-            }
-        </tbody>
-    </table>
+    <a class="btn create-btn mb-5" style="width:auto" asp-controller="Administration" asp-action="CreateRole">Create Role <i class="fa fa-plus"></i></a>
+    <div class="row px-3">
+        @foreach (var role in Model)
+        {
+            <div class="col-sm-4 px-3">
+                <div class="card mb-5">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            @role.Name
+                        </h5>
+                    </div>
+                    <div class="card-footer">
+                        <a asp-action="EditRole" asp-controller="Administration" asp-route-id="@role.Id" class="btn edit-btn mx-2">Edit <i class="fa fa-edit"></i></a> |
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn delete-btn mx-2" data-toggle="modal" data-target="#@role.Name">@Resource.Delete <i class="fa fa-trash"></i></button>
 
+                        <!-- Modal -->
+                        <div class="modal fade" id="@role.Name" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="@role.Name" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title text-danger" id="@role.Name;Label"><i class="fa fa-warning"></i> Delete Role (@role.Name)</h5>
+                                        <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        @Resource.ConfirmDelete Role (@role.Name) @Resource.QuesMark
+                                    </div>
+                                    <div class="modal-footer">
+                                        <form asp-action="DeleteRole" asp-controller="Administration" asp-route-id="@role.Id">
+                                            @*<input type="submit" value="حذف" class="btn btn-danger" /> |*@
+                                            <button type="button" class="btn btn-outline-secondary py-2" data-dismiss="modal">@Resource.Cancel <i class="fa fa-close"></i></button>
+                                            <button type="submit" class="btn delete-btn">@Resource.Delete <i class="fa fa-trash"></i></button>
+                                            @*<input type="submit" value="حذف" class="btn btn-danger" />*@
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
 }
 else
 {
-    <div class="alert alert-secondary">
-        No Roles
+    <div class="card">
+        <div class="card-header">
+            <h2>No Roles Created Yet</h2>
+        </div>
+    </div>
+    <div class="card-body">
+        <h5 class="card-title">
+            Use the button below to create a role
+        </h5>
+        <a class="btn btn-primary" style="width:auto" asp-controller="Administration" asp-action="CreateRole">Create Role</a>
     </div>
 }

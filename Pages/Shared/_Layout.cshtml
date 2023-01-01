@@ -82,6 +82,10 @@
                 <ul class="scrollmenu">
                     @if (SignInManager.IsSignedIn(User))
                     {
+                        @if ((await authorizationService.AuthorizeAsync(User, "Index+DetailsRolesPolicy")).Succeeded)
+                        {
+                            <li class="custom-nav-item" id="listRolesLink"><a asp-action="ListRoles" asp-controller="Administration">List Roles</a></li>
+                        }
                         @if ((await authorizationService.AuthorizeAsync(User, "Index+DetailsUsersPolicy")).Succeeded)
                         {
                             <li class="custom-nav-item" id="listUsersLink"><a asp-action="ListUsers" asp-controller="Administration">List Users</a></li>

@@ -11,7 +11,6 @@ using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Microsoft.ReportingServices.ReportProcessing.ReportObjectModel;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 using System.Security.Claims;
-using Newtonsoft.Json.Linq;
 using System;
 
 namespace Ris2022.Controllers
@@ -137,6 +136,7 @@ namespace Ris2022.Controllers
                 }
                 model.Claims.Add(userClaim);
             }
+            ViewBag.UserName = user.UserName;
 
             return View(model);
         }
@@ -351,6 +351,105 @@ namespace Ris2022.Controllers
 
             return RedirectToAction("EditRole", new { id = RoleId });
             return View();
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> ManageUserRoles(string userId)
+        {
+            var user = await userManager.FindByIdAsync(userId);
+            ViewBag.UserId = userId;
+            ViewBag.UserName = user.UserName;
+
+            if(user == null)
+            {
+                ViewBag.ErrorMessage = $"User With ID: {userId} Cannot Be Found";
+                return View("NotFound");
+            }
+
+            var model = new List<UserRolesViewModel>();
+
+            foreach(var role in _roleManager.Roles)
+            {
+                var userRolesViewModel = new UserRolesViewModel()
+                {
+                    RoleId= role.Id,
+                    RoleName = role.Name,
+                };
+
+                if (await userManager.IsInRoleAsync(user, role.Name))
+                {
+                    userRolesViewModel.IsSelected = true;
+                }
+                else
+                {
+                    userRolesViewModel.IsSelected = false;
+                }
+                model.Add(userRolesViewModel);
+            }
+            return View(model);
+        }
+        [HttpPost]
+        public async Task<IActionResult> ManageUserRoles(List<UserRolesViewModel> model, string userId)
+        {
+            var user = await userManager.FindByIdAsync(userId);
+
+            if (user == null)
+            {
+                ViewBag.ErrorMessage = $"User With ID: {userId} Cannot Be Found";
+                return View("NotFound");
+            }
+
+            var roles = await userManager.GetRolesAsync(user);
+            var result = await userManager.RemoveFromRolesAsync(user, roles);
+
+            if (!result.Succeeded) 
+            {
+                ModelState.AddModelError(string.Empty, "Cannot remove user existing roles");
+                return View(model);
+            }
+
+            result = await userManager.AddToRolesAsync(user, model.Where(x => x.IsSelected).Select(y => y.RoleName));
+
+            if (!result.Succeeded)
+            {
+                ModelState.AddModelError(string.Empty, "Canot add selected roles to user");
+                return View(model);
+            }
+
+            return RedirectToAction("EditUser", new { Id = userId });
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> DeleteRole(string id)
+        {
+            var role = await _roleManager.FindByIdAsync(id);
+            if (role == null)
+            {
+                ViewBag.ErrorMessage = $"Role With ID: {id} Cannot Be Found";
+                return View("NotFound");
+            }
+            else
+            {
+                try
+                {
+                    var result = await _roleManager.DeleteAsync(role);
+                    if(result.Succeeded) 
+                    {
+                        return RedirectToAction("ListRoles");
+                    }
+                    foreach(var error in result.Errors)
+                    {
+                        ModelState.AddModelError(string.Empty, error.Description);
+                    }
+                    return RedirectToAction("ListRoles");
+                }
+                catch(DbUpdateException exp)
+                {
+                    ViewBag.ErrorTitle = $"{role.Name} role is in use";
+                    ViewBag.ErrorMessage = $"{role.Name} role cannot be deleted as there  are users in this role. If you want to delete this role, please remove the users from the role and then try to delete";
+                    return View("Error");
+                }
+            }
         }
 
         [HttpGet]

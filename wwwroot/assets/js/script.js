@@ -233,5 +233,13 @@ $('select').not('.original').each(function () {
         $styledSelect.removeClass('active');
         $list.hide();
     });
+});
 
+$(function () {
+    // For Collapse Items In Claims Management
+    $(".click-claim").on("click", function () {
+        let classes = $(this).data("collapseitems");
+        $("." + classes).fadeToggle();
+        $(this).find("i").toggleClass("fa-chevron-down").toggleClass("fa-minus");
+    });
 });
