@@ -1758,6 +1758,17 @@ footer {
 .custom-checkbox input:checked ~ .input-check::before {
     transform: scale(1) rotate(-45deg);
 }
+.card {
+    box-shadow: 5px 5px 15px 2px;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.scale-card:hover {
+    transform: scale(1.05);
+    border: none;
+}
 /******** End Global ********/
 
 
