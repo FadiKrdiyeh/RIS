@@ -114,6 +114,8 @@ namespace Ris2022.Data.Models
             new Claim("Index+Details-->Users", "false"),
             new Claim("Create-->Users", "false"),
             new Claim("Edit-->Users", "false"),
+            new Claim("ManageRoles-->Users", "false"),
+            new Claim("Index+DetailsClaims-->Users", "false"),
             new Claim("ManageClaims-->Users", "false"),
             new Claim("Index+Details-->Roles", "false"),
             new Claim("Create-->Roles", "false"),

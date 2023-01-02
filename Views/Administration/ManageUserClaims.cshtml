@@ -1,13 +1,28 @@
 ﻿@model UserClaimsViewModel
+@inject UserManager<RisAppUser> _userManager
 
 @{
     ViewBag.Title = "Manage User Claims";
+    var userName = ViewBag.UserName;
+    string currentUserId = _userManager.GetUserId(User);
 }
+
+<script>
+    let activeLink = document.querySelector(".scrollmenu .custom-nav-item#listUsersLink");
+    activeLink.classList.add("active");
+</script>
 
 <form method="post">
     <div class="card">
         <div class="card-header">
-            <h2 class="main-title custom-card-header-title">Manage User Claims For @ViewBag.UserName</h2>
+            <h2 class="main-title custom-card-header-title">Manage Claims For @userName</h2>
+            @if (Model.UserId == currentUserId)
+            {
+                <div class="alert alert-warning">
+                    <i class="fa fa-warning me-2"></i>
+                    Warning: You Cannot Change Your Own Claims!
+                </div>
+            }
         </div>
         <div class="card-body">
             <div class="row justify-content-start text-start">
@@ -25,7 +40,7 @@
                 {
                      <h1 class="click-claim text-start" data-collapseitems="@Model.Claims[i].ClaimTitle.Replace(" ", "")"><i class="fa fa-chevron-down"></i> @Model.Claims[i].ClaimTitle</h1>
                 }
-                <div class="col-3">
+                <div class="col-sm-3">
                     @*<div class="form-check m-1 @Model.Claims[i].ClaimTitle.Replace(" ", "") claims-group" style="display: none;">
                         <input type="hidden" asp-for="@Model.Claims[i].ClaimType" />
                         <input asp-for="@Model.Claims[i].IsSelected" class="form-check-input" />
@@ -35,9 +50,16 @@
                         <div class="checkbox @Model.Claims[i].ClaimTitle.Replace(" ", "") claims-group" style="display: none;">
                             <label asp-for="@Model.Claims[i].IsSelected" class="custom-checkbox">
                                 <input type="hidden" asp-for="@Model.Claims[i].ClaimType" />
-                                <input asp-for="@Model.Claims[i].IsSelected" type="checkbox" />
+                                @if (Model.UserId == currentUserId)
+                                {
+                                    <input asp-for="@Model.Claims[i].IsSelected" type="checkbox" disabled />
+                                }
+                                else
+                                {
+                                    <input asp-for="@Model.Claims[i].IsSelected" type="checkbox" />
+                                }
                                 <span class="input-check"></span>
-                                @Model.Claims[i].ClaimType.Replace("-->", " ")
+                                <span class="not-allowed">@Model.Claims[i].ClaimType.Replace("-->", " ")</span>
                             </label>
                         </div>
                 </div>

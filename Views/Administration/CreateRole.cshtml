@@ -5,6 +5,11 @@
     Layout = "_Layout";
 }
 
+<script>
+    let activeLink = document.querySelector(".scrollmenu .custom-nav-item#listRolesLink");
+    activeLink.classList.add("active");
+</script>
+
 <h1 class="main-title">@ViewData["Title"]</h1>
 
 <div class="row justify-content-center">
@@ -16,7 +21,8 @@
                 <input asp-for="RoleName" class="form-control" placeholder="Role Name..." />
                 <span asp-validation-for="RoleName" class="text-danger"></span>
             </div>
-            <button type="submit" class="btn create-btn mt-3">Create Role <i class="fa fa-plus"></i></button>
+            <button type="submit" class="btn create-btn mx-2 py-2">Create Role <i class="fa fa-plus"></i></button> | 
+            <a asp-action="ListRoles" asp-controller="Administration" class="btn back-btn mx-2 py-2">Back To List <i class="fa fa-hand-o-right"></i></a>
         </form>
     </div>
 </div>

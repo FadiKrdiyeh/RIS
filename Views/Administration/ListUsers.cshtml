@@ -28,11 +28,10 @@
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">
-                            @user.UserName
+                            @user.Firstname @user.Lastname
                         </h5>
                     </div>
-                    @*@if ((await authorizationService.AuthorizeAsync(User, "EditUsersPolicy")).Succeeded)*@
-                    @if (true)
+                    @if ((await authorizationService.AuthorizeAsync(User, "EditUsersPolicy")).Succeeded)
                     {
                         <div class="card-footer">
                             <a asp-action="EditUser" asp-controller="Administration" asp-route-id="@user.Id" class="btn edit-btn">Edit <i class="fa fa-edit"></i></a>

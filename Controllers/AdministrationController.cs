@@ -15,8 +15,6 @@ using System;
 
 namespace Ris2022.Controllers
 {
-    //[Authorize(Roles ="administrator")]
-   // [Authorize(Roles ="User")]
     public class AdministrationController : Controller
     {
         private readonly RisDBContext _context;
@@ -59,8 +57,10 @@ namespace Ris2022.Controllers
             var model = new EditUserViewModel()
             {
                 Id = user.Id,
-                Email = user.Email,
+                //Email = user.Email,
                 UserName = user.UserName,
+                FirstName = user.Firstname,
+                LastName = user.Lastname,
                 Claims = userClaims.ToList(),
                 Roles = userRoles
             };
@@ -80,8 +80,10 @@ namespace Ris2022.Controllers
             }
             else
             {
-                user.Email = model.Email;
+                //user.Email = model.Email;
                 user.UserName = model.UserName;
+                user.Firstname = model.FirstName;
+                user.Lastname = model.LastName;
 
                 var result = await userManager.UpdateAsync(user);
 
@@ -274,6 +276,8 @@ namespace Ris2022.Controllers
 
             var role = await _roleManager.FindByIdAsync(RoleId);
 
+            ViewBag.RoleName = role.Name;
+
             if (role == null)
             {
                 ViewBag.ErrorMessage = $"Role with Id={RoleId} cannot be Found";
@@ -354,6 +358,7 @@ namespace Ris2022.Controllers
         }
 
         [HttpGet]
+        [Authorize(Policy = "ManageRolesUsersPolicy")]
         public async Task<IActionResult> ManageUserRoles(string userId)
         {
             var user = await userManager.FindByIdAsync(userId);
@@ -389,6 +394,7 @@ namespace Ris2022.Controllers
             return View(model);
         }
         [HttpPost]
+        [Authorize(Policy = "ManageRolesUsersPolicy")]
         public async Task<IActionResult> ManageUserRoles(List<UserRolesViewModel> model, string userId)
         {
             var user = await userManager.FindByIdAsync(userId);
@@ -420,6 +426,7 @@ namespace Ris2022.Controllers
         }
 
         [HttpPost]
+        [Authorize(Policy = "DeleteRolesPolicy")]
         public async Task<IActionResult> DeleteRole(string id)
         {
             var role = await _roleManager.FindByIdAsync(id);

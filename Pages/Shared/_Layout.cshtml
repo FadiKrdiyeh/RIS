@@ -77,24 +77,19 @@
                     </div>
                 </div>
             </div>
-
             <nav class="scrollmenu-container not-for-login">
                 <ul class="scrollmenu">
                     @if (SignInManager.IsSignedIn(User))
                     {
-                        @if ((await authorizationService.AuthorizeAsync(User, "Index+DetailsRolesPolicy")).Succeeded)
-                        {
-                            <li class="custom-nav-item" id="listRolesLink"><a asp-action="ListRoles" asp-controller="Administration">List Roles</a></li>
-                        }
+                        <li class="custom-nav-item" id="homeLink"><a asp-page="/MainPage">@Resource.Home</a></li>
                         @if ((await authorizationService.AuthorizeAsync(User, "Index+DetailsUsersPolicy")).Succeeded)
                         {
-                            <li class="custom-nav-item" id="listUsersLink"><a asp-action="ListUsers" asp-controller="Administration">List Users</a></li>
+                            <li class="custom-nav-item" id="listUsersLink"><a asp-action="ListUsers" asp-controller="Administration">Users</a></li>
                         }
-                        @if ((await authorizationService.AuthorizeAsync(User, "CreateRolesPolicy")).Succeeded)
+                        @if ((await authorizationService.AuthorizeAsync(User, "Index+DetailsRolesPolicy")).Succeeded)
                         {
-                            <li class="custom-nav-item" id="administrationLink"><a asp-controller="Administration" asp-action="createrole">@Resource.AddRole</a></li>
+                            <li class="custom-nav-item" id="listRolesLink"><a asp-action="ListRoles" asp-controller="Administration">Roles</a></li>
                         }
-                        <li class="custom-nav-item" id="homeLink"><a asp-page="/MainPage">@Resource.Home</a></li>
                         @if ((await authorizationService.AuthorizeAsync(User, "Index+DetailsPatientsPolicy")).Succeeded)
                         {
                             <li class="custom-nav-item" id="patientLink"><a asp-controller="Patients" asp-action="Index">@Resource.Patients</a></li>
